@@ -1,0 +1,119 @@
+-- spar-flavoured AADL package modelling the FixVec interface.
+--
+-- This is the pulseengine equivalent of eclipse-score's logic_arc_int +
+-- 5 logic_arc_int_op need declarations. Where eclipse stops at "the
+-- typed need graph IS the interface", spar's AADL layer adds:
+--   - typed feature-group with provides/requires direction
+--   - subprogram signatures (typed in/out parameters)
+--   - ARP4761 / ISO 26262 properties bound to the architecture element
+--   - emission to WIT (see ../arch/fixvec.wit) and to Rust traits via
+--     wit-bindgen
+--
+-- This file is hand-authored for the worked example. A real
+-- score-to-aadl converter would emit this shape from the eclipse
+-- typed-need graph.
+--
+-- Validate:  spar validate arch/fixvec.aadl   (when spar is installed)
+
+package FixVec
+public
+  with ARP4761;
+  with Data_Model;
+
+  -- ── The interface: a feature group with 5 typed subprograms ──────
+  --
+  -- Equivalent to eclipse's:
+  --   .. logic_arc_int:: Fixed-Capacity Vector
+  --      :id: logic_arc_int__b_r__fixvec
+  --   + the 5 .. logic_arc_int_op:: children linked via :included_by:
+  feature group FixVecOps
+
+    features
+
+      -- Push: append element. Fails on full.
+      -- Equivalent to logic_arc_int_op__cont__fixvec_push.
+      push : provides subprogram access PushFn;
+
+      -- Pop: remove and return last, or None on empty.
+      pop : provides subprogram access PopFn;
+
+      -- Clear: reset length to zero.
+      clear : provides subprogram access ClearFn;
+
+      -- Index: random access; bounds-checked.
+      index : provides subprogram access IndexFn;
+
+      -- Iterate: borrow contents as slice; iterator protocol.
+      iterate : provides subprogram access IterateFn;
+
+    properties
+      -- ASIL_B classification on the interface as a whole.
+      -- Eclipse encodes the same as `:safety: ASIL_B` on each need.
+      ARP4761::Development_Assurance_Level => ASIL_B;
+      -- Security classification (ISO/SAE 21434).
+      ARP4761::Security_Level => YES;
+  end FixVecOps;
+
+  -- ── The five subprogram signatures ──────────────────────────────
+  --
+  -- This is where the pulseengine stack diverges from eclipse:
+  -- spar emits a typed signature per operation, which becomes the
+  -- WIT contract (see arch/fixvec.wit) which becomes a Rust trait
+  -- via wit-bindgen which is link-time-checked at build.
+  --
+  -- Eclipse stops at "the operation is documented"; pulseengine
+  -- continues to "the operation has a binary contract".
+
+  subprogram PushFn
+    features
+      item       : in parameter Base_Types::Unsigned_32;
+      result     : out parameter Base_Types::Boolean;  -- ok/err
+    properties
+      Data_Model::Base_Type => (classifier (Base_Types::Unsigned_32));
+  end PushFn;
+
+  subprogram PopFn
+    features
+      result     : out parameter Base_Types::Unsigned_32;
+      has_value  : out parameter Base_Types::Boolean;  -- None encoding
+  end PopFn;
+
+  subprogram ClearFn
+    -- no parameters, no return
+  end ClearFn;
+
+  subprogram IndexFn
+    features
+      idx        : in parameter Base_Types::Unsigned_32;
+      result     : out parameter Base_Types::Unsigned_32;
+      has_value  : out parameter Base_Types::Boolean;
+  end IndexFn;
+
+  subprogram IterateFn
+    features
+      callback   : in parameter Base_Types::Unsigned_32;  -- function ptr abstraction
+    -- spar materialises the iterator into a callback-based contract
+    -- so it survives the WIT boundary (WASM components don't have
+    -- native iterator protocols).
+  end IterateFn;
+
+  -- ── The component that ships the interface ──────────────────────
+  -- Equivalent to eclipse's comp_arc_sta__baselibs_rust__containers_rust.
+
+  system FixVecComponent
+    features
+      ops : provides feature group FixVecOps;
+    properties
+      ARP4761::Development_Assurance_Level => ASIL_B;
+      ARP4761::Security_Level => YES;
+  end FixVecComponent;
+
+  system implementation FixVecComponent.inline
+    -- Inline-storage variant. Eclipse's FixVec is the inline variant
+    -- (storage: Inline<T, CAPACITY>). A heap-storage variant would
+    -- be a sibling .heap implementation here.
+    properties
+      ARP4761::Implementation_Strategy => "inline_storage";
+  end FixVecComponent.inline;
+
+end FixVec;
