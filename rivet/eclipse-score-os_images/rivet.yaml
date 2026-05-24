@@ -1,0 +1,13 @@
+# Eclipse S-CORE `os_images` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/os_images
+project:
+  name: eclipse-score-os_images
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

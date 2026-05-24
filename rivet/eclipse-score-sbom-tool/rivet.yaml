@@ -1,0 +1,13 @@
+# Eclipse S-CORE `sbom-tool` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/sbom-tool
+project:
+  name: eclipse-score-sbom-tool
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

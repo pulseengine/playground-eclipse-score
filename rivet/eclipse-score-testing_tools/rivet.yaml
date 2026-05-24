@@ -1,0 +1,13 @@
+# Eclipse S-CORE `testing_tools` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/testing_tools
+project:
+  name: eclipse-score-testing_tools
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

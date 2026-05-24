@@ -1,0 +1,13 @@
+# Eclipse S-CORE `inc_time` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/inc_time
+project:
+  name: eclipse-score-inc_time
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

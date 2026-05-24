@@ -1,0 +1,13 @@
+# Eclipse S-CORE `infrastructure` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/infrastructure
+project:
+  name: eclipse-score-infrastructure
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

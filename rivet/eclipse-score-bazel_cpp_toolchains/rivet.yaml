@@ -1,0 +1,13 @@
+# Eclipse S-CORE `bazel_cpp_toolchains` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/bazel_cpp_toolchains
+project:
+  name: eclipse-score-bazel_cpp_toolchains
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

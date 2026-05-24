@@ -1,0 +1,13 @@
+# Eclipse S-CORE `ferrocene_toolchain_builder` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/ferrocene_toolchain_builder
+project:
+  name: eclipse-score-ferrocene_toolchain_builder
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

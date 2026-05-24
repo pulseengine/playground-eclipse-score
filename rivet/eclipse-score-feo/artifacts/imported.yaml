@@ -1,10 +1,1 @@
 artifacts:
-  - id: STKH_REQ__DOCGEN_ENABLED__EXAMPLE
-    type: stkh-req
-    title: Example Functional Requirement
-    status: approved
-    fields:
-      safety-level: QM
-      security: "YES"
-      req-type: Functional
-      rationale: Ensure documentation builds are possible for all modules

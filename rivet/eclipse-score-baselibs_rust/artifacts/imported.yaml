@@ -1,0 +1,936 @@
+artifacts:
+  - id: DOC__CONTAINERS_RUST_ARCHITECTURE
+    type: doc
+    title: Rust Containers Architecture
+    status: draft
+    tags: [baselibs_rust_containers_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP_ARC_STA__BASELIBS_RUST__CONTAINERS_RUST
+    type: comp-arc-sta
+    title: Rust Containers
+    status: approved
+    tags: [baselibs_rust_containers_rust]
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_component(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__CONTAINERS_RUST__FIXED_VECTOR
+      - type: fulfils
+        target: COMP_REQ__CONTAINERS_RUST__INLINE_VECTOR
+      - type: fulfils
+        target: COMP_REQ__CONTAINERS_RUST__FIXED_QUEUE
+      - type: fulfils
+        target: COMP_REQ__CONTAINERS_RUST__INLINE_QUEUE
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: LOGIC_ARC_INT__B_R__FIXVEC
+    type: logic-arc-int
+    title: Fixed-Capacity Vector
+    status: approved
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+  - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_PUSH
+    type: logic-arc-int
+    title: Push
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixvec
+  - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_POP
+    type: logic-arc-int
+    title: Pop
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixvec
+  - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_CLEAR
+    type: logic-arc-int
+    title: Clear
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixvec
+  - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_INDEX
+    type: logic-arc-int
+    title: Index
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixvec
+  - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_ITERATE
+    type: logic-arc-int
+    title: Iterate
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixvec
+  - id: LOGIC_ARC_INT__B_R__INLINEVEC
+    type: logic-arc-int
+    title: Inline-Storage Vector
+    status: approved
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+  - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_PUSH
+    type: logic-arc-int
+    title: Push
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlinevec
+  - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_POP
+    type: logic-arc-int
+    title: Pop
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlinevec
+  - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_CLEAR
+    type: logic-arc-int
+    title: Clear
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlinevec
+  - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_INDEX
+    type: logic-arc-int
+    title: Index
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlinevec
+  - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_ITERATE
+    type: logic-arc-int
+    title: Iterate
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlinevec
+  - id: LOGIC_ARC_INT__B_R__FIXQUEUE
+    type: logic-arc-int
+    title: Fixed-Capacity Queue
+    status: approved
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_PUSHFRONT
+    type: logic-arc-int
+    title: Push Front
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_PUSHBACK
+    type: logic-arc-int
+    title: Push Back
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_POPFRONT
+    type: logic-arc-int
+    title: Pop Front
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_POPBACK
+    type: logic-arc-int
+    title: Pop Back
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_CLEAR
+    type: logic-arc-int
+    title: Clear
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_ITERATE
+    type: logic-arc-int
+    title: Iterate
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__fixqueue
+  - id: LOGIC_ARC_INT__B_R__INLQUEUE
+    type: logic-arc-int
+    title: Inline-Storage Queue
+    status: approved
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_PUSHFRONT
+    type: logic-arc-int
+    title: Push Front
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_PUSHBACK
+    type: logic-arc-int
+    title: Push Back
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_POPFRONT
+    type: logic-arc-int
+    title: Pop Front
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_POPBACK
+    type: logic-arc-int
+    title: Pop Back
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_CLEAR
+    type: logic-arc-int
+    title: Clear
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_ITERATE
+    type: logic-arc-int
+    title: Iterate
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__b_r__inlqueue
+  - id: DOC__CONTAINERS_RUST
+    type: doc
+    title: Rust Containers Library
+    status: draft
+    tags: [baselibs_rust_containers_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__CONTAINERS_RUST_LIB_REQUIREMENTS
+    type: doc
+    title: Rust Containers Library Requirements
+    status: draft
+    tags: [requirements, containers_rust_library, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_COMP
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_VECTOR
+    type: comp-req
+    title: Fixed-Capacity Vector
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated vector container with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_VECTOR
+    type: comp-req
+    title: Inline-Storage Vector
+    status: approved
+    description: |
+      The Rust Containers library shall provide a vector container with a capacity determined at compile-time,
+      which stores the elements within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible vector.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_STRING
+    type: comp-req
+    title: Fixed-Capacity String
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated, UTF-8 encoded string data type with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_STRING
+    type: comp-req
+    title: Inline-Storage String
+    status: approved
+    description: |
+      The Rust Containers library shall provide a UTF-8 encoded string data type with a capacity determined at compile-time,
+      which stores the codepoints within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible string.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_QUEUE
+    type: comp-req
+    title: Fixed-Capacity Queue
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated double-ended queue container with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_QUEUE
+    type: comp-req
+    title: Inline-Storage Queue
+    status: approved
+    description: |
+      The Rust Containers library shall provide a queue container with a capacity determined at compile-time,
+      which stores the elements within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible queue.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_HASHMAP
+    type: comp-req
+    title: Fixed-Capacity Hashmap
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated hashmap container with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_HASHMAP
+    type: comp-req
+    title: Inline-Storage Hashmap
+    status: approved
+    description: |
+      The Rust Containers library shall provide a hashmap container with a capacity determined at compile-time,
+      which stores the elements within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible hashmap.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_HASHSET
+    type: comp-req
+    title: Fixed-Capacity Hashset
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated hashset container with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_HASHSET
+    type: comp-req
+    title: Inline-Storage Hashset
+    status: approved
+    description: |
+      The Rust Containers library shall provide a hashset container with a capacity determined at compile-time,
+      which stores the elements within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible hashset.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_BTREE
+    type: comp-req
+    title: Fixed-Capacity B-Tree
+    status: approved
+    description: |
+      The Rust Containers library shall provide a heap-allocated B-tree container with construction-time capacity specification.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_BTREE
+    type: comp-req
+    title: Inline-Storage B-Tree
+    status: approved
+    description: |
+      The Rust Containers library shall provide a B-tree container with a capacity determined at compile-time,
+      which stores the elements within the data structure itself.
+      This container shall have a stable, precisely defined memory layout, capable of serving as the basis for an ABI-compatible B-tree.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__TYPE_SAFETY
+    type: comp-req
+    title: Type Safety
+    status: approved
+    description: |
+      The Rust Containers library shall enforce compile-time type safety for all container operations.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CONSISTENT_APIS
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__SAFETY
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__DET_BEHAVIOR
+    type: comp-req
+    title: Deterministic Behavior
+    status: approved
+    description: |
+      The Rust containers library shall provide deterministic behavior.
+    fields:
+      req-type: Non-Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__CORE_UTILITIES
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__SAFETY
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__INLINE_NO_HEAP
+    type: comp-req
+    title: No Heap Allocation
+    status: approved
+    description: |
+      Inline-storage containers shall never allocate heap memory.
+    fields:
+      req-type: Non-Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: COMP_REQ__CONTAINERS_RUST__FIXED_NO_REALLOC
+    type: comp-req
+    title: No Reallocation
+    status: approved
+    description: |
+      Fixed-capacity containers shall never allocate or re-allocate memory after their initial construction.
+    fields:
+      req-type: Non-Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS_RUST__RESULT_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_CONTAINERS
+  - id: DOC__LOG_ARCHITECTURE
+    type: doc
+    title: Log Architecture
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP_ARC_STA__LOG__STATIC_VIEW
+    type: comp-arc-sta
+    title: Log (Static View)
+    status: approved
+    description: |
+      .. uml:: _assets/static_view.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__LOGGING
+      - type: fulfils
+        target: COMP_REQ__LOG__PLACEHOLDER
+  - id: COMP_ARC_DYN__LOG__REGISTER_GLOBAL_LOGGER
+    type: comp-arc-dyn
+    title: Register global logger
+    status: approved
+    description: |
+      .. uml:: _assets/register_global_logger.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__LOGGING
+      - type: fulfils
+        target: COMP_REQ__LOG__PLACEHOLDER
+  - id: COMP_ARC_DYN__LOG__LOG_WITH_GLOBAL_LOGGER
+    type: comp-arc-dyn
+    title: Log with global logger instance
+    status: approved
+    description: |
+      .. uml:: _assets/log_with_global_logger.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__LOGGING
+      - type: fulfils
+        target: COMP_REQ__LOG__PLACEHOLDER
+  - id: COMP_ARC_DYN__LOG__LOG_WITH_LOCAL_LOGGER
+    type: comp-arc-dyn
+    title: Log with local logger instance
+    status: approved
+    description: |
+      .. uml:: _assets/log_with_local_logger.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__LOGGING
+      - type: fulfils
+        target: COMP_REQ__LOG__PLACEHOLDER
+  - id: REAL_ARC_INT__LOG__INTERFACE
+    type: real-arc-int
+    title: Log interface
+    status: approved
+    description: |
+      .. uml:: _assets/interface.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+      language: rust
+    links:
+      - type: fulfils
+        target: COMP_REQ__LOG__PLACEHOLDER
+  - id: DOC__LOG_COMP_CLASS
+    type: doc
+    title: Log Component Classification
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_CLASS
+  - id: DOC__LOG_DETAILED_DESIGN
+    type: doc
+    title: Log Detailed Design
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION
+  - id: DD_STA__LOG__CLASS_DIAGRAM
+    type: dd-sta
+    title: Log class diagram
+    status: approved
+    description: |
+      .. uml:: _assets/class_diagram.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__LOG__PLACEHOLDER
+      - type: satisfies
+        target: COMP_ARC_STA__LOG__STATIC_VIEW
+  - id: DD_DYN__LOG__LOG_OP
+    type: dd-dyn
+    title: Log operation
+    status: approved
+    description: |
+      .. uml:: _assets/log_op.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__LOG__PLACEHOLDER
+      - type: satisfies
+        target: COMP_ARC_STA__LOG__STATIC_VIEW
+  - id: DD_DYN__LOG__LOG_TO_LEVEL
+    type: dd-dyn
+    title: Log to level
+    status: approved
+    description: |
+      .. uml:: _assets/log_to_level.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__LOG__PLACEHOLDER
+      - type: satisfies
+        target: COMP_ARC_STA__LOG__STATIC_VIEW
+  - id: DOC__LOG
+    type: doc
+    title: Log
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__LOG_REQUIREMENTS
+    type: doc
+    title: Log Requirements
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_COMP
+  - id: COMP_REQ__LOG__PLACEHOLDER
+    type: comp-req
+    title: Log requirements placeholder
+    status: obsolete
+    description: |
+      Requirement placeholder for diagram rendering.
+      To be replaced with actual requirements.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__CORE_UTILITIES
+      - type: belongs-to
+        target: COMP__LOGGING
+  - id: DOC__LOG_DFA
+    type: doc
+    title: Log DFA
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_DFA
+  - id: DOC__LOG_FMEA
+    type: doc
+    title: Log FMEA
+    status: draft
+    tags: [log, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_FMEA
+  - id: DOC__BASELIBS_RUST_REQUIREMENTS
+    type: doc
+    title: Baselibs_rust Requirements
+    status: draft
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_FEAT
+  - id: FEAT_REQ__BASELIBS_RUST__CORE_UTILITIES
+    type: feat-req
+    title: Core Software Utilities
+    status: approved
+    description: |
+      The Rust base libraries shall include core software utilities and common infrastructure components needed by multiple platform modules.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: QM
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+  - id: FEAT_REQ__BASELIBS_RUST__SAFETY
+    type: feat-req
+    title: Safety Relevance
+    status: approved
+    description: |
+      The Rust base libraries shall implement functionality necessary to support safety-relevant platform components up to ASIL-B for selected functionalities.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+      - type: satisfies
+        target: STKH_REQ__DEPENDABILITY__AUTOMOTIVE_SAFETY
+  - id: FEAT_REQ__BASELIBS_RUST__CONSISTENT_APIS
+    type: feat-req
+    title: Consistent APIs
+    status: approved
+    description: |
+      The Rust base libraries shall provide consistent APIs while respecting language-specific idioms.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: QM
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+      - type: satisfies
+        target: STKH_REQ__DEV_EXPERIENCE__PROG_LANGUAGES
+      - type: satisfies
+        target: STKH_REQ__OVERALL_GOALS__REUSE_OF_APP_SOFT
+  - id: FEAT_REQ__BASELIBS_RUST__MAINTAINABLE_DESIGN
+    type: feat-req
+    title: Maintainable Design
+    status: approved
+    description: |
+      The Rust base libraries shall be designed for maintainability and code reuse.
+    fields:
+      req-type: Non-Functional
+      security: "NO"
+      safety-level: QM
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+      - type: satisfies
+        target: STKH_REQ__OVERALL_GOALS__REUSE_OF_APP_SOFT
+  - id: FEAT_REQ__BASELIBS_RUST__SECURITY
+    type: feat-req
+    title: Security Robustness
+    status: approved
+    description: |
+      The Rust base libraries shall adhere to secure coding standards to prevent vulnerabilities across platform components.
+    fields:
+      req-type: Non-Functional
+      security: "YES"
+      safety-level: QM
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+  - id: FEAT_REQ__BASELIBS_RUST__RESULT_LIBRARY
+    type: feat-req
+    title: Panic-Free Development Support
+    status: approved
+    description: |
+      The Rust base libraries shall provide error handling mechanisms that enable development without relying on Rust panics.
+      Where an idiomatic interface requires panics, an additional non-panicking option shall be provided as well.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+  - id: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
+    type: feat-req
+    title: Rust Container Library
+    status: approved
+    description: |
+      The Rust base libraries shall provide a library of container types that serve the specific needs of SW-platform components.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+  - id: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
+    type: feat-req
+    title: ABI-Compatible Containers
+    status: approved
+    description: |
+      The Rust base libraries shall provide a library of containers that can serve as the basis for ABI-compatible container data structures.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: STKH_REQ__FUNCTIONAL_REQ__BASE_LIBRARIES
+  - id: DOC__BASELIBS_RUST_SAFETY_MANUAL
+    type: doc
+    title: Rust Base Libraries Safety Manual
+    status: draft
+    tags: [baselibs_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_MANUAL
+  - id: DOC__BASELIBS_RUST_RELEASE_NOTE
+    type: doc
+    title: Rust Base Libraries Release Note
+    status: draft
+    tags: [baselibs_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SW_RELEASE_NOTE
+  - id: DOC__BASELIBS_RUST_SAFETY_PACKAGE_FDR
+    type: doc
+    title: Rust Base Libraries Safety Package Formal Review
+    status: draft
+    tags: [baselibs_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__BASELIBS_RUST_SAFETY_PLAN_FDR
+    type: doc
+    title: Rust Base Libraries Safety Plan Formal Review
+    status: draft
+    tags: [baselibs_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__BASELIBS_RUST_VERIFICATION_REPORT
+    type: doc
+    title: Rust Base Libraries Verification Report
+    status: draft
+    tags: [baselibs_rust, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__VERIFICATION_MODULE_VER_REPORT

@@ -1,0 +1,13 @@
+# Eclipse S-CORE `score_rust_policies` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/score_rust_policies
+project:
+  name: eclipse-score-score_rust_policies
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

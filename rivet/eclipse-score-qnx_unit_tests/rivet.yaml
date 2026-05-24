@@ -1,0 +1,13 @@
+# Eclipse S-CORE `qnx_unit_tests` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/qnx_unit_tests
+project:
+  name: eclipse-score-qnx_unit_tests
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

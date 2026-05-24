@@ -189,6 +189,15 @@ FIELD_MAP = {
 # Options sphinx-needs handles natively and that we don't re-emit:
 NATIVE_OPTIONS = {"id", "status", "tags", "content", "title", "type"}
 
+# IDs that ship with eclipse-score/module_template as placeholders and
+# get copied verbatim into many downstream repos without being renamed.
+# Globally skipping them avoids "declared in N repos" errors at corpus
+# scale. This is an upstream-hygiene issue (the template should ship with
+# either no IDs or per-repo-substituted IDs), not a converter limitation.
+TEMPLATE_PLACEHOLDER_IDS = {
+    "stkh_req__docgen_enabled__example",
+}
+
 
 # ── Parsing ─────────────────────────────────────────────────────────────
 
@@ -322,15 +331,32 @@ def parse_rst(path: pathlib.Path) -> list[ParsedNeed]:
                 break
         # Belt-and-suspenders: skip RST template placeholders that escaped
         # the code-block filter. Template IDs and link targets use angle-
-        # bracketed slots like `<Title>`, `<ID from feature>`.
-        if not need.id or "<" in need.id or ">" in need.id:
+        # bracketed slots like `<Title>`, `<ID from feature>`. Also skip
+        # cross-repo template-placeholder IDs that downstream eclipse
+        # repos copied verbatim from module_template.
+        if (not need.id
+                or "<" in need.id
+                or ">" in need.id
+                or need.id.lower() in TEMPLATE_PLACEHOLDER_IDS):
             continue
         # Drop link targets that are template placeholders so they don't
-        # create spurious "target does not exist" diagnostics.
+        # create spurious "target does not exist" diagnostics. Covers
+        # both `<...>`-bracketed placeholders in the raw option AND
+        # links that point at a known `TEMPLATE_PLACEHOLDER_IDS` target
+        # (which has been globally filtered out of the artifact set).
         for key in list(need.options):
-            if key in LINK_MAP and ("<" in need.options[key]
-                                     or ">" in need.options[key]):
-                need.options.pop(key)
+            if key in LINK_MAP:
+                raw = need.options[key]
+                if "<" in raw or ">" in raw:
+                    need.options.pop(key)
+                    continue
+                kept = [t for t in re.split(r"[\s,;]+", raw)
+                        if t.strip()
+                        and t.strip().lower() not in TEMPLATE_PLACEHOLDER_IDS]
+                if not kept:
+                    need.options.pop(key)
+                else:
+                    need.options[key] = ", ".join(kept)
         needs.append(need)
     return needs
 
@@ -437,14 +463,20 @@ def convert_repo(root: pathlib.Path, out_yaml: pathlib.Path,
     stats = CoverageStats()
     artifacts: list = []
     for path in sorted(root.rglob("*.rst")):
-        # Skip vendored docs / build outputs / upstream metamodel test
-        # fixtures (eclipse-score/docs-as-code ships an `rst/` test tree
-        # under score_metamodel/tests/ whose contents are deliberately
-        # broken examples — useful for upstream unit tests, noise for us).
+        # Skip vendored docs / build outputs / upstream test fixtures.
+        # Two categories of upstream test data trip up the corpus oracle:
+        #   - docs-as-code `score_metamodel/tests/rst/` is a test corpus
+        #     for the metamodel itself; intentionally-broken needs.
+        #   - `*/test/fixtures/**.rst` (and `tests/fixtures/`) is upstream
+        #     Bazel-rule fixture data — concrete needs that reference
+        #     other concrete needs that exist only inside the fixture set.
+        #     E.g. tooling/bazel/rules/rules_score/test/fixtures/seooc_test/.
         spath = str(path)
         if ("/_build/" in spath
                 or "/.git/" in spath
-                or "/score_metamodel/tests/" in spath):
+                or "/score_metamodel/tests/" in spath
+                or "/test/fixtures/" in spath
+                or "/tests/fixtures/" in spath):
             continue
         stats.files_scanned += 1
         try:

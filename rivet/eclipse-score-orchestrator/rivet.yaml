@@ -1,0 +1,13 @@
+# Eclipse S-CORE `orchestrator` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/orchestrator
+project:
+  name: eclipse-score-orchestrator
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

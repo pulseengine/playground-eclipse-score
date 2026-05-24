@@ -1,0 +1,13 @@
+# Eclipse S-CORE `eclipse-score-website-published` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/eclipse-score-website-published
+project:
+  name: eclipse-score-eclipse-score-website-published
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

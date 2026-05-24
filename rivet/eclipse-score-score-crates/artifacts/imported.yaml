@@ -1,0 +1,12 @@
+artifacts:
+  - id: DOC__PASTEY_CRATE_COMP_CLASS
+    type: doc
+    title: Pastey Crate Component Classification
+    status: approved
+    tags: [pre-existing, software-component, classification, Rust, proc-macro, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_CLASS

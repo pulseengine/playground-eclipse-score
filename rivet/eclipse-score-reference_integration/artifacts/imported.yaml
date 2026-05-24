@@ -1,0 +1,23 @@
+artifacts:
+  - id: DOC__SCORE_V07_RELEASE_NOTE
+    type: doc
+    title: S-CORE v0.7 release note
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: QM
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__PLATFORM_SW_RELEASE_NOTE
+  - id: DOC__PLATFORM_VERIFICATION_REPORT_V07
+    type: doc
+    title: Platform Verification Report
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: QM
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__VERIFICATION_PLATFORM_VER_REPORT

@@ -1,0 +1,10 @@
+artifacts:
+  - id: STKH_REQ__SUPPORTED_PLATFORMS__AUTOSD_DEV
+    type: stkh-req
+    title: CentOS AutoSD 9 Development Target
+    status: approved
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: QM
+      rationale: CentOS AutoSD 9 is required as a development target.

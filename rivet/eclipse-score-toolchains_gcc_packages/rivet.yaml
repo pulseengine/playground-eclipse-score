@@ -1,0 +1,13 @@
+# Eclipse S-CORE `toolchains_gcc_packages` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/toolchains_gcc_packages
+project:
+  name: eclipse-score-toolchains_gcc_packages
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

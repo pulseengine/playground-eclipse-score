@@ -1,0 +1,13 @@
+# Eclipse S-CORE `baselibs_rust` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/baselibs_rust
+project:
+  name: eclipse-score-baselibs_rust
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

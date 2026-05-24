@@ -1,0 +1,13 @@
+# Eclipse S-CORE `dash-license-scan` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/dash-license-scan
+project:
+  name: eclipse-score-dash-license-scan
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

@@ -1,0 +1,13 @@
+# Eclipse S-CORE `reference_integration` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/reference_integration
+project:
+  name: eclipse-score-reference_integration
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

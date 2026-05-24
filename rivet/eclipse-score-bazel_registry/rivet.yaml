@@ -1,0 +1,13 @@
+# Eclipse S-CORE `bazel_registry` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/bazel_registry
+project:
+  name: eclipse-score-bazel_registry
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

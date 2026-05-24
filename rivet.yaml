@@ -24,19 +24,119 @@ project:
     - score
 
 sources:
-  - path: rivet/eclipse-score-score/artifacts
+  - path: rivet/eclipse-score-.eclipsefdn/artifacts
     format: generic-yaml
-  - path: rivet/eclipse-score-process-description/artifacts
+  - path: rivet/eclipse-score-.github/artifacts
     format: generic-yaml
-  - path: rivet/eclipse-score-persistency/artifacts
-    format: generic-yaml
-  - path: rivet/eclipse-score-docs-as-code/artifacts
-    format: generic-yaml
-  - path: rivet/eclipse-score-lifecycle/artifacts
+  - path: rivet/eclipse-score-apt-install/artifacts
     format: generic-yaml
   - path: rivet/eclipse-score-baselibs/artifacts
     format: generic-yaml
+  - path: rivet/eclipse-score-baselibs_rust/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-bazel-tools-cc/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-bazel-tools-python/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-bazel_cpp_toolchains/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-bazel_platforms/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-bazel_registry/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-cicd-actions/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-cicd-workflows/artifacts
+    format: generic-yaml
   - path: rivet/eclipse-score-communication/artifacts
     format: generic-yaml
+  - path: rivet/eclipse-score-config_management/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-dash-license-scan/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-dev_playground/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-devcontainer/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-docs-as-code/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-eclipse-score-website/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-eclipse-score-website-preview/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-eclipse-score-website-published/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-eclipse-score.github.io/artifacts
+    format: generic-yaml
   - path: rivet/eclipse-score-feo/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-ferrocene_toolchain_builder/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_daal/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_diagnostics/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_os_autosd/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_security_crypto/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_someip_gateway/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-inc_time/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-infrastructure/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-itf/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-kyron/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-lifecycle/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-logging/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-mcp-servers/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-module_template/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-more-disk-space/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-orchestrator/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-os_images/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-persistency/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-process-description/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-qnx_unit_tests/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-reference_integration/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-rules_imagefs/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-sbom-tool/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-score/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-score-crates/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-score_cpp_policies/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-score_rust_policies/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-scrample/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-testing_tools/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-toolchains_gcc/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-toolchains_gcc_packages/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-toolchains_qnx/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-toolchains_rust/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-tooling/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-tools/artifacts
     format: generic-yaml

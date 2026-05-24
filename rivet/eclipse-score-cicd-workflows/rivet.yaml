@@ -1,0 +1,13 @@
+# Eclipse S-CORE `cicd-workflows` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/cicd-workflows
+project:
+  name: eclipse-score-cicd-workflows
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

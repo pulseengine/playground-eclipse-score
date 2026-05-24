@@ -1,0 +1,13 @@
+# Eclipse S-CORE `tools` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/tools
+project:
+  name: eclipse-score-tools
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

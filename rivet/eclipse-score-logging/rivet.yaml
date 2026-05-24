@@ -1,0 +1,13 @@
+# Eclipse S-CORE `logging` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/logging
+project:
+  name: eclipse-score-logging
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

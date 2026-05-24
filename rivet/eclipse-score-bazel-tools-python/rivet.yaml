@@ -1,0 +1,13 @@
+# Eclipse S-CORE `bazel-tools-python` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/bazel-tools-python
+project:
+  name: eclipse-score-bazel-tools-python
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

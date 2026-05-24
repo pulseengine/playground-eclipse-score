@@ -1,0 +1,13 @@
+# Eclipse S-CORE `dev_playground` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/dev_playground
+project:
+  name: eclipse-score-dev_playground
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

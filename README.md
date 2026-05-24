@@ -144,21 +144,66 @@ The reports are the falsification surface — any non-zero "skipped" line
 is a discrete gap that can be closed by a schema delta or a converter
 mapping. The current numbers (run `make convert` to refresh):
 
-| Repo | RST files | Needs converted | Unknown types | Unknown options |
-|---|---:|---:|---:|---:|
-| eclipse-score-score | 404 | 1373 | 0 | 4 |
-| eclipse-score-process-description | 299 | 1257 | 0 | 3 |
-| eclipse-score-persistency | 30 | 61 | 0 | 0 |
-| eclipse-score-docs-as-code | 24 | 61 | 0 | 0 |
-| eclipse-score-lifecycle | 19 | 28 | 0 | 0 |
-| eclipse-score-baselibs | 5 | 9 | 0 | 0 |
-| eclipse-score-communication | 6 | 0 | 0 | 0 |
-| eclipse-score-feo | 1 | 1 | 0 | 0 |
-| **Total** | **788** | **2790** | **0** | **7** |
+**Headline** (all 58 active non-archived eclipse-score repos, excluding 3
+external forks `nlohmann_json` / `bazel_registry_ui` / `rules_rust`):
 
-**Why eclipse-score-communication has 0 needs**: that repo's docs are
-pure Doxygen API documentation (`.. doxygenclass::`, `.. doxygenfunction::`
-etc.) — eclipse uses sphinx-needs for *requirements*, Doxygen for *API
-reference*. The 0 isn't a converter miss; it's an upstream architectural
-choice. The repo is included in the fork so the round-trip ID space
-covers any cross-repo references that point into it from other repos.
+| Stat | Value |
+|---|---:|
+| Upstream repos forked | 58 |
+| RST files scanned | 919 |
+| Sphinx-needs needs converted | **2985** |
+| Repos with at least one need | 14 |
+| Repos with zero needs (toolchain / CI / pure Doxygen) | 44 |
+| Unknown eclipse need types | 0 |
+| Unknown option keys | 7 |
+| `rivet validate` errors | **0** |
+| `rivet validate` warnings (all lifecycle gaps in eclipse data) | 2507 |
+
+**Per-repo (top 14 by need count):**
+
+| Repo | RST files | Needs converted |
+|---|---:|---:|
+| eclipse-score-score | 404 | 1373 |
+| eclipse-score-process-description | 299 | 1257 |
+| eclipse-score-baselibs_rust | 21 | 76 |
+| eclipse-score-module_template | 39 | 65 |
+| eclipse-score-persistency | 30 | 61 |
+| eclipse-score-docs-as-code | 24 | 61 |
+| eclipse-score-inc_security_crypto | 10 | 38 |
+| eclipse-score-lifecycle | 19 | 28 |
+| eclipse-score-inc_someip_gateway | 14 | 12 |
+| eclipse-score-baselibs | 5 | 9 |
+| eclipse-score-reference_integration | 3 | 2 |
+| eclipse-score-score-crates | 1 | 1 |
+| eclipse-score-logging | 2 | 1 |
+| eclipse-score-inc_os_autosd | 1 | 1 |
+
+The remaining 44 repos report 0 needs — legitimate, not converter misses.
+They split into:
+
+- **Pure Doxygen docs** (eclipse-score-communication, feo, kyron,
+  orchestrator, …) — eclipse uses sphinx-needs for *requirements* and
+  Doxygen for *API reference*. These repos contain only the latter.
+- **Bazel toolchain / CI infrastructure** (toolchains_gcc, toolchains_qnx,
+  toolchains_rust, bazel_platforms, bazel-tools-*, cicd-*, etc.) — no
+  requirements RST, just build rules and CI config.
+- **Website / GitHub Pages** (eclipse-score-website variants,
+  eclipse-score.github.io) — published site assets, no source needs.
+- **Eclipse Foundation metadata** (.eclipsefdn, .github) — repo
+  templates and org config.
+
+These are kept in the corpus so cross-repo ID references that target
+them resolve cleanly, and so any future addition of sphinx-needs
+content lands automatically in the next `make convert`.
+
+## Archived repos
+
+16 eclipse-score repos marked `archived: true` on GitHub are *excluded*
+from the fork by user policy (see commit messages). The skip list (in
+`tools/score_import.py`'s clone block, run manually) is:
+
+`examples, inc_abi_compatible_datatypes, inc_ai_platform,
+inc_config_management, inc_feo, inc_gen_ai, inc_json, inc_mw_com,
+inc_mw_log, inc_process_test_management, inc_process_variant_management,
+inc_score_codegen, operating_system, test_integration, test_module_a,
+test_module_b`

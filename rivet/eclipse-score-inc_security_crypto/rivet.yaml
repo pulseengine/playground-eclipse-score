@@ -1,0 +1,13 @@
+# Eclipse S-CORE `inc_security_crypto` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/inc_security_crypto
+project:
+  name: eclipse-score-inc_security_crypto
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

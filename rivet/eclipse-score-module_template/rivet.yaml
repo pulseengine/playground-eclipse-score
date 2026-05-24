@@ -1,0 +1,13 @@
+# Eclipse S-CORE `module_template` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/module_template
+project:
+  name: eclipse-score-module_template
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

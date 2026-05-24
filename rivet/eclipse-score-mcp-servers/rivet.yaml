@@ -1,0 +1,13 @@
+# Eclipse S-CORE `mcp-servers` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/mcp-servers
+project:
+  name: eclipse-score-mcp-servers
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

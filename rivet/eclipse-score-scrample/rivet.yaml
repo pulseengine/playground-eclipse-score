@@ -1,0 +1,13 @@
+# Eclipse S-CORE `scrample` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/scrample
+project:
+  name: eclipse-score-scrample
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

@@ -1,0 +1,788 @@
+artifacts:
+  - id: DOC__FEATURE_EXAMPLE_ARC_INSPECTION
+    type: doc
+    title: "[Your Feature Name] Architecture Inspection Checklist"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__SW_ARCH_VERIFICATION
+  - id: DOC__FEATURE_EXAMPLE_ARCHITECTURE
+    type: doc
+    title: "[Your Feature Name] Architecture"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FEATURE_ARCH
+  - id: DOC__FEATURE_EXAMPLE_DFA
+    type: doc
+    title: "[Your Feature Name] DFA"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FEATURE_DFA
+  - id: DOC__FEATURE_EXAMPLE_FMEA
+    type: doc
+    title: "[Your Feature Name] FMEA"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FEATURE_FMEA
+  - id: DOC__FEATURE_EXAMPLE_SAFETY_WP
+    type: doc
+    title: "[Your Feature Name] Safety WPs"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__PLATFORM_SAFETY_PLAN
+  - id: DOC__FEATURE_EXAMPLE_SECURITY_ANALYSIS_WP
+    type: doc
+    title: "[Your Feature Name] Security WPs"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__PLATFORM_SECURITY_PLAN
+  - id: DOC__FEATURE_EXAMPLE_SECURITY_PLANNING_WP
+    type: doc
+    title: "[Your Feature Name] Security WPs"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__PLATFORM_SECURITY_PLAN
+  - id: DOC__MOD_TEMP_MODULE_NAME_SAFETY_MANUAL
+    type: doc
+    title: "[Your Module Name] Safety Manual"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_MANUAL
+  - id: DOC__MOD_TEMP_MODULE_NAME_SECURITY_MANUAL
+    type: doc
+    title: "[Your Module Name] Security Manual"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__MODULE_SECURITY_MANUAL
+  - id: DOC__MOD_TEMP_MODULE_NAME_RELEASE_NOTE
+    type: doc
+    title: "[Your Module Name] Release Note"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SW_RELEASE_NOTE
+  - id: DOC__MOD_TEMP_MODULE_NAME_SAFETY_ANALYSIS_FDR
+    type: doc
+    title: "[Your Module Name] Safety Analysis Checklist"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__MOD_TEMP_MODULE_NAME_SAFETY_PACKAGE_FDR
+    type: doc
+    title: "[Your Module Name] Safety Package Formal Review"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN
+    type: doc
+    title: "[Your Module Name] Safety Plan"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_PLAN
+  - id: DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN_FDR
+    type: doc
+    title: "[Your Module Name] Safety Plan Formal Review"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__MOD_TEMP_MODULE_NAME_SEC_PKG_FDR
+    type: doc
+    title: "[Your Module Name] Security Package Formal Review"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__MOD_TEMP_MODULE_NAME_SECURITY_PLAN
+    type: doc
+    title: "[Your Module Name] Security Plan"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__MODULE_SECURITY_PLAN
+  - id: DOC__MOD_TEMP_MODULE_NAME_SECURITY_PLAN_FDR
+    type: doc
+    title: "[Your Module Name] Security Plan Formal Review"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__MOD_TEMP_MODULE_NAME_VERIFICATION_REPORT
+    type: doc
+    title: "[Your Module Name] Verification Report"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__VERIFICATION_MODULE_VER_REPORT
+  - id: FEAT__MTEF
+    type: feat
+    title: Feature 1
+    status: approved
+    description: |
+      This is the example feature which shall normally defined in the platform repo.
+    fields:
+      security: "YES"
+      safety-level: QM
+    links:
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_1
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_3
+  - id: FEAT_ARC_STA__EXAMPLE_FEATURE__STA
+    type: feat-arc-sta
+    title: Feature 1 Static View
+    status: approved
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_feature(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: QM
+    links:
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_1
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: includes
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_3
+      - type: fulfils
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_1
+    type: logic-arc-int
+    title: Logical Interface 1
+    status: approved
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_interface(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+  - id: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+    type: logic-arc-int
+    title: Logical Interface 2
+    status: approved
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_interface(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+  - id: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_3
+    type: logic-arc-int
+    title: Logical Interface 3
+    status: approved
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_1
+    type: logic-arc-int
+    title: Logical Operation 1
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_1
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_2
+    type: logic-arc-int
+    title: Logical Operation 2
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_1
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_3
+    type: logic-arc-int
+    title: Logical Operation 3
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_2
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_4
+    type: logic-arc-int
+    title: Logical Operation 4
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_2
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_5
+    type: logic-arc-int
+    title: Logical Operation 5
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_3
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_6
+    type: logic-arc-int
+    title: Logical Operation 6
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_3
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_7
+    type: logic-arc-int
+    title: Logical Operation 7
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_3
+  - id: LOGIC_ARC_INT_OP__EXAMPLE_FEATURE__OP_8
+    type: logic-arc-int
+    title: Logical Operation 8
+    status: approved
+    tags: ["eclipse:logic_arc_int_op"]
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      included_by: logic_arc_int__example_feature__if_3
+  - id: MOD__MTEF_ARCHEX_MODULE_1
+    type: mod
+    title: Module 1
+    status: approved
+    description: |
+      This is Module 1.
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_1
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_2
+  - id: MOD_VIEW_STA__EXAMPLE_FEATURE__1
+    type: mod-view-sta
+    title: Module 1 Static View
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_module(need(), needs) }}
+    links:
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_1
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_2
+  - id: MOD__MTEF_ARCHEX_MODULE_2
+    type: mod
+    title: Module 2
+    status: approved
+    description: |
+      This is Module 2.
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_3
+  - id: MOD_VIEW_STA__EXAMPLE_FEATURE__2
+    type: mod-view-sta
+    title: Module 2 Static View
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_module(need(), needs) }}
+    links:
+      - type: includes
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_3
+  - id: COMP__MOD_TEMP_COMPONENT_EXAMPLE_1
+    type: comp
+    title: Component 1
+    status: obsolete
+    description: |
+      Example Component 1 description.
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      consists_of: "comp__mod_temp_archex_sub_component_1, comp__mod_temp_archex_sub_component_2, comp__mod_temp_archex_sub_component_3"
+    links:
+      - type: implements
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_1
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP__MOD_TEMP_COMPONENT_EXAMPLE_2
+    type: comp
+    title: Component 2
+    status: obsolete
+    description: |
+      Example Component 2 description.
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP__MOD_TEMP_COMPONENT_EXAMPLE_3
+    type: comp
+    title: Component 3
+    status: obsolete
+    description: |
+      Example Component 3 description.
+    fields:
+      security: "YES"
+      safety-level: QM
+    links:
+      - type: implements
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_3
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP_ARC_STA__EXAMPLE_FEATURE__COMP_1
+    type: comp-arc-sta
+    title: Component 1 Static View
+    status: approved
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_component(need(), needs) }}
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_1
+      - type: fulfils
+        target: COMP_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+  - id: COMP__MOD_TEMP_ARCHEX_SUB_COMPONENT_1
+    type: comp
+    title: Component 1_1
+    status: approved
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: uses
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: implements
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_1
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP__MOD_TEMP_ARCHEX_SUB_COMPONENT_2
+    type: comp
+    title: Component 1_2
+    status: approved
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: uses
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: implements
+        target: LOGIC_ARC_INT__EXAMPLE_FEATURE__IF_2
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP__MOD_TEMP_ARCHEX_SUB_COMPONENT_3
+    type: comp
+    title: Component 1_3
+    status: approved
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: STKH_REQ__MTFN__EXAMPLE_REQ
+    type: stkh-req
+    title: Example Stkh Req
+    status: approved
+    description: |
+      The platform shall provide the feature ....
+    fields:
+      req-type: Functional
+      safety-level: ASIL_B
+      security: "YES"
+      rationale: needed for archdes example
+  - id: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+    type: feat-req
+    title: Example Feature Req
+    status: approved
+    description: |
+      The feature shall provide the functionality to ....
+    fields:
+      req-type: Functional
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: STKH_REQ__MTFN__EXAMPLE_REQ
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+    type: comp-req
+    title: Example Component Req
+    status: approved
+    description: |
+      The component shall provide the Logical Operation 4 to get the ..
+    fields:
+      req-type: Functional
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_2
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_ARC_INSPECTION
+    type: doc
+    title: "[Your Component Name] Architecture Inspection Checklist"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__SW_ARCH_VERIFICATION
+  - id: REAL_ARC_INT__MOD_TEMP_COMPONENT_NAME__IF_1
+    type: real-arc-int
+    title: Component Interface 1
+    status: approved
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_interface(need(), needs)}}
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+      language: cpp
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_ARCHITECTURE
+    type: doc
+    title: "[Your Component Name] Architecture"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE
+    type: comp
+    title: Component Name
+    status: obsolete
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+      consists_of: "comp__mod_temp_archex_sub_component_1, comp__mod_temp_archex_sub_component_2, comp__mod_temp_archex_sub_component_3"
+    links:
+      - type: belongs-to
+        target: FEAT__MTEF
+  - id: COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV
+    type: comp-arc-sta
+    title: Component Name (Static View)
+    status: obsolete
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_component(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE
+      - type: fulfils
+        target: COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE
+  - id: COMP_ARC_DYN__MOD_TEMP_COMPONENT_NAME__DV
+    type: comp-arc-dyn
+    title: Dynamic View
+    status: obsolete
+    description: |
+      Put here a sequence diagram
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE
+      - type: fulfils
+        target: COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE
+  - id: COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__2
+    type: comp-arc-sta
+    title: Component Name Static View
+    status: obsolete
+    description: |
+      No architecture but detailed design
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: fulfils
+        target: COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_EXAMPLE_2
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_COMP_CLASS
+    type: doc
+    title: "[Your Component Name] Component Classification"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_CLASS
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_IMPL_INSPECTION
+    type: doc
+    title: "[Your Component Name] Implementation Inspection Checklist"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION_INSPECTION
+  - id: DD_STA__EXAMPLE_FEATURE__APPROVER
+    type: dd-sta
+    title: dd example static
+    status: approved
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+      - type: satisfies
+        target: COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV
+  - id: DD_DYN__EXAMPLE_FEATURE__DYNAMIC
+    type: dd-dyn
+    title: dd example dynamic
+    status: approved
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+      - type: satisfies
+        target: COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_DETAILED_DESIGN
+    type: doc
+    title: "[Your Component Name] Detailed Design"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION
+  - id: DOC__MOD_TEMP_COMPONENT_NAME
+    type: doc
+    title: "[Your Component Name]"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_REQ_INSPECTION
+    type: doc
+    title: "[Your Component Name] Requirements Inspection Checklist"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_INSPECT
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_REQUIREMENTS
+    type: doc
+    title: "[Your Component Name] Requirements"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_COMP
+  - id: COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE
+    type: comp-req
+    title: Some Title
+    status: obsolete
+    description: |
+      The Component shall do xyz to another component to bring it to this condition at this time
+      
+      Note: (optional, not to be verified)
+    fields:
+      req-type: Process
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__EXAMPLE_FEATURE__EXAMPLE_REQ
+      - type: belongs-to
+        target: COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE
+  - id: AOU_REQ__MOD_TEMP_COMPONENT_NAME__NEXT_TITLE
+    type: aou-req
+    title: Next Title
+    status: obsolete
+    description: |
+      The Component User shall do xyz to use the component safely/securely
+    fields:
+      req-type: Process
+      security: "YES"
+      safety-level: ASIL_B
+  - id: AOU_REQ__MOD_TEMP_COMPONENT_NAME__ANOTHER
+    type: aou-req
+    title: Another Title
+    status: obsolete
+    tags: [environment]
+    description: |
+      The Component shall only be used in a xyz environment to ensure its proper functioning.
+    fields:
+      req-type: Process
+      security: "YES"
+      safety-level: ASIL_B
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_DFA
+    type: doc
+    title: "[Your Component Name] DFA"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_DFA
+  - id: DOC__MOD_TEMP_COMPONENT_NAME_FMEA
+    type: doc
+    title: "[Your Component Name] FMEA"
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_FMEA
