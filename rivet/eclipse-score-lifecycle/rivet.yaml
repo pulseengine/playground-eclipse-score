@@ -13,4 +13,9 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/module/health_monitor
+  - docs/docs/module/health_monitor/architecture
+  - docs/docs/module/health_monitor/detailed_design
+  - docs/docs/module/health_monitor/requirements
+  - docs/docs/module/health_monitor/safety_analysis
+  - docs/docs/release_notes

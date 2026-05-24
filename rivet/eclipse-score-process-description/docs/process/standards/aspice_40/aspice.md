@@ -1,5 +1,5 @@
 ---
-id: DOC-ASPICE-15309
+id: DOC-ASPICE-10726
 title: Aspice
 type: specification
 status: approved

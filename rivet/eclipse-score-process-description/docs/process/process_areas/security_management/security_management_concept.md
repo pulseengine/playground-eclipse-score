@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-CONCEPT-4458
+id: DOC-SECURITY-MANAGEMENT-CONCEPT-68131
 title: Security Management Concept
 type: specification
 status: approved

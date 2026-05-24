@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIOS-GUIDELINE-49895
+id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIOS-GUIDELINE-43655
 title: Security Analysis Threat Scenarios Guideline
 type: specification
 status: approved

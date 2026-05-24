@@ -1,5 +1,5 @@
 ---
-id: DOC-EXPLICIT-INIT-35373
+id: DOC-EXPLICIT-INIT-76123
 title: Explicit Init
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-17170
+id: DOC-RELEASE-NOTE-22487
 title: Release Note
 type: specification
 status: approved

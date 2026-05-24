@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-GETSTRT-98992
+id: DOC-SAFETY-ANALYSIS-GETSTRT-3725
 title: Safety Analysis Getstrt
 type: specification
 status: approved

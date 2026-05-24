@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-REQUIREMENTS-49238
+id: DOC-COMPONENT-REQUIREMENTS-14837
 title: Component Requirements
 type: specification
 status: approved

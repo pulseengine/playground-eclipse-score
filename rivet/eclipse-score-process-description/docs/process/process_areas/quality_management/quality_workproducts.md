@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-WORKPRODUCTS-84769
+id: DOC-QUALITY-WORKPRODUCTS-6787
 title: Quality Workproducts
 type: specification
 status: approved

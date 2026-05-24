@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-QUALITY-MANAGER-58623
+id: DOC-PLATFORM-QUALITY-MANAGER-63200
 title: Platform Quality Manager
 type: specification
 status: approved

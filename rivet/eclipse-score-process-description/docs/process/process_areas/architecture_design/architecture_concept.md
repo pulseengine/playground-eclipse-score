@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-CONCEPT-68910
+id: DOC-ARCHITECTURE-CONCEPT-46847
 title: Architecture Concept
 type: specification
 status: approved

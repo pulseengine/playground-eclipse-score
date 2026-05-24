@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-PLAN-TEMPLATES-20762
+id: DOC-SECURITY-PLAN-TEMPLATES-18620
 title: Security Plan Templates
 type: specification
 status: approved

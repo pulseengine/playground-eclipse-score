@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-MODELING-EXAMPLE-3724
+id: DOC-ARCHITECTURE-MODELING-EXAMPLE-1529
 title: Architecture Modeling Example
 type: specification
 status: approved

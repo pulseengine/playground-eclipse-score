@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-GUIDELINE-85414
+id: DOC-SECURITY-MANAGEMENT-GUIDELINE-92134
 title: Security Management Guideline
 type: specification
 status: approved

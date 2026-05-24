@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-WORKFLOW-43974
+id: DOC-PLATFORM-MANAGEMENT-WORKFLOW-68251
 title: Platform Management Workflow
 type: specification
 status: approved

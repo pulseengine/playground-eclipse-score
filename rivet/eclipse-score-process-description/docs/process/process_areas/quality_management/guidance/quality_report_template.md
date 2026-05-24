@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-REPORT-TEMPLATE-34461
+id: DOC-QUALITY-REPORT-TEMPLATE-42341
 title: Quality Report Template
 type: specification
 status: approved

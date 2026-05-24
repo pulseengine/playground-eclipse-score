@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-TEMPLATES-59588
+id: DOC-SECURITY-ANALYSIS-THREAT-TEMPLATES-52185
 title: Security Analysis Threat Templates
 type: specification
 status: approved

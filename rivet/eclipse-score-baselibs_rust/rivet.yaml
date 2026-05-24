@@ -13,4 +13,16 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/baselibs_rust/containers_rust
+  - docs/docs/baselibs_rust/containers_rust/architecture
+  - docs/docs/baselibs_rust/containers_rust/requirements
+  - docs/docs/baselibs_rust/log
+  - docs/docs/baselibs_rust/log/architecture
+  - docs/docs/baselibs_rust/log/detailed_design
+  - docs/docs/baselibs_rust/log/requirements
+  - docs/docs/baselibs_rust/log/safety_analysis
+  - docs/docs/features/baselibs_rust/requirements
+  - docs/docs/module_docs/manual
+  - docs/docs/module_docs/release
+  - docs/docs/module_docs/safety_mgt
+  - docs/docs/module_docs/verification

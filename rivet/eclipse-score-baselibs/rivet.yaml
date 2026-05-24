@@ -13,4 +13,6 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/json/vajson
+  - docs/docs/json/vajson/architecture
+  - docs/docs/json/vajson/requirements

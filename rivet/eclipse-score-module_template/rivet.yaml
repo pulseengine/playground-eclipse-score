@@ -13,4 +13,19 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/features/feature_example/architecture
+  - docs/docs/features/feature_example/safety_analysis
+  - docs/docs/features/feature_example/safety_planning
+  - docs/docs/features/feature_example/security_analysis
+  - docs/docs/features/feature_example/security_planning
+  - docs/docs/manuals
+  - docs/docs/release
+  - docs/docs/safety_mgt
+  - docs/docs/security_mgt
+  - docs/docs/verification_report
+  - docs/examples/docs
+  - docs/score/component_example/docs
+  - docs/score/component_example/docs/architecture
+  - docs/score/component_example/docs/detailed_design
+  - docs/score/component_example/docs/requirements
+  - docs/score/component_example/docs/safety_analysis

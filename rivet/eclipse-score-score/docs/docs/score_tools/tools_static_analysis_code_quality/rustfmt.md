@@ -1,5 +1,5 @@
 ---
-id: DOC-RUSTFMT-14626
+id: DOC-RUSTFMT-19985
 title: Rustfmt
 type: specification
 status: approved

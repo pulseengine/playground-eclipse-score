@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-GETSTRT-57893
+id: DOC-PROBLEM-RESOLUTION-GETSTRT-92077
 title: Problem Resolution Getstrt
 type: specification
 status: approved

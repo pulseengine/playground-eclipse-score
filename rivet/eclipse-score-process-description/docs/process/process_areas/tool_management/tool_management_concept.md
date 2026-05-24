@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-CONCEPT-69233
+id: DOC-TOOL-MANAGEMENT-CONCEPT-12437
 title: Tool Management Concept
 type: specification
 status: approved

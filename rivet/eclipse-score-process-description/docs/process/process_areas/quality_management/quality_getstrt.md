@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-GETSTRT-12764
+id: DOC-QUALITY-GETSTRT-55914
 title: Quality Getstrt
 type: specification
 status: approved

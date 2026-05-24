@@ -1,5 +1,5 @@
 ---
-id: DOC-DETAILED-DESIGN-TEMPLATE-87498
+id: DOC-DETAILED-DESIGN-TEMPLATE-10857
 title: Detailed Design Template
 type: specification
 status: approved

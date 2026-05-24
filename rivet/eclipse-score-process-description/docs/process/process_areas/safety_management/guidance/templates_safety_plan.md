@@ -1,5 +1,5 @@
 ---
-id: DOC-TEMPLATES-SAFETY-PLAN-40605
+id: DOC-TEMPLATES-SAFETY-PLAN-53060
 title: Templates Safety Plan
 type: specification
 status: approved

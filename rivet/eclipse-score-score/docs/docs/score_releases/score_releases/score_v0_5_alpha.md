@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-5-ALPHA-34471
+id: DOC-SCORE-V0-5-ALPHA-67968
 title: Score V0 5 Alpha
 type: specification
 status: approved

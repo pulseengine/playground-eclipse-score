@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-VER-REPORT-32579
+id: DOC-PLATFORM-VER-REPORT-3214
 title: Platform Ver Report
 type: specification
 status: approved

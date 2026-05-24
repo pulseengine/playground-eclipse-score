@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-GETSTRT-14750
+id: DOC-PLATFORM-MANAGEMENT-GETSTRT-61178
 title: Platform Management Getstrt
 type: specification
 status: approved

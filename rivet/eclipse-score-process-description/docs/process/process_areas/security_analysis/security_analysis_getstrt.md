@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-GETSTRT-95891
+id: DOC-SECURITY-ANALYSIS-GETSTRT-44028
 title: Security Analysis Getstrt
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-GUIDELINE-51515
+id: DOC-SECURITY-ANALYSIS-GUIDELINE-53473
 title: Security Analysis Guideline
 type: specification
 status: approved

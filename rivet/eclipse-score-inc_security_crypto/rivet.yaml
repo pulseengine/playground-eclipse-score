@@ -13,4 +13,5 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/crypto/architecture
+  - docs/score/crypto/daemon/data_manager/docs
