@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-40733
+id: DOC-INDEX-39820
 title: Index
 type: specification
 status: approved
@@ -10,11 +10,11 @@ tags: [eclipse-score]
 
 ### Lifecycle
 
-{{artifact:DOC__LIFECYCLE:status,safety-level,security}}}}
+{{artifact:DOC__LIFECYCLE:status,safety-level,security}}
 
 ### Lifecycle
 
-{{artifact:FEAT__LIFECYCLE:status,safety-level,security}}}}
+{{artifact:FEAT__LIFECYCLE:status,safety-level,security}}
 
 # Feature Flag
 
@@ -86,7 +86,7 @@ Coming from the OCI Specification the operation modes is a superset of the OCI s
 
 ### Feature architecture
 
-{{artifact:MOD_VIEW_STA__LIFECYCLE__OVERVIEW:status,safety-level,security}}}}
+{{artifact:MOD_VIEW_STA__LIFECYCLE__OVERVIEW:status,safety-level,security}}
 
 The overall functionality of the feature can be split into 2 subfeatures, which are
 closely coupled to each other:

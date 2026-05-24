@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-SCORE-07-95937
+id: DOC-RELEASE-NOTE-SCORE-07-85824
 title: Release Note Score 07
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### S-CORE v0.7 release note
 
-{{artifact:DOC__SCORE_V07_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_V07_RELEASE_NOTE:status,safety-level,security}}
 
 | **Platform Release:** S-CORE
 | **Release Tag:** v0.7.0

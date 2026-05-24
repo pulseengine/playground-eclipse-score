@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-52118
+id: DOC-INDEX-64220
 title: Index
 type: specification
 status: approved
@@ -15,7 +15,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] Architecture
 
-{{artifact:DOC__FEATURE_NAME_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_NAME_ARCHITECTURE:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -56,9 +56,9 @@ The live feature architecture template snippets are maintained in the
 
 ### Interface Name
 
-{{artifact:LOGIC_ARC_INT__FEATURE_NAME__INTERFACE_NAME1:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__FEATURE_NAME__INTERFACE_NAME1:status,safety-level,security}}
 
 ### Operation
 
-{{artifact:LOGIC_ARC_INT_OP__FEATURE_NAME__OPERATION:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__FEATURE_NAME__OPERATION:status,safety-level,security}}
 

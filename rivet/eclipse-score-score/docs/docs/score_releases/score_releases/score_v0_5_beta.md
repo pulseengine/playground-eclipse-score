@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-5-BETA-56220
+id: DOC-SCORE-V0-5-BETA-84285
 title: Score V0 5 Beta
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### S-Core v0.5-beta release note
 
-{{artifact:DOC__SCORE_V05_BETA_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_V05_BETA_RELEASE_NOTE:status,safety-level,security}}
 
 | **Platform Name**: S-CORE
 | **Release Tag**: v0.5.0-beta

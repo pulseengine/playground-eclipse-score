@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-ANALYSIS-FDR-12286
+id: DOC-MODULE-SAFETY-ANALYSIS-FDR-48878
 title: Module Safety Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Safety Analysis Checklist
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

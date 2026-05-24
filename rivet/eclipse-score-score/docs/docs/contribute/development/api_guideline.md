@@ -1,5 +1,5 @@
 ---
-id: DOC-API-GUIDELINE-23053
+id: DOC-API-GUIDELINE-2012
 title: Api Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### API Guidelines
 
-{{artifact:DOC__API_GUIDELINES:status,safety-level,security}}}}
+{{artifact:DOC__API_GUIDELINES:status,safety-level,security}}
 
 What makes a good API? A start is to create an API that feels natural to a user.
 There are multiple layers to "natural".

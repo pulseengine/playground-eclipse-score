@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-GETSTRT-54545
+id: DOC-CONFIGURATION-GETSTRT-7493
 title: Configuration Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Configuration Management Get Started
 
-{{artifact:DOC_GETSTRT__CONFIGURATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__CONFIGURATION_PROCESS:status,safety-level,security}}
 
 In case you are appointed as a [[RL__PROJECT_LEAD]] in the project:
 

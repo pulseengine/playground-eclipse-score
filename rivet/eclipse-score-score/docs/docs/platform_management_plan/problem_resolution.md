@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-53201
+id: DOC-PROBLEM-RESOLUTION-39687
 title: Problem Resolution
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Problem Resolution Plan
 
-{{artifact:DOC__PLATFORM_PROBLEM_RESOLUTION_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_PROBLEM_RESOLUTION_PLAN:status,safety-level,security}}
 
 ## Problem Resolution / Problem Resolution Plan
 

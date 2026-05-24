@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-987
+id: DOC-MODULE-SAFETY-PLAN-6946
 title: Module Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Safety Plan
 
-{{artifact:DOC__BASELIBS_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_SAFETY_PLAN:status,safety-level,security}}
 
 # Functional Safety Management Context
 

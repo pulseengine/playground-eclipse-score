@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-IMPACT-ANALYSIS-TEMPLATE-70614
+id: DOC-CHANGE-MANAGEMENT-IMPACT-ANALYSIS-TEMPLATE-61187
 title: Change Management Impact Analysis Template
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Impact Analysis Template
 
-{{artifact:GD_TEMP__CHANGE_IMPACT_ANALYSIS:status,safety-level,security}}}}
+{{artifact:GD_TEMP__CHANGE_IMPACT_ANALYSIS:status,safety-level,security}}
 
 ## Type of Change Request
 

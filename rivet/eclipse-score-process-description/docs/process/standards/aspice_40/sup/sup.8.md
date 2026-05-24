@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.8-49476
+id: DOC-SUP.8-56280
 title: Sup.8
 type: specification
 status: approved
@@ -27,33 +27,33 @@ make them available to affected parties.
 
 ### SUP.8.BP1: Identify configuration items
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP1:status,safety-level,security}}
 
 ### SUP.8.BP2: Define configuration item properties
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP2:status,safety-level,security}}
 
 ### SUP.8.BP3: Establish configuration management
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP3:status,safety-level,security}}
 
 ### SUP.8.BP4: Control modifications
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP4:status,safety-level,security}}
 
 ### SUP.8.BP5: Establish baselines
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP5:status,safety-level,security}}
 
 ### SUP.8.BP6: Summarize and communicate configuration status
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP6:status,safety-level,security}}
 
 ### SUP.8.BP7: Ensure completeness and consistency
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP7:status,safety-level,security}}
 
 ### SUP.8.BP8: Verify backup and recovery mechanisms availability.
 
-{{artifact:STD_REQ__ASPICE_40__SUP-8-BP8:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-8-BP8:status,safety-level,security}}
 

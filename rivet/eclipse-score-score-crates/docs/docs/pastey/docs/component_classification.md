@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-76636
+id: DOC-COMPONENT-CLASSIFICATION-82380
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Pastey Crate Component Classification
 
-{{artifact:DOC__PASTEY_CRATE_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__PASTEY_CRATE_COMP_CLASS:status,safety-level,security}}
 
 | Classification of Pastey Crate as a software component in the context of S-CORE.
 |

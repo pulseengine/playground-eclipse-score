@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-35519
+id: DOC-CHKLST-ARC-INSPECTION-80471
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Utils Architecture Inspection Checklist
 
-{{artifact:DOC__UTILS_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__UTILS_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

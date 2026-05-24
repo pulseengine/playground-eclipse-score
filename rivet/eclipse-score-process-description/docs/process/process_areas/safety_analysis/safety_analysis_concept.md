@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-CONCEPT-41587
+id: DOC-SAFETY-ANALYSIS-CONCEPT-65939
 title: Safety Analysis Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safety Analysis Concept
 
-{{artifact:DOC_CONCEPT__SAFETY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__SAFETY_ANALYSIS:status,safety-level,security}}
 
 This section discusses a concept for Safety Analysis. As methods for Safety Analysis are used DFA (Dependent Failure Analysis)
 and FMEA (Failure Mode and Effects Analysis). Inputs for this concept are the requirements of ISO26262 Part 6 Chapter 7 and Part 9 Chapter 7 and 8.

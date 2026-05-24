@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-74936
+id: DOC-REQUIREMENTS-81764
 title: Requirements
 type: specification
 status: approved
@@ -15,7 +15,7 @@ as a formal verification activity for the SOME/IP Gateway's protocol stack.
 
 ### TC8 SOME/IP Protocol Conformance
 
-{{artifact:FEAT_REQ__TC8_CONFORMANCE__CONFORMANCE:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__TC8_CONFORMANCE__CONFORMANCE:status,safety-level,security}}
 
 ## Component Requirements — Service Discovery
 
@@ -25,39 +25,39 @@ Specification (AUTOSAR PRS_SOMEIP_SD).
 
 ### TC8 SD Offer Entry Format Validation
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_OFFER_FORMAT:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_OFFER_FORMAT:status,safety-level,security}}
 
 ### TC8 SD Cyclic Offer Timing
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_CYCLIC_TIMING:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_CYCLIC_TIMING:status,safety-level,security}}
 
 ### TC8 SD FindService Response
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_FIND_RESPONSE:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_FIND_RESPONSE:status,safety-level,security}}
 
 ### TC8 SD Subscribe Eventgroup Lifecycle
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_SUB_LIFECYCLE:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_SUB_LIFECYCLE:status,safety-level,security}}
 
 ### TC8 SD Initial Delay and Repetitions Phase
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_PHASES_TIMING:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__SD_PHASES_TIMING:status,safety-level,security}}
 
 ## Component Requirements — SOME/IP Message Format
 
 ### TC8 SOME/IP Response Header Validation
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__MSG_RESP_HEADER:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__MSG_RESP_HEADER:status,safety-level,security}}
 
 ### TC8 SOME/IP Error Return Codes
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__MSG_ERROR_CODES:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__MSG_ERROR_CODES:status,safety-level,security}}
 
 ## Component Requirements — Event Notification
 
 ### TC8 Event Notification Subscription Lifecycle
 
-{{artifact:COMP_REQ__TC8_CONFORMANCE__EVT_SUBSCRIPTION:status,safety-level,security}}}}
+{{artifact:COMP_REQ__TC8_CONFORMANCE__EVT_SUBSCRIPTION:status,safety-level,security}}
 
 ## Traceability Summary
 

@@ -50,12 +50,16 @@ the upstream name verbatim makes the rebase target obvious.
 
 ```
 $ make validate
-Result: PASS (2289 warnings)
+# rivet validate
+Result: PASS (2507 warnings)
+# rivet variant check-all
+4/4 variants passed (0 failed)
 ```
 
-- 2752 artifacts converted
-- 0 errors, 2289 warnings (all about lifecycle gaps in eclipse data,
+- 2985 artifacts converted across 58 active eclipse-score repos
+- 0 errors, 2507 warnings (all about lifecycle gaps in eclipse data,
   not schema issues)
+- 4/4 named variants in `variants/bindings.yaml` solve cleanly
 - All gaps fed back into `chore/score-schema-eclipse-comparison-update`
   in rivet — two rounds of deltas, the second one driven entirely by
   this corpus oracle.

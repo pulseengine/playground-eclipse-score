@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-ARCHITECTURE-TEMPLATE-18190
+id: DOC-COMPONENT-ARCHITECTURE-TEMPLATE-75825
 title: Component Architecture Template
 type: specification
 status: approved
@@ -22,11 +22,11 @@ the module template.
 
 ### Component Name
 
-{{artifact:COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE:status,safety-level,security}}}}
+{{artifact:COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE:status,safety-level,security}}
 
 ### Component Name (Static View)
 
-{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV:status,safety-level,security}}
 
 ## Dynamic Architecture
 
@@ -34,7 +34,7 @@ the module template.
 
 ### Dynamic View
 
-{{artifact:COMP_ARC_DYN__MOD_TEMP_COMPONENT_NAME__DV:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__MOD_TEMP_COMPONENT_NAME__DV:status,safety-level,security}}
 
 ## Component Interface
 
@@ -43,7 +43,7 @@ repository owns the live ``real_arc_int`` example.
 
 ### Component Interface 1
 
-{{artifact:REAL_ARC_INT__MOD_TEMP_COMPONENT_NAME__IF_1:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__MOD_TEMP_COMPONENT_NAME__IF_1:status,safety-level,security}}
 
 ## Internal Components
 
@@ -51,17 +51,17 @@ repository owns the live ``real_arc_int`` example.
 
 ### Component Name Static View
 
-{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__2:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__2:status,safety-level,security}}
 
 ### Internal Component 1
 
-{{artifact:COMP__COMPONENT_NAME_INTERNAL_1:status,safety-level,security}}}}
+{{artifact:COMP__COMPONENT_NAME_INTERNAL_1:status,safety-level,security}}
 
 ### Internal Component 2
 
-{{artifact:COMP__COMPONENT_NAME_INTERNAL_2:status,safety-level,security}}}}
+{{artifact:COMP__COMPONENT_NAME_INTERNAL_2:status,safety-level,security}}
 
 ### Internal Component 3
 
-{{artifact:COMP__COMPONENT_NAME_INTERNAL_3:status,safety-level,security}}}}
+{{artifact:COMP__COMPONENT_NAME_INTERNAL_3:status,safety-level,security}}
 

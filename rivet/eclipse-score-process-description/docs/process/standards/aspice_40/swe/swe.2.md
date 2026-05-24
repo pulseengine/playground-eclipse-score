@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.2-494
+id: DOC-SWE.2-48825
 title: Swe.2
 type: specification
 status: approved
@@ -26,21 +26,21 @@ requirements.
 
 ### SWE.2.BP1: Specify static aspects of the software architecture
 
-{{artifact:STD_REQ__ASPICE_40__SWE-2-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-2-BP1:status,safety-level,security}}
 
 ### SWE.2.BP2: Specify dynamic aspects of the software architecture
 
-{{artifact:STD_REQ__ASPICE_40__SWE-2-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-2-BP2:status,safety-level,security}}
 
 ### SWE.2.BP3: Analyze software architecture
 
-{{artifact:STD_REQ__ASPICE_40__SWE-2-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-2-BP3:status,safety-level,security}}
 
 ### SWE.2.BP4: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-2-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-2-BP4:status,safety-level,security}}
 
 ### SWE.2.BP5: Communicate agreed software architecture
 
-{{artifact:STD_REQ__ASPICE_40__SWE-2-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-2-BP5:status,safety-level,security}}
 

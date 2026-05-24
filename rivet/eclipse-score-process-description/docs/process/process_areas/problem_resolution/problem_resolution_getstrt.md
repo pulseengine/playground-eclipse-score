@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-GETSTRT-44573
+id: DOC-PROBLEM-RESOLUTION-GETSTRT-57246
 title: Problem Resolution Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Problem Resolution
 
-{{artifact:DOC_GETSTRT__PROBLEM_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__PROBLEM_PROCESS:status,safety-level,security}}
 
 This document describes the steps to create a problem report, and further to analyze,
 resolve, and to control the problem until closure. Where a problem is defined as a

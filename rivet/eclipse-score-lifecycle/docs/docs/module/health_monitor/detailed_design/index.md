@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-62412
+id: DOC-INDEX-25819
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### HealthMonitor Detailed Design
 
-{{artifact:DOC__HEALTH_MONITOR_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR_DETAILED_DESIGN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -62,7 +62,7 @@ Due to a need to interface with existing C++ codebases, a C-compatible Foreign F
 
 ### Class Diagram
 
-{{artifact:DD_STA__HEALTH_MONITOR__CLASS_DIAGRAM:status,safety-level,security}}}}
+{{artifact:DD_STA__HEALTH_MONITOR__CLASS_DIAGRAM:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
@@ -70,5 +70,5 @@ Due to a need to interface with existing C++ codebases, a C-compatible Foreign F
 
 ### <Title>
 
-{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-44620
+id: DOC-INDEX-24571
 title: Index
 type: specification
 status: approved
@@ -12,21 +12,21 @@ tags: [eclipse-score]
 
 ### IPC Requirements
 
-{{artifact:DOC__IPC_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__IPC_REQUIREMENTS:status,safety-level,security}}
 
 ### Zero-Copy Approach
 
-{{artifact:FEAT_REQ__IPC__ZERO_COPY:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__IPC__ZERO_COPY:status,safety-level,security}}
 
 ### IPC Confidentiality
 
-{{artifact:FEAT_REQ__IPC__CONFIDENTIALITY:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__IPC__CONFIDENTIALITY:status,safety-level,security}}
 
 ### IPC Integrity
 
-{{artifact:FEAT_REQ__IPC__INTEGRITY:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__IPC__INTEGRITY:status,safety-level,security}}
 
 ### IPC Availability
 
-{{artifact:FEAT_REQ__IPC__AVAILABILITY:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__IPC__AVAILABILITY:status,safety-level,security}}
 

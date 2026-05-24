@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-89863
+id: DOC-COMPONENT-CLASSIFICATION-42658
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### JSON Component Classification
 
-{{artifact:DOC__JSON_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__JSON_COMP_CLASS:status,safety-level,security}}
 
 | Classification of Tiny JSON
 |

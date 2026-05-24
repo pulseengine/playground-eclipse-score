@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-CONCEPT-92164
+id: DOC-ARCHITECTURE-CONCEPT-87778
 title: Architecture Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Architecture Process
 
-{{artifact:DOC_CONCEPT__ARCH_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__ARCH_PROCESS:status,safety-level,security}}
 
 In this section a concept for the architecture design will be discussed.
 
@@ -375,11 +375,11 @@ The following section links to the rendered feature example that is now maintain
 
 ### Feature Name
 
-{{artifact:FEAT__FEATURE_NAME:status,safety-level,security}}}}
+{{artifact:FEAT__FEATURE_NAME:status,safety-level,security}}
 
 ### Feature Static Architecture View Getting Started
 
-{{artifact:FEAT_ARC_STA__EXAMPLE_FEATURE__ARCHDES_GETSTRT:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__EXAMPLE_FEATURE__ARCHDES_GETSTRT:status,safety-level,security}}
 
 #### Component Architecture
 
@@ -392,7 +392,7 @@ The rendered component examples are maintained in the
 
 ### Static View - Rendered Example
 
-{{artifact:COMP_ARC_STA__EXAMPLE_FEATURE__COMPONENT_GETSTRT:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__EXAMPLE_FEATURE__COMPONENT_GETSTRT:status,safety-level,security}}
 
 ## Debugging PlantUML Figures
 
@@ -441,7 +441,7 @@ To make *needuml* work we have to replace the *need()* call with a different fun
 
 ### Component Architecture Static View - Rendered Example Manually Edited
 
-{{artifact:COMP_ARC_STA__EXAMPLE_FEATURE__COMPONENT_MANUAL_GETSTRT:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__EXAMPLE_FEATURE__COMPONENT_MANUAL_GETSTRT:status,safety-level,security}}
 
 See the rendered manual-edit example in the
 `module template documentation <https://eclipse-score.github.io/module_template/main/>`__.

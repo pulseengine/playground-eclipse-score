@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-29254
+id: DOC-INDEX-42532
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety WPs
 
-{{artifact:DOC__PERSISTENCY_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_WP:status,safety-level,security}}
 
 # Tailoring
 

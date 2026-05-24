@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-94500
+id: DOC-DFA-97566
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] DFA
 
-{{artifact:DOC__FEATURE_EXAMPLE_DFA:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_EXAMPLE_DFA:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -169,7 +169,7 @@ For all identified applicable failure initiators, the DFA is performed in the fo
 
 ### <Title>
 
-{{artifact:FEAT_SAF_DFA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature DFA.

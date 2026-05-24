@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-59542
+id: DOC-INDEX-35963
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### HealthMonitor Requirements
 
-{{artifact:DOC__HEALTH_MONITOR_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR_REQUIREMENTS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -26,19 +26,19 @@ tags: [eclipse-score]
 
 ### Dummy Stakeholder
 
-{{artifact:STKH_REQ__REQUIREMENTS__DUMMY:status,safety-level,security}}}}
+{{artifact:STKH_REQ__REQUIREMENTS__DUMMY:status,safety-level,security}}
 
 ### Dummy Feature
 
-{{artifact:FEAT_REQ__REQUIREMENTS__TEMPLATE:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__REQUIREMENTS__TEMPLATE:status,safety-level,security}}
 
 ### Dummy Component
 
-{{artifact:COMP_REQ__HEALTH_MONITOR__DUMMY:status,safety-level,security}}}}
+{{artifact:COMP_REQ__HEALTH_MONITOR__DUMMY:status,safety-level,security}}
 
 ### Dummy AoU
 
-{{artifact:AOU_REQ__HEALTH_MONITOR__DUMMY:status,safety-level,security}}}}
+{{artifact:AOU_REQ__HEALTH_MONITOR__DUMMY:status,safety-level,security}}
 
 .. attention::
     The above directives must be updated according to your feature requirements.

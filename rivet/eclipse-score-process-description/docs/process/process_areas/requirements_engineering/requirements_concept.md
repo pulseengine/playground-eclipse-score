@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-CONCEPT-54168
+id: DOC-REQUIREMENTS-CONCEPT-30104
 title: Requirements Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Requirements Concept
 
-{{artifact:DOC_CONCEPT__REQ_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__REQ_PROCESS:status,safety-level,security}}
 
 In this section a concept for the requirements management will be discussed. Inputs for this concepts are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SWE.1 additionally including the requirements of the different stakeholders for the requirement process.
 

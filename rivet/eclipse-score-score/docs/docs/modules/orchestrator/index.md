@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-46564
+id: DOC-INDEX-33420
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator
 
-{{artifact:DOC__ORCHESTRATOR:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR:status,safety-level,security}}
 
 # Abstract
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-WORKFLOW-82384
+id: DOC-CHANGE-MANAGEMENT-WORKFLOW-82292
 title: Change Management Workflow
 type: specification
 status: approved
@@ -14,19 +14,19 @@ For a detailed explanation of workflows and their role within the process model,
 
 ### Create Change Request
 
-{{artifact:WF__CHANGE_CREATE_CR:status,safety-level,security}}}}
+{{artifact:WF__CHANGE_CREATE_CR:status,safety-level,security}}
 
 ### Analyze Change Request
 
-{{artifact:WF__CHANGE_ANALYZE_CR:status,safety-level,security}}}}
+{{artifact:WF__CHANGE_ANALYZE_CR:status,safety-level,security}}
 
 ### Implement and Monitor Change Request
 
-{{artifact:WF__CHANGE_IMPLEMENT_MONITOR_CR:status,safety-level,security}}}}
+{{artifact:WF__CHANGE_IMPLEMENT_MONITOR_CR:status,safety-level,security}}
 
 ### Close Change Request
 
-{{artifact:WF__CHANGE_CLOSE_CR:status,safety-level,security}}}}
+{{artifact:WF__CHANGE_CLOSE_CR:status,safety-level,security}}
 
 # RAS(IC) for Change Management:
 

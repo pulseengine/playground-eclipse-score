@@ -1,5 +1,5 @@
 ---
-id: DOC-DYNAMIC-ARCHITECTURE-49998
+id: DOC-DYNAMIC-ARCHITECTURE-62781
 title: Dynamic Architecture
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Dynamic View
 
-{{artifact:COMP_ARC_DYN__CRYPTO__DYNAMIC_VIEW:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__CRYPTO__DYNAMIC_VIEW:status,safety-level,security}}
 
 ## Typical Usage Flow
 

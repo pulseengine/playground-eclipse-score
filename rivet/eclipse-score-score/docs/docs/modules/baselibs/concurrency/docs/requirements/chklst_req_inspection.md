@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-82635
+id: DOC-CHKLST-REQ-INSPECTION-72719
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Concurrency Requirements Inspection Checklist
 
-{{artifact:DOC__CONCURRENCY_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__CONCURRENCY_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

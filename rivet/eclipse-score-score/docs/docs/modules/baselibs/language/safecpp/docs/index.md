@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-11861
+id: DOC-INDEX-89657
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safecpp Library
 
-{{artifact:DOC__SAFECPP:status,safety-level,security}}}}
+{{artifact:DOC__SAFECPP:status,safety-level,security}}
 
 .. toctree::
    :hidden:

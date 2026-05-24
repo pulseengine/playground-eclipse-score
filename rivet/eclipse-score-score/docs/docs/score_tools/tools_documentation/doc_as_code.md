@@ -1,5 +1,5 @@
 ---
-id: DOC-DOC-AS-CODE-16562
+id: DOC-DOC-AS-CODE-9106
 title: Doc As Code
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Doc-as-Code
 
-{{artifact:DOC_TOOL__DOC_AS_CODE:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__DOC_AS_CODE:status,safety-level,security}}
 
 # Doc-as-Code Verification Report
 

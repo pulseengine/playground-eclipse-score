@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-WORKPRODUCTS-457
+id: DOC-ARCHITECTURE-WORKPRODUCTS-15579
 title: Architecture Workproducts
 type: specification
 status: approved
@@ -12,17 +12,17 @@ tags: [eclipse-score]
 
 ### Platform Architecture
 
-{{artifact:WP__PLATFORM_ARCH:status,safety-level,security}}}}
+{{artifact:WP__PLATFORM_ARCH:status,safety-level,security}}
 
 ### Feature Architecture
 
-{{artifact:WP__FEATURE_ARCH:status,safety-level,security}}}}
+{{artifact:WP__FEATURE_ARCH:status,safety-level,security}}
 
 ### Component Architecture
 
-{{artifact:WP__COMPONENT_ARCH:status,safety-level,security}}}}
+{{artifact:WP__COMPONENT_ARCH:status,safety-level,security}}
 
 ### Architecture Verification
 
-{{artifact:WP__SW_ARCH_VERIFICATION:status,safety-level,security}}}}
+{{artifact:WP__SW_ARCH_VERIFICATION:status,safety-level,security}}
 

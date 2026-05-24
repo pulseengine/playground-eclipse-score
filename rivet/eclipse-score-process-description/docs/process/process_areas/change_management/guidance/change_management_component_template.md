@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-COMPONENT-TEMPLATE-81055
+id: DOC-CHANGE-MANAGEMENT-COMPONENT-TEMPLATE-87510
 title: Change Management Component Template
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Component Request Template
 
-{{artifact:GD_TEMP__CHANGE_COMPONENT_REQUEST:status,safety-level,security}}}}
+{{artifact:GD_TEMP__CHANGE_COMPONENT_REQUEST:status,safety-level,security}}
 

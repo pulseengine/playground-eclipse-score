@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-12859
+id: DOC-INDEX-52633
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Static Reflection With Serialization Library
 
-{{artifact:DOC__STATIC_REFLECTION_WITH_SERIALIZATION:status,safety-level,security}}}}
+{{artifact:DOC__STATIC_REFLECTION_WITH_SERIALIZATION:status,safety-level,security}}
 
 .. toctree::
    :hidden:

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-13828
+id: DOC-CHANGE-MANAGEMENT-14302
 title: Change Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Change Management Plan
 
-{{artifact:DOC__PLATFORM_CHANGE_MANAGEMENT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_CHANGE_MANAGEMENT_PLAN:status,safety-level,security}}
 
 .. _change_mgmt_plan:
 

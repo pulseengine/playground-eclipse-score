@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-CHECKLIST-28973
+id: DOC-TOOL-MANAGEMENT-CHECKLIST-7124
 title: Tool Management Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Tool Verification Report Review Checklist
 
-{{artifact:GD_CHKLST__TOOL_CR_REVIEW:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__TOOL_CR_REVIEW:status,safety-level,security}}
 

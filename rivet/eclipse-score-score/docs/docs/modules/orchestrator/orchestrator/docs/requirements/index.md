@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-91088
+id: DOC-INDEX-42069
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Requirements
 
-{{artifact:DOC__ORCHESTRATOR_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_REQUIREMENTS:status,safety-level,security}}
 
 # <Headlines (for the list of requirements if structuring is needed)>
 

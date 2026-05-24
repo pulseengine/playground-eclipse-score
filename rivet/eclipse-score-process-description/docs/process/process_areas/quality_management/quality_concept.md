@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-CONCEPT-43287
+id: DOC-QUALITY-CONCEPT-43885
 title: Quality Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Quality Management Concept
 
-{{artifact:DOC_CONCEPT__QUALITY_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__QUALITY_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Quality Management will be discussed. Inputs for this concepts is ASPICE SUP.1
 as quality standard. And also in aspect to the development the addressed requirements from ISO 26262, ISO/SAE 21434

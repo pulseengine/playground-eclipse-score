@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-55144
+id: DOC-INDEX-46379
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Diagnostics
 
-{{artifact:DOC__DIAGNOSTICS:status,safety-level,security}}}}
+{{artifact:DOC__DIAGNOSTICS:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

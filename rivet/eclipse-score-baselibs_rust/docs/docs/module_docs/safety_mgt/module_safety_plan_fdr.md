@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-FDR-27486
+id: DOC-MODULE-SAFETY-PLAN-FDR-54319
 title: Module Safety Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust Base Libraries Safety Plan Formal Review
 
-{{artifact:DOC__BASELIBS_RUST_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RUST_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

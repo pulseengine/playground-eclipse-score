@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-87358
+id: DOC-INDEX-63793
 title: Index
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Mock binding
 
-{{artifact:COMP__COM_MOCK_BINDING:status,safety-level,security}}}}
+{{artifact:COMP__COM_MOCK_BINDING:status,safety-level,security}}
 

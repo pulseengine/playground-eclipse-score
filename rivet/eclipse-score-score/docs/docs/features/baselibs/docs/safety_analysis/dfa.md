@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-52801
+id: DOC-DFA-94494
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs DFA
 
-{{artifact:DOC__BASELIBS_DFA:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_DFA:status,safety-level,security}}
 
 ## Dependent Failure Initiators
 
@@ -199,25 +199,25 @@ For all identified applicable failure initiators, the DFA is performed in the fo
 
 ### memory access
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__MEMORY_ACCESS:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__MEMORY_ACCESS:status,safety-level,security}}
 
 ### locked ressource
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__LOCKED_RESSOURCE:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__LOCKED_RESSOURCE:status,safety-level,security}}
 
 ### concurrent file access
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__CONC_FILE_ACCESS:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__CONC_FILE_ACCESS:status,safety-level,security}}
 
 ### concurrent memory access
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__CONC_MEMORY_ACCESS:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__CONC_MEMORY_ACCESS:status,safety-level,security}}
 
 ### blocked execution
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__BLOCKED_EXECUTION:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__BLOCKED_EXECUTION:status,safety-level,security}}
 
 ### CPU starvation
 
-{{artifact:FEAT_SAF_DFA__BASELIBS__CPU_STARVATION:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__BASELIBS__CPU_STARVATION:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-DR-001-PROC-17108
+id: DOC-DR-001-PROC-73093
 title: Dr-001-Proc
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Feature as Independent Delivery Product
 
-{{artifact:DEC_REC__PLATFORM__FEATURE_DELIVERY:status,safety-level,security}}}}
+{{artifact:DEC_REC__PLATFORM__FEATURE_DELIVERY:status,safety-level,security}}
 
 ## Context
 

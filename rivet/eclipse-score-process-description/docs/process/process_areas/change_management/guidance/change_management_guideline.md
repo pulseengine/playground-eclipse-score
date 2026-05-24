@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-GUIDELINE-46791
+id: DOC-CHANGE-MANAGEMENT-GUIDELINE-31749
 title: Change Management Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Change Request Guideline
 
-{{artifact:GD_GUIDL__CHANGE_CHANGE_REQUEST:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__CHANGE_CHANGE_REQUEST:status,safety-level,security}}
 
 This document describes the general guidances for Change Management based on the concept which is defined [[title]]<doc_concept__change_process>.
 
@@ -257,5 +257,5 @@ The teams has the freedom to reject it at any time by setting the status to "rej
 
 ### Change Management Requirements Tailored
 
-{{artifact:GD_GUIDL__CHANGE_REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__CHANGE_REQ_TAILORED:status,safety-level,security}}
 

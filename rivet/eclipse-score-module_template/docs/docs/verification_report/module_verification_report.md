@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-VERIFICATION-REPORT-11413
+id: DOC-MODULE-VERIFICATION-REPORT-48761
 title: Module Verification Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Verification Report
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_VERIFICATION_REPORT:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

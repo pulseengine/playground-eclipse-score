@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-PLAN-TEMPLATE-65009
+id: DOC-QUALITY-PLAN-TEMPLATE-40978
 title: Quality Plan Template
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Quality Management Plan Template
 
-{{artifact:GD_TEMP__QLM_PLAN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__QLM_PLAN:status,safety-level,security}}
 
 :note: The quality management plan shall be continuously maintained during the project.
        Deviations to the platform plan should be documented here.

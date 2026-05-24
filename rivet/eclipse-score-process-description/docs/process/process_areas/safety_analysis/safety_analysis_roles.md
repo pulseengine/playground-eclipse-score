@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-ROLES-75333
+id: DOC-SAFETY-ANALYSIS-ROLES-20024
 title: Safety Analysis Roles
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safety Engineer
 
-{{artifact:RL__SAFETY_ENGINEER:status,safety-level,security}}}}
+{{artifact:RL__SAFETY_ENGINEER:status,safety-level,security}}
 
 Contributing Roles:
 

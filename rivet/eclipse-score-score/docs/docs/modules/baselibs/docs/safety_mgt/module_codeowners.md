@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-CODEOWNERS-68959
+id: DOC-MODULE-CODEOWNERS-76330
 title: Module Codeowners
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Codeowners
 
-{{artifact:DOC__BASELIBS_CODEOWNERS:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_CODEOWNERS:status,safety-level,security}}
 
 # Assigned Committer(s)
 

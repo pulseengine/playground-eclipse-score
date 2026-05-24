@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-46996
+id: DOC-INDEX-9788
 title: Index
 type: specification
 status: approved
@@ -17,7 +17,7 @@ tags: [eclipse-score]
 
 ### Persistency JSON
 
-{{artifact:DOC__PERSISTENCYJSON:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCYJSON:status,safety-level,security}}
 
 # Abstract
 

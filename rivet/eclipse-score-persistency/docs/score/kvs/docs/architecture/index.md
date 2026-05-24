@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-1743
+id: DOC-INDEX-16127
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### KVS Module Architecture
 
-{{artifact:DOC__KVS_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__KVS_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -46,13 +46,13 @@ The live component architecture template is maintained in the
 
 ### Component Name (Static View)
 
-{{artifact:COMP_ARC_STA__KVS__STATIC_VIEW:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__KVS__STATIC_VIEW:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Dynamic View
 
-{{artifact:COMP_ARC_DYN__KVS__DYNAMIC_VIEW:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__KVS__DYNAMIC_VIEW:status,safety-level,security}}
 
 ## Interfaces
 
@@ -60,13 +60,13 @@ The live component architecture template is maintained in the
 
 ### <Title>
 
-{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Internal Components
 
 ### Component Name 2
 
-{{artifact:COMP_ARC_STA__KVS__2:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__KVS__2:status,safety-level,security}}
 
 .. note::
    Architecture can be split into multiple files. At component level the public interfaces to be used by the user and tester to be shown.

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-95273
+id: DOC-INDEX-71508
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Executor Architecture
 
-{{artifact:DOC__EXECUTOR_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__EXECUTOR_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -39,7 +39,7 @@ The components are designed to cover the expectations from the feature architect
 
 ### Executor
 
-{{artifact:COMP__ORCH_EXECUTOR:status,safety-level,security}}}}
+{{artifact:COMP__ORCH_EXECUTOR:status,safety-level,security}}
 
 ## Dynamic Architecture
 
@@ -50,7 +50,7 @@ The components are designed to cover the expectations from the feature architect
 
 ### <Title>
 
-{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Lower Level Components
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-67555
+id: DOC-SAFETY-MANUAL-1282
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Safety Manual
 
-{{artifact:DOC__COMMUNICATION_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_SAFETY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

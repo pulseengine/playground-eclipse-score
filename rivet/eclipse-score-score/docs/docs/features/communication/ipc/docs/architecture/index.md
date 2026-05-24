@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-55094
+id: DOC-INDEX-83989
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### IPC Architecture
 
-{{artifact:DOC__IPC_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__IPC_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -183,5 +183,5 @@ We reduce the likelihood of the second scenario, by using transactions only when
 
 ### Dynamic Architecture
 
-{{artifact:FEAT_ARC_DYN__COMMUNICATION__IPC:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__COMMUNICATION__IPC:status,safety-level,security}}
 

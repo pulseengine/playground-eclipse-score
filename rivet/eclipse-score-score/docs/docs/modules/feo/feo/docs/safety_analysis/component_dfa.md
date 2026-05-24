@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-DFA-28491
+id: DOC-COMPONENT-DFA-44502
 title: Component Dfa
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Component DFA
 
-{{artifact:DOC__COMPONENT_FEO_DFA:status,safety-level,security}}}}
+{{artifact:DOC__COMPONENT_FEO_DFA:status,safety-level,security}}
 
 # FEO Component DFA (Dependent Failure Analysis)
 
@@ -19,7 +19,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component DFA.

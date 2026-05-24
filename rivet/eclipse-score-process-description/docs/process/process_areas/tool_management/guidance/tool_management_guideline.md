@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-GUIDELINE-79075
+id: DOC-TOOL-MANAGEMENT-GUIDELINE-66311
 title: Tool Management Guideline
 type: specification
 status: approved
@@ -12,11 +12,11 @@ tags: [eclipse-score]
 
 ### Tool Qualification
 
-{{artifact:GD_GUIDL__TOOL_QUALIFICATION:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__TOOL_QUALIFICATION:status,safety-level,security}}
 
 # Tailoring
 
 ### Tool Requirements Tailored
 
-{{artifact:GD_GUIDL__TOOL_REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__TOOL_REQ_TAILORED:status,safety-level,security}}
 

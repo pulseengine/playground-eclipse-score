@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.1-59770
+id: DOC-SUP.1-21603
 title: Sup.1
 type: specification
 status: approved
@@ -25,29 +25,29 @@ and processes comply with defined criteria and that non-conformances are resolve
 
 ### SUP.1.BP1: Ensure independence of quality assurance
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP1:status,safety-level,security}}
 
 ### SUP.1.BP2: Define criteria for quality assurance
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP2:status,safety-level,security}}
 
 ### SUP.1.BP3: Assure quality of work products
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP3:status,safety-level,security}}
 
 ### SUP.1.BP4: Assure quality of process activities
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP4:status,safety-level,security}}
 
 ### SUP.1.BP5: Summarize and communicate quality assurance activities and results
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP5:status,safety-level,security}}
 
 ### SUP.1.BP6: Ensure resolution of non-conformances
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP6:status,safety-level,security}}
 
 ### SUP.1.BP7: Escalate non-conformances
 
-{{artifact:STD_REQ__ASPICE_40__SUP-1-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-1-BP7:status,safety-level,security}}
 

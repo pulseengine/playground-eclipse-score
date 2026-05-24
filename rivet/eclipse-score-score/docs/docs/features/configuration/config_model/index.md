@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-30883
+id: DOC-INDEX-18720
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Configuration Model
 
-{{artifact:DOC__CONFIGURATION_MODEL:status,safety-level,security}}}}
+{{artifact:DOC__CONFIGURATION_MODEL:status,safety-level,security}}
 
 # Feature flag
 

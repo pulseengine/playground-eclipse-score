@@ -1,5 +1,5 @@
 ---
-id: DOC-IMPLEMENTATION-CONCEPT-95002
+id: DOC-IMPLEMENTATION-CONCEPT-56159
 title: Implementation Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__IMP_CONCEPT:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__IMP_CONCEPT:status,safety-level,security}}
 
 In this section a concept for the implementation will be discussed. Inputs for this concepts are
 both the requirements of ISO26262 Part-6 Chapter 8+9 and ASPICE SWE 3+4.
@@ -90,7 +90,7 @@ the detailed design.
 
 ### <Title>
 
-{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ##### Dynamic View
 
@@ -111,7 +111,7 @@ it does not require a dynamic diagram at all (similar to the rules depicted in [
 
 ### <Title>
 
-{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Units within the Component
 
@@ -132,7 +132,7 @@ We link the unit id to the comments in the code like:
 
 ### cpp unit
 
-{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
    In your source file, any programming language, here with C++:
 
@@ -187,7 +187,7 @@ The following section provides templates for defining needs within the source co
 
 ### <here InterfaceDemo - change it>
 
-{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
    In your source file, any programming language, here with C++:
 

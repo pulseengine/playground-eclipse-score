@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-74944
+id: DOC-CHKLST-REQ-INSPECTION-94028
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Stakeholder Requirements Inspection Checklist
 
-{{artifact:DOC__STAKEHOLDER_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__STAKEHOLDER_REQ_INSPECTION:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Stakeholder requirements.

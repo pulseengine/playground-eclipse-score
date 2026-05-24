@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANUAL-80512
+id: DOC-SECURITY-MANUAL-6161
 title: Security Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Security Manual
 
-{{artifact:DOC__PERSISTENCY_SECURITY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SECURITY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.4-52220
+id: DOC-SWE.4-89540
 title: Swe.4
 type: specification
 status: approved
@@ -30,21 +30,21 @@ software detailed design
 
 ### SWE.4.BP1: Specify software unit verification measures
 
-{{artifact:STD_REQ__ASPICE_40__SWE-4-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-4-BP1:status,safety-level,security}}
 
 ### SWE.4.BP2: Select software unit verification measures
 
-{{artifact:STD_REQ__ASPICE_40__SWE-4-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-4-BP2:status,safety-level,security}}
 
 ### SWE.4.BP3: Verify software units
 
-{{artifact:STD_REQ__ASPICE_40__SWE-4-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-4-BP3:status,safety-level,security}}
 
 ### SWE.4.BP4: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-4-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-4-BP4:status,safety-level,security}}
 
 ### SWE.4.BP5: Summarize and communicate results
 
-{{artifact:STD_REQ__ASPICE_40__SWE-4-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-4-BP5:status,safety-level,security}}
 

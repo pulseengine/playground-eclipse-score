@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-56919
+id: DOC-INDEX-52788
 title: Index
 type: specification
 status: approved
@@ -21,7 +21,7 @@ It integrates best practices for build, test, CI/CD and documentation.
 
 ### CentOS AutoSD 9 Development Target
 
-{{artifact:STKH_REQ__SUPPORTED_PLATFORMS__AUTOSD_DEV:status,safety-level,security}}}}
+{{artifact:STKH_REQ__SUPPORTED_PLATFORMS__AUTOSD_DEV:status,safety-level,security}}
 
 ## Project Layout
 

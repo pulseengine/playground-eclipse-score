@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-WORKPRODUCTS-57264
+id: DOC-TOOL-MANAGEMENT-WORKPRODUCTS-45483
 title: Tool Management Workproducts
 type: specification
 status: approved
@@ -10,9 +10,9 @@ tags: [eclipse-score]
 
 ### Platform Tool Management Plan
 
-{{artifact:WP__TLM_PLAN:status,safety-level,security}}}}
+{{artifact:WP__TLM_PLAN:status,safety-level,security}}
 
 ### Tool Verification Report
 
-{{artifact:WP__TOOL_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:WP__TOOL_VERIFICATION_REPORT:status,safety-level,security}}
 

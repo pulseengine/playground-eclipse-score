@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-50497
+id: DOC-INDEX-8756
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Bit Manipulation Library
 
-{{artifact:DOC__BITMANIPULATION:status,safety-level,security}}}}
+{{artifact:DOC__BITMANIPULATION:status,safety-level,security}}
 
 .. toctree::
    :hidden:

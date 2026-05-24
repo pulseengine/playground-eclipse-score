@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-14275
+id: DOC-SAFETY-MANUAL-66766
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Safety Manual
 
-{{artifact:DOC__BASELIBS_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_SAFETY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

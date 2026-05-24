@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-9604
+id: DOC-INDEX-73693
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Rust Containers Library
 
-{{artifact:DOC__CONTAINERS_RUST:status,safety-level,security}}}}
+{{artifact:DOC__CONTAINERS_RUST:status,safety-level,security}}
 
 # Abstract
 

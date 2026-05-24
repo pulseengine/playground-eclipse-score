@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-VERIFICATION-REPORT-79393
+id: DOC-MODULE-VERIFICATION-REPORT-55116
 title: Module Verification Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Verification Report
 
-{{artifact:DOC__PERSISTENCY_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_VERIFICATION_REPORT:status,safety-level,security}}
 
 This verification report is based on the verification plan.
 It covers all the components of the above stated module.

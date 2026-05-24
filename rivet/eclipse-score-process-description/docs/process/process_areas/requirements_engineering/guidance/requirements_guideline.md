@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-GUIDELINE-68567
+id: DOC-REQUIREMENTS-GUIDELINE-92403
 title: Requirements Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Requirements Guideline
 
-{{artifact:GD_GUIDL__REQ_ENGINEERING:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__REQ_ENGINEERING:status,safety-level,security}}
 
 This document describes the general guidances for requirements based on the concept which is defined in [[title]]<doc_concept__req_process>.
 
@@ -235,5 +235,5 @@ new function is planned and the requirement with the new specification is valid_
 
 ### Requirements Tailored
 
-{{artifact:GD_GUIDL__REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__REQ_TAILORED:status,safety-level,security}}
 

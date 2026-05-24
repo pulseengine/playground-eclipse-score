@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-98445
+id: DOC-INDEX-34892
 title: Index
 type: specification
 status: approved
@@ -32,7 +32,7 @@ To calculate the score link evidences to the Trustable Assertions (TA).
 
 ### TRUSTABLE SOFTWARE
 
-{{artifact:TSF__TRUST__TRUSTABLE-SOFTWARE:status,safety-level,security}}}}
+{{artifact:TSF__TRUST__TRUSTABLE-SOFTWARE:status,safety-level,security}}
 
 ## XYZ Trustable Overview
 

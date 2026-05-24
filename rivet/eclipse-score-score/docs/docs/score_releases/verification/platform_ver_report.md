@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-VER-REPORT-25894
+id: DOC-PLATFORM-VER-REPORT-64863
 title: Platform Ver Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Verification Report
 
-{{artifact:DOC__SCORE_PLATFORM_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_VERIFICATION_REPORT:status,safety-level,security}}
 
 **<In its final form (status = valid), Platform Verification Report must contain:>**
 

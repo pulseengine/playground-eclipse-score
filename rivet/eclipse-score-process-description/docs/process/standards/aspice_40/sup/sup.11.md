@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.11-49128
+id: DOC-SUP.11-93259
 title: Sup.11
 type: specification
 status: approved
@@ -23,25 +23,25 @@ and quality of the ML data, and make them available to affected parties.
 
 ### SUP.11.BP1: Establish an ML data management system
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP1:status,safety-level,security}}
 
 ### SUP.11.BP2: Develop an ML data quality approach
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP2:status,safety-level,security}}
 
 ### SUP.11.BP3: Collect ML data
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP3:status,safety-level,security}}
 
 ### SUP.11.BP4: Process ML data
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP4:status,safety-level,security}}
 
 ### SUP.11.BP5: Assure quality of ML data
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP5:status,safety-level,security}}
 
 ### SUP.11.BP6: Communicate agreed processed ML data
 
-{{artifact:STD_REQ__ASPICE_40__SUP-11-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-11-BP6:status,safety-level,security}}
 

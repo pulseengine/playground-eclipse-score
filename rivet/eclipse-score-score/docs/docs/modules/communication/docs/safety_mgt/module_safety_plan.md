@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-78688
+id: DOC-MODULE-SAFETY-PLAN-81488
 title: Module Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Safety Plan
 
-{{artifact:DOC__COMMUNICATION_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_SAFETY_PLAN:status,safety-level,security}}
 
 # Functional Safety Management Context
 

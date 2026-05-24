@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-FEATURE-TEMPLATE-61004
+id: DOC-CHANGE-MANAGEMENT-FEATURE-TEMPLATE-2176
 title: Change Management Feature Template
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Feature Request Template
 
-{{artifact:GD_TEMP__CHANGE_FEATURE_REQUEST:status,safety-level,security}}}}
+{{artifact:GD_TEMP__CHANGE_FEATURE_REQUEST:status,safety-level,security}}
 

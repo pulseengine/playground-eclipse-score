@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-86754
+id: DOC-INDEX-55250
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Filesystem Library
 
-{{artifact:DOC__FILESYSTEM:status,safety-level,security}}}}
+{{artifact:DOC__FILESYSTEM:status,safety-level,security}}
 
 .. toctree::
    :hidden:

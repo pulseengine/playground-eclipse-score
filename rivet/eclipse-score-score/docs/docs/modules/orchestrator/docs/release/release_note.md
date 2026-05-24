@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-82897
+id: DOC-RELEASE-NOTE-60378
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Release Note
 
-{{artifact:DOC__ORCHESTRATOR_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_RELEASE_NOTE:status,safety-level,security}}
 
 | Module Name: Orchestrator
 | Release Tag: vX.Y.Z

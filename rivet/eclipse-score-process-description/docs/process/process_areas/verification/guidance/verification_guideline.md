@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-GUIDELINE-26732
+id: DOC-VERIFICATION-GUIDELINE-94233
 title: Verification Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Verification Guideline
 
-{{artifact:GD_GUIDL__VERIFICATION_GUIDE:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__VERIFICATION_GUIDE:status,safety-level,security}}
 
 ## General Principles
 
@@ -124,5 +124,5 @@ create test cases using the same.
 
 ### Verification Requirements Tailored
 
-{{artifact:GD_GUIDL__VERIFICATION_REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__VERIFICATION_REQ_TAILORED:status,safety-level,security}}
 

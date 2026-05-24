@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-FDR-81726
+id: DOC-MODULE-SAFETY-PLAN-FDR-40841
 title: Module Safety Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Plan Formal Review
 
-{{artifact:DOC__PERSISTENCY_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 **Purpose**
 

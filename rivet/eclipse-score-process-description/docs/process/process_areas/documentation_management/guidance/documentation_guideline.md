@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-GUIDELINE-31376
+id: DOC-DOCUMENTATION-GUIDELINE-41883
 title: Documentation Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Documentation
 
-{{artifact:GD_GUIDL__DOCUMENTATION:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__DOCUMENTATION:status,safety-level,security}}
 
 The planning for the documents is part of the [[WP__DOCUMENT_MGT_PLAN]] within the Platform Management Plan.
 This plan includes the configuration item list containing all work products created in the project

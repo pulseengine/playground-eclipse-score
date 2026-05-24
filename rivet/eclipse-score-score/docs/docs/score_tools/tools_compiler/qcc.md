@@ -1,5 +1,5 @@
 ---
-id: DOC-QCC-48500
+id: DOC-QCC-60899
 title: Qcc
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### qcc
 
-{{artifact:DOC_TOOL__QCC:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__QCC:status,safety-level,security}}
 
 # QCC Compiler Verification Report
 

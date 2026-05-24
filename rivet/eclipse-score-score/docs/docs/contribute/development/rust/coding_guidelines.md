@@ -1,5 +1,5 @@
 ---
-id: DOC-CODING-GUIDELINES-6211
+id: DOC-CODING-GUIDELINES-46425
 title: Coding Guidelines
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Coding Guidelines Rust
 
-{{artifact:DOC__RUST_CODING_GUIDELINES:status,safety-level,security}}}}
+{{artifact:DOC__RUST_CODING_GUIDELINES:status,safety-level,security}}
 
 # Coding Guidelines
 

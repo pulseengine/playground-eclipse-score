@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-13317
+id: DOC-CHKLST-ARC-INSPECTION-66939
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Persistency Architecture Inspection Checklist
 
-{{artifact:DOC__PERSISTENCY_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

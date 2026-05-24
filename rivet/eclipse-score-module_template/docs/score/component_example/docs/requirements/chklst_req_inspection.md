@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-11850
+id: DOC-CHKLST-REQ-INSPECTION-79157
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Requirements Inspection Checklist
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_REQ_INSPECTION:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

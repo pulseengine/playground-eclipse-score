@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-59961
+id: DOC-FMEA-63625
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Executor FMEA
 
-{{artifact:DOC__EXECUTOR_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__EXECUTOR_FMEA:status,safety-level,security}}
 
 ## Failure Mode List
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component FMEA.

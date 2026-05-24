@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-TEMPLATE-77973
+id: DOC-PROBLEM-RESOLUTION-TEMPLATE-35338
 title: Problem Resolution Template
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Problem Template
 
-{{artifact:GD_TEMP__PROBLEM_TEMPLATE:status,safety-level,security}}}}
+{{artifact:GD_TEMP__PROBLEM_TEMPLATE:status,safety-level,security}}
 
 This template defines the content to be implemented in the selected Issue Tracking System
 of the project.

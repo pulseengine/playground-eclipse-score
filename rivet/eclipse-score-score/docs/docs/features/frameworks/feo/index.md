@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-36576
+id: DOC-INDEX-34830
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Fixed execution order framework
 
-{{artifact:DOC__FRAMEWORKS_FEO:status,safety-level,security}}}}
+{{artifact:DOC__FRAMEWORKS_FEO:status,safety-level,security}}
 
 .. toctree::
    :hidden:

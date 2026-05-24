@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-19371
+id: DOC-SAFETY-MANUAL-87141
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Manual
 
-{{artifact:DOC__PERSISTENCY_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

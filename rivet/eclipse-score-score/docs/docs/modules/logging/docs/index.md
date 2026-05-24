@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-10423
+id: DOC-INDEX-59413
 title: Index
 type: specification
 status: approved
@@ -8,11 +8,11 @@ tags: [eclipse-score]
 
 ### Logging
 
-{{artifact:MOD__LOGGING:status,safety-level,security}}}}
+{{artifact:MOD__LOGGING:status,safety-level,security}}
 
 ### Logging
 
-{{artifact:MOD_VIEW_STA__LOGGING__LOGGING:status,safety-level,security}}}}
+{{artifact:MOD_VIEW_STA__LOGGING__LOGGING:status,safety-level,security}}
 
 # Module Documents
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-BAZEL-47910
+id: DOC-BAZEL-67100
 title: Bazel
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Bazel
 
-{{artifact:DOC_TOOL__BAZEL:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__BAZEL:status,safety-level,security}}
 
 # Bazel Verification Report
 

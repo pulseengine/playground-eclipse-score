@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-BUILDING-BLOCKS-CONCEPT-33796
+id: DOC-SCORE-BUILDING-BLOCKS-CONCEPT-53598
 title: Score Building Blocks Concept
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Building Block Concept
 
-{{artifact:DOC_CONCEPT__GENERAL_BUILDING_BLOCKS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__GENERAL_BUILDING_BLOCKS:status,safety-level,security}}
 
 .. attention::
 

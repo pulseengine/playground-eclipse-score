@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-70103
+id: DOC-INDEX-67944
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency KVS Security WPs
 
-{{artifact:DOC__PERSISTENCY_SECURITY_WP:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SECURITY_WP:status,safety-level,security}}
 
 .. list-table:: Feature persistency Workproducts
     :header-rows: 1

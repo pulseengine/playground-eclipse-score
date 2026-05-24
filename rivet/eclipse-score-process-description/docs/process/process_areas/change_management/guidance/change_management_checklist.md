@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-CHECKLIST-27516
+id: DOC-CHANGE-MANAGEMENT-CHECKLIST-46198
 title: Change Management Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Change Request Review Checklist
 
-{{artifact:GD_CHKLST__CHANGE_CR_REVIEW:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__CHANGE_CR_REVIEW:status,safety-level,security}}
 

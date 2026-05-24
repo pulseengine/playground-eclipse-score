@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-63264
+id: DOC-INDEX-59935
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### OS Library
 
-{{artifact:DOC__OS:status,safety-level,security}}}}
+{{artifact:DOC__OS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

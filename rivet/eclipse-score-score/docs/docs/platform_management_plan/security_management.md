@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-20408
+id: DOC-SECURITY-MANAGEMENT-15455
 title: Security Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Platform Security Plan
 
-{{artifact:DOC__SCORE_PLATFORM_SECURITY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_SECURITY_PLAN:status,safety-level,security}}
 
 ## Security management / Platform Security Plan
 

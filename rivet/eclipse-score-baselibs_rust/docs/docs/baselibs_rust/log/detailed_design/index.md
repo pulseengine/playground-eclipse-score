@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-75233
+id: DOC-INDEX-17630
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Log Detailed Design
 
-{{artifact:DOC__LOG_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__LOG_DETAILED_DESIGN:status,safety-level,security}}
 
 # Detailed Design for Component: Log
 
@@ -44,15 +44,15 @@ Such frontend shall remain transparent replacement to common functionalities pro
 
 ### Log class diagram
 
-{{artifact:DD_STA__LOG__CLASS_DIAGRAM:status,safety-level,security}}}}
+{{artifact:DD_STA__LOG__CLASS_DIAGRAM:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
 ### Log operation
 
-{{artifact:DD_DYN__LOG__LOG_OP:status,safety-level,security}}}}
+{{artifact:DD_DYN__LOG__LOG_OP:status,safety-level,security}}
 
 ### Log to level
 
-{{artifact:DD_DYN__LOG__LOG_TO_LEVEL:status,safety-level,security}}}}
+{{artifact:DD_DYN__LOG__LOG_TO_LEVEL:status,safety-level,security}}
 

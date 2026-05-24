@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-SPECIFICATION-23139
+id: DOC-VERIFICATION-SPECIFICATION-8992
 title: Verification Specification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Test Specification Guideline
 
-{{artifact:GD_GUIDL__VERIFICATION_SPECIFICATION:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__VERIFICATION_SPECIFICATION:status,safety-level,security}}
 
 ## Test specification
 

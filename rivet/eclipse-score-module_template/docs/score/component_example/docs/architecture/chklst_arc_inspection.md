@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-98954
+id: DOC-CHKLST-ARC-INSPECTION-46869
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Architecture Inspection Checklist
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_ARC_INSPECTION:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component.

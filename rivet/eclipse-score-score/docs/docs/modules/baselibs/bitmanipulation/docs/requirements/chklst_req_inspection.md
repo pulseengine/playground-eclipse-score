@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-87018
+id: DOC-CHKLST-REQ-INSPECTION-3137
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Bitmanipulation Requirements Inspection Checklist
 
-{{artifact:DOC__BITMANIPULATION_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__BITMANIPULATION_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

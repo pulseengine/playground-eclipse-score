@@ -1,5 +1,5 @@
 ---
-id: DOC-DETAILED-DESIGN-TEMPLATE-85282
+id: DOC-DETAILED-DESIGN-TEMPLATE-6406
 title: Detailed Design Template
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Detailed Design Templates
 
-{{artifact:GD_TEMP__DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__DETAILED_DESIGN:status,safety-level,security}}
 

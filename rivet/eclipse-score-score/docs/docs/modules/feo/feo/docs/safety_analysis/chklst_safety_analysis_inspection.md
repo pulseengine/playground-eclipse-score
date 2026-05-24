@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-SAFETY-ANALYSIS-INSPECTION-56776
+id: DOC-CHKLST-SAFETY-ANALYSIS-INSPECTION-66827
 title: Chklst Safety Analysis Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Safety Analysis Inspection Checklist
 
-{{artifact:DOC__SAFETY_ANALYSIS_INSPECTION_COMPONENT_FEO:status,safety-level,security}}}}
+{{artifact:DOC__SAFETY_ANALYSIS_INSPECTION_COMPONENT_FEO:status,safety-level,security}}
 
 # FEO Component Safety Analysis Checklist
 

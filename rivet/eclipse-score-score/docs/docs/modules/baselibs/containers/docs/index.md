@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-19812
+id: DOC-INDEX-30090
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Containers Library
 
-{{artifact:DOC__CONTAINERS:status,safety-level,security}}}}
+{{artifact:DOC__CONTAINERS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

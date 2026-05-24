@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-46218
+id: DOC-INDEX-62896
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### vajson
 
-{{artifact:DOC__VAJSON:status,safety-level,security}}}}
+{{artifact:DOC__VAJSON:status,safety-level,security}}
 
 # Abstract
 

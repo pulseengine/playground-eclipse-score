@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-GUIDELINE-69377
+id: DOC-SAFETY-ANALYSIS-GUIDELINE-36428
 title: Safety Analysis Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safety Analysis (DFA and FMEA) Guideline
 
-{{artifact:GD_GUIDL__SAFETY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__SAFETY_ANALYSIS:status,safety-level,security}}
 
 This document describes the general guidances for Safety Analysis (DFA and FMEA) based on the concept which is defined Safety Analysis Concept<doc_concept__safety_analysis>.
 Use the Platform DFA as an input so that general Safety Mechanisms are only defined once and not in every single Safety Analysis.
@@ -88,7 +88,7 @@ find possible failures. Therefore we need a mitigation.
 
 ### Component 1 Call message not received
 
-{{artifact:FEAT_SAF_FMEA__MAB__COMP1_CALL_NRECEIVED:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__MAB__COMP1_CALL_NRECEIVED:status,safety-level,security}}
 
 For all fault models that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that
 
@@ -103,7 +103,7 @@ In the static view of the example could be seen that component 1 uses component 
 
 ### Mab data corruption
 
-{{artifact:FEAT_SAF_DFA__MAB__DATA_CORRUPTION:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__MAB__DATA_CORRUPTION:status,safety-level,security}}
 
 * Failure initiator SR_01_01 "reused software components" is not applicable, no software components are reused in the feature.
 * Failure initiator SI_01_03 "constants, or variables, being global to the two software functions" is not applicable, because it's not possible to create constants or variables that being global to the two software functions in Rust.
@@ -129,7 +129,7 @@ Additionally in the static view we see Component 4 is a library used by Componen
 
 ### Allocated memory
 
-{{artifact:COMP_SAF_DFA__COMPONENT4__ALLOCATED_MEMORY:status,safety-level,security}}}}
+{{artifact:COMP_SAF_DFA__COMPONENT4__ALLOCATED_MEMORY:status,safety-level,security}}
 
 For all failure initiators that are not applicable, the reason has to be documented in the content of the document, so it can be recognized. An example could be that
 
@@ -139,5 +139,5 @@ For all failure initiators that are not applicable, the reason has to be documen
 
 ### Analysis Tailored
 
-{{artifact:GD_GUIDL__ANALYSIS_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__ANALYSIS_TAILORED:status,safety-level,security}}
 

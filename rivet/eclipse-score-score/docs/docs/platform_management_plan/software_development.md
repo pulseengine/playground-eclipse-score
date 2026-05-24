@@ -1,5 +1,5 @@
 ---
-id: DOC-SOFTWARE-DEVELOPMENT-2263
+id: DOC-SOFTWARE-DEVELOPMENT-59076
 title: Software Development
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Software Development Plan
 
-{{artifact:DOC__SOFTWARE_DEVELOPMENT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__SOFTWARE_DEVELOPMENT_PLAN:status,safety-level,security}}
 
 #### Purpose
 

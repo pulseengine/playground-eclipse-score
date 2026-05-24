@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-25904
+id: DOC-INDEX-62062
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### JSON Wrapper Requirements
 
-{{artifact:DOC__JSON_WRAPPER_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__JSON_WRAPPER_REQUIREMENTS:status,safety-level,security}}
 
 Due to low complexity, the requirements of the JSON component were not split into the "sub" components
 "JSON Wrapper" and "nlohman_json". Reasoning is the low number of requirements (only about ten).

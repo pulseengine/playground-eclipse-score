@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-60789
+id: DOC-CHKLST-IMPL-INSPECTION-91622
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Safecpp Implementation Inspection Checklist
 
-{{artifact:DOC__SAFECPP_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__SAFECPP_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

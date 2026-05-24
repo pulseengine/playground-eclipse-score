@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-72119
+id: DOC-INDEX-42389
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Process Meta Model
 
-{{artifact:DOC_CONCEPT__PROCESS_META_MODEL:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__PROCESS_META_MODEL:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 2

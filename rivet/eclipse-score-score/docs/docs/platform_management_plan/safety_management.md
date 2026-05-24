@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-98935
+id: DOC-SAFETY-MANAGEMENT-77483
 title: Safety Management
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Plan
 
-{{artifact:DOC__SCORE_PLATFORM_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_SAFETY_PLAN:status,safety-level,security}}
 
 .. _score_platform_safety_plan:
 

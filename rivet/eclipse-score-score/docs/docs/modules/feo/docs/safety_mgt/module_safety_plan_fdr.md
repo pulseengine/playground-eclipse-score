@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-FDR-78786
+id: DOC-MODULE-SAFETY-PLAN-FDR-33455
 title: Module Safety Plan Fdr
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Module Safety Plan Formal Review
 
-{{artifact:DOC__FEO_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__FEO_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 # FEO Module Safety Plan Formal Review Report
 

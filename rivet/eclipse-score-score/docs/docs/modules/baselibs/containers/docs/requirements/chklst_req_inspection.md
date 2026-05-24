@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-99852
+id: DOC-CHKLST-REQ-INSPECTION-47382
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Containers Requirements Inspection Checklist
 
-{{artifact:DOC__CONTAINERS_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__CONTAINERS_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

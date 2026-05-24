@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-40482
+id: DOC-CHKLST-ARC-INSPECTION-5086
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Filesystem Architecture Inspection Checklist
 
-{{artifact:DOC__FILESYSTEM_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__FILESYSTEM_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

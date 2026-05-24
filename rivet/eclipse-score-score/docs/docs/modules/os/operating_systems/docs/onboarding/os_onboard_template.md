@@ -1,5 +1,5 @@
 ---
-id: DOC-OS-ONBOARD-TEMPLATE-41579
+id: DOC-OS-ONBOARD-TEMPLATE-8410
 title: Os Onboard Template
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [OS Name]
 
-{{artifact:DOC__OS_ONBOARDING:status,safety-level,security}}}}
+{{artifact:DOC__OS_ONBOARDING:status,safety-level,security}}
 
 The following component needs to be defined at the top of the page (modify accordingly):
 
@@ -18,7 +18,7 @@ The following component needs to be defined at the top of the page (modify accor
 
 ### [OS Name]
 
-{{artifact:COMP__OS_[OS_NAME]:status,safety-level,security}}}}
+{{artifact:COMP__OS_[OS_NAME]:status,safety-level,security}}
 
 Short overview of the operating system and why it is relevant for S-CORE.
 Keep this to 3-6 lines. Mention what the OS is and the intended usage context.

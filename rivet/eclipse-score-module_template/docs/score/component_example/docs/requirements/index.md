@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-20800
+id: DOC-INDEX-78505
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Requirements
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_REQUIREMENTS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -26,7 +26,7 @@ tags: [eclipse-score]
 
 ### Some Title
 
-{{artifact:COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE:status,safety-level,security}}}}
+{{artifact:COMP_REQ__MOD_TEMP_COMPONENT_NAME__SOME_TITLE:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component requirements.
@@ -42,13 +42,13 @@ tags: [eclipse-score]
 
 ### Next Title
 
-{{artifact:AOU_REQ__MOD_TEMP_COMPONENT_NAME__NEXT_TITLE:status,safety-level,security}}}}
+{{artifact:AOU_REQ__MOD_TEMP_COMPONENT_NAME__NEXT_TITLE:status,safety-level,security}}
 
 ## Environmental Requirements
 
 ### Another Title
 
-{{artifact:AOU_REQ__MOD_TEMP_COMPONENT_NAME__ANOTHER:status,safety-level,security}}}}
+{{artifact:AOU_REQ__MOD_TEMP_COMPONENT_NAME__ANOTHER:status,safety-level,security}}
 
 ## Hints
 

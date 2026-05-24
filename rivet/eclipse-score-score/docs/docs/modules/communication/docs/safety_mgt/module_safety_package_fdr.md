@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-23870
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-10935
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Safety Package Formal Review
 
-{{artifact:DOC__COMMUNICATION_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

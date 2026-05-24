@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-79893
+id: DOC-INDEX-33211
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### LoLa Requirements
 
-{{artifact:DOC__LOLA_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__LOLA_REQUIREMENTS:status,safety-level,security}}
 
 # LoLa component requirements
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-12066
+id: DOC-CHKLST-IMPL-INSPECTION-98353
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Containers Implementation Inspection Checklist
 
-{{artifact:DOC__CONTAINERS_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__CONTAINERS_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-GUIDELINE-917
+id: DOC-PLATFORM-MANAGEMENT-GUIDELINE-52918
 title: Platform Management Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Working model
 
-{{artifact:GD_GUIDL__PLATFORM_MGMT_PLAN:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__PLATFORM_MGMT_PLAN:status,safety-level,security}}
 
 This document describes the general guidances for Platform Management based on the concept which is defined [[title]]<doc_concept__platform_process>.
 
@@ -106,5 +106,5 @@ The status of the project is regularly reported.
 
 ### Platform Management Plan Requirements Tailored
 
-{{artifact:GD_GUIDL__PLATFORM_MGMT_PLAN_REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__PLATFORM_MGMT_PLAN_REQ_TAILORED:status,safety-level,security}}
 

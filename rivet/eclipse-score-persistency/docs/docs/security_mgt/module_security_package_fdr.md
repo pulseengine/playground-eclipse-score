@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SECURITY-PACKAGE-FDR-60152
+id: DOC-MODULE-SECURITY-PACKAGE-FDR-63599
 title: Module Security Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Security Package Formal Review
 
-{{artifact:DOC__PERSISTENCY_SEC_PKG_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SEC_PKG_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

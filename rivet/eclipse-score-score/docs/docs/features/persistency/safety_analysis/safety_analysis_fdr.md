@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-FDR-34522
+id: DOC-SAFETY-ANALYSIS-FDR-21505
 title: Safety Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Analysis Checklist
 
-{{artifact:DOC__PERSISTENCY_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 **Purpose**
 The purpose of this Safety Analysis (DFA and FMEA) checklist template is to collect the topics to be checked during verification of the Safety Analysis.

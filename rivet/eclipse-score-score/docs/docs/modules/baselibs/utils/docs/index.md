@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-69836
+id: DOC-INDEX-85140
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Utils Library
 
-{{artifact:DOC__UTILS:status,safety-level,security}}}}
+{{artifact:DOC__UTILS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-86020
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-74705
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust Base Libraries Safety Package Formal Review
 
-{{artifact:DOC__BASELIBS_RUST_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RUST_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

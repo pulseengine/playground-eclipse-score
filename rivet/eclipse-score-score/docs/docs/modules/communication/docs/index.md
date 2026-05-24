@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-71096
+id: DOC-INDEX-45432
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication
 
-{{artifact:MOD__COM_COMMUNICATION:status,safety-level,security}}}}
+{{artifact:MOD__COM_COMMUNICATION:status,safety-level,security}}
 
 # Module Documents
 

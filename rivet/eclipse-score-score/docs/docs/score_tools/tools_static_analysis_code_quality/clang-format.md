@@ -1,5 +1,5 @@
 ---
-id: DOC-CLANG-FORMAT-33583
+id: DOC-CLANG-FORMAT-7181
 title: Clang-Format
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### clang-format
 
-{{artifact:DOC_TOOL__CLANG_FORMAT:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__CLANG_FORMAT:status,safety-level,security}}
 
 # Clang-Format Verification Report
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-WORKFLOW-60411
+id: DOC-TOOL-MANAGEMENT-WORKFLOW-47547
 title: Tool Management Workflow
 type: specification
 status: approved
@@ -14,19 +14,19 @@ For a detailed explanation of workflows and their role within the process model,
 
 ### Create Tool Verification Report
 
-{{artifact:WF__TOOL_CREATE_TOOL_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:WF__TOOL_CREATE_TOOL_VERIFICATION_REPORT:status,safety-level,security}}
 
 ### Evaluate Tool and Update Tool Verification Report
 
-{{artifact:WF__TOOL_EVALUATE_TOOL:status,safety-level,security}}}}
+{{artifact:WF__TOOL_EVALUATE_TOOL:status,safety-level,security}}
 
 ### Qualify Tool and Update Tool Verification Report
 
-{{artifact:WF__TOOL_QUALIFY_TOOL:status,safety-level,security}}}}
+{{artifact:WF__TOOL_QUALIFY_TOOL:status,safety-level,security}}
 
 ### Approve Tool Verification Report
 
-{{artifact:WF__TOOL_APPROVE_TOOL_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:WF__TOOL_APPROVE_TOOL_VERIFICATION_REPORT:status,safety-level,security}}
 
 # RAS(IC) for Tool Management:
 

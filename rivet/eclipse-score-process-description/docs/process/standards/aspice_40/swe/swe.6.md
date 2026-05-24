@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.6-1647
+id: DOC-SWE.6-91593
 title: Swe.6
 type: specification
 status: approved
@@ -31,21 +31,21 @@ requirements.
 
 ### SWE.6.BP1: Specify verification measures for software verification
 
-{{artifact:STD_REQ__ASPICE_40__SWE-6-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-6-BP1:status,safety-level,security}}
 
 ### SWE.6.BP2: Select verification measures
 
-{{artifact:STD_REQ__ASPICE_40__SWE-6-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-6-BP2:status,safety-level,security}}
 
 ### SWE.6.BP3: Verify the integrated software
 
-{{artifact:STD_REQ__ASPICE_40__SWE-6-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-6-BP3:status,safety-level,security}}
 
 ### SWE.6.BP4: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-6-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-6-BP4:status,safety-level,security}}
 
 ### SWE.6.BP5: Summarize and communicate results
 
-{{artifact:STD_REQ__ASPICE_40__SWE-6-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-6-BP5:status,safety-level,security}}
 

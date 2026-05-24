@@ -1,5 +1,5 @@
 ---
-id: DOC-AOU-REQUIREMENTS-TEMPLATE-3419
+id: DOC-AOU-REQUIREMENTS-TEMPLATE-76680
 title: Aou Requirements Template
 type: specification
 status: approved
@@ -17,5 +17,5 @@ template repository.
 
 ### Some Other Title
 
-{{artifact:AOU_REQ__FEATURE_NAME__SOME_OTHER_TITLE:status,safety-level,security}}}}
+{{artifact:AOU_REQ__FEATURE_NAME__SOME_OTHER_TITLE:status,safety-level,security}}
 

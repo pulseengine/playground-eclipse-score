@@ -1,5 +1,5 @@
 ---
-id: DOC-STAKEHOLDER-50169
+id: DOC-STAKEHOLDER-67271
 title: Stakeholder
 type: specification
 status: approved
@@ -15,7 +15,7 @@ feature and component requirements derive from these.
 
 ### Example Functional Requirement
 
-{{artifact:STKH_REQ__DOCGEN_ENABLED__EXAMPLE:status,safety-level,security}}}}
+{{artifact:STKH_REQ__DOCGEN_ENABLED__EXAMPLE:status,safety-level,security}}
 
 .. note::
 

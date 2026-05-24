@@ -1,5 +1,5 @@
 ---
-id: DOC-MLE.4-49496
+id: DOC-MLE.4-80002
 title: Mle.4
 type: specification
 status: approved
@@ -27,29 +27,29 @@ the ML requirements.
 
 ### MLE.4.BP1: Specify an ML test approach
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP1:status,safety-level,security}}
 
 ### MLE.4.BP2: Create ML test data set
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP2:status,safety-level,security}}
 
 ### MLE.4.BP3: Test trained ML model
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP3:status,safety-level,security}}
 
 ### MLE.4.BP4: Derive deployed ML model
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP4:status,safety-level,security}}
 
 ### MLE.4.BP5: Test deployed ML model
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP5:status,safety-level,security}}
 
 ### MLE.4.BP6: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP6:status,safety-level,security}}
 
 ### MLE.4.BP7: Summarize and communicate results
 
-{{artifact:STD_REQ__ASPICE_40__MLE-4-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-4-BP7:status,safety-level,security}}
 

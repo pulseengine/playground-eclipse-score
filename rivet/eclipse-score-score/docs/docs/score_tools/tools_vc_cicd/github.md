@@ -1,5 +1,5 @@
 ---
-id: DOC-GITHUB-1790
+id: DOC-GITHUB-86479
 title: Github
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### github
 
-{{artifact:DOC_TOOL__GITHUB:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__GITHUB:status,safety-level,security}}
 
 # GitHub Verification Report
 

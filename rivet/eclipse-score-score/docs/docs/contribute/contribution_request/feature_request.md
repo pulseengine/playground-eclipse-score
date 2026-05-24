@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-REQUEST-24056
+id: DOC-FEATURE-REQUEST-37843
 title: Feature Request
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Feature Request Guideline
 
-{{artifact:DOC__FEATURE_REQUEST_GUIDELINE:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_REQUEST_GUIDELINE:status,safety-level,security}}
 
 This Feature Request Guideline is a "How-To for Dummies" for proposing/contributing a new feature or changes to an existing feature.
 This Guideline is based on or references following documents:

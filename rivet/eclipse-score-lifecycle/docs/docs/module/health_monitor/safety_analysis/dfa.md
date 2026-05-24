@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-76555
+id: DOC-DFA-62078
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Health Monitor DFA
 
-{{artifact:DOC__HEALTH_MONITOR_DFA:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR_DFA:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -26,7 +26,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component DFA.

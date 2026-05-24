@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-55388
+id: DOC-INDEX-30078
 title: Index
 type: specification
 status: approved
@@ -19,7 +19,7 @@ It integrates best practices for build, test, CI/CD and documentation.
 
 ### Example Functional Requirement
 
-{{artifact:STKH_REQ__DOCGEN_ENABLED__EXAMPLE:status,safety-level,security}}}}
+{{artifact:STKH_REQ__DOCGEN_ENABLED__EXAMPLE:status,safety-level,security}}
 
 ## Project Layout
 

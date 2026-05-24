@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-7615
+id: DOC-INDEX-72830
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### FutureCPP Library
 
-{{artifact:DOC__FUTURECPP:status,safety-level,security}}}}
+{{artifact:DOC__FUTURECPP:status,safety-level,security}}
 
 .. toctree::
    :hidden:

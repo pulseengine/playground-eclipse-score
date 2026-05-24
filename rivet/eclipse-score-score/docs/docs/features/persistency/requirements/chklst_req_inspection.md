@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-56625
+id: DOC-CHKLST-REQ-INSPECTION-57880
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Requirements Inspection Checklist
 
-{{artifact:DOC__FEATURE_PERSISTENCY_REQUIREMENTS_CHKLST:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_PERSISTENCY_REQUIREMENTS_CHKLST:status,safety-level,security}}
 
 **Purpose**
 

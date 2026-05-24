@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-80857
+id: DOC-CHKLST-IMPL-INSPECTION-75925
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Utils Implementation Inspection Checklist
 
-{{artifact:DOC__UTILS_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__UTILS_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

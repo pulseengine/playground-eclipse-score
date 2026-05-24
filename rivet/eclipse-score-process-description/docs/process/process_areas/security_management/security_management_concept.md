@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-CONCEPT-44440
+id: DOC-SECURITY-MANAGEMENT-CONCEPT-45133
 title: Security Management Concept
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__SECURITY_MANAGEMENT_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__SECURITY_MANAGEMENT_PROCESS:status,safety-level,security}}
 
 In this section a concept for the security management will be discussed. Inputs for this concepts
 are mainly the requirements of ISO SAE 21434 Clause 5, 6 and 8.

@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-94221
+id: DOC-DFA-98822
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Executor DFA
 
-{{artifact:DOC__EXECUTOR_DFA:status,safety-level,security}}}}
+{{artifact:DOC__EXECUTOR_DFA:status,safety-level,security}}
 
 ## Dependent Failure Initiators
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component DFA.

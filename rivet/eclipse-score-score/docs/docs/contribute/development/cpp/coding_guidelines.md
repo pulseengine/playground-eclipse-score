@@ -1,5 +1,5 @@
 ---
-id: DOC-CODING-GUIDELINES-57701
+id: DOC-CODING-GUIDELINES-77468
 title: Coding Guidelines
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Coding Guidelines C++
 
-{{artifact:DOC__CPP_CODING_GUIDELINES:status,safety-level,security}}}}
+{{artifact:DOC__CPP_CODING_GUIDELINES:status,safety-level,security}}
 
 # Coding Guidelines
 

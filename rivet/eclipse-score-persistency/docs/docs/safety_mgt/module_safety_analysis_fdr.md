@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-ANALYSIS-FDR-78705
+id: DOC-MODULE-SAFETY-ANALYSIS-FDR-97846
 title: Module Safety Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Analysis Checklist
 
-{{artifact:DOC__MODULE_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__MODULE_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 **Purpose**
 

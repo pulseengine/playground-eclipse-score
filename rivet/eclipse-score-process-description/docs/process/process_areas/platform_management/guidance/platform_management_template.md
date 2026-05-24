@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-TEMPLATE-37705
+id: DOC-PLATFORM-MANAGEMENT-TEMPLATE-70123
 title: Platform Management Template
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Platform Management Plan Template
 
-{{artifact:GD_TEMP__PLATFORM_MGMT_PLAN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__PLATFORM_MGMT_PLAN:status,safety-level,security}}
 
 .. attention::
     Remove everything above when copying and filling the template.

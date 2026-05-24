@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-VERIFICATION-REPORT-70925
+id: DOC-MODULE-VERIFICATION-REPORT-33967
 title: Module Verification Report
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Module Verification Report
 
-{{artifact:DOC__FEO_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__FEO_VERIFICATION_REPORT:status,safety-level,security}}
 
 # FEO Module Verification Report
 

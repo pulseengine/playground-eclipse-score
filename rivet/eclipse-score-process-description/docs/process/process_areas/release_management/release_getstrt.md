@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-GETSTRT-59764
+id: DOC-RELEASE-GETSTRT-96803
 title: Release Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Release Management
 
-{{artifact:DOC_GETSTRT__RELEASE_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__RELEASE_PROCESS:status,safety-level,security}}
 
 This document describes the steps to create a release of the SW and collaterals (test, documentation).
 

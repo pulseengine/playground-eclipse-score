@@ -1,5 +1,5 @@
 ---
-id: DOC-AUTOSD-22898
+id: DOC-AUTOSD-41567
 title: Autosd
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### AutoSD
 
-{{artifact:COMP__OS_AUTOSD:status,safety-level,security}}}}
+{{artifact:COMP__OS_AUTOSD:status,safety-level,security}}
 
 # AutoSD
 

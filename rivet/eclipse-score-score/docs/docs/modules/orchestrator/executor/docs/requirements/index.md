@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-6528
+id: DOC-INDEX-34667
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Executor Requirements
 
-{{artifact:DOC__EXECUTOR_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__EXECUTOR_REQUIREMENTS:status,safety-level,security}}
 
 # <Headlines (for the list of requirements if structuring is needed)>
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-VERIFICATION-REPORT-55151
+id: DOC-MODULE-VERIFICATION-REPORT-51263
 title: Module Verification Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Verification Report
 
-{{artifact:DOC__ORCHESTRATOR_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_VERIFICATION_REPORT:status,safety-level,security}}
 
 This verification report is based on the [[GD_TEMP__VERIFICATION_PLAN]].
 It covers all the components of the above stated module.

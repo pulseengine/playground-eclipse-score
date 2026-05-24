@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-GETSTRT-44550
+id: DOC-QUALITY-GETSTRT-29413
 title: Quality Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Quality Management
 
-{{artifact:DOC_GETSTRT__QUALITY_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__QUALITY_PROCESS:status,safety-level,security}}
 
 This document describes the steps which need to be done to ensure Quality according to ASPICE 4.0 as used
 standard in the project.

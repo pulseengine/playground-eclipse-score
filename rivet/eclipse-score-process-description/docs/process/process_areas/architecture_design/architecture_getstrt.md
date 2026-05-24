@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-GETSTRT-25717
+id: DOC-ARCHITECTURE-GETSTRT-54637
 title: Architecture Getstrt
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Architecture Design Process
 
-{{artifact:DOC_GETSTRT__ARCH_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__ARCH_PROCESS:status,safety-level,security}}
 
 This document describes the steps to create the architectural design of a system. It provides an overview of the necessary activities and their sequence to effectively design both the feature architecture and the component architecture.
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-8675
+id: DOC-SAFETY-MANUAL-68062
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Safety Manual
 
-{{artifact:DOC__ORCHESTRATOR_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_SAFETY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

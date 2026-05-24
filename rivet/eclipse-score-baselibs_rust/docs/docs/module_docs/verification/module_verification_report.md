@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-VERIFICATION-REPORT-18239
+id: DOC-MODULE-VERIFICATION-REPORT-96873
 title: Module Verification Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust Base Libraries Verification Report
 
-{{artifact:DOC__BASELIBS_RUST_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RUST_VERIFICATION_REPORT:status,safety-level,security}}
 
 This verification report is based on the [[GD_TEMP__VERIFICATION_PLAN]].
 It covers all the components of the above stated module.

@@ -1,5 +1,5 @@
 ---
-id: DOC-GCC-43005
+id: DOC-GCC-18659
 title: Gcc
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### gcc
 
-{{artifact:DOC_TOOL__GCC:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__GCC:status,safety-level,security}}
 
 # GCC Compiler Verification Report
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-81854
+id: DOC-INDEX-94630
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### LoLa Architecture
 
-{{artifact:DOC__LOLA_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__LOLA_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 

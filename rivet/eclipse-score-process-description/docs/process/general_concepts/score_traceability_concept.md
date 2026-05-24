@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-TRACEABILITY-CONCEPT-31775
+id: DOC-SCORE-TRACEABILITY-CONCEPT-76699
 title: Score Traceability Concept
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Traceability Concept
 
-{{artifact:DOC_CONCEPT__GENERAL_TRACEABILITY:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__GENERAL_TRACEABILITY:status,safety-level,security}}
 
 .. attention::
    The traceability concept is not intended to be complete.

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-69552
+id: DOC-CHKLST-ARC-INSPECTION-3554
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Safecpp Architecture Inspection Checklist
 
-{{artifact:DOC__SAFECPP_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__SAFECPP_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

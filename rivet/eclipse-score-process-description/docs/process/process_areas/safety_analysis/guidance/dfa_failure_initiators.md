@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-FAILURE-INITIATORS-11994
+id: DOC-DFA-FAILURE-INITIATORS-96794
 title: Dfa Failure Initiators
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### DFA failure initiators
 
-{{artifact:GD_GUIDL__DFA_FAILURE_INITIATORS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__DFA_FAILURE_INITIATORS:status,safety-level,security}}
 
 **Purpose**
 

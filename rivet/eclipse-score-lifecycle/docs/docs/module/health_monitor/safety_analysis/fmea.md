@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-51084
+id: DOC-FMEA-78434
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Health Monitor FMEA
 
-{{artifact:DOC__HEALTH_MONITOR_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR_FMEA:status,safety-level,security}}
 
 ## Failure Mode Evaluation Table
 
@@ -129,7 +129,7 @@ After evaluation of above detection mechanisms, it was decided that **Health Mon
 
 ### <Title>
 
-{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component FMEA.

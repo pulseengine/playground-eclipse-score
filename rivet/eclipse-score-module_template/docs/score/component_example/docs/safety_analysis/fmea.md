@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-6895
+id: DOC-FMEA-54090
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] FMEA
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_FMEA:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -26,7 +26,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component FMEA.

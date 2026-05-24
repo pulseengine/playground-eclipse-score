@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-ROLES-21632
+id: DOC-SECURITY-ANALYSIS-ROLES-53415
 title: Security Analysis Roles
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Security Engineer
 
-{{artifact:RL__SECURITY_ENGINEER:status,safety-level,security}}}}
+{{artifact:RL__SECURITY_ENGINEER:status,safety-level,security}}
 
 Contributing Roles:
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-GETSTRT-69350
+id: DOC-SAFETY-MANAGEMENT-GETSTRT-40051
 title: Safety Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting started on Safety Management
 
-{{artifact:DOC_GETSTRT__SAFETY_MANAGEMENT_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__SAFETY_MANAGEMENT_PROCESS:status,safety-level,security}}
 
 This document describes the steps which need to be done to ensure Functional Safety according to ISO 26262 as used standard in the project.
 

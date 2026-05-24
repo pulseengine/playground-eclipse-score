@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-TEMPLATES-47062
+id: DOC-FMEA-TEMPLATES-49321
 title: Fmea Templates
 type: specification
 status: approved
@@ -12,9 +12,9 @@ tags: [eclipse-score]
 
 ### Feature FMEA Template
 
-{{artifact:GD_TEMP__FEAT_SAF_FMEA:status,safety-level,security}}}}
+{{artifact:GD_TEMP__FEAT_SAF_FMEA:status,safety-level,security}}
 
 ### Component FMEA Template
 
-{{artifact:GD_TEMP__COMP_SAF_FMEA:status,safety-level,security}}}}
+{{artifact:GD_TEMP__COMP_SAF_FMEA:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIOS-GUIDELINE-7021
+id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIOS-GUIDELINE-39790
 title: Security Analysis Threat Scenarios Guideline
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Security Analysis threat scenarios
 
-{{artifact:GD_GUIDL__SEC_ANA_THREAT_SCENARIOS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__SEC_ANA_THREAT_SCENARIOS:status,safety-level,security}}
 
 .. note::
   Use all applicable threat scenarios to ensure a structured analysis. If there are

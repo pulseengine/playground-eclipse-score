@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-17399
+id: DOC-INDEX-460
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestration Safety WPs
 
-{{artifact:DOC__ORCHESTRATION_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATION_SAFETY_WP:status,safety-level,security}}
 
 .. list-table:: Feature Orchestration Work products
     :header-rows: 1

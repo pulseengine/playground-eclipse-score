@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-62076
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-64849
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Safety Package Formal Review
 
-{{artifact:DOC__BASELIBS_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

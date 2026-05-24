@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-12201
+id: DOC-INDEX-99033
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Log Architecture
 
-{{artifact:DOC__LOG_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__LOG_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -37,25 +37,25 @@ Log component is a monolithic frontend.
 
 ### Log (Static View)
 
-{{artifact:COMP_ARC_STA__LOG__STATIC_VIEW:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__LOG__STATIC_VIEW:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Register global logger
 
-{{artifact:COMP_ARC_DYN__LOG__REGISTER_GLOBAL_LOGGER:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__LOG__REGISTER_GLOBAL_LOGGER:status,safety-level,security}}
 
 ### Log with global logger instance
 
-{{artifact:COMP_ARC_DYN__LOG__LOG_WITH_GLOBAL_LOGGER:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__LOG__LOG_WITH_GLOBAL_LOGGER:status,safety-level,security}}
 
 ### Log with local logger instance
 
-{{artifact:COMP_ARC_DYN__LOG__LOG_WITH_LOCAL_LOGGER:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__LOG__LOG_WITH_LOCAL_LOGGER:status,safety-level,security}}
 
 ## Interfaces
 
 ### Log interface
 
-{{artifact:REAL_ARC_INT__LOG__INTERFACE:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__LOG__INTERFACE:status,safety-level,security}}
 

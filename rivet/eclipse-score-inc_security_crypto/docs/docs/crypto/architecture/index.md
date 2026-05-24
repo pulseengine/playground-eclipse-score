@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-38307
+id: DOC-INDEX-56170
 title: Index
 type: specification
 status: approved
@@ -12,11 +12,11 @@ tags: [eclipse-score]
 
 ### Crypto Architecture
 
-{{artifact:DOC__CRYPTO_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__CRYPTO_ARCHITECTURE:status,safety-level,security}}
 
 ### Component Request Dummy
 
-{{artifact:WP__CMPT_REQUEST_DUMMY:status,safety-level,security}}}}
+{{artifact:WP__CMPT_REQUEST_DUMMY:status,safety-level,security}}
 
 ## Overview
 
@@ -65,7 +65,7 @@ The components are designed to cover the expectations from the feature architect
 
 ### Crypto
 
-{{artifact:COMP__CRYPTO:status,safety-level,security}}}}
+{{artifact:COMP__CRYPTO:status,safety-level,security}}
 
 ## Provider Layer
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-GETSTRT-45205
+id: DOC-SAFETY-ANALYSIS-GETSTRT-88278
 title: Safety Analysis Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Safety Analysis (FMEA and DFA)
 
-{{artifact:DOC_GETSTRT__SAFETY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__SAFETY_ANALYSIS:status,safety-level,security}}
 
 This document outlines the steps for performing, monitoring, and verifying Safety Analysis. Safety Analysis is used as a umbrella term for the methods
 DFA (Dependent Failure Analysis) and FMEA (Failure Mode and Effects Analysis).

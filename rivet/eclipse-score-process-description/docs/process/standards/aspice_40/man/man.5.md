@@ -1,5 +1,5 @@
 ---
-id: DOC-MAN.5-28004
+id: DOC-MAN.5-33857
 title: Man.5
 type: specification
 status: approved
@@ -22,29 +22,29 @@ The purpose is to Regularly identify, analyze, treat and monitor process related
 
 ### MAN.5.BP1: Identify sources of risks
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP1:status,safety-level,security}}
 
 ### MAN.5.BP2: Identify potential undesirable events
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP2:status,safety-level,security}}
 
 ### MAN.5.BP3: Determine risks
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP3:status,safety-level,security}}
 
 ### MAN.5.BP4: Define risk treatment options
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP4:status,safety-level,security}}
 
 ### MAN.5.BP5: Define and perform risk treatment activities
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP5:status,safety-level,security}}
 
 ### MAN.5.BP6: Monitor risks
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP6:status,safety-level,security}}
 
 ### MAN.5.BP7: Take corrective action
 
-{{artifact:STD_REQ__ASPICE_40__MAN-5-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-5-BP7:status,safety-level,security}}
 

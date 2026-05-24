@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-33855
+id: DOC-COMPONENT-CLASSIFICATION-38234
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Component Classification
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_COMP_CLASS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

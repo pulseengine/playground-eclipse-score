@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-TEMPLATES-65607
+id: DOC-CONFIGURATION-TEMPLATES-74203
 title: Configuration Templates
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Configuration Management Plan Template
 
-{{artifact:GD_TEMP__CONFIG_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__CONFIG_MGT_PLAN:status,safety-level,security}}
 
 #### Purpose
 

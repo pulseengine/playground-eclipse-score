@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-37062
+id: DOC-INDEX-65325
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Communication IPC Safety WPs
 
-{{artifact:DOC__COM_IPC_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__COM_IPC_SAFETY_WP:status,safety-level,security}}
 
 # Tailoring
 

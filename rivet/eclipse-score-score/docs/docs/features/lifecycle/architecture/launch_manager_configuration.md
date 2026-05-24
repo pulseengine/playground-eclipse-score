@@ -1,5 +1,5 @@
 ---
-id: DOC-LAUNCH-MANAGER-CONFIGURATION-84708
+id: DOC-LAUNCH-MANAGER-CONFIGURATION-62271
 title: Launch Manager Configuration
 type: specification
 status: approved
@@ -50,5 +50,5 @@ These parameters specify how the Launch Manager itself is monitored.
 
 ### Configuration parameters static architecture
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__CFG_PARAMS_STATIC:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__CFG_PARAMS_STATIC:status,safety-level,security}}
 

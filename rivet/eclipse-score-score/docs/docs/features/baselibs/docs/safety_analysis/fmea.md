@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-54676
+id: DOC-FMEA-49910
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs FMEA
 
-{{artifact:DOC__BASELIBS_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_FMEA:status,safety-level,security}}
 
 The feature baselibs consists of multiple components which provide very different functionality.
 They are also low-complex (i.e. no component architecture is documented, so that the feature architecture is the only one to analyze,

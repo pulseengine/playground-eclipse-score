@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-45053
+id: DOC-INDEX-59952
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Configuration Management
 
-{{artifact:DOC__CONFIG_MGMT:status,safety-level,security}}}}
+{{artifact:DOC__CONFIG_MGMT:status,safety-level,security}}
 
 .. toctree::
    :hidden:

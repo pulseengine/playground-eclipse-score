@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-84588
+id: DOC-INDEX-19413
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Code-Generation
 
-{{artifact:DOC__CODE_GENERATION:status,safety-level,security}}}}
+{{artifact:DOC__CODE_GENERATION:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

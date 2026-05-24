@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-29456
+id: DOC-CHKLST-REQ-INSPECTION-67215
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] Requirements Inspection Checklist
 
-{{artifact:DOC__FEATURE_NAME_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_NAME_REQ_INSPECTION:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.

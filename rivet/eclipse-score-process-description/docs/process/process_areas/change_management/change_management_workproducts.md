@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-WORKPRODUCTS-26586
+id: DOC-CHANGE-MANAGEMENT-WORKPRODUCTS-95024
 title: Change Management Workproducts
 type: specification
 status: approved
@@ -10,17 +10,17 @@ tags: [eclipse-score]
 
 ### Platform Change Management Plan
 
-{{artifact:WP__CHM_PLAN:status,safety-level,security}}}}
+{{artifact:WP__CHM_PLAN:status,safety-level,security}}
 
 ### Issue tracking system
 
-{{artifact:WP__ISSUE_TRACK_SYSTEM:status,safety-level,security}}}}
+{{artifact:WP__ISSUE_TRACK_SYSTEM:status,safety-level,security}}
 
 ### Feature Request
 
-{{artifact:WP__FEAT_REQUEST:status,safety-level,security}}}}
+{{artifact:WP__FEAT_REQUEST:status,safety-level,security}}
 
 ### Component Request
 
-{{artifact:WP__CMPT_REQUEST:status,safety-level,security}}}}
+{{artifact:WP__CMPT_REQUEST:status,safety-level,security}}
 

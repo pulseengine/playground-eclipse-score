@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-DD-INSPECTION-64986
+id: DOC-CHKLST-DD-INSPECTION-45114
 title: Chklst Dd Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Implementation Inspection Checklist
 
-{{artifact:DOC__IMPL_INSPECTION_COMPONENT_FEO:status,safety-level,security}}}}
+{{artifact:DOC__IMPL_INSPECTION_COMPONENT_FEO:status,safety-level,security}}
 
 # FEO Implementation Inspection Checklist
 

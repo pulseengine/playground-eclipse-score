@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-CHECKLIST-88758
+id: DOC-DOCUMENTATION-CHECKLIST-83897
 title: Documentation Checklist
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Documentation Review Checklist
 
-{{artifact:GD_CHKLST__DOCUMENTATION_REVIEW:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__DOCUMENTATION_REVIEW:status,safety-level,security}}
 

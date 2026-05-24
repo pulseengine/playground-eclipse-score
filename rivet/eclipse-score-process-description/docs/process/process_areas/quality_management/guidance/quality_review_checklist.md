@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-REVIEW-CHECKLIST-95814
+id: DOC-QUALITY-REVIEW-CHECKLIST-6173
 title: Quality Review Checklist
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Quality Work Product Review Checklist
 
-{{artifact:GD_CHKLST__REVIEW_CHECKLIST:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__REVIEW_CHECKLIST:status,safety-level,security}}
 
 #### General plan review checklist template
 

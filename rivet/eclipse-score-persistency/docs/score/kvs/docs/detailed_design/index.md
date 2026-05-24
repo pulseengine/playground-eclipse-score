@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-48394
+id: DOC-INDEX-93264
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### KVS Detailed Design
 
-{{artifact:DOC__KVS_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__KVS_DETAILED_DESIGN:status,safety-level,security}}
 
 # Detailed Design for Component: <Component Name>
 
@@ -29,7 +29,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
@@ -37,7 +37,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Units within the Component
 
@@ -47,7 +47,7 @@ In your rst file:
 
 ### cpp unit
 
-{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 In your source file, any programming language, here with C++:
 
@@ -67,7 +67,7 @@ In your rst file:
 
 ### <here InterfaceDemo - change it>
 
-{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 In your source file, any programming language, here with C++:
 

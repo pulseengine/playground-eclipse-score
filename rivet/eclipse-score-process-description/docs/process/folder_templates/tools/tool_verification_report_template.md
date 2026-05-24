@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-VERIFICATION-REPORT-TEMPLATE-53448
+id: DOC-TOOL-VERIFICATION-REPORT-TEMPLATE-76162
 title: Tool Verification Report Template
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Tool Name]
 
-{{artifact:DOC_TOOL__TOOL_NAME_VERSION:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__TOOL_NAME_VERSION:status,safety-level,security}}
 
 .. attention::
    The above directive must be updated according to your tool.

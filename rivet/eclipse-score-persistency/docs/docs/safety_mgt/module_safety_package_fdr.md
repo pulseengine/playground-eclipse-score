@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-90207
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-40870
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Package Formal Review
 
-{{artifact:DOC__PERSISTENCY_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **Purpose**
 

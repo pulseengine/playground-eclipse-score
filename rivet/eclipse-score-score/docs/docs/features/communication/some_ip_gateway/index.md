@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-34838
+id: DOC-INDEX-70413
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### SOME_IP-Gateway
 
-{{artifact:DOC__SOME_IP_GATEWAY:status,safety-level,security}}}}
+{{artifact:DOC__SOME_IP_GATEWAY:status,safety-level,security}}
 
 .. toctree::
    :hidden:

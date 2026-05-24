@@ -1,5 +1,5 @@
 ---
-id: DOC-SPL.2-66226
+id: DOC-SPL.2-24170
 title: Spl.2
 type: specification
 status: approved
@@ -22,33 +22,33 @@ The purpose is to control the release of a product to the intended customer.
 
 ### SPL.2.BP1: Define the functional content of releases
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP1:status,safety-level,security}}
 
 ### SPL.2.BP2: Define release package
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP2:status,safety-level,security}}
 
 ### SPL.2.BP3: Ensure unique identification of releases
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP3:status,safety-level,security}}
 
 ### SPL.2.BP4: Build the release from items under configuration control
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP4:status,safety-level,security}}
 
 ### SPL.2.BP5: Ensure release approval before delivery
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP5:status,safety-level,security}}
 
 ### SPL.2.BP6: Provide a release note
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP6:status,safety-level,security}}
 
 ### SPL.2.BP7: Communicate the type, service level and duration of support for a release
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP7:status,safety-level,security}}
 
 ### SPL.2.BP8: Deliver the release package to the intended customer
 
-{{artifact:STD_REQ__ASPICE_40__SPL-2-BP8:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SPL-2-BP8:status,safety-level,security}}
 

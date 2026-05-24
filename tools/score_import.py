@@ -707,8 +707,8 @@ def emit_markdown_for_rst(rst_path: pathlib.Path, md_path: pathlib.Path,
                 # once the proposed embed extension lands — see
                 # rivet `docs/design/artifact-embed-with-fields.md`.
                 out.append(
-                    f"{{{{artifact:{normalise_id(need_id)}:"
-                    "status,safety-level,security}}}}"
+                    f"{{{{artifact:{normalise_id(need_id)}"
+                    f":status,safety-level,security}}}}"
                 )
                 out.append("")
                 rendered_any_need = True

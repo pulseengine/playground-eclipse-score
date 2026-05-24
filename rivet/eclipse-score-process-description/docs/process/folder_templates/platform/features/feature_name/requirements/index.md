@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-35982
+id: DOC-INDEX-31206
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] Requirements
 
-{{artifact:DOC__FEATURE_NAME_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_NAME_REQUIREMENTS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -26,13 +26,13 @@ tags: [eclipse-score]
 
 ### Some Title
 
-{{artifact:FEAT_REQ__FEATURE_NAME__SOME_TITLE:status,safety-level,security}}}}
+{{artifact:FEAT_REQ__FEATURE_NAME__SOME_TITLE:status,safety-level,security}}
 
 .. code-block:: rst
 
 ### Some Other Title
 
-{{artifact:AOU_REQ__FEATURE_NAME__SOME_OTHER_TITLE:status,safety-level,security}}}}
+{{artifact:AOU_REQ__FEATURE_NAME__SOME_OTHER_TITLE:status,safety-level,security}}
 
 .. attention::
     The above directives must be updated according to your feature requirements.

@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-GETSTRT-43686
+id: DOC-DOCUMENTATION-GETSTRT-51483
 title: Documentation Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Documentation Management Get Started
 
-{{artifact:DOC_GETSTRT__DOCUMENTATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__DOCUMENTATION_PROCESS:status,safety-level,security}}
 
 This document describes how to get started with documentation management in the project.
 

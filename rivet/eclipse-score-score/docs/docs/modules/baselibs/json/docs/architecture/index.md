@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-59096
+id: DOC-INDEX-34930
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### JSON Architecture
 
-{{artifact:DOC__JSON_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__JSON_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -46,39 +46,39 @@ the main driver is to re-use existing implementation(s), enable switch of implem
 
 ### JSON
 
-{{artifact:COMP__BASELIBS_JSON:status,safety-level,security}}}}
+{{artifact:COMP__BASELIBS_JSON:status,safety-level,security}}
 
 ### JSON Static view
 
-{{artifact:COMP_ARC_STA__BASELIBS__JSON:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__BASELIBS__JSON:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### JSON dynamic arch
 
-{{artifact:COMP_ARC_DYN__BASELIBS__JSON_DYNAMIC_VIEW:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__BASELIBS__JSON_DYNAMIC_VIEW:status,safety-level,security}}
 
 ## Interfaces
 
 ### IJson
 
-{{artifact:LOGIC_ARC_INT__BASELIBS__JSON:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__BASELIBS__JSON:status,safety-level,security}}
 
 ### Parse
 
-{{artifact:LOGIC_ARC_INT_OP__BASELIBS__PARSE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__BASELIBS__PARSE:status,safety-level,security}}
 
 ### Write
 
-{{artifact:LOGIC_ARC_INT_OP__BASELIBS__WRITE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__BASELIBS__WRITE:status,safety-level,security}}
 
 ## Lower Level Components
 
 ### JSON-Wrapper
 
-{{artifact:COMP__BASELIBS_JSON_WRAPPER:status,safety-level,security}}}}
+{{artifact:COMP__BASELIBS_JSON_WRAPPER:status,safety-level,security}}
 
 ### nlohman-JSON
 
-{{artifact:COMP__BASELIBS_NLOHMAN_JSON:status,safety-level,security}}}}
+{{artifact:COMP__BASELIBS_NLOHMAN_JSON:status,safety-level,security}}
 

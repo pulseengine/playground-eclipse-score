@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-52339
+id: DOC-INDEX-14585
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Detailed Design
 
-{{artifact:DOC__ORCHESTRATOR_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_DETAILED_DESIGN:status,safety-level,security}}
 
 # Detailed Design for Component: <Component Name>
 
@@ -29,7 +29,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_STA__<FEATURE>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_STA__<FEATURE>__<TITLE>:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
@@ -37,5 +37,5 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}
 

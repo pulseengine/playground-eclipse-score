@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-CONCEPT-53061
+id: DOC-SAFETY-MANAGEMENT-CONCEPT-43781
 title: Safety Management Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safety Management Concept
 
-{{artifact:DOC_CONCEPT__SAFETY_MANAGEMENT_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__SAFETY_MANAGEMENT_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Safety Management will be discussed.
 Inputs for this concepts are mainly the requirements of ISO26262 "Part 2: Management of functional safety".

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-57320
+id: DOC-CHKLST-ARC-INSPECTION-8858
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Concurrency Architecture Inspection Checklist
 
-{{artifact:DOC__CONCURRENCY_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__CONCURRENCY_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

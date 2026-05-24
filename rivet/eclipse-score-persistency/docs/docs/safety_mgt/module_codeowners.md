@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-CODEOWNERS-97749
+id: DOC-MODULE-CODEOWNERS-93064
 title: Module Codeowners
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Codeowners
 
-{{artifact:DOC__PERSISTENCY_CODEOWNERS:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_CODEOWNERS:status,safety-level,security}}
 
 # Assigned Committer(s)
 

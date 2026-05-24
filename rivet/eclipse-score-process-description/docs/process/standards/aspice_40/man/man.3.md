@@ -1,5 +1,5 @@
 ---
-id: DOC-MAN.3-23604
+id: DOC-MAN.3-53955
 title: Man.3
 type: specification
 status: approved
@@ -26,41 +26,41 @@ in the context of the project’s requirements and constraints.
 
 ### MAN.3.BP1: Define the scope of work
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP1:status,safety-level,security}}
 
 ### MAN.3.BP2: Define project life cycle
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP2:status,safety-level,security}}
 
 ### MAN.3.BP3: Evaluate feasibility of the project
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP3:status,safety-level,security}}
 
 ### MAN.3.BP4: Define and monitor work packages
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP4:status,safety-level,security}}
 
 ### MAN.3.BP5: Define and monitor project estimates and resources
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP5:status,safety-level,security}}
 
 ### MAN.3.BP6: Define and monitor required skills, knowledge, and experience
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP6:status,safety-level,security}}
 
 ### MAN.3.BP7: Define and monitor project interfaces and agreed commitments
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP7:status,safety-level,security}}
 
 ### MAN.3.BP8: Define and monitor project schedule
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP8:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP8:status,safety-level,security}}
 
 ### MAN.3.BP9: Ensure consistency
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP9:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP9:status,safety-level,security}}
 
 ### MAN.3.BP10: Review and report progress of the project
 
-{{artifact:STD_REQ__ASPICE_40__MAN-3-BP10:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MAN-3-BP10:status,safety-level,security}}
 

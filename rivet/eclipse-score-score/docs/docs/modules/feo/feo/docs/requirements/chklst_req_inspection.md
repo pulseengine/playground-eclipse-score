@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-92799
+id: DOC-CHKLST-REQ-INSPECTION-58081
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Component Requirements Inspection Checklist
 
-{{artifact:DOC__REQ_INSPECTION_COMPONENT_FEO:status,safety-level,security}}}}
+{{artifact:DOC__REQ_INSPECTION_COMPONENT_FEO:status,safety-level,security}}
 
 # FEO Component Requirement Inspection Checklist
 

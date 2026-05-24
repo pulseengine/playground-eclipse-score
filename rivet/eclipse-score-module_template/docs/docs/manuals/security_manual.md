@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANUAL-44050
+id: DOC-SECURITY-MANUAL-30563
 title: Security Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Security Manual
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SECURITY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SECURITY_MANUAL:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

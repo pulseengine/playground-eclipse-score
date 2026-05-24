@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-40786
+id: DOC-RELEASE-NOTE-3530
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust Base Libraries Release Note
 
-{{artifact:DOC__BASELIBS_RUST_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RUST_RELEASE_NOTE:status,safety-level,security}}
 
 | Module Name: Rust Base Libraries
 | Release Tag: vX.Y.Z

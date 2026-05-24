@@ -1,5 +1,5 @@
 ---
-id: DOC-TRACEABILITY-TOOLING-49113
+id: DOC-TRACEABILITY-TOOLING-11794
 title: Traceability Tooling
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Traceability Tooling
 
-{{artifact:DOC__TRACEABILITY_TOOLING:status,safety-level,security}}}}
+{{artifact:DOC__TRACEABILITY_TOOLING:status,safety-level,security}}
 
 # Traceability Tooling
 

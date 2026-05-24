@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-50929
+id: DOC-INDEX-94629
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Operating System Requirements
 
-{{artifact:DOC__OS_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__OS_REQUIREMENTS:status,safety-level,security}}
 
 Generally the OS (as an external SW element) is expected by the S-CORE project to fulfill the following requirements,
 defined in the SW-platform assumptions (and partly even in the Stakeholder requirements).

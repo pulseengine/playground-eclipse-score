@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-98728
+id: DOC-CHKLST-REQ-INSPECTION-72621
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Utils Requirements Inspection Checklist
 
-{{artifact:DOC__UTILS_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__UTILS_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-DETAILED-DESIGN-66456
+id: DOC-COMPONENT-DETAILED-DESIGN-16376
 title: Component Detailed Design
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Component Detailed Design
 
-{{artifact:DOC__COMPONENT_FEO_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__COMPONENT_FEO_DETAILED_DESIGN:status,safety-level,security}}
 
 # FEO Component Detailed Design
 
@@ -27,7 +27,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_STA__<FEATURE>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_STA__<FEATURE>__<TITLE>:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
@@ -35,5 +35,5 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<FEATURE>__<TITLE>:status,safety-level,security}}
 

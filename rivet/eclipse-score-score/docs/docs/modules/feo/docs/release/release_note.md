@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-2949
+id: DOC-RELEASE-NOTE-40923
 title: Release Note
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Module Release Note
 
-{{artifact:DOC__FEO_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__FEO_RELEASE_NOTE:status,safety-level,security}}
 
 # FEO Module Release Note
 

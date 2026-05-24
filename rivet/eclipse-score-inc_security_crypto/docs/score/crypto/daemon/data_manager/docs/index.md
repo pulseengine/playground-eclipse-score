@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-20259
+id: DOC-INDEX-44686
 title: Index
 type: specification
 status: approved
@@ -33,7 +33,7 @@ lookup, lifecycle management, and safe concurrent access to those nodes.
 
 ### Central Data Node Manager
 
-{{artifact:DEC_REC__CRYPTO__CENTRAL_DATA_NODE_MANAGER:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__CENTRAL_DATA_NODE_MANAGER:status,safety-level,security}}
 
 State information for ongoing daemon operations is stored in a dedicated, central
 Data Manager component rather than being managed locally by individual handlers in the

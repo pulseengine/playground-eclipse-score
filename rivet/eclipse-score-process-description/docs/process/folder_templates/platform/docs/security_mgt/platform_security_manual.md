@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-MANUAL-5241
+id: DOC-PLATFORM-SECURITY-MANUAL-31526
 title: Platform Security Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Security Manual
 
-{{artifact:DOC__PLATFORM_SECURITY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SECURITY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

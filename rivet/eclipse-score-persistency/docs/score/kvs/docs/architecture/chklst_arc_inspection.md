@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-1120
+id: DOC-CHKLST-ARC-INSPECTION-58692
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### KVS Architecture Inspection Checklist
 
-{{artifact:DOC__KVS_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__KVS_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

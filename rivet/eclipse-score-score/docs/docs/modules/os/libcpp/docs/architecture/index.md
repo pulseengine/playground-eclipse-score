@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-68347
+id: DOC-INDEX-96611
 title: Index
 type: specification
 status: approved
@@ -10,9 +10,9 @@ tags: [eclipse-score]
 
 ### libcpp (C++ Std Library)
 
-{{artifact:COMP__OS_LIBCPP:status,safety-level,security}}}}
+{{artifact:COMP__OS_LIBCPP:status,safety-level,security}}
 
 ### Library headers (C++17)
 
-{{artifact:LOGIC_ARC_INT__OS__LIBCPP:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__OS__LIBCPP:status,safety-level,security}}
 

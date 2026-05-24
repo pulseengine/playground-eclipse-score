@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-57292
+id: DOC-CHKLST-IMPL-INSPECTION-51055
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Bitmanipulation Implementation Inspection Checklist
 
-{{artifact:DOC__BITMANIPULATION_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__BITMANIPULATION_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

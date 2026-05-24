@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-GETSTRT-9386
+id: DOC-CHANGE-MANAGEMENT-GETSTRT-95195
 title: Change Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Change Management
 
-{{artifact:DOC_GETSTRT__CHANGE_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__CHANGE_PROCESS:status,safety-level,security}}
 
 This document describes the steps to create a change request, and further to analyze,
 implement, and to control the change until closure. Where a change is defined as an

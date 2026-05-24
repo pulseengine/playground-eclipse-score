@@ -1,5 +1,5 @@
 ---
-id: DOC-MLE.1-79034
+id: DOC-MLE.1-37441
 title: Mle.1
 type: specification
 status: approved
@@ -26,25 +26,25 @@ requirements.
 
 ### MLE.1.BP1: Specify ML requirements
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP1:status,safety-level,security}}
 
 ### MLE.1.BP2: Structure ML requirements
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP2:status,safety-level,security}}
 
 ### MLE.1.BP3: Analyze ML requirements
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP3:status,safety-level,security}}
 
 ### MLE.1.BP4: Analyze the impact on the ML operating environment
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP4:status,safety-level,security}}
 
 ### MLE.1.BP5: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP5:status,safety-level,security}}
 
 ### MLE.1.BP6: Communicate agreed ML requirements and impact on the operating environment
 
-{{artifact:STD_REQ__ASPICE_40__MLE-1-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-1-BP6:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-MODELS-GUIDELINE-73097
+id: DOC-SECURITY-ANALYSIS-THREAT-MODELS-GUIDELINE-21171
 title: Security Analysis Threat Models Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### STRIDE Threat Model
 
-{{artifact:GD_GUIDL__THREAT_MODELS_STRIDE:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__THREAT_MODELS_STRIDE:status,safety-level,security}}
 
 .. note::
   Use the applicable threat models to ensure a structured analysis. If there are

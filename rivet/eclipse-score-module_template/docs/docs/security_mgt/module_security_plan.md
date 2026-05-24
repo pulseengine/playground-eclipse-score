@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SECURITY-PLAN-78143
+id: DOC-MODULE-SECURITY-PLAN-79451
 title: Module Security Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Security Plan
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SECURITY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SECURITY_PLAN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

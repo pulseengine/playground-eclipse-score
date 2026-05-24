@@ -1,5 +1,5 @@
 ---
-id: DOC-MW-FR-LOGGING-32222
+id: DOC-MW-FR-LOGGING-26662
 title: Mw-Fr Logging
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### doc__logging
 
-{{artifact:DOC__LOGGING:status,safety-level,security}}}}
+{{artifact:DOC__LOGGING:status,safety-level,security}}
 
 # Feature flag
 

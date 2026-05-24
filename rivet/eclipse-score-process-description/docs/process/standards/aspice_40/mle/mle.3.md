@@ -1,5 +1,5 @@
 ---
-id: DOC-MLE.3-63289
+id: DOC-MLE.3-47660
 title: Mle.3
 type: specification
 status: approved
@@ -25,21 +25,21 @@ The purpose is to optimize the ML model to meet the defined ML requirements.
 
 ### MLE.3.BP1: Specify ML training and validation approach
 
-{{artifact:STD_REQ__ASPICE_40__MLE-3-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-3-BP1:status,safety-level,security}}
 
 ### MLE.3.BP2: Create ML training and validation data set
 
-{{artifact:STD_REQ__ASPICE_40__MLE-3-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-3-BP2:status,safety-level,security}}
 
 ### MLE.3.BP3: Create and optimize ML model
 
-{{artifact:STD_REQ__ASPICE_40__MLE-3-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-3-BP3:status,safety-level,security}}
 
 ### MLE.3.BP4: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__MLE-3-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-3-BP4:status,safety-level,security}}
 
 ### MLE.3.BP5: Summarize and communicate agreed trained ML model
 
-{{artifact:STD_REQ__ASPICE_40__MLE-3-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__MLE-3-BP5:status,safety-level,security}}
 

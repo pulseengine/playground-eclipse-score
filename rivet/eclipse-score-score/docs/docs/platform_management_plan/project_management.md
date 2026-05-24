@@ -1,5 +1,5 @@
 ---
-id: DOC-PROJECT-MANAGEMENT-63801
+id: DOC-PROJECT-MANAGEMENT-27953
 title: Project Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Project Management Plan
 
-{{artifact:DOC__PROJECT_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PROJECT_MGT_PLAN:status,safety-level,security}}
 
 .. _pmp_pm_plan:
 

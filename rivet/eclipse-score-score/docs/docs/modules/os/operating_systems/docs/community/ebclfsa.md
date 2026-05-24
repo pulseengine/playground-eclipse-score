@@ -1,5 +1,5 @@
 ---
-id: DOC-EBCLFSA-9532
+id: DOC-EBCLFSA-13112
 title: Ebclfsa
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### EBcLfSA
 
-{{artifact:COMP__OS_EBCLFSA:status,safety-level,security}}}}
+{{artifact:COMP__OS_EBCLFSA:status,safety-level,security}}
 
 # EB corbos Linux for Safety Applications (EBcLfSA)
 

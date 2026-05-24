@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-93932
+id: DOC-INDEX-35368
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Time
 
-{{artifact:DOC__TIME:status,safety-level,security}}}}
+{{artifact:DOC__TIME:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

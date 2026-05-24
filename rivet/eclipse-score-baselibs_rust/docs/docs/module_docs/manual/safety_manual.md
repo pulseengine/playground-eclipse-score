@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-54111
+id: DOC-SAFETY-MANUAL-37616
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust Base Libraries Safety Manual
 
-{{artifact:DOC__BASELIBS_RUST_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RUST_SAFETY_MANUAL:status,safety-level,security}}
 
 ## Introduction/Scope
 

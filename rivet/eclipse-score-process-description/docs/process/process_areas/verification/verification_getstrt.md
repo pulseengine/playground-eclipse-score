@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-GETSTRT-36190
+id: DOC-VERIFICATION-GETSTRT-14760
 title: Verification Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Verification Get Started
 
-{{artifact:DOC_GETSTRT__VERIFICATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__VERIFICATION_PROCESS:status,safety-level,security}}
 
 # Relevant Documents
 

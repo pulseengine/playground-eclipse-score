@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-28866
+id: DOC-RELEASE-NOTE-76166
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Release Note
 
-{{artifact:DOC__PLATFORM_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_RELEASE_NOTE:status,safety-level,security}}
 
 | **Platform Name:** <Your platform name>
 | **Release Tag:** vX.Y.Z

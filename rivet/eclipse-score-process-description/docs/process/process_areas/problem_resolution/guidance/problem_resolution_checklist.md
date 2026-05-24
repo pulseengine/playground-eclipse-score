@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-CHECKLIST-17241
+id: DOC-PROBLEM-RESOLUTION-CHECKLIST-45412
 title: Problem Resolution Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Problem Review Checklist
 
-{{artifact:GD_CHKLST__PROBLEM_CR_REVIEW:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__PROBLEM_CR_REVIEW:status,safety-level,security}}
 

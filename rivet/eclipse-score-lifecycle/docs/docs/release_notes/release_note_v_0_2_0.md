@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-V-0-2-0-97653
+id: DOC-RELEASE-NOTE-V-0-2-0-58489
 title: Release Note V 0 2 0
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### lifecycle Release Note
 
-{{artifact:DOC__LIFECYCLE_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__LIFECYCLE_RELEASE_NOTE:status,safety-level,security}}
 
 # Overview
 

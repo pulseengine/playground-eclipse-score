@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-7989
+id: DOC-INDEX-1492
 title: Index
 type: specification
 status: approved
@@ -28,11 +28,11 @@ This ensures a stable public API, independent of the underlying binding(s). At t
 
 ### Communication Feature
 
-{{artifact:FEAT__COM_COMMUNICATION:status,safety-level,security}}}}
+{{artifact:FEAT__COM_COMMUNICATION:status,safety-level,security}}
 
 ### Feature Architecture Communication
 
-{{artifact:FEAT_ARC_STA__COM__COMMUNICATION:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__COM__COMMUNICATION:status,safety-level,security}}
 
 In the following sections we will look on the different architectural elements of the communication framework in more
 detail.
@@ -102,7 +102,7 @@ The public API for the frontend is defined as:
 
 ### Communication User Interface
 
-{{artifact:LOGIC_ARC_INT__COMMUNICATION__USER:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__COMMUNICATION__USER:status,safety-level,security}}
 
 #### Bindings
 

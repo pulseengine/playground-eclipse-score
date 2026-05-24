@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-LIFECYCLE-CONCEPT-84216
+id: DOC-SCORE-LIFECYCLE-CONCEPT-58053
 title: Score Lifecycle Concept
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Lifecycle Concept
 
-{{artifact:DOC_CONCEPT__GENERAL_LIFECYCLE:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__GENERAL_LIFECYCLE:status,safety-level,security}}
 
 Contributions to the project are driven by feature/component requests.
 

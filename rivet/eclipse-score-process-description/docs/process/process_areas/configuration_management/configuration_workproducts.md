@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-WORKPRODUCTS-92128
+id: DOC-CONFIGURATION-WORKPRODUCTS-41017
 title: Configuration Workproducts
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Platform Configuration Management Plan
 
-{{artifact:WP__CONFIG_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:WP__CONFIG_MGT_PLAN:status,safety-level,security}}
 

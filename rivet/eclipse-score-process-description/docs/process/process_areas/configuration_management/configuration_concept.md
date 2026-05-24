@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-CONCEPT-69933
+id: DOC-CONFIGURATION-CONCEPT-1392
 title: Configuration Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Configuration Management Concept
 
-{{artifact:DOC_CONCEPT__CONFIGURATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__CONFIGURATION_PROCESS:status,safety-level,security}}
 
 In this section a concept for the configuration management will be discussed.
 Inputs for this concepts are mainly the requirements of ISO26262 "Part 8: Supporting Processes"

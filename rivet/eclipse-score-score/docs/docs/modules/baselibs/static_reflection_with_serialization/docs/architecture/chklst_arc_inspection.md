@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-87716
+id: DOC-CHKLST-ARC-INSPECTION-92369
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Static Reflection Architecture Inspection Checklist
 
-{{artifact:DOC__STATIC_REFLECTION_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__STATIC_REFLECTION_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

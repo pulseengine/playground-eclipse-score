@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-56726
+id: DOC-FMEA-69242
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] FMEA
 
-{{artifact:DOC__FEATURE_EXAMPLE_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_EXAMPLE_FMEA:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -103,7 +103,7 @@ For all identified applicable failure initiators, the FMEA is performed in the f
 
 ### <Title>
 
-{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature FMEA.

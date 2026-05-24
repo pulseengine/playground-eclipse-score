@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-MANAGEMENT-39487
+id: DOC-RELEASE-MANAGEMENT-45330
 title: Release Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Release Management Plan
 
-{{artifact:DOC__PLATFORM_RELEASE_MANAGEMENT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_RELEASE_MANAGEMENT_PLAN:status,safety-level,security}}
 
 ## Release Management Plan
 

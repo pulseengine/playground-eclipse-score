@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-76931
+id: DOC-INDEX-47891
 title: Index
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Lola Configuration
 
-{{artifact:COMP__COM_CONFIGURATION:status,safety-level,security}}}}
+{{artifact:COMP__COM_CONFIGURATION:status,safety-level,security}}
 

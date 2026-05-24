@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-REVIEW-CONCEPT-20162
+id: DOC-SCORE-REVIEW-CONCEPT-19208
 title: Score Review Concept
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Work product Inspections Concept
 
-{{artifact:DOC_CONCEPT__WP_INSPECTIONS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__WP_INSPECTIONS:status,safety-level,security}}
 
 #### Inspection Definition
 
@@ -159,21 +159,21 @@ shall transition from "valid(inspected)" back to "valid" state. This shall be au
 
 ### Version for inspected requirements
 
-{{artifact:GD_REQ__GENERAL_REQUIREMENTS_VERSION:status,safety-level,security}}}}
+{{artifact:GD_REQ__GENERAL_REQUIREMENTS_VERSION:status,safety-level,security}}
 
 ### Version for inspected architecture
 
-{{artifact:GD_REQ__GENERAL_ARCHITECTURE_VERSION:status,safety-level,security}}}}
+{{artifact:GD_REQ__GENERAL_ARCHITECTURE_VERSION:status,safety-level,security}}
 
 ### Checklist templates in pull requests
 
-{{artifact:GD_REQ__GENERAL_CHECKLIST_TEMPLATES:status,safety-level,security}}}}
+{{artifact:GD_REQ__GENERAL_CHECKLIST_TEMPLATES:status,safety-level,security}}
 
 ### Status Set Check
 
-{{artifact:GD_REQ__GENERAL_STATUS_SET_CHECK:status,safety-level,security}}}}
+{{artifact:GD_REQ__GENERAL_STATUS_SET_CHECK:status,safety-level,security}}
 
 ### Status Reset Check
 
-{{artifact:GD_REQ__GENERAL_STATUS_RESET_CHECK:status,safety-level,security}}}}
+{{artifact:GD_REQ__GENERAL_STATUS_RESET_CHECK:status,safety-level,security}}
 

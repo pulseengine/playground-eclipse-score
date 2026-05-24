@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-93317
+id: DOC-INDEX-53552
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Requirements
 
-{{artifact:DOC__PLATFORM_NAME_REQUIREMENTS:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_NAME_REQUIREMENTS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated.
@@ -24,13 +24,13 @@ tags: [eclipse-score]
 
 ### Template
 
-{{artifact:STKH_REQ__REQUIREMENTS__TEMPLATE:status,safety-level,security}}}}
+{{artifact:STKH_REQ__REQUIREMENTS__TEMPLATE:status,safety-level,security}}
 
 .. code-block:: rst
 
 ### Some Other Title
 
-{{artifact:AOU_REQ__PLATFORM__SOME_OTHER_TITLE:status,safety-level,security}}}}
+{{artifact:AOU_REQ__PLATFORM__SOME_OTHER_TITLE:status,safety-level,security}}
 
 .. attention::
     The above directives must be updated according to platform requirements.

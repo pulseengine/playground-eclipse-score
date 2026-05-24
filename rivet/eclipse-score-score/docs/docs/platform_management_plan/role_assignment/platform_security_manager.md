@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-MANAGER-46026
+id: DOC-PLATFORM-SECURITY-MANAGER-56836
 title: Platform Security Manager
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Security Manager
 
-{{artifact:DOC__PLATFORM_SECURITY_MANAGER:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SECURITY_MANAGER:status,safety-level,security}}
 
 # Elected Committer(s)
 

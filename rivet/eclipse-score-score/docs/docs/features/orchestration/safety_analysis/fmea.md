@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-97001
+id: DOC-FMEA-24382
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestration FMEA
 
-{{artifact:DOC__ORCHESTRATION_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATION_FMEA:status,safety-level,security}}
 
 ## Failure Mode List
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature FMEA.

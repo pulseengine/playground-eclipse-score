@@ -1,5 +1,5 @@
 ---
-id: DOC-PROCESS-MANAGEMENT-CONCEPT-72558
+id: DOC-PROCESS-MANAGEMENT-CONCEPT-91339
 title: Process Management Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__PROCESS_MANAGEMENT:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__PROCESS_MANAGEMENT:status,safety-level,security}}
 
 In this section concepts for the Process Management are discussed. Inputs for these
 concepts are the requirements of ISO26262 Part-2, ISO/SAE21434 Clause 5 and ASPICE

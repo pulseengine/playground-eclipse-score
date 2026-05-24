@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-GETSTRT-42639
+id: DOC-PLATFORM-MANAGEMENT-GETSTRT-59728
 title: Platform Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Platform/Project Management
 
-{{artifact:DOC_GETSTRT__PLATFORM_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__PLATFORM_PROCESS:status,safety-level,security}}
 
 In case you want to manage contributions to <Project> consider to:
 

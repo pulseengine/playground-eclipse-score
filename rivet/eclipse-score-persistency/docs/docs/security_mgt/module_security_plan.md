@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SECURITY-PLAN-91203
+id: DOC-MODULE-SECURITY-PLAN-1224
 title: Module Security Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Security Plan
 
-{{artifact:DOC__PERSISTENCY_SECURITY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SECURITY_PLAN:status,safety-level,security}}
 
 # Security Management Context
 

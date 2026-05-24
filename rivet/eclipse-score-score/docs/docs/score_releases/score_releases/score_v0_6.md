@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-6-40677
+id: DOC-SCORE-V0-6-16848
 title: Score V0 6
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### S-CORE v0.6 release note
 
-{{artifact:DOC__SCORE_V06_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_V06_RELEASE_NOTE:status,safety-level,security}}
 
 | **Platform Name**: S-CORE
 | **Release Tag**: v0.6.0

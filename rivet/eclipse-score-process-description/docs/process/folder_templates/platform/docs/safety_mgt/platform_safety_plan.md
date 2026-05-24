@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-PLAN-59844
+id: DOC-PLATFORM-SAFETY-PLAN-35139
 title: Platform Safety Plan
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Plan
 
-{{artifact:DOC__PLATFORM_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_PLAN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated.

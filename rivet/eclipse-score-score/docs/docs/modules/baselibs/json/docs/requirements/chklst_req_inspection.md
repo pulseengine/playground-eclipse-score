@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-8324
+id: DOC-CHKLST-REQ-INSPECTION-252
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### JSON Requirements Inspection Checklist
 
-{{artifact:DOC__JSON_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__JSON_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

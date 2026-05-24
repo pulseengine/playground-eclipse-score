@@ -1,5 +1,5 @@
 ---
-id: DOC-CLIPPY-51659
+id: DOC-CLIPPY-53315
 title: Clippy
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### clippy
 
-{{artifact:DOC_TOOL__CLIPPY:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__CLIPPY:status,safety-level,security}}
 
 # Clippy Verification Report
 

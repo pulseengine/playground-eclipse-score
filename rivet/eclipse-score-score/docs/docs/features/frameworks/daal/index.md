@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-74851
+id: DOC-INDEX-77325
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Deterministic App Abstraction Layer
 
-{{artifact:DOC__DAAL:status,safety-level,security}}}}
+{{artifact:DOC__DAAL:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 2

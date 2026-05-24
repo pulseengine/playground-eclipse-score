@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-MANAGEMENT-94813
+id: DOC-DOCUMENTATION-MANAGEMENT-9848
 title: Documentation Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Documentation Management Plan
 
-{{artifact:DOC__DOCUMENTATION_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__DOCUMENTATION_MGT_PLAN:status,safety-level,security}}
 
 ## Documentation Management Plan
 

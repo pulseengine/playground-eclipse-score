@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.5-10745
+id: DOC-SWE.5-51205
 title: Swe.5
 type: specification
 status: approved
@@ -44,29 +44,29 @@ software architecture and software detailed design.
 
 ### SWE.5.BP1: Specify software integration verification measures
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP1:status,safety-level,security}}
 
 ### SWE.5.BP2: Specify verification measures for verifying software component behavior
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP2:status,safety-level,security}}
 
 ### SWE.5.BP3: Select verification measures
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP3:status,safety-level,security}}
 
 ### SWE.5.BP4: Integrate software elements and perform integration verification
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP4:status,safety-level,security}}
 
 ### SWE.5.BP5: Perform software component verification
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP5:status,safety-level,security}}
 
 ### SWE.5.BP6: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP6:status,safety-level,security}}
 
 ### SWE.5.BP7: Summarize and communicate results
 
-{{artifact:STD_REQ__ASPICE_40__SWE-5-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-5-BP7:status,safety-level,security}}
 

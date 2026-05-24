@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-TOOLS-EVALUATION-LIST-2180
+id: DOC-SCORE-TOOLS-EVALUATION-LIST-83300
 title: Score Tools Evaluation List
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Tool Evaluation List
 
-{{artifact:DOC__TOOL_EVALUATION_LIST:status,safety-level,security}}}}
+{{artifact:DOC__TOOL_EVALUATION_LIST:status,safety-level,security}}
 
 # S-CORE - Complete Tool List for Tool Evaluation
 

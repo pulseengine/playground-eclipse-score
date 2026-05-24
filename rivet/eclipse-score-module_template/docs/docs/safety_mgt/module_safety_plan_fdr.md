@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-FDR-43453
+id: DOC-MODULE-SAFETY-PLAN-FDR-33751
 title: Module Safety Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Safety Plan Formal Review
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

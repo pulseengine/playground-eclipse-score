@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-5-ALPHA-23354
+id: DOC-SCORE-V0-5-ALPHA-45791
 title: Score V0 5 Alpha
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### S-Core v0.5-alpha release note
 
-{{artifact:DOC__SCORE_V05_ALPHA_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_V05_ALPHA_RELEASE_NOTE:status,safety-level,security}}
 
 | **Platform Name**: S-CORE
 | **Release Tag**: v0.5.0-alpha

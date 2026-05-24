@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-FDR-93807
+id: DOC-MODULE-SAFETY-PLAN-FDR-13589
 title: Module Safety Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Safety Plan Formal Review
 
-{{artifact:DOC__COMMUNICATION_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

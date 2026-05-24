@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-CONCEPT-40369
+id: DOC-RELEASE-CONCEPT-46405
 title: Release Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__REL_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__REL_PROCESS:status,safety-level,security}}
 
 This section describes the general concept for the release management process.
 The release process can be separated into two parts. On the first level are the software module

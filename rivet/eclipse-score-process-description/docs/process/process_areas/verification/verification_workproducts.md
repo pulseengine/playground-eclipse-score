@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-WORKPRODUCTS-73887
+id: DOC-VERIFICATION-WORKPRODUCTS-87019
 title: Verification Workproducts
 type: specification
 status: approved
@@ -14,37 +14,37 @@ tags: [eclipse-score]
 
 ### Verification Plan
 
-{{artifact:WP__VERIFICATION_PLAN:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_PLAN:status,safety-level,security}}
 
 ### Platform Integration Test
 
-{{artifact:WP__VERIFICATION_PLATFORM_INT_TEST:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_PLATFORM_INT_TEST:status,safety-level,security}}
 
 ### Platform Verification Report
 
-{{artifact:WP__VERIFICATION_PLATFORM_VER_REPORT:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_PLATFORM_VER_REPORT:status,safety-level,security}}
 
 # Feature
 
 ### Feature Integration test
 
-{{artifact:WP__VERIFICATION_FEAT_INT_TEST:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_FEAT_INT_TEST:status,safety-level,security}}
 
 # Module
 
 ### Module Verification Report
 
-{{artifact:WP__VERIFICATION_MODULE_VER_REPORT:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_MODULE_VER_REPORT:status,safety-level,security}}
 
 # Component
 
 ### Component Integration test
 
-{{artifact:WP__VERIFICATION_COMP_INT_TEST:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_COMP_INT_TEST:status,safety-level,security}}
 
 ### Unit test
 
-{{artifact:WP__VERIFICATION_SW_UNIT_TEST:status,safety-level,security}}}}
+{{artifact:WP__VERIFICATION_SW_UNIT_TEST:status,safety-level,security}}
 
 # Inspection
 

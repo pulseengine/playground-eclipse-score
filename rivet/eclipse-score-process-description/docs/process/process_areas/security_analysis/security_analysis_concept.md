@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-CONCEPT-78305
+id: DOC-SECURITY-ANALYSIS-CONCEPT-92303
 title: Security Analysis Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Security Analysis Concept
 
-{{artifact:DOC_CONCEPT__SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__SECURITY_ANALYSIS:status,safety-level,security}}
 
 This section discusses a concept for Security Analysis. Various methods can be used for Security Analysis (e.g. STRIDE).
 This concept is based on the requirements of ISO/SAE 21434 Part 8 and Part 15.

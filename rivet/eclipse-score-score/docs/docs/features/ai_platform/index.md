@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-24912
+id: DOC-INDEX-94287
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### AI-Platform
 
-{{artifact:DOC__AI_PLATFORM:status,safety-level,security}}}}
+{{artifact:DOC__AI_PLATFORM:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

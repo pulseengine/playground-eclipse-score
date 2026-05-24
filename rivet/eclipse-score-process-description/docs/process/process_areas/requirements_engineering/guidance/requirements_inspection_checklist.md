@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-INSPECTION-CHECKLIST-41965
+id: DOC-REQUIREMENTS-INSPECTION-CHECKLIST-10444
 title: Requirements Inspection Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Requirements Inspection Checklist Template
 
-{{artifact:GD_CHKLST__REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__REQ_INSPECTION:status,safety-level,security}}
 

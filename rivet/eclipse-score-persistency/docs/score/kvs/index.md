@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-56306
+id: DOC-INDEX-98551
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### KVS
 
-{{artifact:DOC__KVS:status,safety-level,security}}}}
+{{artifact:DOC__KVS:status,safety-level,security}}
 
 # Abstract
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-ANALYSIS-FDR-48437
+id: DOC-PLATFORM-SAFETY-ANALYSIS-FDR-98258
 title: Platform Safety Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Analysis Formal Review Report
 
-{{artifact:DOC__PLATFORM_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 **Purpose**
 The purpose of this Safety Analysis (DFA and FMEA) formal review report template is to collect the topics to be checked during verification of the Platform Safety Analysis.

@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-CODEOWNERS-77244
+id: DOC-MODULE-CODEOWNERS-84546
 title: Module Codeowners
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Codeowners
 
-{{artifact:DOC__ORCHESTRATOR_CODEOWNERS:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_CODEOWNERS:status,safety-level,security}}
 
 # Assigned Committer(s)
 

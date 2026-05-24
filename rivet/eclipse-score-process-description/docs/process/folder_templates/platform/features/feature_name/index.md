@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-54611
+id: DOC-INDEX-48958
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name]
 
-{{artifact:DOC__FEATURE_NAME:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_NAME:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -40,7 +40,7 @@ To activate this feature, use the following feature flag:
 
 ### Feature Name
 
-{{artifact:FEAT__FEATURE_NAME:status,safety-level,security}}}}
+{{artifact:FEAT__FEATURE_NAME:status,safety-level,security}}
 
 [A short (~200 word) description of the contribution being addressed.]
 

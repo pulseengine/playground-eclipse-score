@@ -1,5 +1,5 @@
 ---
-id: DOC-NAMING-70693
+id: DOC-NAMING-60894
 title: Naming
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Naming Conventions
 
-{{artifact:DOC__NAMING_CONVENTIONS:status,safety-level,security}}}}
+{{artifact:DOC__NAMING_CONVENTIONS:status,safety-level,security}}
 
 # Naming Conventions
 

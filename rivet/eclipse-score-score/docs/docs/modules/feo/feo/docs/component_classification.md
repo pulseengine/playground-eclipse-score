@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-18858
+id: DOC-COMPONENT-CLASSIFICATION-3703
 title: Component Classification
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Component Classification
 
-{{artifact:DOC__FEO_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__FEO_COMP_CLASS:status,safety-level,security}}
 
 # Component Classification
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-CONCEPT-73981
+id: DOC-TOOL-MANAGEMENT-CONCEPT-14992
 title: Tool Management Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__TOOL_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__TOOL_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Tool Management will be discussed. Inputs for this concepts
 are the requirements of ISO 26262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and

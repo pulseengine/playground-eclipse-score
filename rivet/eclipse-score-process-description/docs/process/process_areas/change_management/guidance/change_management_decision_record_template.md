@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-DECISION-RECORD-TEMPLATE-26893
+id: DOC-CHANGE-MANAGEMENT-DECISION-RECORD-TEMPLATE-62750
 title: Change Management Decision Record Template
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Decision Record Template
 
-{{artifact:GD_TEMP__CHANGE_DECISION_RECORD:status,safety-level,security}}}}
+{{artifact:GD_TEMP__CHANGE_DECISION_RECORD:status,safety-level,security}}
 
 This template is used to create new Decision Records (DRs) in the project.
 
@@ -24,7 +24,7 @@ In each DR file, include the following sections:
 
 ### <Title>
 
-{{artifact:DEC_REC__<PLATFORM|FEATURE|COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DEC_REC__<PLATFORM|FEATURE|COMPONENT>__<TITLE>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your decision record.

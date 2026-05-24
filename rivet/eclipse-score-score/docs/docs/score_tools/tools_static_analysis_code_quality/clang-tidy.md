@@ -1,5 +1,5 @@
 ---
-id: DOC-CLANG-TIDY-14800
+id: DOC-CLANG-TIDY-42463
 title: Clang-Tidy
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### clang-tidy
 
-{{artifact:DOC_TOOL__CLANG_TIDY:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__CLANG_TIDY:status,safety-level,security}}
 
 # Clang-Tidy Verification Report
 

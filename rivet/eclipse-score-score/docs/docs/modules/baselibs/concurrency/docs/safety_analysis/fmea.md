@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-45127
+id: DOC-FMEA-24595
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### concurrency FMEA
 
-{{artifact:DOC__CONCURRENCY_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__CONCURRENCY_FMEA:status,safety-level,security}}
 
 ## Failure Mode List
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component FMEA.

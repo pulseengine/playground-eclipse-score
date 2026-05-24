@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-50826
+id: DOC-MODULE-SAFETY-PLAN-14087
 title: Module Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Safety Plan
 
-{{artifact:DOC__ORCHESTRATOR_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_SAFETY_PLAN:status,safety-level,security}}
 
 # Functional Safety Management Context
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-15046
+id: DOC-RELEASE-NOTE-89907
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Release Note
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_RELEASE_NOTE:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

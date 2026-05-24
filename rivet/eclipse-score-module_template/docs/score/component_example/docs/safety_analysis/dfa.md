@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-32343
+id: DOC-DFA-32371
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] DFA
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_DFA:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_DFA:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -26,7 +26,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your component DFA.

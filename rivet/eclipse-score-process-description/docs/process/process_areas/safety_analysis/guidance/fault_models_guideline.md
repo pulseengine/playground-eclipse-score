@@ -1,5 +1,5 @@
 ---
-id: DOC-FAULT-MODELS-GUIDELINE-47624
+id: DOC-FAULT-MODELS-GUIDELINE-95452
 title: Fault Models Guideline
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### FMEA Fault Models
 
-{{artifact:GD_GUIDL__FAULT_MODELS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__FAULT_MODELS:status,safety-level,security}}
 
 Fault Models for sequence diagrams
   .. list-table:: Fault Models for sequence diagrams

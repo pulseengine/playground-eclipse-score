@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-GETSTRT-15608
+id: DOC-TOOL-MANAGEMENT-GETSTRT-33085
 title: Tool Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Tool Management
 
-{{artifact:DOC_GETSTRT__TOOL_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__TOOL_PROCESS:status,safety-level,security}}
 
 This document describes the steps to evaluate tools and qualify them according to
 ISO 26262 and ISO/SAE 21434 as used standards in the project.

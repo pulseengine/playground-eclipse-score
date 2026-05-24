@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.9-45401
+id: DOC-SUP.9-48076
 title: Sup.9
 type: specification
 status: approved
@@ -23,29 +23,29 @@ recorded, analyzed, and their resolution is managed and controlled.
 
 ### SUP.9.BP1: Identify and record the problem
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP1:status,safety-level,security}}
 
 ### SUP.9.BP2: Determine the cause and the impact of the problem
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP2:status,safety-level,security}}
 
 ### SUP.9.BP3: Authorize urgent resolution action
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP3:status,safety-level,security}}
 
 ### SUP.9.BP4: Raise alert notifications
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP4:status,safety-level,security}}
 
 ### SUP.9.BP5: Initiate problem resolution
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP5:status,safety-level,security}}
 
 ### SUP.9.BP6: Track problems to closure
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP6:status,safety-level,security}}
 
 ### SUP.9.BP7: Report the status of problem resolution activities
 
-{{artifact:STD_REQ__ASPICE_40__SUP-9-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-9-BP7:status,safety-level,security}}
 

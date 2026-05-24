@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-72411
+id: DOC-INDEX-65990
 title: Index
 type: specification
 status: approved
@@ -8,11 +8,11 @@ tags: [eclipse-score]
 
 ### Tracing
 
-{{artifact:MOD__TRACING:status,safety-level,security}}}}
+{{artifact:MOD__TRACING:status,safety-level,security}}
 
 ### Tracing
 
-{{artifact:MOD_VIEW_STA__TRACING__TRACING:status,safety-level,security}}}}
+{{artifact:MOD_VIEW_STA__TRACING__TRACING:status,safety-level,security}}
 
 # Module Documents
 

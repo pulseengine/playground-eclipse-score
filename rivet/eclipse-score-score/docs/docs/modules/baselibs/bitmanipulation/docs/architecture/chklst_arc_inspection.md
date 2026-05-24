@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-66624
+id: DOC-CHKLST-ARC-INSPECTION-86567
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Bitmanipulation Architecture Inspection Checklist
 
-{{artifact:DOC__BITMANIPULATION_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__BITMANIPULATION_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

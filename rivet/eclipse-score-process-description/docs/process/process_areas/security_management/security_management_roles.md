@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-ROLES-10017
+id: DOC-SECURITY-MANAGEMENT-ROLES-14682
 title: Security Management Roles
 type: specification
 status: approved
@@ -10,9 +10,9 @@ tags: [eclipse-score]
 
 ### Security Manager
 
-{{artifact:RL__SECURITY_MANAGER:status,safety-level,security}}}}
+{{artifact:RL__SECURITY_MANAGER:status,safety-level,security}}
 
 ### Security External Auditor
 
-{{artifact:RL__SECURITY_EXTERNAL_AUDITOR:status,safety-level,security}}}}
+{{artifact:RL__SECURITY_EXTERNAL_AUDITOR:status,safety-level,security}}
 

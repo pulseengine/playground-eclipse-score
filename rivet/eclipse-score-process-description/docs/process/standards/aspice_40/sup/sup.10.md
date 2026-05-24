@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.10-51456
+id: DOC-SUP.10-38998
 title: Sup.10
 type: specification
 status: approved
@@ -25,25 +25,25 @@ recorded, analyzed, tracked, approved, and implemented.
 
 ### SUP.10.BP1: Identify and record the change requests
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP1:status,safety-level,security}}
 
 ### SUP.10.BP2: Analyze and assess change requests
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP2:status,safety-level,security}}
 
 ### SUP.10.BP3: Approve change requests before implementation
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP3:status,safety-level,security}}
 
 ### SUP.10.BP4: Establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP4:status,safety-level,security}}
 
 ### SUP.10.BP5: Confirm the implementation of change requests
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP5:status,safety-level,security}}
 
 ### SUP.10.BP6: Track change requests to closure
 
-{{artifact:STD_REQ__ASPICE_40__SUP-10-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SUP-10-BP6:status,safety-level,security}}
 

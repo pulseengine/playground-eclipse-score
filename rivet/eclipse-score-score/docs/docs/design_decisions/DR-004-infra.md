@@ -1,5 +1,5 @@
 ---
-id: DOC-DR-004-INFRA-56887
+id: DOC-DR-004-INFRA-41511
 title: Dr-004-Infra
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Bi-directional traceability in docs
 
-{{artifact:DEC_REC__INFRA__TRACEABLE_DOCS:status,safety-level,security}}}}
+{{artifact:DEC_REC__INFRA__TRACEABLE_DOCS:status,safety-level,security}}
 
 ## Context / Problem
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-6251
+id: DOC-CHKLST-ARC-INSPECTION-68905
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Architecture Inspection Checklist
 
-{{artifact:DOC__BASELIBS_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_ARC_INSPECTION:status,safety-level,security}}
 
 ## Purpose
 

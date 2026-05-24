@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-98803
+id: DOC-INDEX-88020
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Security & Crpyto Feature Requirements
 
-{{artifact:DOC__SECURITY_CRYPTO_FEAT_REQS:status,safety-level,security}}}}
+{{artifact:DOC__SECURITY_CRYPTO_FEAT_REQS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

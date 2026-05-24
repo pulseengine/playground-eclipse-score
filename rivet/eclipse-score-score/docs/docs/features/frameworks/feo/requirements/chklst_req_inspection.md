@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-50941
+id: DOC-CHKLST-REQ-INSPECTION-3592
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Feature Requirements Inspection Checklist
 
-{{artifact:DOC__REQ_INSPECTION_FRAMEWORKS_FEO:status,safety-level,security}}}}
+{{artifact:DOC__REQ_INSPECTION_FRAMEWORKS_FEO:status,safety-level,security}}
 
 # FEO Feature Requirement Inspection Checklist
 

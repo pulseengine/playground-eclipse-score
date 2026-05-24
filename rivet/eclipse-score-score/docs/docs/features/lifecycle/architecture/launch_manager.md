@@ -1,5 +1,5 @@
 ---
-id: DOC-LAUNCH-MANAGER-1684
+id: DOC-LAUNCH-MANAGER-6282
 title: Launch Manager
 type: specification
 status: approved
@@ -49,13 +49,13 @@ This interface provides control functionality for activating and managing run ta
 
 ### Control Interface
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__CONTROLIF:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__CONTROLIF:status,safety-level,security}}
 
 **Operations**
 
 ### Activate Run Target
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ACTIVATE_TARGET:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ACTIVATE_TARGET:status,safety-level,security}}
 
 The Launch Manager shall provide an interface, which allows an external State Manager application to request the Launch Manager to start, stop or restart applications or groups of applications,
 which allows the implementation of a state management applications to support dynamic state control.
@@ -90,7 +90,7 @@ This unified approach allows external state managers to request any run target a
 
 ### Control interface dynamic architecture activate run target
 
-{{artifact:FEAT_ARC_DYN__LIFECYCLE__CONTROL_IF_ACTIVATE:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__LIFECYCLE__CONTROL_IF_ACTIVATE:status,safety-level,security}}
 
 ## Requirements
 
@@ -122,15 +122,15 @@ The Lifecycle Interface serves as the communication channel between applications
 
 ### Lifecycle Interface
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__LIFECYCLE_IF:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__LIFECYCLE_IF:status,safety-level,security}}
 
 ### run
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__RUN:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__RUN:status,safety-level,security}}
 
 ### terminate
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__TERMINATE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__TERMINATE:status,safety-level,security}}
 
 The following use cases are supported by the Lifecycle Interface, with different capabilities depending on the application type.
 
@@ -183,7 +183,7 @@ For native applications, the Launch Manager provides:
 
 ### Lifecyle Interface
 
-{{artifact:FEAT_ARC_DYN__LIFECYCLE__STATE_MACHINE:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__LIFECYCLE__STATE_MACHINE:status,safety-level,security}}
 
 ## Requirements
 
@@ -248,19 +248,19 @@ The liveliness mechanism includes:
 
 ### Alive API
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__ALIVE_IF:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__ALIVE_IF:status,safety-level,security}}
 
 **Operations**
 
 ### report_health_status
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__REPORT_HEALTH:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__REPORT_HEALTH:status,safety-level,security}}
 
 ## Dynamic architecture
 
 ### Alive Monitoring
 
-{{artifact:FEAT_ARC_DYN__LIFECYCLE__ALIVE_MONITORING:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__LIFECYCLE__ALIVE_MONITORING:status,safety-level,security}}
 
 ## Requirements
 

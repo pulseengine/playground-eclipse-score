@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-18172
+id: DOC-INDEX-80636
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] Safety WPs
 
-{{artifact:DOC__FEATURE_EXAMPLE_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_EXAMPLE_SAFETY_WP:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.

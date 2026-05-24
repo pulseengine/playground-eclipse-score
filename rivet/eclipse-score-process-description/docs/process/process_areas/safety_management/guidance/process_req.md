@@ -1,5 +1,5 @@
 ---
-id: DOC-PROCESS-REQ-53437
+id: DOC-PROCESS-REQ-25332
 title: Process Req
 type: specification
 status: approved
@@ -10,9 +10,9 @@ tags: [eclipse-score]
 
 ### Safety Management Document Status
 
-{{artifact:GD_REQ__SAFETY_DOC_STATUS:status,safety-level,security}}}}
+{{artifact:GD_REQ__SAFETY_DOC_STATUS:status,safety-level,security}}
 
 ### Safety Management Work Product Status
 
-{{artifact:GD_REQ__SAFETY_WP_STATUS:status,safety-level,security}}}}
+{{artifact:GD_REQ__SAFETY_WP_STATUS:status,safety-level,security}}
 

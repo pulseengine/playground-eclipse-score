@@ -1,5 +1,5 @@
 ---
-id: DOC-DEVELOPMENT-ENVIRONMENT-7346
+id: DOC-DEVELOPMENT-ENVIRONMENT-84689
 title: Development Environment
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Development Environment
 
-{{artifact:DOC__DEVELOP_ENVIRONMENT:status,safety-level,security}}}}
+{{artifact:DOC__DEVELOP_ENVIRONMENT:status,safety-level,security}}
 
 .. _setting_up_dev_env:
 

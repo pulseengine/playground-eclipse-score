@@ -1,5 +1,5 @@
 ---
-id: DOC-IMPLEMENTATION-GETSTRT-43939
+id: DOC-IMPLEMENTATION-GETSTRT-52611
 title: Implementation Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Implementation
 
-{{artifact:DOC_GETSTRT__IMP_GETSTRT:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__IMP_GETSTRT:status,safety-level,security}}
 
 This document describes the steps which need to be done to document detailed design and implement the code.
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-55553
+id: DOC-RELEASE-NOTE-54790
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Release Note
 
-{{artifact:DOC__COMMUNICATION_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_RELEASE_NOTE:status,safety-level,security}}
 
 Module Name: Communication
 

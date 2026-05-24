@@ -1,5 +1,5 @@
 ---
-id: DOC-PROCESS-MANAGEMENT-GUIDELINE-26071
+id: DOC-PROCESS-MANAGEMENT-GUIDELINE-92129
 title: Process Management Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Process Management Guideline
 
-{{artifact:GD_GUIDL__PROCESS_MANAGEMENT:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__PROCESS_MANAGEMENT:status,safety-level,security}}
 
 This document describes the general guidances for Process Management based on the concept which is defined [[title]]<doc_concept__process_management>.
 
@@ -97,5 +97,5 @@ or pm_define_approve_process_description must be created.
 
 ### IIC Requirements Tailored
 
-{{artifact:GD_GUIDL__IIC_REQ_TAILORED:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__IIC_REQ_TAILORED:status,safety-level,security}}
 

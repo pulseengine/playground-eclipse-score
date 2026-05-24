@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-GETSTRT-22369
+id: DOC-SECURITY-ANALYSIS-GETSTRT-10045
 title: Security Analysis Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Security Analysis
 
-{{artifact:DOC_GETSTRT__SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__SECURITY_ANALYSIS:status,safety-level,security}}
 
 This document outlines the steps for performing, monitoring, and verifying Security
 Analysis. Security Analysis is used as an umbrella term for different methods.

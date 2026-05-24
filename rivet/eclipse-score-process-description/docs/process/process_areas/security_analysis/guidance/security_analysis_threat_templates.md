@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-TEMPLATES-18256
+id: DOC-SECURITY-ANALYSIS-THREAT-TEMPLATES-13037
 title: Security Analysis Threat Templates
 type: specification
 status: approved
@@ -12,9 +12,9 @@ tags: [eclipse-score]
 
 ### Feature Threat Template
 
-{{artifact:GD_TEMP__FEAT_SEC_ANA_THREAT:status,safety-level,security}}}}
+{{artifact:GD_TEMP__FEAT_SEC_ANA_THREAT:status,safety-level,security}}
 
 ### Component Threat Template
 
-{{artifact:GD_TEMP__COMP_SEC_ANA_THREAT:status,safety-level,security}}}}
+{{artifact:GD_TEMP__COMP_SEC_ANA_THREAT:status,safety-level,security}}
 

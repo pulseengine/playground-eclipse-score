@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-67290
+id: DOC-RELEASE-NOTE-71344
 title: Release Note
 type: specification
 status: approved
@@ -10,6 +10,6 @@ tags: [eclipse-score]
 
 ### Baselibs Release Note
 
-{{artifact:DOC__BASELIBS_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_RELEASE_NOTE:status,safety-level,security}}
 
 For the release notes, see the `Baselibs releases <https://github.com/eclipse-score/baselibs/releases>`_ on GitHub.

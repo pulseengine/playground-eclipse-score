@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-42815
+id: DOC-COMPONENT-CLASSIFICATION-65085
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Log Component Classification
 
-{{artifact:DOC__LOG_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__LOG_COMP_CLASS:status,safety-level,security}}
 
 | Classification of <component>
 |

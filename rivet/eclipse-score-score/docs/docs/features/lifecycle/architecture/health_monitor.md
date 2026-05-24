@@ -1,5 +1,5 @@
 ---
-id: DOC-HEALTH-MONITOR-63715
+id: DOC-HEALTH-MONITOR-3300
 title: Health Monitor
 type: specification
 status: approved
@@ -72,49 +72,49 @@ These concerns are valid, but can be addressed using the following techniques:
 
 ### Deadline Monitor API
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__DEADLINE_MONITOR_IF:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__DEADLINE_MONITOR_IF:status,safety-level,security}}
 
 ### configure_minimum_time
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__MIN_TIME:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__MIN_TIME:status,safety-level,security}}
 
 ### configure_maximum_time
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__MAX_TIME:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__MAX_TIME:status,safety-level,security}}
 
 ### link_condition
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__LINK_COND_DL:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__LINK_COND_DL:status,safety-level,security}}
 
 ### mark_start
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__START:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__START:status,safety-level,security}}
 
 ### mark_end
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__END:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__END:status,safety-level,security}}
 
 ### on_timer_expiry
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__TIMER_EXPIRY:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__TIMER_EXPIRY:status,safety-level,security}}
 
 ### enable_monitoring
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENABLE_MON:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENABLE_MON:status,safety-level,security}}
 
 ### disable_monitoring
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__DISABLE_MON:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__DISABLE_MON:status,safety-level,security}}
 
 ### check_configuration
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__CHECK_CFG:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__CHECK_CFG:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Application health monitoring
 
-{{artifact:FEAT_ARC_DYN__LIFECYCLE__APP_HEALTH_MONI:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__LIFECYCLE__APP_HEALTH_MONI:status,safety-level,security}}
 
 The most important interactions are the following:
 
@@ -154,43 +154,43 @@ The most important interactions are the following:
 
 ### Logical Monitor API
 
-{{artifact:LOGIC_ARC_INT__LIFECYCLE__LOGICAL_MONITOR_IF:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__LIFECYCLE__LOGICAL_MONITOR_IF:status,safety-level,security}}
 
 ### add_entry_point
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENTRY_POINT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENTRY_POINT:status,safety-level,security}}
 
 ### add_exit_point
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__EXIT_POINT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__EXIT_POINT:status,safety-level,security}}
 
 ### add_allowed_transition
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ALLOWED_TRANS:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ALLOWED_TRANS:status,safety-level,security}}
 
 ### link_condition
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__LINK_COND_LG:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__LINK_COND_LG:status,safety-level,security}}
 
 ### record_checkpoint
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__REC_CHECKPOINT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__REC_CHECKPOINT:status,safety-level,security}}
 
 ### enable
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENABLE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__ENABLE:status,safety-level,security}}
 
 ### disable
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__DISABLE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__DISABLE:status,safety-level,security}}
 
 ### verify
 
-{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__VERIFY:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT_OP__LIFECYCLE__VERIFY:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Logical control flow monitoring
 
-{{artifact:FEAT_ARC_DYN__LIFECYCLE__APP_CTRL_FLOW_MONI:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__LIFECYCLE__APP_CTRL_FLOW_MONI:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-ARCHITECTURE-31590
+id: DOC-FEATURE-ARCHITECTURE-51826
 title: Feature Architecture
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Feature Architecture
 
-{{artifact:DOC__FRAMEWORKS_FEO_FEAT_ARCH:status,safety-level,security}}}}
+{{artifact:DOC__FRAMEWORKS_FEO_FEAT_ARCH:status,safety-level,security}}
 
 # FEO Feature Architecture
 
@@ -79,33 +79,33 @@ expected to be used directly in a productive system. They may become obsolete in
 
 ### Feature FEO
 
-{{artifact:FEAT__FEO:status,safety-level,security}}}}
+{{artifact:FEAT__FEO:status,safety-level,security}}
 
 ### Static Architecture
 
-{{artifact:FEAT_ARC_STA__FEO__MAIN:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__FEO__MAIN:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Dynamic Architecture
 
-{{artifact:FEAT_ARC_DYN__FEO__MAIN:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__FEO__MAIN:status,safety-level,security}}
 
 ## Logical Interfaces
 
 ### Activity
 
-{{artifact:LOGIC_ARC_INT__FEO__ACTIVITY:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__FEO__ACTIVITY:status,safety-level,security}}
 
 ### Primary Agent
 
-{{artifact:LOGIC_ARC_INT__FEO__PRIM_AGENT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__FEO__PRIM_AGENT:status,safety-level,security}}
 
 ### Secondary Agent
 
-{{artifact:LOGIC_ARC_INT__FEO__SEC_AGENT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__FEO__SEC_AGENT:status,safety-level,security}}
 
 ### Lifecycle Listener
 
-{{artifact:LOGIC_ARC_INT__FEO__LIFECYCLE:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__FEO__LIFECYCLE:status,safety-level,security}}
 

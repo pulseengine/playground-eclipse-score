@@ -1,5 +1,5 @@
 ---
-id: DOC-SOFTWARE-DEVELOPMENT-TEMPLATE-49669
+id: DOC-SOFTWARE-DEVELOPMENT-TEMPLATE-90891
 title: Software Development Template
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Software Development Plan Template
 
-{{artifact:GD_TEMP__SOFTWARE_DEVELOPMENT_PLAN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__SOFTWARE_DEVELOPMENT_PLAN:status,safety-level,security}}
 
 #### Purpose
 

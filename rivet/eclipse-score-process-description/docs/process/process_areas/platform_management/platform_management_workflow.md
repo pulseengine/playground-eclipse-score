@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-WORKFLOW-12309
+id: DOC-PLATFORM-MANAGEMENT-WORKFLOW-58248
 title: Platform Management Workflow
 type: specification
 status: approved
@@ -14,11 +14,11 @@ For a detailed explanation of workflows and their role within the process model,
 
 ### Create/Maintain Platform Management Plan
 
-{{artifact:WF__PLATFORM_CR_MT_PLATFORM_MGMT_PLAN:status,safety-level,security}}}}
+{{artifact:WF__PLATFORM_CR_MT_PLATFORM_MGMT_PLAN:status,safety-level,security}}
 
 ### Monitor/Improve Platform Management Plan
 
-{{artifact:WF__PLATFORM_MR_IM_PLATFORM_MGMT_PLAN:status,safety-level,security}}}}
+{{artifact:WF__PLATFORM_MR_IM_PLATFORM_MGMT_PLAN:status,safety-level,security}}
 
 # RAS(IC) for Platform Management:
 

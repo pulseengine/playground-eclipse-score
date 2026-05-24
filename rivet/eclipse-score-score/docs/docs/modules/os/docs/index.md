@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-52634
+id: DOC-INDEX-71336
 title: Index
 type: specification
 status: approved
@@ -9,15 +9,15 @@ tags: [eclipse-score]
 
 ### Operating System
 
-{{artifact:FEAT__OS:status,safety-level,security}}}}
+{{artifact:FEAT__OS:status,safety-level,security}}
 
 ### OS
 
-{{artifact:MOD__OS:status,safety-level,security}}}}
+{{artifact:MOD__OS:status,safety-level,security}}
 
 ### OS (external)
 
-{{artifact:MOD_VIEW_STA__OS__OS:status,safety-level,security}}}}
+{{artifact:MOD_VIEW_STA__OS__OS:status,safety-level,security}}
 
 # Module Documents
 

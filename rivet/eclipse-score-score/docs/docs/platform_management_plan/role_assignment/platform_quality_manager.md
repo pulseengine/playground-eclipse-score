@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-QUALITY-MANAGER-93908
+id: DOC-PLATFORM-QUALITY-MANAGER-2995
 title: Platform Quality Manager
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Quality Manager
 
-{{artifact:DOC__PLATFORM_QUALITY_MANAGER:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_QUALITY_MANAGER:status,safety-level,security}}
 
 # Elected Committer(s)
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-CODEOWNERS-25559
+id: DOC-MODULE-CODEOWNERS-63519
 title: Module Codeowners
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Communication Codeowners
 
-{{artifact:DOC__COMMUNICATION_CODEOWNERS:status,safety-level,security}}}}
+{{artifact:DOC__COMMUNICATION_CODEOWNERS:status,safety-level,security}}
 
 # Assigned Committer(s)
 

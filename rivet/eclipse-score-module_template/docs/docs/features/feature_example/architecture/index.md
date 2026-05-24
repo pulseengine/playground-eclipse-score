@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-56410
+id: DOC-INDEX-97333
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Feature Name] Architecture
 
-{{artifact:DOC__FEATURE_EXAMPLE_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__FEATURE_EXAMPLE_ARCHITECTURE:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -51,7 +51,7 @@ The live feature architecture template snippets are maintained in the
 
 ### Feature Static View
 
-{{artifact:FEAT_ARC_STA__FEATURE_NAME__STATIC_VIEW:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__FEATURE_NAME__STATIC_VIEW:status,safety-level,security}}
 
 ## Dynamic Architecture
 
@@ -59,7 +59,7 @@ The live feature architecture template snippets are maintained in the
 
 ### Dynamic View
 
-{{artifact:FEAT_ARC_DYN__FEATURE_NAME__DYNAMIC_VIEW:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__FEATURE_NAME__DYNAMIC_VIEW:status,safety-level,security}}
 
 ## Logical Interfaces
 
@@ -77,11 +77,11 @@ The rendered module and used-component examples are maintained in the
 
 ### Module Name
 
-{{artifact:MOD__MODULE_NAME:status,safety-level,security}}}}
+{{artifact:MOD__MODULE_NAME:status,safety-level,security}}
 
 ### Module Name Static View
 
-{{artifact:MOD_VIEW_STA__FEATURE_NAME__MODULE_NAME:status,safety-level,security}}}}
+{{artifact:MOD_VIEW_STA__FEATURE_NAME__MODULE_NAME:status,safety-level,security}}
 
 ## Used Components
 
@@ -92,7 +92,7 @@ They will be replaced by linking the proper SW component definitions in the used
 
 ### Component Name
 
-{{artifact:COMP__COMPONENT_NAME_TEMPLATE:status,safety-level,security}}}}
+{{artifact:COMP__COMPONENT_NAME_TEMPLATE:status,safety-level,security}}
 
 .. note::
    Architecture can be split into multiple files, it is an high level architecture design

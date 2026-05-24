@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-MANUAL-92912
+id: DOC-PLATFORM-SAFETY-MANUAL-56350
 title: Platform Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Manual
 
-{{artifact:DOC__PLATFORM_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_MANUAL:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated.

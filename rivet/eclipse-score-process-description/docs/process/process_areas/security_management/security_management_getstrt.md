@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-GETSTRT-93687
+id: DOC-SECURITY-MANAGEMENT-GETSTRT-6017
 title: Security Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Change Management
 
-{{artifact:DOC_GETSTRT__SECURITY_MANAGEMENT_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__SECURITY_MANAGEMENT_PROCESS:status,safety-level,security}}
 
 This document and sub chapters outlines the required steps to ensure that project complies with ISO SAE 21434 security standard.
 Begin with this document to understand the project's security-related processes and procedures.

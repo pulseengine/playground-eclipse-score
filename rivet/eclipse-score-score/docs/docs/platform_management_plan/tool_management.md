@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-28999
+id: DOC-TOOL-MANAGEMENT-71386
 title: Tool Management
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Tool Management Plan
 
-{{artifact:DOC__PLATFORM_TOOL_MANAGEMENT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_TOOL_MANAGEMENT_PLAN:status,safety-level,security}}
 
 ## Tool Management/ Tool Management Plan
 

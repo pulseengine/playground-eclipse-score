@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-78401
+id: DOC-CHKLST-IMPL-INSPECTION-8538
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Implementation Inspection Checklist
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_IMPL_INSPECTION:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-WORK-PRODUCT-REVIEW-GUIDELINE-22821
+id: DOC-QUALITY-WORK-PRODUCT-REVIEW-GUIDELINE-12237
 title: Quality Work Product Review Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Quality work product review
 
-{{artifact:GD_GUIDL__WP_REVIEW:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__WP_REVIEW:status,safety-level,security}}
 
 ## Purpose
 

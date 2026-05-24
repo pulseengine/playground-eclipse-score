@@ -1,5 +1,5 @@
 ---
-id: DOC-IMPLEMENTATION-CHECKLIST-79594
+id: DOC-IMPLEMENTATION-CHECKLIST-88003
 title: Implementation Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Implementation Inspection Checklist Template
 
-{{artifact:GD_CHKLST__IMPL_INSPECTION_CHECKLIST:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__IMPL_INSPECTION_CHECKLIST:status,safety-level,security}}
 

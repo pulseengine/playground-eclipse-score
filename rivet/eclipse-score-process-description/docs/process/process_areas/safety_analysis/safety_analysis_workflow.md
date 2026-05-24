@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-ANALYSIS-WORKFLOW-45742
+id: DOC-SAFETY-ANALYSIS-WORKFLOW-79122
 title: Safety Analysis Workflow
 type: specification
 status: approved
@@ -16,23 +16,23 @@ Safety Analysis is used as a umbrella term for the methods FMEA (Failure Modes a
 
 ### Analyze Platform Feature Architecture
 
-{{artifact:WF__ANALYSE_PLATFORM_FEATARCH:status,safety-level,security}}}}
+{{artifact:WF__ANALYSE_PLATFORM_FEATARCH:status,safety-level,security}}
 
 ### Analyse Feature Architecture
 
-{{artifact:WF__ANALYSE_FEATARCH:status,safety-level,security}}}}
+{{artifact:WF__ANALYSE_FEATARCH:status,safety-level,security}}
 
 ### Analyse Component Architecture
 
-{{artifact:WF__ANALYSE_COMPARCH:status,safety-level,security}}}}
+{{artifact:WF__ANALYSE_COMPARCH:status,safety-level,security}}
 
 ### Monitor FMEA and DFA
 
-{{artifact:WF__MR_SAF_ANALYSES_DFA:status,safety-level,security}}}}
+{{artifact:WF__MR_SAF_ANALYSES_DFA:status,safety-level,security}}
 
 ### Verify FMEA and DFA
 
-{{artifact:WF__VY_SAF_ANALYSES_DFA:status,safety-level,security}}}}
+{{artifact:WF__VY_SAF_ANALYSES_DFA:status,safety-level,security}}
 
 # RAS(IC) for Safety Analysis  (FMEA and DFA)
 

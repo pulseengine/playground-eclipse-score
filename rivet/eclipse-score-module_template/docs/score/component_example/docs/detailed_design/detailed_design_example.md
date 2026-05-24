@@ -1,5 +1,5 @@
 ---
-id: DOC-DETAILED-DESIGN-EXAMPLE-51495
+id: DOC-DETAILED-DESIGN-EXAMPLE-48273
 title: Detailed Design Example
 type: specification
 status: approved
@@ -17,13 +17,13 @@ tags: [eclipse-score]
 
 ### dd example static
 
-{{artifact:DD_STA__EXAMPLE_FEATURE__APPROVER:status,safety-level,security}}}}
+{{artifact:DD_STA__EXAMPLE_FEATURE__APPROVER:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
 ### dd example dynamic
 
-{{artifact:DD_DYN__EXAMPLE_FEATURE__DYNAMIC:status,safety-level,security}}}}
+{{artifact:DD_DYN__EXAMPLE_FEATURE__DYNAMIC:status,safety-level,security}}
 
 ## Units within the Component
 

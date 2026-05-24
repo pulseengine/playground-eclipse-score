@@ -1,5 +1,5 @@
 ---
-id: DOC-IMPLEMENTATION-GUIDELINE-5906
+id: DOC-IMPLEMENTATION-GUIDELINE-24397
 title: Implementation Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Implementation Guideline
 
-{{artifact:GD_GUIDL__IMPLEMENTATION:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__IMPLEMENTATION:status,safety-level,security}}
 
 This document describes the general guidance for implementation based on the concept which is defined [[title]]<doc_concept__imp_concept>.
 An example of a Detailed Design is maintained in the

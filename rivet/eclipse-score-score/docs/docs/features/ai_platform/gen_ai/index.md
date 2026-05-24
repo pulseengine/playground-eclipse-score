@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-10840
+id: DOC-INDEX-75174
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Gen-AI
 
-{{artifact:DOC__GEN_AI:status,safety-level,security}}}}
+{{artifact:DOC__GEN_AI:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

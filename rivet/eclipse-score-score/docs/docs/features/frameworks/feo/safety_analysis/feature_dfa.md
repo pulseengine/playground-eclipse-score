@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-DFA-90621
+id: DOC-FEATURE-DFA-39534
 title: Feature Dfa
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Feature DFA
 
-{{artifact:DOC__FRAMEWORKS_FEO_DFA:status,safety-level,security}}}}
+{{artifact:DOC__FRAMEWORKS_FEO_DFA:status,safety-level,security}}
 
 # FEO Feature DFA
 
@@ -21,7 +21,7 @@ Safety mechanisms that are used by many features are not considered here, but at
 
 ### <Title>
 
-{{artifact:FEAT_SAF_DFA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature DFA.

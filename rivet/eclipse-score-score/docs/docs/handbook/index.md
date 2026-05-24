@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-98704
+id: DOC-INDEX-60100
 title: Index
 type: specification
 status: approved
@@ -15,7 +15,7 @@ tags: [eclipse-score]
 
 ### Handbook
 
-{{artifact:DOC__PLATFORM_HANDBOOK:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_HANDBOOK:status,safety-level,security}}
 
 # Handbook
 

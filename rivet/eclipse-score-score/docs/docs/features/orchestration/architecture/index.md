@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-10255
+id: DOC-INDEX-76496
 title: Index
 type: specification
 status: approved
@@ -10,11 +10,11 @@ tags: [eclipse-score]
 
 ### Orchestration Architecture
 
-{{artifact:DOC__ORCHESTRATION_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATION_ARCHITECTURE:status,safety-level,security}}
 
 ### Orchestration
 
-{{artifact:FEAT__ORCHESTRATION:status,safety-level,security}}}}
+{{artifact:FEAT__ORCHESTRATION:status,safety-level,security}}
 
 ## Overview
 
@@ -46,7 +46,7 @@ This architectural approach is informed by best practices in automotive and safe
 
 ### Static View
 
-{{artifact:FEAT_ARC_STA__ORCHESTRATION__STATIC_VIEW:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__ORCHESTRATION__STATIC_VIEW:status,safety-level,security}}
 
 ## API Components
 
@@ -93,13 +93,13 @@ The public API for the frontend is defined as:
 
 ### Orchestration Interface
 
-{{artifact:LOGIC_ARC_INT__ORCHESTRATION__USER:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__ORCHESTRATION__USER:status,safety-level,security}}
 
 ### Design Interface
 
-{{artifact:LOGIC_ARC_INT__ORCHESTRATION__DESIGN:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__ORCHESTRATION__DESIGN:status,safety-level,security}}
 
 ### Deployment Interface
 
-{{artifact:LOGIC_ARC_INT__ORCHESTRATION__DEPLOYMENT:status,safety-level,security}}}}
+{{artifact:LOGIC_ARC_INT__ORCHESTRATION__DEPLOYMENT:status,safety-level,security}}
 

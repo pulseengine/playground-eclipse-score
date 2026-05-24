@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-GUIDELINE-19865
+id: DOC-RELEASE-GUIDELINE-10770
 title: Release Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Release Management Guideline
 
-{{artifact:GD_GUIDL__REL_MANAGEMENT:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__REL_MANAGEMENT:status,safety-level,security}}
 
 .. _workflow_release:
 
@@ -101,7 +101,7 @@ tags: [eclipse-score]
 
 ### Release Handbook
 
-{{artifact:GD_GUIDL__REL_HANDBOOK:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__REL_HANDBOOK:status,safety-level,security}}
 
 # Templates
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-37610
+id: DOC-CHKLST-ARC-INSPECTION-4871
 title: Chklst Arc Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Architecture Inspection Checklist
 
-{{artifact:DOC__ORCHESTRATOR_ARC_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_ARC_INSPECTION:status,safety-level,security}}
 
 # Architecture Inspection Checklist
 

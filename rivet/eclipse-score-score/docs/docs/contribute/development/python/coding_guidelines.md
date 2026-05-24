@@ -1,5 +1,5 @@
 ---
-id: DOC-CODING-GUIDELINES-70252
+id: DOC-CODING-GUIDELINES-32989
 title: Coding Guidelines
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Coding Guidelines Python
 
-{{artifact:DOC__PYTHON_CODING_GUIDELINES:status,safety-level,security}}}}
+{{artifact:DOC__PYTHON_CODING_GUIDELINES:status,safety-level,security}}
 
 # Coding Guidelines
 

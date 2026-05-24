@@ -1,5 +1,5 @@
 ---
-id: DOC-CODE-ANALYSIS-10048
+id: DOC-CODE-ANALYSIS-3179
 title: Code Analysis
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Static Code Analysis C++
 
-{{artifact:DOC__CPP_CODE_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC__CPP_CODE_ANALYSIS:status,safety-level,security}}
 
 # Static Code Analysis
 

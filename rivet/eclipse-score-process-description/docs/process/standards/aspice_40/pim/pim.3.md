@@ -1,5 +1,5 @@
 ---
-id: DOC-PIM.3-97471
+id: DOC-PIM.3-15516
 title: Pim.3
 type: specification
 status: approved
@@ -24,11 +24,11 @@ through the processes used and ensure alignment of the processes with the busine
 
 ### PIM.3.BP1: Establish commitment
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP1:status,safety-level,security}}
 
 ### PIM.3.BP2: Identify improvement measures
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP2:status,safety-level,security}}
 
 Identify issues from the analysis of process performance and derive improvement opportunities with justified reasons for change.
 
@@ -47,25 +47,25 @@ Identify issues from the analysis of process performance and derive improvement 
 
 ### PIM.3.BP3: Establish process improvement goals
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP3:status,safety-level,security}}
 
 ### PIM.3.BP4: Prioritize improvements
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP4:status,safety-level,security}}
 
 ### PIM.3.BP5: Define process improvement measures
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP5:status,safety-level,security}}
 
 ### PIM.3.BP6: Implement process improvement measures
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP6:status,safety-level,security}}
 
 ### PIM.3.BP7: Confirm process improvement
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP7:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP7:status,safety-level,security}}
 
 ### PIM.3.BP8: Communicate results of improvement
 
-{{artifact:STD_REQ__ASPICE_40__PIM-3-BP8:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__PIM-3-BP8:status,safety-level,security}}
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-1510
+id: DOC-INDEX-71842
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Log
 
-{{artifact:DOC__LOG:status,safety-level,security}}}}
+{{artifact:DOC__LOG:status,safety-level,security}}
 
 # Abstract
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-PLAN-FDR-26081
+id: DOC-PLATFORM-SAFETY-PLAN-FDR-65387
 title: Platform Safety Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Plan Formal Review
 
-{{artifact:DOC__PLATFORM_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 **Purpose**
 

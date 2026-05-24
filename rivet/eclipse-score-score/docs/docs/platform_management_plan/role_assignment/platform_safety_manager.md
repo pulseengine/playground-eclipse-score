@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-MANAGER-3350
+id: DOC-PLATFORM-SAFETY-MANAGER-37410
 title: Platform Safety Manager
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Manager
 
-{{artifact:DOC__PLATFORM_SAFETY_MANAGER:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_MANAGER:status,safety-level,security}}
 
 # Elected Committer(s)
 

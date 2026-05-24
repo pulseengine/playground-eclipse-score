@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-INSPECTION-CHECKLIST-9420
+id: DOC-ARCHITECTURE-INSPECTION-CHECKLIST-56261
 title: Architecture Inspection Checklist
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Architecture Inspection Checklist Template
 
-{{artifact:GD_CHKLST__ARCH_INSPECTION_CHECKLIST:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__ARCH_INSPECTION_CHECKLIST:status,safety-level,security}}
 

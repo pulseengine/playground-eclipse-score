@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-94594
+id: DOC-INDEX-48394
 title: Index
 type: specification
 status: approved
@@ -14,53 +14,53 @@ tags: [eclipse-score]
 
 ### Project Lead
 
-{{artifact:RL__PROJECT_LEAD:status,safety-level,security}}}}
+{{artifact:RL__PROJECT_LEAD:status,safety-level,security}}
 
 ## Project Process Roles
 
 ### Process Community Member
 
-{{artifact:RL__PROCESS_COMMUNITY:status,safety-level,security}}}}
+{{artifact:RL__PROCESS_COMMUNITY:status,safety-level,security}}
 
 ## Project Development Roles
 
 ### Infrastructure Tooling Community Member
 
-{{artifact:RL__INFRASTRUCTURE_TOOLING_COMMUNITY:status,safety-level,security}}}}
+{{artifact:RL__INFRASTRUCTURE_TOOLING_COMMUNITY:status,safety-level,security}}
 
 ### Contributor
 
-{{artifact:RL__CONTRIBUTOR:status,safety-level,security}}}}
+{{artifact:RL__CONTRIBUTOR:status,safety-level,security}}
 
 ### Committer
 
-{{artifact:RL__COMMITTER:status,safety-level,security}}}}
+{{artifact:RL__COMMITTER:status,safety-level,security}}
 
 ### Testing Community Member
 
-{{artifact:RL__TESTING_COMMUNITY:status,safety-level,security}}}}
+{{artifact:RL__TESTING_COMMUNITY:status,safety-level,security}}
 
 ### Architecture Community Member
 
-{{artifact:RL__ARCHITECTURE_COMMUNITY:status,safety-level,security}}}}
+{{artifact:RL__ARCHITECTURE_COMMUNITY:status,safety-level,security}}
 
 ### Project Security Team
 
-{{artifact:RL__SECURITY_TEAM:status,safety-level,security}}}}
+{{artifact:RL__SECURITY_TEAM:status,safety-level,security}}
 
 ## Project Teams
 
 ### Platform Team
 
-{{artifact:RL__PLATFORM_TEAM:status,safety-level,security}}}}
+{{artifact:RL__PLATFORM_TEAM:status,safety-level,security}}
 
 ### Delivery Team
 
-{{artifact:RL__DELIVERY_TEAM:status,safety-level,security}}}}
+{{artifact:RL__DELIVERY_TEAM:status,safety-level,security}}
 
 ### Release Team
 
-{{artifact:RL__RELEASE_TEAM:status,safety-level,security}}}}
+{{artifact:RL__RELEASE_TEAM:status,safety-level,security}}
 
 ## Project Roles List
 

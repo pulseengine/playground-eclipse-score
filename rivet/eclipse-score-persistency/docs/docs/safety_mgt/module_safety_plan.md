@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-82430
+id: DOC-MODULE-SAFETY-PLAN-18682
 title: Module Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Safety Plan
 
-{{artifact:DOC__PERSISTENCY_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SAFETY_PLAN:status,safety-level,security}}
 
 # Functional Safety Management Context
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-13889
+id: DOC-INDEX-48837
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Architecture
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_ARCHITECTURE:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your needs.
@@ -51,17 +51,17 @@ A component can optional also consist of lower level components to further struc
 
 ### Component Name
 
-{{artifact:COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE:status,safety-level,security}}}}
+{{artifact:COMP__MOD_TEMP_COMPONENT_NAME_TEMPLATE:status,safety-level,security}}
 
 ### Component Name (Static View)
 
-{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__SV:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Dynamic View
 
-{{artifact:COMP_ARC_DYN__MOD_TEMP_COMPONENT_NAME__DV:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__MOD_TEMP_COMPONENT_NAME__DV:status,safety-level,security}}
 
 ## Interfaces
 
@@ -69,13 +69,13 @@ A component can optional also consist of lower level components to further struc
 
 ### <Title>
 
-{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Internal Components
 
 ### Component Name Static View
 
-{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__2:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__MOD_TEMP_COMPONENT_NAME__2:status,safety-level,security}}
 
 .. note::
    Architecture can be split into multiple files. At component level the public interfaces to be used by the user and tester to be shown.

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-65189
+id: DOC-INDEX-40589
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency
 
-{{artifact:DOC__PERSISTENCY:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY:status,safety-level,security}}
 
 .. toctree::
    architecture/index.rst

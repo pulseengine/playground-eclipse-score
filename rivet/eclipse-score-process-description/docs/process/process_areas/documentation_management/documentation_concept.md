@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-CONCEPT-66878
+id: DOC-DOCUMENTATION-CONCEPT-44328
 title: Documentation Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Documentation Management Concept
 
-{{artifact:DOC_CONCEPT__DOCUMENTATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__DOCUMENTATION_PROCESS:status,safety-level,security}}
 
 In this section a concept for the documentation management will be discussed.
 Inputs for this concepts are mainly the requirements of ISO26262 "Part 2: Management of functional safety"

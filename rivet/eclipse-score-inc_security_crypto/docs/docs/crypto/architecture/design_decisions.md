@@ -1,5 +1,5 @@
 ---
-id: DOC-DESIGN-DECISIONS-64924
+id: DOC-DESIGN-DECISIONS-49121
 title: Design Decisions
 type: specification
 status: approved
@@ -14,7 +14,7 @@ tags: [eclipse-score]
 
 ### ABI Compatibility for IPC Layer (Deferred Post-Stabilisation)
 
-{{artifact:DEC_REC__CRYPTO__NO_ABI_COMPATIBILITY_IPC:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__NO_ABI_COMPATIBILITY_IPC:status,safety-level,security}}
 
 ABI compatibility for the IPC layer between the crypto library and daemon is
 deferred until the API and wire format are stable. Once stable, a versioned wire
@@ -95,7 +95,7 @@ efficiently once the stack stabilises.
 
 ### CryptoResourceGuard Lifetime via Daemon-Side Reference Counting
 
-{{artifact:DEC_REC__CRYPTO__CRY_RES_GRD_LIFETIME:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__CRY_RES_GRD_LIFETIME:status,safety-level,security}}
 
 Transient key lifetime is managed exclusively in the daemon. The daemon ref-counts
 every ephemeral key; the client communicates changes via two IPC calls:
@@ -237,7 +237,7 @@ via this conversion — no extra overload is needed:
 
 ### Shared-Connection Anchor for Persistent Resource ID Stability
 
-{{artifact:DEC_REC__CRYPTO__CONN_ANCHOR_PERSISTENT_IDS:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__CONN_ANCHOR_PERSISTENT_IDS:status,safety-level,security}}
 
 The application-level daemon connection is a shared anchor across all
 ``ICryptoStack`` instances within the same application. Persistent resource IDs
@@ -330,7 +330,7 @@ daemon is built.
 
 ### AlgorithmId Represented as FixedCapacityString<64>
 
-{{artifact:DEC_REC__CRYPTO__ALG_ID_FIXED_CAP_STR:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__ALG_ID_FIXED_CAP_STR:status,safety-level,security}}
 
 ``AlgorithmId`` is defined as ``FixedCapacityString<64>`` rather than a
 compile-time enum or ``std::string``, providing open-set extensibility with
@@ -386,7 +386,7 @@ Three candidate representations were evaluated:
 
 ### Synchronous-Only IPC Model
 
-{{artifact:DEC_REC__CRYPTO__SYNCHRONOUS_IPC:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__SYNCHRONOUS_IPC:status,safety-level,security}}
 
 All IPC calls between the client library and the crypto daemon are synchronous
 (blocking). No callback, future, or async-notify pattern is exposed in the V1
@@ -438,7 +438,7 @@ and rejected:
 
 ### Context Reset() for Streaming Context Reuse
 
-{{artifact:DEC_REC__CRYPTO__CONTEXT_RESET_REUSE:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__CONTEXT_RESET_REUSE:status,safety-level,security}}
 
 ``IStreamingContext`` exposes a ``Reset()`` method returning the context to
 post-construction state after ``Finalize()``, preserving key, algorithm, and config
@@ -488,7 +488,7 @@ per-message MAC), this doubles the IPC overhead.
 
 ### Two-Layer Per-Call Timeout with Daemon-Side Enforcement
 
-{{artifact:DEC_REC__CRYPTO__TWO_LAYER_TIMEOUT:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__TWO_LAYER_TIMEOUT:status,safety-level,security}}
 
 Operation timeouts are enforced at two layers — a stack-wide default in
 ``CryptoStackConfig`` and a per-context override in ``BaseContextConfig`` with an
@@ -551,7 +551,7 @@ Model 3 was selected for bounded behaviour at both layers.
 
 ### KeyOperationPermission as a Capability Bitmask
 
-{{artifact:DEC_REC__CRYPTO__KEY_OP_PERMISSION_BITMASK:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__KEY_OP_PERMISSION_BITMASK:status,safety-level,security}}
 
 Per-key usage restrictions are encoded as a ``KeyOperationPermission`` bitmask
 (named bit-flag capabilities: ``kEncrypt``, ``kDecrypt``, ``kSign``, ``kVerify``,
@@ -606,7 +606,7 @@ The bitmask (option 3) was selected for compactness and extensibility.
 
 ### Unified Cipher Context Rather Than Separate Encrypt/Decrypt Plus Symmetric/Asymmetric Split
 
-{{artifact:DEC_REC__CRYPTO__UNIFIED_ENC_DEC_CONTEXTS:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__UNIFIED_ENC_DEC_CONTEXTS:status,safety-level,security}}
 
 Encrypt and decrypt share a single ``ICipherContext`` (direction set via
 ``CipherContextConfig``). Sign, verify, MAC, and AEAD are each a separate context
@@ -667,7 +667,7 @@ Design 2 was selected for the balance of clarity and extensibility.
 
 ### IMemoryAllocator Separated from ICryptoStack
 
-{{artifact:DEC_REC__CRYPTO__MEMORY_ALLOCATOR_SEPARATION:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__MEMORY_ALLOCATOR_SEPARATION:status,safety-level,security}}
 
 ``IMemoryAllocator`` is a standalone interface independent of ``ICryptoStack``.
 It represents the data plane, can be injected into components that need only
@@ -724,7 +724,7 @@ connection sharing is not supported; each application has its own allocator inst
 
 ### Control Plane IPC Boundary Copy with Daemon-Internal Zero-Copy References
 
-{{artifact:DEC_REC__CRYPTO__IPC_BOUNDARY_COPY:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__IPC_BOUNDARY_COPY:status,safety-level,security}}
 
 The control plane IPC layer on the daemon side shall create exactly one owning
 copy of all incoming request data at the deserialization boundary. All subsequent
@@ -804,7 +804,7 @@ operations — zero-copy is safe there by design.
 
 ### Per-Operation Parameter Structs with Dual Overloads
 
-{{artifact:DEC_REC__CRYPTO__PER_OP_PARAMS:status,safety-level,security}}}}
+{{artifact:DEC_REC__CRYPTO__PER_OP_PARAMS:status,safety-level,security}}
 
 Each key management operation accepts parameters via a dedicated fluent-builder
 struct (``GenerateKeyParams``, ``DeriveKeyParams``, ``AgreeKeyParams``,

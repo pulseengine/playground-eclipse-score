@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-CONCEPT-99292
+id: DOC-PROBLEM-RESOLUTION-CONCEPT-29617
 title: Problem Resolution Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__PROBLEM_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__PROBLEM_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Problem Resolution will be discussed. Inputs for this concepts
 are both the requirements of ISO26262 Part-2 and ASPICE Requirements from SUP.9 additionally

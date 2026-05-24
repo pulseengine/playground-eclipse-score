@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-WORKPRODUCTS-10929
+id: DOC-SECURITY-ANALYSIS-WORKPRODUCTS-48345
 title: Security Analysis Workproducts
 type: specification
 status: approved
@@ -10,13 +10,13 @@ tags: [eclipse-score]
 
 ### Platform Security Analysis
 
-{{artifact:WP__PLATFORM_SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:WP__PLATFORM_SECURITY_ANALYSIS:status,safety-level,security}}
 
 ### Feature Security Analysis
 
-{{artifact:WP__FEATURE_SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:WP__FEATURE_SECURITY_ANALYSIS:status,safety-level,security}}
 
 ### Component Security Analysis
 
-{{artifact:WP__SW_COMPONENT_SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:WP__SW_COMPONENT_SECURITY_ANALYSIS:status,safety-level,security}}
 

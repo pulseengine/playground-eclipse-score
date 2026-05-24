@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-62013
+id: DOC-MODULE-SAFETY-PLAN-49371
 title: Module Safety Plan
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Module Safety Plan
 
-{{artifact:DOC__FEO_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__FEO_SAFETY_PLAN:status,safety-level,security}}
 
 # FEO Module Safety Plan
 

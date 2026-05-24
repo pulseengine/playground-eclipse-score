@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.1-38487
+id: DOC-SWE.1-17289
 title: Swe.1
 type: specification
 status: approved
@@ -31,25 +31,25 @@ architecture.
 
 ### SWE.1.BP1: Specify software requirements
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP1:status,safety-level,security}}
 
 ### SWE.1.BP2: Structure software requirements
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP2:status,safety-level,security}}
 
 ### SWE.1.BP3: Analyze software requirements
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP3:status,safety-level,security}}
 
 ### SWE.1.BP4: Analyze the impact on the operating environment
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP4:status,safety-level,security}}
 
 ### SWE.1.BP5: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP5:status,safety-level,security}}
 
 ### SWE.1.BP6: Communicate agreed software requirements and impact on the operating environment
 
-{{artifact:STD_REQ__ASPICE_40__SWE-1-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-1-BP6:status,safety-level,security}}
 

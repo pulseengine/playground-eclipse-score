@@ -1,5 +1,5 @@
 ---
-id: DOC-FDR-REPORTS-SAFETY-PLATFORM-SAFETY-PLAN-4781
+id: DOC-FDR-REPORTS-SAFETY-PLATFORM-SAFETY-PLAN-46150
 title: Fdr Reports Safety Platform Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### S-CORE Platform Safety Plan Formal Review
 
-{{artifact:DOC__SCORE_PLATFORM_SAFETY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_SAFETY_PLAN_FDR:status,safety-level,security}}
 
 **Purpose**
 

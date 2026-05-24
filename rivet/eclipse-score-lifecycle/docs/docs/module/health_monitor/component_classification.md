@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-98238
+id: DOC-COMPONENT-CLASSIFICATION-38887
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Health Monitor Component Classification
 
-{{artifact:DOC__HEALTH_MONITOR_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR_COMP_CLASS:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

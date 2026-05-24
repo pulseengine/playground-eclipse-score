@@ -1,5 +1,5 @@
 ---
-id: DOC-GTEST-95973
+id: DOC-GTEST-98545
 title: Gtest
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### gtest
 
-{{artifact:DOC_TOOL__GTEST:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__GTEST:status,safety-level,security}}
 
 # GoogleTest (GTest) Verification Report
 

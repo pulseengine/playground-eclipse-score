@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-CONCEPT-43181
+id: DOC-PLATFORM-MANAGEMENT-CONCEPT-90175
 title: Platform Management Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__PLATFORM_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__PLATFORM_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Platform Management will be discussed. Inputs for this concepts
 are both the requirements of ISO26262 Part-2 and ASPICE Requirements from MAN.3 additionally

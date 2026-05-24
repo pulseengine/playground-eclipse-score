@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-77422
+id: DOC-FMEA-28533
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### result FMEA
 
-{{artifact:DOC__RESULT_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__RESULT_FMEA:status,safety-level,security}}
 
 ## Failure Mode List
 
@@ -90,17 +90,17 @@ For all identified applicable failure initiators, the FMEA is performed in the f
 
 ### Result Error Code Cross-Domain Misinterpretation
 
-{{artifact:COMP_SAF_FMEA__RESULT__ERROR_CODE:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__RESULT__ERROR_CODE:status,safety-level,security}}
 
 ### Result Error Message Lifetime Violation
 
-{{artifact:COMP_SAF_FMEA__RESULT__ERROR_MESSAGE_LIFE:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__RESULT__ERROR_MESSAGE_LIFE:status,safety-level,security}}
 
 ### Result Unchecked Value or Error Access
 
-{{artifact:COMP_SAF_FMEA__RESULT__UNCHECKED:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__RESULT__UNCHECKED:status,safety-level,security}}
 
 ### Result Stop User
 
-{{artifact:COMP_SAF_FMEA__RESULT__STOP_USER:status,safety-level,security}}}}
+{{artifact:COMP_SAF_FMEA__RESULT__STOP_USER:status,safety-level,security}}
 

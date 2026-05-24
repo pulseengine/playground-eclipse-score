@@ -1,5 +1,5 @@
 ---
-id: DOC-SWE.3-8966
+id: DOC-SWE.3-65721
 title: Swe.3
 type: specification
 status: approved
@@ -31,21 +31,21 @@ design.
 
 ### SWE.3.BP1: Specify the static aspects of the detailed design
 
-{{artifact:STD_REQ__ASPICE_40__SWE-3-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-3-BP1:status,safety-level,security}}
 
 ### SWE.3.BP2: Specify dynamic aspects of the detailed design
 
-{{artifact:STD_REQ__ASPICE_40__SWE-3-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-3-BP2:status,safety-level,security}}
 
 ### SWE.3.BP3: Develop software units
 
-{{artifact:STD_REQ__ASPICE_40__SWE-3-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-3-BP3:status,safety-level,security}}
 
 ### SWE.3.BP4: Ensure consistency and establish bidirectional traceability
 
-{{artifact:STD_REQ__ASPICE_40__SWE-3-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-3-BP4:status,safety-level,security}}
 
 ### SWE.3.BP5: Communicate agreed software detailed design and developed software units
 
-{{artifact:STD_REQ__ASPICE_40__SWE-3-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__SWE-3-BP5:status,safety-level,security}}
 

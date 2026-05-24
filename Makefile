@@ -57,9 +57,20 @@ convert-%:
 	    --docs-out rivet/$*/docs \
 	    --report rivet/$*/coverage.md
 
-# ── Mechanical oracle — corpus-scale rivet validate ─────────────────────
-validate:
+# ── Mechanical oracle — corpus-scale rivet validate + variant gate ─────
+#
+# Two gates: rivet schema validation across all 58 repos AND the
+# variant model's check-all over the named worked variants. Both must
+# pass for the falsification claim to hold.
+validate: validate-corpus validate-variants
+
+validate-corpus:
 	@$(RIVET) --schemas $(SCHEMAS) validate
+
+validate-variants:
+	@$(RIVET) variant check-all \
+	    --model   variants/feature-model.yaml \
+	    --binding variants/bindings.yaml
 
 # Per-repo validation (each isolated; expect cross-repo dangling links).
 validate-each: $(addprefix validate-,$(REPOS))

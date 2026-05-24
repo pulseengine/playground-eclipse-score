@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-PLAN-34945
+id: DOC-PLATFORM-SECURITY-PLAN-88246
 title: Platform Security Plan
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Platform Security Plan
 
-{{artifact:DOC__PLATFORM_SECURITY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SECURITY_PLAN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Platform.

@@ -1,5 +1,5 @@
 ---
-id: DOC-DFA-85931
+id: DOC-DFA-5336
 title: Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency DFA
 
-{{artifact:DOC__PERSISTENCY_DFA:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_DFA:status,safety-level,security}}
 
 The DFA for the feature Persistency is performed. To show evidence that all failure initiators are considered, the applicability has to be filled out in the
 following tables. For all applicable failure initiators, the DFA has to be performed.
@@ -159,5 +159,5 @@ For all identified applicable failure initiators, the DFA is performed in the fo
 
 ### Persistency execution blocking
 
-{{artifact:FEAT_SAF_DFA__PERSISTENCY__EXECUTION_BLOCKING:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_DFA__PERSISTENCY__EXECUTION_BLOCKING:status,safety-level,security}}
 

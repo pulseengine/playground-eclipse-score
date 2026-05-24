@@ -1,5 +1,5 @@
 ---
-id: DOC-CHECKLIST-SAFETY-PLAN-48253
+id: DOC-CHECKLIST-SAFETY-PLAN-73593
 title: Checklist Safety Plan
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Safety Plan Formal Review Checklist
 
-{{artifact:GD_CHKLST__SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:GD_CHKLST__SAFETY_PLAN:status,safety-level,security}}
 

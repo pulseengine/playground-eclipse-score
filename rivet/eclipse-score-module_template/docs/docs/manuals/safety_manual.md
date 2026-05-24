@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-49539
+id: DOC-SAFETY-MANUAL-17378
 title: Safety Manual
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Safety Manual
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_MANUAL:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

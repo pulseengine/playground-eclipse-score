@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-63447
+id: DOC-INDEX-86892
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### LoLa Detailed Design
 
-{{artifact:DOC__LOLA_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__LOLA_DETAILED_DESIGN:status,safety-level,security}}
 
 # Detailed Design for Component: LoLa
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-36807
+id: DOC-INDEX-87183
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Memory Library
 
-{{artifact:DOC__MEMORY:status,safety-level,security}}}}
+{{artifact:DOC__MEMORY:status,safety-level,security}}
 
 .. toctree::
    :hidden:

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-73836
+id: DOC-INDEX-94735
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concurrency Library
 
-{{artifact:DOC__CONCURRENCY:status,safety-level,security}}}}
+{{artifact:DOC__CONCURRENCY:status,safety-level,security}}
 
 .. toctree::
    :hidden:

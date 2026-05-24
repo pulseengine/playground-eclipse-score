@@ -1,5 +1,5 @@
 ---
-id: DOC-SOFTWARE-VERIFICATION-79082
+id: DOC-SOFTWARE-VERIFICATION-7841
 title: Software Verification
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Software Verification Plan
 
-{{artifact:DOC__VERIFICATION_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__VERIFICATION_PLAN:status,safety-level,security}}
 
 .. _software_verification_plan:
 

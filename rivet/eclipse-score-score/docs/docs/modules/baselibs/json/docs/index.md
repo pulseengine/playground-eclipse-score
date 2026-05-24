@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-50275
+id: DOC-INDEX-34445
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### JSON-Library
 
-{{artifact:DOC__JSON:status,safety-level,security}}}}
+{{artifact:DOC__JSON:status,safety-level,security}}
 
 .. toctree::
    :hidden:

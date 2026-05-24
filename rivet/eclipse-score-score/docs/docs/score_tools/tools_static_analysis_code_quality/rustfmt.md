@@ -1,5 +1,5 @@
 ---
-id: DOC-RUSTFMT-27375
+id: DOC-RUSTFMT-18513
 title: Rustfmt
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### rustfmt
 
-{{artifact:DOC_TOOL__RUSTFMT:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__RUSTFMT:status,safety-level,security}}
 
 # Rustfmt Verification Report
 

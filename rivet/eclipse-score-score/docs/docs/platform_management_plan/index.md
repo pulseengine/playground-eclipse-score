@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-78472
+id: DOC-INDEX-52251
 title: Index
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Platform Management Plan
 
-{{artifact:DOC__PLATFORM_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_MGT_PLAN:status,safety-level,security}}
 
 # Platform Management Plan
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-33339
+id: DOC-INDEX-11669
 title: Index
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Contribution
 
-{{artifact:DOC__CONTRIBUTION_GUIDELINE:status,safety-level,security}}}}
+{{artifact:DOC__CONTRIBUTION_GUIDELINE:status,safety-level,security}}
 
 .. _contribute:
 

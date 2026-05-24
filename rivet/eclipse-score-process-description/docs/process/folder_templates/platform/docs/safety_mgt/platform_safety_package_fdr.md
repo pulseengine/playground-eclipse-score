@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-PACKAGE-FDR-37493
+id: DOC-PLATFORM-SAFETY-PACKAGE-FDR-18559
 title: Platform Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Package Formal Review
 
-{{artifact:DOC__PLATFORM_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **Purpose**
 

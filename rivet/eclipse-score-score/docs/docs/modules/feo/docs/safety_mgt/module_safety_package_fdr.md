@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-26374
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-60762
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Module Safety Package Formal Review
 
-{{artifact:DOC__FEO_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__FEO_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 # FEO Module Safety Package Formal Review Report
 

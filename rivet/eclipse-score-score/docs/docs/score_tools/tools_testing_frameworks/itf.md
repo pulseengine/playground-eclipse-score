@@ -1,5 +1,5 @@
 ---
-id: DOC-ITF-80916
+id: DOC-ITF-77979
 title: Itf
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### ITF
 
-{{artifact:DOC_TOOL__ITF:status,safety-level,security}}}}
+{{artifact:DOC_TOOL__ITF:status,safety-level,security}}
 
 # ITF (Integration Testing Framework) Verification Report
 

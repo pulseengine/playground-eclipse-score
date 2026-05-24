@@ -1,5 +1,5 @@
 ---
-id: DOC-GIT-78323
+id: DOC-GIT-74215
 title: Git
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Git Guidelines
 
-{{artifact:DOC__GIT_CODING_GUIDELINES:status,safety-level,security}}}}
+{{artifact:DOC__GIT_CODING_GUIDELINES:status,safety-level,security}}
 
 .. _git_guidelines:
 

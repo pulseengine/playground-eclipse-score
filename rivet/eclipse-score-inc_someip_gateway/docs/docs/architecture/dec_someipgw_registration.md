@@ -1,5 +1,5 @@
 ---
-id: DOC-DEC-SOMEIPGW-REGISTRATION-77787
+id: DOC-DEC-SOMEIPGW-REGISTRATION-91912
 title: Dec Someipgw Registration
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Dynamic Registration for SOME/IP Gateway
 
-{{artifact:DEC_REC__COMPONENT__SOMEIP_GW_REGISTRATION:status,safety-level,security}}}}
+{{artifact:DEC_REC__COMPONENT__SOMEIP_GW_REGISTRATION:status,safety-level,security}}
 
 ## Alternatives Considered
 

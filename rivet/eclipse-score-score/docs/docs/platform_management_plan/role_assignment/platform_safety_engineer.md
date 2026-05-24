@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-ENGINEER-9807
+id: DOC-PLATFORM-SAFETY-ENGINEER-55163
 title: Platform Safety Engineer
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Engineer
 
-{{artifact:DOC__PLATFORM_SAFETY_ENGINEER:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SAFETY_ENGINEER:status,safety-level,security}}
 
 # Elected Committer(s)
 

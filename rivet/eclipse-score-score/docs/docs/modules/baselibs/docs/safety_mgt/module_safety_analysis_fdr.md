@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-ANALYSIS-FDR-21599
+id: DOC-MODULE-SAFETY-ANALYSIS-FDR-95629
 title: Module Safety Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Safety Analysis Checklist
 
-{{artifact:DOC__BASELIBS_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 **Purpose**
 

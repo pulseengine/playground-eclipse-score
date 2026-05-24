@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-52238
+id: DOC-CHKLST-IMPL-INSPECTION-4554
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Static Reflection Implementation Inspection Checklist
 
-{{artifact:DOC__STATIC_REFLECTION_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__STATIC_REFLECTION_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

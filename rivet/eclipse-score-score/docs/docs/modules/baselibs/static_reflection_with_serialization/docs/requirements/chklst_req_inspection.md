@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-20263
+id: DOC-CHKLST-REQ-INSPECTION-97481
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Static Reflection Requirements Inspection Checklist
 
-{{artifact:DOC__STATIC_REFLECTION_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__STATIC_REFLECTION_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

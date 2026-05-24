@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-35253
+id: DOC-CHKLST-IMPL-INSPECTION-65951
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Filesystem Implementation Inspection Checklist
 
-{{artifact:DOC__FILESYSTEM_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__FILESYSTEM_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

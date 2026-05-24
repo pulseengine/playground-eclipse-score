@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-13123
+id: DOC-FMEA-33077
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency FMEA
 
-{{artifact:DOC__PERSISTENCY_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_FMEA:status,safety-level,security}}
 
 The FMEA for the feature Persistency is performed. To show evidence that all failure initiators are considered, the applicability has to be filled out in the
 following tables. For all applicable failure initiators, the FMEA has to be performed.
@@ -93,21 +93,21 @@ For all identified applicable failure initiators, the FMEA is performed in the f
 
 ### Persistency
 
-{{artifact:FEAT_SAF_FMEA__PERSISTENCY__MESSAGE_NREIVED:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__PERSISTENCY__MESSAGE_NREIVED:status,safety-level,security}}
 
 ### Persistency
 
-{{artifact:FEAT_SAF_FMEA__PERSISTENCY__LATE_MESSAGE:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__PERSISTENCY__LATE_MESSAGE:status,safety-level,security}}
 
 ### Persistency
 
-{{artifact:FEAT_SAF_FMEA__PERSISTENCY__CORRUPTED_MESSAGE:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__PERSISTENCY__CORRUPTED_MESSAGE:status,safety-level,security}}
 
 ### Persistency
 
-{{artifact:FEAT_SAF_FMEA__PERSISTENCY__NOT_SENT:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__PERSISTENCY__NOT_SENT:status,safety-level,security}}
 
 ### Persistency
 
-{{artifact:FEAT_SAF_FMEA__PERSISTENCY__ERR_HANDL:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__PERSISTENCY__ERR_HANDL:status,safety-level,security}}
 

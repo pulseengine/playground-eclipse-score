@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-GUIDELINE-27330
+id: DOC-PROBLEM-RESOLUTION-GUIDELINE-53370
 title: Problem Resolution Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Problem Resolution Guideline
 
-{{artifact:GD_GUIDL__PROBLEM_PROBLEM:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__PROBLEM_PROBLEM:status,safety-level,security}}
 
 This document describes the general guidances for Problem Resolution based on the concept which is defined [[title]]<doc_concept__problem_process>.
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-ASPICE-94310
+id: DOC-ASPICE-34761
 title: Aspice
 type: specification
 status: approved
@@ -86,27 +86,27 @@ to which the performance of the process is managed.
 
 ### GP2.1.1: Identify the objectives and define a strategy for the performance of the process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-211:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-211:status,safety-level,security}}
 
 ### GP2.1.2: Plan the performance of the process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-212:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-212:status,safety-level,security}}
 
 ### GP2.1.3: Determine resource needs.
 
-{{artifact:STD_REQ__ASPICE_40__GP-213:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-213:status,safety-level,security}}
 
 ### GP2.1.4: Identify and make available resources.
 
-{{artifact:STD_REQ__ASPICE_40__GP-214:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-214:status,safety-level,security}}
 
 ### GP2.1.5: Monitor and adjust the performance of the process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-215:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-215:status,safety-level,security}}
 
 ### GP2.1.6: Manage the interfaces between involved parties.
 
-{{artifact:STD_REQ__ASPICE_40__GP-216:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-216:status,safety-level,security}}
 
 ## PA 2.2 Work product management process attribute
 
@@ -124,19 +124,19 @@ to which the work products produced by the process are appropriately managed.
 
 ### GP2.2.1: Define the requirements for the work products.
 
-{{artifact:STD_REQ__ASPICE_40__GP-221:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-221:status,safety-level,security}}
 
 ### GP2.2.2: Define the requirements for storage and control of the work products.
 
-{{artifact:STD_REQ__ASPICE_40__GP-222:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-222:status,safety-level,security}}
 
 ### GP2.2.3: Identify, store and control the work products.
 
-{{artifact:STD_REQ__ASPICE_40__GP-223:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-223:status,safety-level,security}}
 
 ### GP2.2.4: Review and adjust work products.
 
-{{artifact:STD_REQ__ASPICE_40__GP-224:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-224:status,safety-level,security}}
 
 ## PA 3.1 Process definition process attribute
 
@@ -156,19 +156,19 @@ which a standard process is maintained to support the deployment of the defined 
 
 ### GP3.1.1: Establish and maintain the standard process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-311:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-311:status,safety-level,security}}
 
 ### GP3.1.2: Determine the required competencies.
 
-{{artifact:STD_REQ__ASPICE_40__GP-312:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-312:status,safety-level,security}}
 
 ### GP3.1.3: Determine the required resources.
 
-{{artifact:STD_REQ__ASPICE_40__GP-313:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-313:status,safety-level,security}}
 
 ### GP3.1.4: Determine suitable methods to monitor the standard process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-314:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-314:status,safety-level,security}}
 
 ## PA 3.2 Process deployment process attribute
 
@@ -187,19 +187,19 @@ the standard process is deployed as a defined process to achieve its process out
 
 ### GP3.2.1: Deploy a defined process that satisfies the context specific requirements of the use of the standard process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-321:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-321:status,safety-level,security}}
 
 ### GP3.2.2: Ensure required competencies for the defined roles.
 
-{{artifact:STD_REQ__ASPICE_40__GP-322:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-322:status,safety-level,security}}
 
 ### GP3.2.3: Ensure required resources to support the performance of the defined process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-323:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-323:status,safety-level,security}}
 
 ### GP3.2.4: Monitor the performance of the defined process.
 
-{{artifact:STD_REQ__ASPICE_40__GP-324:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__GP-324:status,safety-level,security}}
 
 ## Appendix
 

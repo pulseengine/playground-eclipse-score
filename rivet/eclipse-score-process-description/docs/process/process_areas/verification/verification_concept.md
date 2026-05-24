@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-CONCEPT-6943
+id: DOC-VERIFICATION-CONCEPT-64702
 title: Verification Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Verification Concept
 
-{{artifact:DOC_CONCEPT__VERIFICATION_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__VERIFICATION_PROCESS:status,safety-level,security}}
 
 # Inputs
 

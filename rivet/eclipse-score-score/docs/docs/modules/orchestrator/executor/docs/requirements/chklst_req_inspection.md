@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-39946
+id: DOC-CHKLST-REQ-INSPECTION-99836
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Executor Requirements Inspection Checklist
 
-{{artifact:DOC__EXECUTOR_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__EXECUTOR_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

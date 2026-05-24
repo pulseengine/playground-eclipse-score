@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-619
+id: DOC-INDEX-19200
 title: Index
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Component
 
-{{artifact:DOC__FEO:status,safety-level,security}}}}
+{{artifact:DOC__FEO:status,safety-level,security}}
 
 # FEO Component
 

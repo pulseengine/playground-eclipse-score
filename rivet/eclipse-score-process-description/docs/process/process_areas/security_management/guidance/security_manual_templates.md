@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANUAL-TEMPLATES-74690
+id: DOC-SECURITY-MANUAL-TEMPLATES-1912
 title: Security Manual Templates
 type: specification
 status: approved
@@ -10,9 +10,9 @@ tags: [eclipse-score]
 
 ### Platform Security Manual Template
 
-{{artifact:GD_TEMP__PLATFORM_SECURITY_MANUAL:status,safety-level,security}}}}
+{{artifact:GD_TEMP__PLATFORM_SECURITY_MANUAL:status,safety-level,security}}
 
 ### Module Security Manual Template
 
-{{artifact:GD_TEMP__MODULE_SECURITY_MANUAL:status,safety-level,security}}}}
+{{artifact:GD_TEMP__MODULE_SECURITY_MANUAL:status,safety-level,security}}
 

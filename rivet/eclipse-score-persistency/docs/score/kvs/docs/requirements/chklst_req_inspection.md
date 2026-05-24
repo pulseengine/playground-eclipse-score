@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-4994
+id: DOC-CHKLST-REQ-INSPECTION-78818
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### KVS Requirements Inspection Checklist
 
-{{artifact:DOC__KVS_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__KVS_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

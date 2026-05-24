@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-ANALYSIS-97639
+id: DOC-PLATFORM-SECURITY-ANALYSIS-62851
 title: Platform Security Analysis
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Security Analysis
 
-{{artifact:DOC__PLATFORM_SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_SECURITY_ANALYSIS:status,safety-level,security}}
 
 .. ..  attention::
 ## Purpose

@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SECURITY-PACKAGE-FDR-42797
+id: DOC-MODULE-SECURITY-PACKAGE-FDR-82450
 title: Module Security Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Security Package Formal Review
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SEC_PKG_FDR:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SEC_PKG_FDR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

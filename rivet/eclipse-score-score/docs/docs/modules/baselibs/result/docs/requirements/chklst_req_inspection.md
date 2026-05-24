@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-REQ-INSPECTION-72596
+id: DOC-CHKLST-REQ-INSPECTION-83436
 title: Chklst Req Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Result Library Requirements Inspection Checklist
 
-{{artifact:DOC__RESULT_LIBRARY_REQ_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__RESULT_LIBRARY_REQ_INSPECTION:status,safety-level,security}}
 
 # Requirement Inspection Checklist
 

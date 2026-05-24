@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-5202
+id: DOC-INDEX-58814
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Contribution Guideline
 
-{{artifact:DOC__CONTR_GUIDELINE:status,safety-level,security}}}}
+{{artifact:DOC__CONTR_GUIDELINE:status,safety-level,security}}
 
 # How we Work
 
@@ -73,7 +73,7 @@ We're excited to have you on board. Together, we can shape S-CORE into a platfor
 
 ### Pull Request Guideline
 
-{{artifact:DOC__PULL_REQUEST_GUIDELINE:status,safety-level,security}}}}
+{{artifact:DOC__PULL_REQUEST_GUIDELINE:status,safety-level,security}}
 
 A Pull Request (**PR**) is the **ONLY** way to contribute **CODE** to the *S-CORE* project.
 
@@ -122,7 +122,7 @@ At any point the contributor (Contributor <rl__contributor>) may decide not to c
 
 ### Issue Guideline
 
-{{artifact:DOC__ISSUE_GUIDELINE:status,safety-level,security}}}}
+{{artifact:DOC__ISSUE_GUIDELINE:status,safety-level,security}}
 
 A *GitHub Issue* is the way to report bugs or propose improvements without knowing the solution and to request features (incl. scope changes).
 

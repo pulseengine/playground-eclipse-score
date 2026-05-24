@@ -1,5 +1,5 @@
 ---
-id: DOC-RUST-API-DESIGN-22249
+id: DOC-RUST-API-DESIGN-56311
 title: Rust Api Design
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Rust API design guidelines
 
-{{artifact:DOC__RUST_API_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__RUST_API_DESIGN:status,safety-level,security}}
 
 # Preface
 

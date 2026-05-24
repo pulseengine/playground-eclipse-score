@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-78718
+id: DOC-INDEX-36306
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### HealthMonitor
 
-{{artifact:DOC__HEALTH_MONITOR:status,safety-level,security}}}}
+{{artifact:DOC__HEALTH_MONITOR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

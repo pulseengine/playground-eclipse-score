@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-PACKAGE-FDR-17760
+id: DOC-PLATFORM-SECURITY-PACKAGE-FDR-10954
 title: Platform Security Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Platform Name] Security Package Checklist
 
-{{artifact:DOC__PLATFORM_NAME_SECURITY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_NAME_SECURITY_PACKAGE_FDR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Platform.

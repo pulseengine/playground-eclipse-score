@@ -1,5 +1,5 @@
 ---
-id: DOC-FMEA-40776
+id: DOC-FMEA-87276
 title: Fmea
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### IPC FMEA
 
-{{artifact:DOC__IPC_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__IPC_FMEA:status,safety-level,security}}
 
 ## Failure Mode List
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature FMEA.

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-16178
+id: DOC-INDEX-53479
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name]
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.

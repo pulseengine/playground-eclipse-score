@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-ANALYSIS-FDR-7427
+id: DOC-PLATFORM-SECURITY-ANALYSIS-FDR-83086
 title: Platform Security Analysis Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Platform Name] Security Analysis Checklist
 
-{{artifact:DOC__PLATFORM_NAME_SECURITY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_NAME_SECURITY_ANALYSIS_FDR:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Platform.

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-33513
+id: DOC-INDEX-28805
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### FlatBuffers-Library
 
-{{artifact:DOC__FLATBUFFERS:status,safety-level,security}}}}
+{{artifact:DOC__FLATBUFFERS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

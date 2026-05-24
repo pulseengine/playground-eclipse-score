@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-6081
+id: DOC-INDEX-17327
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Communication
 
-{{artifact:DOC__COM:status,safety-level,security}}}}
+{{artifact:DOC__COM:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

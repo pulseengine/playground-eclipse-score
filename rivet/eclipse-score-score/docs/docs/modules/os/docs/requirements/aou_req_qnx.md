@@ -1,5 +1,5 @@
 ---
-id: DOC-AOU-REQ-QNX-38478
+id: DOC-AOU-REQ-QNX-15238
 title: Aou Req Qnx
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### QNX Assumptions of Use
 
-{{artifact:DOC__OS_AOU_QNX:status,safety-level,security}}}}
+{{artifact:DOC__OS_AOU_QNX:status,safety-level,security}}
 
 Note: Document is draft until all relevant restrictions from the QNX safety manual(s) are included.
 
@@ -31,10 +31,10 @@ requirements inspection checklist's scope and document findings like for other i
 
 ### RST-0001
 
-{{artifact:AOU_REQ__OS__RST0001:status,safety-level,security}}}}
+{{artifact:AOU_REQ__OS__RST0001:status,safety-level,security}}
 
 ### RST-0002
 
-{{artifact:AOU_REQ__OS__RST0002:status,safety-level,security}}}}
+{{artifact:AOU_REQ__OS__RST0002:status,safety-level,security}}
 
 more to come ...

@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-TEMPLATES-35567
+id: DOC-VERIFICATION-TEMPLATES-70714
 title: Verification Templates
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Verification Specification Template
 
-{{artifact:GD_TEMP__VERIFICATION_SPECIFICATION:status,safety-level,security}}}}
+{{artifact:GD_TEMP__VERIFICATION_SPECIFICATION:status,safety-level,security}}
 
 ## C++
 

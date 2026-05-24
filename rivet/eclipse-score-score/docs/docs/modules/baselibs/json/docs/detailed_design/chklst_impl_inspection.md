@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-53086
+id: DOC-CHKLST-IMPL-INSPECTION-77164
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Json Implementation Inspection Checklist
 
-{{artifact:DOC__JSON_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__JSON_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

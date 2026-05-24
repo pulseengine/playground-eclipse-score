@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-METHODS-90388
+id: DOC-VERIFICATION-METHODS-42632
 title: Verification Methods
 type: specification
 status: approved
@@ -17,7 +17,7 @@ and how to create test cases using the same.
 
 ### Verification Methods
 
-{{artifact:GD_METH__VERIFICATION_METHODS:status,safety-level,security}}}}
+{{artifact:GD_METH__VERIFICATION_METHODS:status,safety-level,security}}
 
 .. _ver_fault:
 
@@ -146,7 +146,7 @@ Systematic resolution or justified handling of findings contributes to the overa
 
 ### Verification Derivation Technique
 
-{{artifact:GD_METH__VERIFICATION_DERIVATION:status,safety-level,security}}}}
+{{artifact:GD_METH__VERIFICATION_DERIVATION:status,safety-level,security}}
 
 .. _ver_boundary:
 

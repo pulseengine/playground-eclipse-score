@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SECURITY-PLAN-FDR-93497
+id: DOC-MODULE-SECURITY-PLAN-FDR-85985
 title: Module Security Plan Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Security Plan Formal Review
 
-{{artifact:DOC__PERSISTENCY_SECURITY_PLAN_FDR:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_SECURITY_PLAN_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

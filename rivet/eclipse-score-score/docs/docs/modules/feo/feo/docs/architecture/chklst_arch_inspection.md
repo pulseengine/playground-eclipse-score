@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARCH-INSPECTION-29257
+id: DOC-CHKLST-ARCH-INSPECTION-79084
 title: Chklst Arch Inspection
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Component Architecture Inspection Checklist
 
-{{artifact:DOC__ARCH_INSPECTION_COMPONENT_FEO:status,safety-level,security}}}}
+{{artifact:DOC__ARCH_INSPECTION_COMPONENT_FEO:status,safety-level,security}}
 
 # FEO Component Architecture Inspection Checklist
 

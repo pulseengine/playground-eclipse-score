@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-79297
+id: DOC-INDEX-69051
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### LoLa
 
-{{artifact:DOC__LOLA:status,safety-level,security}}}}
+{{artifact:DOC__LOLA:status,safety-level,security}}
 
 As the component implements the complete feature [[DOC__COM_IPC]], there is currently nothing to add here.
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-PLAN-TEMPLATE-28117
+id: DOC-VERIFICATION-PLAN-TEMPLATE-64617
 title: Verification Plan Template
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Platform Verification Plan Template
 
-{{artifact:GD_TEMP__VERIFICATION_PLAN:status,safety-level,security}}}}
+{{artifact:GD_TEMP__VERIFICATION_PLAN:status,safety-level,security}}
 

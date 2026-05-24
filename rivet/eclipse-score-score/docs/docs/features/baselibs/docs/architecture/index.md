@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-51126
+id: DOC-INDEX-49226
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Baselibs Architecture
 
-{{artifact:DOC__BASELIBS_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_ARCHITECTURE:status,safety-level,security}}
 
 ## Overview
 
@@ -71,15 +71,15 @@ The decomposition of Baselibs into modular libraries is motivated by the need fo
 
 ### Baselibs
 
-{{artifact:FEAT__BASELIBS:status,safety-level,security}}}}
+{{artifact:FEAT__BASELIBS:status,safety-level,security}}
 
 ### Baselibs Static View
 
-{{artifact:FEAT_ARC_STA__BASELIBS__STATIC_VIEW_ARCH:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_STA__BASELIBS__STATIC_VIEW_ARCH:status,safety-level,security}}
 
 ### Baselibs Dynamic View
 
-{{artifact:FEAT_ARC_DYN__BASELIBS__DYNAMIC_VIEW_ARCH:status,safety-level,security}}}}
+{{artifact:FEAT_ARC_DYN__BASELIBS__DYNAMIC_VIEW_ARCH:status,safety-level,security}}
 
 ## Logical Interfaces
 

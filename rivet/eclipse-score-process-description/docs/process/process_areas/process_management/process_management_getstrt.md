@@ -1,5 +1,5 @@
 ---
-id: DOC-PROCESS-MANAGEMENT-GETSTRT-60772
+id: DOC-PROCESS-MANAGEMENT-GETSTRT-50906
 title: Process Management Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Process Management
 
-{{artifact:DOC_GETSTRT__PROCESS_MANAGEMENT:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__PROCESS_MANAGEMENT:status,safety-level,security}}
 
 This document describes the steps to create and maintain the process strategy and the
 process description.

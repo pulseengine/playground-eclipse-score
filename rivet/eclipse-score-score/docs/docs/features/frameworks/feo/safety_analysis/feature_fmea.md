@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-FMEA-73456
+id: DOC-FEATURE-FMEA-29240
 title: Feature Fmea
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Feature FMEA
 
-{{artifact:DOC__FRAMEWORKS_FEO_FMEA:status,safety-level,security}}}}
+{{artifact:DOC__FRAMEWORKS_FEO_FMEA:status,safety-level,security}}
 
 # FEO Feature FMEA
 
@@ -18,7 +18,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:FEAT_SAF_FMEA__<FEATURE>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your feature FMEA.

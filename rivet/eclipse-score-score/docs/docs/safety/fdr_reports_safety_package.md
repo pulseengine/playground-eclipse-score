@@ -1,5 +1,5 @@
 ---
-id: DOC-FDR-REPORTS-SAFETY-PACKAGE-48369
+id: DOC-FDR-REPORTS-SAFETY-PACKAGE-12097
 title: Fdr Reports Safety Package
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Safety Package Formal Review
 
-{{artifact:DOC__SCORE_PLATFORM_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **Purpose**
 

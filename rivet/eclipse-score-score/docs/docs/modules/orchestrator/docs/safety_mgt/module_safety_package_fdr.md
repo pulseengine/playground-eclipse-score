@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PACKAGE-FDR-35571
+id: DOC-MODULE-SAFETY-PACKAGE-FDR-885
 title: Module Safety Package Fdr
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Orchestrator Safety Package Formal Review
 
-{{artifact:DOC__ORCHESTRATOR_SAFETY_PACKAGE_FDR:status,safety-level,security}}}}
+{{artifact:DOC__ORCHESTRATOR_SAFETY_PACKAGE_FDR:status,safety-level,security}}
 
 **1. Purpose**
 

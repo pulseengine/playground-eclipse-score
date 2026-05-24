@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-GUIDELINE-67780
+id: DOC-SECURITY-ANALYSIS-GUIDELINE-41759
 title: Security Analysis Guideline
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Security Analysis Guideline
 
-{{artifact:GD_GUIDL__SECURITY_ANALYSIS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__SECURITY_ANALYSIS:status,safety-level,security}}
 
 This document describes the general guidance for Security Analysis based on the concept
 which is defined Security Analysis Concept<doc_concept__security_analysis>.

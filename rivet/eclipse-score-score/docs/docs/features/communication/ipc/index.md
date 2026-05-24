@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-94880
+id: DOC-INDEX-82534
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Inter-process Communication
 
-{{artifact:DOC__COM_IPC:status,safety-level,security}}}}
+{{artifact:DOC__COM_IPC:status,safety-level,security}}
 
 .. toctree::
    :maxdepth: 1

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-77632
+id: DOC-INDEX-17903
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### FEO Safety Work Products
 
-{{artifact:DOC__FEO_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__FEO_SAFETY_WP:status,safety-level,security}}
 
 .. list-table:: FEO Feature Work Products
     :header-rows: 1

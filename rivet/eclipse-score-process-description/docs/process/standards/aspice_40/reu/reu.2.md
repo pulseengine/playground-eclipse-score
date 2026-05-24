@@ -1,5 +1,5 @@
 ---
-id: DOC-REU.2-52722
+id: DOC-REU.2-43867
 title: Reu.2
 type: specification
 status: approved
@@ -24,25 +24,25 @@ and approved for their target context.
 
 ### REU.2.BP1: Select products for reuse
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP1:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP1:status,safety-level,security}}
 
 ### REU.2.BP2: Analyze the reuse capability of the product
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP2:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP2:status,safety-level,security}}
 
 ### REU.2.BP3: Define limitations for reuse
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP3:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP3:status,safety-level,security}}
 
 ### REU.2.BP4: Ensure qualification of products for reuse
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP4:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP4:status,safety-level,security}}
 
 ### REU.2.BP5: Provide products for reuse
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP5:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP5:status,safety-level,security}}
 
 ### REU.2.BP6: Communicate information about effectiveness of reuse activities
 
-{{artifact:STD_REQ__ASPICE_40__REU-2-BP6:status,safety-level,security}}}}
+{{artifact:STD_REQ__ASPICE_40__REU-2-BP6:status,safety-level,security}}
 

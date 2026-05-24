@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-58636
+id: DOC-INDEX-90546
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### ABI Compatible Data Types
 
-{{artifact:DOC__ABI_COMPATIBLE_DATA_TYPES:status,safety-level,security}}}}
+{{artifact:DOC__ABI_COMPATIBLE_DATA_TYPES:status,safety-level,security}}
 
 .. toctree::
    :hidden:

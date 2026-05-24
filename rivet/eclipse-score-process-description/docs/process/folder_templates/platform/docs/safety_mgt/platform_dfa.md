@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-DFA-74095
+id: DOC-PLATFORM-DFA-44568
 title: Platform Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform DFA
 
-{{artifact:DOC__PLATFORM_DFA:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_DFA:status,safety-level,security}}
 
 The DFA for the platform is performed. To show evidence that all failure initiators are considered, the applicability has to be filled out in the
 following tables. For all applicable failure initiators, the DFA has to be performed.
@@ -230,7 +230,7 @@ For all identified applicable failure initiators, the DFA is performed in the fo
 
 ### <Title>
 
-{{artifact:PLAT_SAF_DFA__PLATFORM__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+{{artifact:PLAT_SAF_DFA__PLATFORM__<ELEMENTDESCRIPTOR>:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to the platform DFA.

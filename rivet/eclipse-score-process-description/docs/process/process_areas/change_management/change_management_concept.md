@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-CONCEPT-80276
+id: DOC-CHANGE-MANAGEMENT-CONCEPT-56381
 title: Change Management Concept
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Concept Description
 
-{{artifact:DOC_CONCEPT__CHANGE_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_CONCEPT__CHANGE_PROCESS:status,safety-level,security}}
 
 In this section a concept for the Change Management will be discussed. Inputs for this concepts
 are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SUP.10 additionally

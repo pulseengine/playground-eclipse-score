@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-V-1-5-3-8461
+id: DOC-RELEASE-NOTE-V-1-5-3-70245
 title: Release Note V 1 5 3
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Process description Release Note v1.5.3
 
-{{artifact:DOC__PROCESS_DESCRIPTION_RELEASE_NOTE_V152:status,safety-level,security}}}}
+{{artifact:DOC__PROCESS_DESCRIPTION_RELEASE_NOTE_V152:status,safety-level,security}}
 
 | **Module Name:** Process description
 | **Release Tag:** v1.5.3

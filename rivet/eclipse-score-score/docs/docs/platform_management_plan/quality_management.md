@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-MANAGEMENT-43370
+id: DOC-QUALITY-MANAGEMENT-92692
 title: Quality Management
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Quality Management Plan
 
-{{artifact:DOC__PLATFORM_QUALITY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_QUALITY_PLAN:status,safety-level,security}}
 
 ## Purpose
 

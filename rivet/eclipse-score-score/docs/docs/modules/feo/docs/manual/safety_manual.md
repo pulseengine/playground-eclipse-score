@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-80956
+id: DOC-SAFETY-MANUAL-57787
 title: Safety Manual
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### FEO Module Safety Manual
 
-{{artifact:DOC__FEO_SAFETY_MANUAL:status,safety-level,security}}}}
+{{artifact:DOC__FEO_SAFETY_MANUAL:status,safety-level,security}}
 
 # FEO Module Safety Manual
 
@@ -35,15 +35,15 @@ For FEO module the following safety related stakeholder requirements are assumed
 
 ### on_target_crates
 
-{{artifact:AOU_REQ__FEO__ON_TARGET_CRATES:status,safety-level,security}}}}
+{{artifact:AOU_REQ__FEO__ON_TARGET_CRATES:status,safety-level,security}}
 
 ### rust_core_lib
 
-{{artifact:AOU_REQ__FEO__RUST_CORE_LIB:status,safety-level,security}}}}
+{{artifact:AOU_REQ__FEO__RUST_CORE_LIB:status,safety-level,security}}
 
 ### rust_std_lib_modules
 
-{{artifact:AOU_REQ__FEO__RUST_STD_LIB_MODULES:status,safety-level,security}}}}
+{{artifact:AOU_REQ__FEO__RUST_STD_LIB_MODULES:status,safety-level,security}}
 
 List of AoUs expected from the environment the platform / module runs on:
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-86490
+id: DOC-INDEX-48598
 title: Index
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### FlatBuffers
 
-{{artifact:COMP__BASELIBS_FLATBUFFERS:status,safety-level,security}}}}
+{{artifact:COMP__BASELIBS_FLATBUFFERS:status,safety-level,security}}
 

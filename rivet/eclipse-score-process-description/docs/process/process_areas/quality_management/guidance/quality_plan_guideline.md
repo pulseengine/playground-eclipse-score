@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-PLAN-GUIDELINE-41478
+id: DOC-QUALITY-PLAN-GUIDELINE-99674
 title: Quality Plan Guideline
 type: specification
 status: approved
@@ -12,5 +12,5 @@ tags: [eclipse-score]
 
 ### Quality Management Plan Definitions Guideline
 
-{{artifact:GD_GUIDL__QLM_PLAN_DEFINITIONS:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__QLM_PLAN_DEFINITIONS:status,safety-level,security}}
 

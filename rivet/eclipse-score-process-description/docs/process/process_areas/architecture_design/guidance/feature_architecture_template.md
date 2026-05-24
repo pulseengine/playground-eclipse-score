@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-ARCHITECTURE-TEMPLATE-90442
+id: DOC-FEATURE-ARCHITECTURE-TEMPLATE-35420
 title: Feature Architecture Template
 type: specification
 status: approved
@@ -10,5 +10,5 @@ tags: [eclipse-score]
 
 ### Feature Architecture Templates
 
-{{artifact:GD_TEMP__ARCH_FEATURE:status,safety-level,security}}}}
+{{artifact:GD_TEMP__ARCH_FEATURE:status,safety-level,security}}
 

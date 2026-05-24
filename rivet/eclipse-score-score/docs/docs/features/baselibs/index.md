@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-87737
+id: DOC-INDEX-92584
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Base Libraries
 
-{{artifact:DOC__BASELIBS:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS:status,safety-level,security}}
 
 .. toctree::
    :hidden:

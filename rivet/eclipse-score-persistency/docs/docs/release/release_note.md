@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-59507
+id: DOC-RELEASE-NOTE-53008
 title: Release Note
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Persistency Release Note
 
-{{artifact:DOC__PERSISTENCY_RELEASE_NOTE:status,safety-level,security}}}}
+{{artifact:DOC__PERSISTENCY_RELEASE_NOTE:status,safety-level,security}}
 
 | **Module Name:** Persistency
 | **Release Tag:** vX.Y.Z

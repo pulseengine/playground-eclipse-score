@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-VERIFICATION-REPORT-64998
+id: DOC-PLATFORM-VERIFICATION-REPORT-43558
 title: Platform Verification Report
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Platform Verification Report
 
-{{artifact:DOC__PLATFORM_VERIFICATION_REPORT:status,safety-level,security}}}}
+{{artifact:DOC__PLATFORM_VERIFICATION_REPORT:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated.

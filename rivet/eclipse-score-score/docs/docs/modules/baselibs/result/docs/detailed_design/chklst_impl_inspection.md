@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-2099
+id: DOC-CHKLST-IMPL-INSPECTION-91439
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### Result Lib Implementation Inspection Checklist
 
-{{artifact:DOC__RESULT_LIB_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__RESULT_LIB_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

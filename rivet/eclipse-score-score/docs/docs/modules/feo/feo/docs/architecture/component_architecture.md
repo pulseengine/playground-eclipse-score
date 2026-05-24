@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-ARCHITECTURE-48496
+id: DOC-COMPONENT-ARCHITECTURE-72106
 title: Component Architecture
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### FEO Component Architecture
 
-{{artifact:DOC__COMPONENT_FEO_ARCHITECTURE:status,safety-level,security}}}}
+{{artifact:DOC__COMPONENT_FEO_ARCHITECTURE:status,safety-level,security}}
 
 # FEO Component Architecture
 
@@ -43,37 +43,37 @@ considerations and Rust compiler constraints. (Rust proc-macros must reside in t
 
 ### FEO Main
 
-{{artifact:COMP__FEO_MAIN:status,safety-level,security}}}}
+{{artifact:COMP__FEO_MAIN:status,safety-level,security}}
 
 ### Static Architecture
 
-{{artifact:COMP_ARC_STA__FEO__MAIN:status,safety-level,security}}}}
+{{artifact:COMP_ARC_STA__FEO__MAIN:status,safety-level,security}}
 
 ## Dynamic Architecture
 
 ### Dynamic Architecture
 
-{{artifact:COMP_ARC_DYN__FEO__MAIN:status,safety-level,security}}}}
+{{artifact:COMP_ARC_DYN__FEO__MAIN:status,safety-level,security}}
 
 ## Interfaces
 
 ### feo::agent::PrimaryConfig
 
-{{artifact:REAL_ARC_INT__FEO__PRIMARY_CONFIG:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__FEO__PRIMARY_CONFIG:status,safety-level,security}}
 
 ### feo::agent::Primary
 
-{{artifact:REAL_ARC_INT__FEO__PRIMARY:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__FEO__PRIMARY:status,safety-level,security}}
 
 ### feo::agent::SecondaryConfig
 
-{{artifact:REAL_ARC_INT__FEO__SECONDARY_CONFIG:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__FEO__SECONDARY_CONFIG:status,safety-level,security}}
 
 ### feo::agent::Secondary
 
-{{artifact:REAL_ARC_INT__FEO__SECONDARY:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__FEO__SECONDARY:status,safety-level,security}}
 
 ### feo::activity::Activity
 
-{{artifact:REAL_ARC_INT__FEO__ACTIVITY:status,safety-level,security}}}}
+{{artifact:REAL_ARC_INT__FEO__ACTIVITY:status,safety-level,security}}
 

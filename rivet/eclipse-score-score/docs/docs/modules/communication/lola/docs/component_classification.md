@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-78850
+id: DOC-COMPONENT-CLASSIFICATION-96948
 title: Component Classification
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### lola Component Classification
 
-{{artifact:DOC__LOLA_COMP_CLASS:status,safety-level,security}}}}
+{{artifact:DOC__LOLA_COMP_CLASS:status,safety-level,security}}
 
 | Classification of lola
 |

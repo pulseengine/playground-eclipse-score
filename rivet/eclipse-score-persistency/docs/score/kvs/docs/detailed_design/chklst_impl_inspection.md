@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-IMPL-INSPECTION-78678
+id: DOC-CHKLST-IMPL-INSPECTION-8758
 title: Chklst Impl Inspection
 type: specification
 status: approved
@@ -9,7 +9,7 @@ tags: [eclipse-score]
 
 ### KVS Implementation Inspection Checklist
 
-{{artifact:DOC__KVS_IMPL_INSPECTION:status,safety-level,security}}}}
+{{artifact:DOC__KVS_IMPL_INSPECTION:status,safety-level,security}}
 
 # Implementation Inspection Checklist
 

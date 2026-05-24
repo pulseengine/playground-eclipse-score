@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-35937
+id: DOC-MODULE-SAFETY-PLAN-33309
 title: Module Safety Plan
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### [Your Module Name] Safety Plan
 
-{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_MODULE_NAME_SAFETY_PLAN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Module.

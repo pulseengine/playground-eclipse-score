@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-97142
+id: DOC-INDEX-18658
 title: Index
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Baselibs Safety WPs
 
-{{artifact:DOC__BASELIBS_SAFETY_WP:status,safety-level,security}}}}
+{{artifact:DOC__BASELIBS_SAFETY_WP:status,safety-level,security}}
 
 .. list-table:: Feature Baselibs Work products
     :header-rows: 1

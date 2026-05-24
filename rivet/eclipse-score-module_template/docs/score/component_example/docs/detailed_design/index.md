@@ -1,5 +1,5 @@
 ---
-id: DOC-INDEX-50328
+id: DOC-INDEX-17740
 title: Index
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### [Your Component Name] Detailed Design
 
-{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_DETAILED_DESIGN:status,safety-level,security}}}}
+{{artifact:DOC__MOD_TEMP_COMPONENT_NAME_DETAILED_DESIGN:status,safety-level,security}}
 
 .. attention::
     The above directive must be updated according to your Component.
@@ -39,7 +39,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_STA__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Dynamic Diagrams for Unit Interactions
 
@@ -47,7 +47,7 @@ tags: [eclipse-score]
 
 ### <Title>
 
-{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:DD_DYN__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 ## Units within the Component
 
@@ -57,7 +57,7 @@ In your rst file:
 
 ### cpp unit
 
-{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 In your source file, any programming language, here with C++:
 
@@ -77,7 +77,7 @@ In your rst file:
 
 ### <here InterfaceDemo - change it>
 
-{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}}}
+{{artifact:SW_UNIT_INT__<COMPONENT>__<TITLE>:status,safety-level,security}}
 
 In your source file, any programming language, here with C++:
 

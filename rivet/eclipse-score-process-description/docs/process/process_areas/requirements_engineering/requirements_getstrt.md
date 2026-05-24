@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-GETSTRT-49822
+id: DOC-REQUIREMENTS-GETSTRT-86695
 title: Requirements Getstrt
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Getting Started on Requirements
 
-{{artifact:DOC_GETSTRT__REQ_PROCESS:status,safety-level,security}}}}
+{{artifact:DOC_GETSTRT__REQ_PROCESS:status,safety-level,security}}
 
 This document describes the steps which need to be done to create requirements, derive child requirements and finally to perform the formal requirement inspection.
 

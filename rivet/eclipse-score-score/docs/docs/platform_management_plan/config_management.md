@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIG-MANAGEMENT-33444
+id: DOC-CONFIG-MANAGEMENT-90940
 title: Config Management
 type: specification
 status: approved
@@ -8,7 +8,7 @@ tags: [eclipse-score]
 
 ### Configuration Management Plan
 
-{{artifact:DOC__CONFIG_MGT_PLAN:status,safety-level,security}}}}
+{{artifact:DOC__CONFIG_MGT_PLAN:status,safety-level,security}}
 
 ## Config management / Configuration Management Plan
 

@@ -1,5 +1,5 @@
 ---
-id: DOC-FDR-REPORTS-SAFETY-ANALYSES-DFA-98793
+id: DOC-FDR-REPORTS-SAFETY-ANALYSES-DFA-40132
 title: Fdr Reports Safety Analyses Dfa
 type: specification
 status: approved
@@ -10,7 +10,7 @@ tags: [eclipse-score]
 
 ### Safety Analysis Formal Review Report
 
-{{artifact:DOC__SCORE_PLATFORM_SAFETY_ANALYSIS_FDR:status,safety-level,security}}}}
+{{artifact:DOC__SCORE_PLATFORM_SAFETY_ANALYSIS_FDR:status,safety-level,security}}
 
 **Purpose**
 The purpose of this Safety Analysis checklist template is to collect the topics to be checked during verification of the Platform Safety Analyses.

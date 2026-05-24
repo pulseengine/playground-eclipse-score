@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-GUIDELINE-72271
+id: DOC-ARCHITECTURE-GUIDELINE-36127
 title: Architecture Guideline
 type: specification
 status: approved
@@ -12,7 +12,7 @@ tags: [eclipse-score]
 
 ### Architectural Design Guideline
 
-{{artifact:GD_GUIDL__ARCH_DESIGN:status,safety-level,security}}}}
+{{artifact:GD_GUIDL__ARCH_DESIGN:status,safety-level,security}}
 
 The guideline focuses on the steps which need to be performed in order to create the architectural design. The concept behind those steps is described in the [[title]] <doc_concept__arch_process>.
 
