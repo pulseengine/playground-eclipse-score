@@ -1,5 +1,5 @@
 ---
-id: DOC-GUIDELINE-COMPONENT-CLASSIFICATION-84556
+id: DOC-GUIDELINE-COMPONENT-CLASSIFICATION-90843
 title: Guideline Component Classification
 type: specification
 status: approved

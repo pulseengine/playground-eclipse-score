@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-BUILDING-BLOCKS-CONCEPT-97524
+id: DOC-SCORE-BUILDING-BLOCKS-CONCEPT-54518
 title: Score Building Blocks Concept
 type: specification
 status: approved

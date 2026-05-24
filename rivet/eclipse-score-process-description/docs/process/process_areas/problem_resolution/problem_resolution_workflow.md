@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-WORKFLOW-22758
+id: DOC-PROBLEM-RESOLUTION-WORKFLOW-12312
 title: Problem Resolution Workflow
 type: specification
 status: approved

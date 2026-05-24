@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-TEMPLATE-13172
+id: DOC-PLATFORM-MANAGEMENT-TEMPLATE-44249
 title: Platform Management Template
 type: specification
 status: approved

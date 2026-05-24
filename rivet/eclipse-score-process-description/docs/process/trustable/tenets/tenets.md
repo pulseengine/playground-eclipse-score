@@ -1,5 +1,5 @@
 ---
-id: DOC-TENETS-28957
+id: DOC-TENETS-92034
 title: Tenets
 type: specification
 status: approved

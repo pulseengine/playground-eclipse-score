@@ -1,5 +1,5 @@
 ---
-id: DOC-PROCESS-MANAGEMENT-GETSTRT-87923
+id: DOC-PROCESS-MANAGEMENT-GETSTRT-36061
 title: Process Management Getstrt
 type: specification
 status: approved

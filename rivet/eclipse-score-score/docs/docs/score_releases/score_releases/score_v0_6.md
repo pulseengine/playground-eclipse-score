@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-6-61653
+id: DOC-SCORE-V0-6-80757
 title: Score V0 6
 type: specification
 status: approved

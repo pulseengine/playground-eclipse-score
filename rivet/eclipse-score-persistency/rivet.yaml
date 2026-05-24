@@ -20,4 +20,14 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/manual
+  - docs/docs/release
+  - docs/docs/safety_mgt
+  - docs/docs/security_mgt
+  - docs/docs/verification
+  - docs/score/json/docs
+  - docs/score/kvs
+  - docs/score/kvs/docs/architecture
+  - docs/score/kvs/docs/detailed_design
+  - docs/score/kvs/docs/requirements
+  - docs/score/kvs/docs/safety_analysis

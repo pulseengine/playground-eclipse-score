@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-GUIDELINE-22518
+id: DOC-DOCUMENTATION-GUIDELINE-88267
 title: Documentation Guideline
 type: specification
 status: approved

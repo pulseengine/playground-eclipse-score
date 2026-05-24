@@ -13,4 +13,6 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/architecture
+  - docs/docs/requirements
+  - docs/docs/tc8_conformance

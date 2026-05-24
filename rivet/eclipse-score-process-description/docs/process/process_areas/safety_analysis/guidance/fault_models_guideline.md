@@ -1,5 +1,5 @@
 ---
-id: DOC-FAULT-MODELS-GUIDELINE-71866
+id: DOC-FAULT-MODELS-GUIDELINE-7314
 title: Fault Models Guideline
 type: specification
 status: approved

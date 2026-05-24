@@ -1,5 +1,5 @@
 ---
-id: DOC-NAMING-94736
+id: DOC-NAMING-67876
 title: Naming
 type: specification
 status: approved

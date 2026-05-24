@@ -1,5 +1,5 @@
 ---
-id: DOC-CODING-GUIDELINES-78692
+id: DOC-CODING-GUIDELINES-60004
 title: Coding Guidelines
 type: specification
 status: approved

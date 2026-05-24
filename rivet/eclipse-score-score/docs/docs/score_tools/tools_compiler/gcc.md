@@ -1,5 +1,5 @@
 ---
-id: DOC-GCC-12932
+id: DOC-GCC-20584
 title: Gcc
 type: specification
 status: approved

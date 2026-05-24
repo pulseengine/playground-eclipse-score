@@ -1,5 +1,5 @@
 ---
-id: DOC-STRIDE-99611
+id: DOC-STRIDE-89348
 title: Stride
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-ARCHITECTURE-43221
+id: DOC-COMPONENT-ARCHITECTURE-30741
 title: Component Architecture
 type: specification
 status: approved

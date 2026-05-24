@@ -1,5 +1,5 @@
 ---
-id: DOC-TEMPLATE-COMPONENT-CLASSIFICATION-55304
+id: DOC-TEMPLATE-COMPONENT-CLASSIFICATION-7344
 title: Template Component Classification
 type: specification
 status: approved

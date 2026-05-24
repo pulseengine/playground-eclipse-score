@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-CONCEPT-76105
+id: DOC-QUALITY-CONCEPT-92623
 title: Quality Concept
 type: specification
 status: approved

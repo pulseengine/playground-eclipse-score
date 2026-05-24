@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-GETSTRT-11350
+id: DOC-CHANGE-MANAGEMENT-GETSTRT-62666
 title: Change Management Getstrt
 type: specification
 status: approved

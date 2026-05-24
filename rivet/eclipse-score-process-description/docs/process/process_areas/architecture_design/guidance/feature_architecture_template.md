@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-ARCHITECTURE-TEMPLATE-61393
+id: DOC-FEATURE-ARCHITECTURE-TEMPLATE-38205
 title: Feature Architecture Template
 type: specification
 status: approved

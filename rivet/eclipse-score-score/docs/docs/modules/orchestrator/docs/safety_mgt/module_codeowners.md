@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-CODEOWNERS-71936
+id: DOC-MODULE-CODEOWNERS-62966
 title: Module Codeowners
 type: specification
 status: approved

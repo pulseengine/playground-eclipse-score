@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-MANAGEMENT-16487
+id: DOC-RELEASE-MANAGEMENT-1467
 title: Release Management
 type: specification
 status: approved

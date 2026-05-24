@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIG-MANAGEMENT-15666
+id: DOC-CONFIG-MANAGEMENT-81782
 title: Config Management
 type: specification
 status: approved

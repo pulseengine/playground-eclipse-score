@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-GUIDELINE-19904
+id: DOC-ARCHITECTURE-GUIDELINE-30833
 title: Architecture Guideline
 type: specification
 status: approved

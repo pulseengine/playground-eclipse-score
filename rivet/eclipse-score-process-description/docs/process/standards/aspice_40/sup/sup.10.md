@@ -1,5 +1,5 @@
 ---
-id: DOC-SUP.10-15264
+id: DOC-SUP.10-70692
 title: Sup.10
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-DOC-AS-CODE-91640
+id: DOC-DOC-AS-CODE-36167
 title: Doc As Code
 type: specification
 status: approved

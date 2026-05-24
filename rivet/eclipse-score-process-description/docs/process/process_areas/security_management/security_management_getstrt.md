@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-GETSTRT-11508
+id: DOC-SECURITY-MANAGEMENT-GETSTRT-20811
 title: Security Management Getstrt
 type: specification
 status: approved

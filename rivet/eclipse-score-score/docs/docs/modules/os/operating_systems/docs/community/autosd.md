@@ -1,5 +1,5 @@
 ---
-id: DOC-AUTOSD-80219
+id: DOC-AUTOSD-78074
 title: Autosd
 type: specification
 status: approved

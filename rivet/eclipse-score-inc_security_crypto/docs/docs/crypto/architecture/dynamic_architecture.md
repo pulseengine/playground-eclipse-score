@@ -1,5 +1,5 @@
 ---
-id: DOC-DYNAMIC-ARCHITECTURE-61265
+id: DOC-DYNAMIC-ARCHITECTURE-88922
 title: Dynamic Architecture
 type: specification
 status: approved

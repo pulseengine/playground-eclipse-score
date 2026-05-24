@@ -48,6 +48,7 @@ all: convert validate
 
 # ── Convert every upstream RST tree → rivet YAML ─────────────────────────
 convert: $(addprefix convert-,$(REPOS))
+	@$(PYTHON) tools/regen_docs_paths.py
 
 convert-%:
 	@echo "→ converting upstream/$* …"
@@ -56,6 +57,15 @@ convert-%:
 	    rivet/$*/artifacts/imported.yaml \
 	    --docs-out rivet/$*/docs \
 	    --report rivet/$*/coverage.md
+
+# rivet's `docs:` directive does NOT recurse — it loads markdown from
+# each listed directory at one level only. So after `make convert` emits
+# markdown into new subdirectories, we rewrite both per-repo and
+# top-level rivet.yaml `docs:` blocks to enumerate every leaf dir that
+# contains .md files. The `convert:` target above invokes this
+# automatically; `make regen-docs` is exposed for manual runs.
+regen-docs:
+	@$(PYTHON) tools/regen_docs_paths.py
 
 # ── Mechanical oracle — corpus-scale rivet validate + variant gate ─────
 #

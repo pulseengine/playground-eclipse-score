@@ -1,5 +1,5 @@
 ---
-id: DOC-MODULE-SAFETY-PLAN-33852
+id: DOC-MODULE-SAFETY-PLAN-2650
 title: Module Safety Plan
 type: specification
 status: approved

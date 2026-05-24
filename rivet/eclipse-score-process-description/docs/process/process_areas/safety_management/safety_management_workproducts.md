@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-WORKPRODUCTS-32665
+id: DOC-SAFETY-MANAGEMENT-WORKPRODUCTS-85797
 title: Safety Management Workproducts
 type: specification
 status: approved

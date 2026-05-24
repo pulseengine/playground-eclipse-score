@@ -1,5 +1,5 @@
 ---
-id: DOC-IMPLEMENTATION-GETSTRT-16358
+id: DOC-IMPLEMENTATION-GETSTRT-86612
 title: Implementation Getstrt
 type: specification
 status: approved

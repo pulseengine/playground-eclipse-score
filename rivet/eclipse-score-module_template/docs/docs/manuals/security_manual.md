@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANUAL-20531
+id: DOC-SECURITY-MANUAL-87722
 title: Security Manual
 type: specification
 status: approved

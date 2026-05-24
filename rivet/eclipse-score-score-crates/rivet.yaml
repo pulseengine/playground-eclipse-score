@@ -13,4 +13,4 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/pastey/docs

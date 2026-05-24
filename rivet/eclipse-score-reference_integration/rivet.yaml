@@ -13,4 +13,5 @@ sources:
     format: generic-yaml
 
 docs:
-  - docs
+  - docs/docs/score_releases
+  - docs/docs/verification_report

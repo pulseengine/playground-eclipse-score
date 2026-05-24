@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-ANALYSIS-FDR-33469
+id: DOC-PLATFORM-SECURITY-ANALYSIS-FDR-48424
 title: Platform Security Analysis Fdr
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-GETSTRT-45882
+id: DOC-CONFIGURATION-GETSTRT-57619
 title: Configuration Getstrt
 type: specification
 status: approved

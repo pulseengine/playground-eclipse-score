@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-GETSTRT-82222
+id: DOC-TOOL-MANAGEMENT-GETSTRT-97633
 title: Tool Management Getstrt
 type: specification
 status: approved

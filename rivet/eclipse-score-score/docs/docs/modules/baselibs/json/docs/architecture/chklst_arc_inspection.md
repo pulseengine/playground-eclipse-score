@@ -1,5 +1,5 @@
 ---
-id: DOC-CHKLST-ARC-INSPECTION-25961
+id: DOC-CHKLST-ARC-INSPECTION-596
 title: Chklst Arc Inspection
 type: specification
 status: approved

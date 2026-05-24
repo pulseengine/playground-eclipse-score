@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-TEMPLATE-59287
+id: DOC-TOOL-MANAGEMENT-TEMPLATE-12408
 title: Tool Management Template
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANUAL-TEMPLATES-26103
+id: DOC-SECURITY-MANUAL-TEMPLATES-94653
 title: Security Manual Templates
 type: specification
 status: approved
