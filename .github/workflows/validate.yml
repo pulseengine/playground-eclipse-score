@@ -55,7 +55,7 @@ jobs:
         run: |
           cargo install --git https://github.com/pulseengine/rivet \
               --tag v0.13.0 \
-              --package rivet-cli --bin rivet --locked
+              rivet-cli --bin rivet --locked
           rivet --version
 
       - name: Sync upstream eclipse-score repos at pinned SHAs
