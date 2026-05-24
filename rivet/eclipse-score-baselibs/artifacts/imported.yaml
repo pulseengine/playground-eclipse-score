@@ -1,0 +1,122 @@
+artifacts:
+  - id: DOC__VAJSON_ARCHITECTURE
+    type: doc
+    title: VaJson Architecture
+    status: draft
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP__BASELIBS_VAJSON
+    type: comp
+    title: VaJson
+    status: obsolete
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: FEAT__BASELIBS
+  - id: DOC__VAJSON
+    type: doc
+    title: vajson
+    status: approved
+    tags: [component_request, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__VAJSON_REQUIREMENTS
+    type: doc
+    title: VaJson Requirements
+    status: draft
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_COMP
+  - id: COMP_REQ__VAJSON__VALIDATION
+    type: comp-req
+    title: JSON Validation
+    status: approved
+    description: |
+      VaJson checks the well-formedness of JSON data.
+      Errors shall include the reason and location in the JSON document for malformed JSON.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__JSON_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_VAJSON
+  - id: COMP_REQ__VAJSON__TRAILING_COMMAS
+    type: comp-req
+    title: JSON Deserialization RFC extension trailing commas
+    status: approved
+    description: |
+      VaJson shall ignore trailing commas.
+      This behavior extends RFC 8259.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__JSON_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_VAJSON
+  - id: COMP_REQ__VAJSON__HEX_INTEGERS
+    type: comp-req
+    title: JSON Deserialization RFC extension hexadecimal integers
+    status: approved
+    description: |
+      VaJson shall accept hexadecimal integers.
+      This behavior extends RFC 8259.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__JSON_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_VAJSON
+  - id: COMP_REQ__VAJSON__UNICODE
+    type: comp-req
+    title: Unicode Support
+    status: approved
+    description: |
+      VaJson shall encode and decode UTF-8 encoded strings.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__JSON_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_VAJSON
+  - id: COMP_REQ__VAJSON__ASIL
+    type: comp-req
+    title: VaJson library ASIL level
+    status: approved
+    description: |
+      The VaJson library shall be ASIL-B compliant.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__BASELIBS__JSON_LIBRARY
+      - type: belongs-to
+        target: COMP__BASELIBS_VAJSON

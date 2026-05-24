@@ -1,0 +1,13 @@
+# Eclipse S-CORE `feo` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/feo
+project:
+  name: eclipse-score-feo
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

@@ -1,0 +1,13 @@
+# Eclipse S-CORE `communication` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/communication
+project:
+  name: eclipse-score-communication
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

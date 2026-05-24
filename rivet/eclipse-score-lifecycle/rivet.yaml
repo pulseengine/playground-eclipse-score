@@ -1,0 +1,13 @@
+# Eclipse S-CORE `lifecycle` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/lifecycle
+project:
+  name: eclipse-score-lifecycle
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

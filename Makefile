@@ -8,7 +8,9 @@
 #   make clean         Delete generated rivet/*/artifacts/ + coverage reports
 
 REPOS := eclipse-score-score eclipse-score-process-description \
-         eclipse-score-persistency eclipse-score-docs-as-code
+         eclipse-score-persistency eclipse-score-docs-as-code \
+         eclipse-score-lifecycle eclipse-score-baselibs \
+         eclipse-score-communication eclipse-score-feo
 
 RIVET   := /Users/r/.cargo/bin/rivet
 SCHEMAS := vendor/rivet-schemas

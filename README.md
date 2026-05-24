@@ -150,4 +150,15 @@ mapping. The current numbers (run `make convert` to refresh):
 | eclipse-score-process-description | 299 | 1257 | 0 | 3 |
 | eclipse-score-persistency | 30 | 61 | 0 | 0 |
 | eclipse-score-docs-as-code | 24 | 61 | 0 | 0 |
-| **Total** | **757** | **2752** | **0** | **7** |
+| eclipse-score-lifecycle | 19 | 28 | 0 | 0 |
+| eclipse-score-baselibs | 5 | 9 | 0 | 0 |
+| eclipse-score-communication | 6 | 0 | 0 | 0 |
+| eclipse-score-feo | 1 | 1 | 0 | 0 |
+| **Total** | **788** | **2790** | **0** | **7** |
+
+**Why eclipse-score-communication has 0 needs**: that repo's docs are
+pure Doxygen API documentation (`.. doxygenclass::`, `.. doxygenfunction::`
+etc.) — eclipse uses sphinx-needs for *requirements*, Doxygen for *API
+reference*. The 0 isn't a converter miss; it's an upstream architectural
+choice. The repo is included in the fork so the round-trip ID space
+covers any cross-repo references that point into it from other repos.

@@ -1,0 +1,13 @@
+# Eclipse S-CORE `baselibs` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/baselibs
+project:
+  name: eclipse-score-baselibs
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

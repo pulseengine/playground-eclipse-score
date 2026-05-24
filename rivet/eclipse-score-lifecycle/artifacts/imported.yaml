@@ -1,0 +1,362 @@
+artifacts:
+  - id: DOC__HEALTH_MONITOR_ARCHITECTURE
+    type: doc
+    title: HealthMonitor Architecture
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP__HEALTH_MONITOR
+    type: comp
+    title: Health Monitor
+    status: approved
+    description: |
+      Health Monitor component provides a set of functionalities to verify the health of the system and its components. It includes monitoring deadlines, logic, and heartbeats to ensure proper system functioning.
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: FEAT__LIFECYCLE
+  - id: COMP_ARC_STA__DEADLINE_MONITOR__STATIC_VIEW
+    type: comp-arc-sta
+    title: Deadline Monitor
+    status: approved
+    description: |
+      .. uml::  assets/dm_static_architecture.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_STA__LOGIC_MONITOR__STATIC_VIEW
+    type: comp-arc-sta
+    title: Logic Monitor
+    status: approved
+    description: |
+      .. uml::  assets/lm_static_architecture.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_STA__HEALTH_MONITOR__STATIC_VIEW
+    type: comp-arc-sta
+    title: Health Monitor
+    status: approved
+    description: |
+      .. uml::  assets/hm_static_architecture.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__HEALTH_MONITOR__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: HealthMonitor Creation
+    status: approved
+    description: |
+      .. uml::  assets/hm_creation.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__HEALTH_LIB_THREAD__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: HealthMonitor background thread
+    status: approved
+    description: |
+      .. uml::  assets/hm_background_thread.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__DEADLINE_MONITOR__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: DeadlineMonitor Usage
+    status: approved
+    description: |
+      .. uml::  assets/dm_usage.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__LOGIC_MONITOR__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: LogicMonitor Usage
+    status: approved
+    description: |
+      .. uml::  assets/lm_usage.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__HEARTBEAT_MONITOR__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: HeartbeatMonitor Usage
+    status: approved
+    description: |
+      .. uml::  assets/hbm_usage.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__HEALTH_MONITOR__STARTUP_VIEW
+    type: comp-arc-dyn
+    title: Health Monitoring Startup Interaction
+    status: approved
+    description: |
+      .. uml::  assets/hm_startup.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: COMP_ARC_DYN__HEALTH_MONITOR__SHUTDOWN_VIEW
+    type: comp-arc-dyn
+    title: Health Monitoring Shutdown Interaction
+    status: approved
+    description: |
+      .. uml::  assets/hm_shutdown.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: REAL_ARC_INT__DEADLINE_MONITOR__INTERFACE
+    type: real-arc-int
+    title: DeadlineMonitor Interface
+    status: approved
+    description: |
+      .. uml::  assets/dmb_interface.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+      language: rust
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+  - id: REAL_ARC_INT__LOGIC_MONITOR__INTERFACE
+    type: real-arc-int
+    title: LogicMonitor Interface
+    status: approved
+    description: |
+      .. uml::  assets/lmb_interface.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+      language: rust
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+  - id: REAL_ARC_INT__HEARTBEAT_MONITOR__INTERFACE
+    type: real-arc-int
+    title: HeartbeatMonitor Interface
+    status: approved
+    description: |
+      .. uml::  assets/hbm_interface.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+      language: rust
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+  - id: REAL_ARC_INT__HEALTH_MONITOR__INTERFACE
+    type: real-arc-int
+    title: HealthMonitor Interface
+    status: approved
+    description: |
+      .. uml::  assets/hmb_interface.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+      language: rust
+    links:
+      - type: fulfils
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+  - id: DOC__HEALTH_MONITOR_COMP_CLASS
+    type: doc
+    title: Health Monitor Component Classification
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_CLASS
+  - id: DOC__HEALTH_MONITOR_DETAILED_DESIGN
+    type: doc
+    title: HealthMonitor Detailed Design
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION
+  - id: DD_STA__HEALTH_MONITOR__CLASS_DIAGRAM
+    type: dd-sta
+    title: Class Diagram
+    status: approved
+    description: |
+      .. uml::  assets/static_diagram.puml
+    fields:
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: implements
+        target: COMP_REQ__HEALTH_MONITOR__DUMMY
+      - type: satisfies
+        target: COMP_ARC_STA__DEADLINE_MONITOR__STATIC_VIEW
+      - type: satisfies
+        target: COMP_ARC_STA__LOGIC_MONITOR__STATIC_VIEW
+      - type: satisfies
+        target: COMP_ARC_STA__HEALTH_MONITOR__STATIC_VIEW
+  - id: DOC__HEALTH_MONITOR
+    type: doc
+    title: HealthMonitor
+    status: draft
+    tags: [health_monitor, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__HEALTH_MONITOR_REQUIREMENTS
+    type: doc
+    title: HealthMonitor Requirements
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_FEAT
+  - id: STKH_REQ__REQUIREMENTS__DUMMY
+    type: stkh-req
+    title: Dummy Stakeholder
+    status: obsolete
+    description: |
+      The platform shall ...
+    fields:
+      req-type: Non-Functional
+      safety-level: ASIL_B
+      security: "YES"
+      rationale: Dummy
+  - id: FEAT_REQ__REQUIREMENTS__TEMPLATE
+    type: feat-req
+    title: Dummy Feature
+    status: obsolete
+    description: |
+      Dummy
+    fields:
+      req-type: Non-Functional
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: satisfies
+        target: STKH_REQ__REQUIREMENTS__DUMMY
+  - id: COMP_REQ__HEALTH_MONITOR__DUMMY
+    type: comp-req
+    title: Dummy Component
+    status: obsolete
+    description: |
+      The Feature shall do xyz to the user to bring him to this condition at this time
+      
+      Note: (optional, not to be verified)
+    fields:
+      req-type: Process
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__REQUIREMENTS__TEMPLATE
+      - type: belongs-to
+        target: COMP__HEALTH_MONITOR
+  - id: AOU_REQ__HEALTH_MONITOR__DUMMY
+    type: aou-req
+    title: Dummy AoU
+    status: obsolete
+    description: |
+      The Feature User shall do xyz to use the feature safely
+    fields:
+      req-type: Process
+      security: "YES"
+      safety-level: ASIL_B
+  - id: DOC__HEALTH_MONITOR_DFA
+    type: doc
+    title: Health Monitor DFA
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_DFA
+  - id: DOC__HEALTH_MONITOR_FMEA
+    type: doc
+    title: Health Monitor FMEA
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_FMEA
+  - id: DOC__LIFECYCLE_RELEASE_NOTE
+    type: doc
+    title: lifecycle Release Note
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SW_RELEASE_NOTE

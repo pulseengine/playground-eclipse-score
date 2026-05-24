@@ -32,3 +32,11 @@ sources:
     format: generic-yaml
   - path: rivet/eclipse-score-docs-as-code/artifacts
     format: generic-yaml
+  - path: rivet/eclipse-score-lifecycle/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-baselibs/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-communication/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-feo/artifacts
+    format: generic-yaml
