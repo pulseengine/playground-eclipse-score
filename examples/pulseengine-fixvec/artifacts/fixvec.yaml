@@ -1,0 +1,169 @@
+# FixVec interface — pulseengine treatment of the eclipse-score
+# `logic_arc_int__b_r__fixvec` + 5× `logic_arc_int_op__cont__fixvec_*`
+# need declarations.
+#
+# Hand-authored for this worked example. A real converter would emit
+# this shape from the eclipse RST automatically (TYPE_MAP already
+# covers logic_arc_int / logic_arc_int_op via the playground's
+# tools/score_import.py).
+
+artifacts:
+
+  # ── The interface itself ───────────────────────────────────────────
+  - id: LOGIC-ARC-INT-FIXVEC
+    type: logic-arc-int
+    title: Fixed-Capacity Vector
+    status: approved
+    description: >
+      A fixed-capacity vector with inline storage. Provides the
+      classical vector operations bounded by a compile-time CAPACITY.
+      Equivalent to eclipse-score's logic_arc_int__b_r__fixvec.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+
+  # ── The five operations ────────────────────────────────────────────
+  # Each maps to one eclipse logic_arc_int_op need. The
+  # `belongs-to → LOGIC-ARC-INT-FIXVEC` link is the rivet equivalent
+  # of eclipse's `:included_by:` back-reference.
+
+  - id: LOGIC-ARC-INT-OP-FIXVEC-PUSH
+    type: logic-arc-int
+    title: Push
+    status: approved
+    description: >
+      Append an element. Fails with InsufficientCapacity if the
+      vector is full.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+    links:
+      - type: belongs-to
+        target: LOGIC-ARC-INT-FIXVEC
+
+  - id: LOGIC-ARC-INT-OP-FIXVEC-POP
+    type: logic-arc-int
+    title: Pop
+    status: approved
+    description: >
+      Remove and return the last element, or None if the vector is empty.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+    links:
+      - type: belongs-to
+        target: LOGIC-ARC-INT-FIXVEC
+
+  - id: LOGIC-ARC-INT-OP-FIXVEC-CLEAR
+    type: logic-arc-int
+    title: Clear
+    status: approved
+    description: Remove all elements; reset length to zero.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+    links:
+      - type: belongs-to
+        target: LOGIC-ARC-INT-FIXVEC
+
+  - id: LOGIC-ARC-INT-OP-FIXVEC-INDEX
+    type: logic-arc-int
+    title: Index
+    status: approved
+    description: >
+      Random access to the i-th element. Bounds-checked; panics on
+      out-of-bounds in std, returns Option in no-std variants.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+    links:
+      - type: belongs-to
+        target: LOGIC-ARC-INT-FIXVEC
+
+  - id: LOGIC-ARC-INT-OP-FIXVEC-ITERATE
+    type: logic-arc-int
+    title: Iterate
+    status: approved
+    description: Borrow the contents as a slice; iterator protocol.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    tags: [baselibs-rust, containers, fixvec]
+    links:
+      - type: belongs-to
+        target: LOGIC-ARC-INT-FIXVEC
+
+  # ── The architectural component that ships the interface ───────────
+  # Eclipse: comp_arc_sta__baselibs_rust__containers_rust
+  # Pulseengine: a `comp` artifact with `provides:` link to the interface.
+
+  - id: COMP-BASELIBS-CONTAINERS-RUST
+    type: comp
+    title: Rust Containers
+    status: approved
+    description: >
+      Component providing the inline / heap-storage vector
+      implementations. Equivalent to eclipse's
+      comp_arc_sta__baselibs_rust__containers_rust.
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+      component-type: library
+    tags: [baselibs-rust, containers]
+    links:
+      - type: provides
+        target: LOGIC-ARC-INT-FIXVEC
+
+  # ── Detailed design — bridges the interface to the implementation ──
+  # The score schema enforces `sw-unit → dd-sta → comp-req` rather than
+  # `sw-unit → interface` directly. This is the realistic eclipse
+  # pattern: detailed design (dd_sta) sits between the architecture
+  # interface and the implementing source file.
+
+  - id: DD-STA-FIXVEC-INLINE
+    type: dd-sta
+    title: InlineVec detailed design
+    status: approved
+    description: >
+      Static design: `#[repr(transparent)] struct InlineVec<T, const N>`
+      wrapping a `GenericVec<T, Inline<T, N>>`. Backs the FixVec
+      interface with inline (no-heap) storage. CAPACITY must be in
+      [1, u32::MAX].
+    fields:
+      safety-level: ASIL_B
+      view-type: class-diagram
+    tags: [baselibs-rust, containers, design]
+    links:
+      - type: belongs-to
+        target: COMP-BASELIBS-CONTAINERS-RUST
+
+  # ── Cited source: the actual Rust implementation file ──────────────
+  # This is the pulseengine equivalent of eclipse's `source_code_link`
+  # field but explicit and content-hashed. In a real build, the
+  # `wit-bindgen` step would generate a trait against arch/fixvec.wit
+  # and the Rust impl would implement that trait — making the
+  # interface-to-implementation link binary, not documentary.
+
+  - id: SRC-INLINEVEC-RS
+    type: sw-unit
+    title: InlineVec implementation
+    status: approved
+    description: >
+      Hand-written Rust implementation of the FixVec interface using
+      inline storage. Lives in the upstream baselibs_rust repo at
+      score/baselibs_rust/src/containers/inline/vec.rs.
+    fields:
+      safety-level: ASIL_B
+      source-file: "upstream/eclipse-score-baselibs_rust/src/containers/inline/vec.rs"
+      language: rust
+    tags: [baselibs-rust, containers, impl]
+    links:
+      - type: implements
+        target: DD-STA-FIXVEC-INLINE
+      - type: belongs-to
+        target: COMP-BASELIBS-CONTAINERS-RUST

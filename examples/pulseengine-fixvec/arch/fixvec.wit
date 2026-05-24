@@ -1,0 +1,58 @@
+// WIT (WebAssembly Interface Type) — the binary contract spar emits
+// from arch/fixvec.aadl.
+//
+// This is the file that makes the pulseengine treatment more than
+// eclipse's "interface as documentation". The Rust implementation
+// of FixVec is required to satisfy this contract at link time —
+// wit-bindgen generates a trait, the impl provides it, the WASM
+// component link step fails if the signature drifts.
+//
+// In eclipse's setup, the equivalent step doesn't exist: the
+// interface need (logic_arc_int__b_r__fixvec + 5 ops) and the Rust
+// implementation (vec.rs::fn push) are two hand-maintained
+// artifacts; a developer can rename `fn push` and the interface
+// need stays unchanged, with nothing complaining.
+
+package pulseengine:fixvec@0.1.0;
+
+/// The fixed-capacity vector interface, as a binary contract.
+///
+/// Lifted from eclipse-score's logic_arc_int__b_r__fixvec, which
+/// declares the same 5 operations at the spec level but doesn't
+/// bind them to typed signatures.
+interface fix-vec {
+    /// Errors that the FixVec operations can return.
+    variant vec-err {
+        /// The vector is full and cannot accept more elements.
+        insufficient-capacity,
+        /// Index is out of bounds for the current vector length.
+        out-of-bounds,
+    }
+
+    /// Append an element. Fails with insufficient-capacity if full.
+    /// Eclipse equivalent: logic_arc_int_op__cont__fixvec_push
+    push: func(item: u32) -> result<_, vec-err>;
+
+    /// Remove and return the last element, or none if empty.
+    /// Eclipse equivalent: logic_arc_int_op__cont__fixvec_pop
+    pop: func() -> option<u32>;
+
+    /// Remove all elements; reset length to zero.
+    /// Eclipse equivalent: logic_arc_int_op__cont__fixvec_clear
+    clear: func();
+
+    /// Random access to the i-th element.
+    /// Eclipse equivalent: logic_arc_int_op__cont__fixvec_index
+    index: func(idx: u32) -> result<u32, vec-err>;
+
+    /// Borrow the contents as a slice (length + pointer in the
+    /// WASM-component ABI). Iterator protocol is provided by the
+    /// host-side wrapper around this primitive.
+    /// Eclipse equivalent: logic_arc_int_op__cont__fixvec_iterate
+    iterate: func() -> list<u32>;
+}
+
+/// The world the FixVec component exports.
+world fixvec-component {
+    export fix-vec;
+}

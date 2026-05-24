@@ -1,0 +1,17 @@
+# Worked example — eclipse-score FixVec interface in rivet typed YAML.
+#
+# Self-contained rivet project. The artifacts under `artifacts/` are
+# the pulseengine equivalent of the typed needs eclipse-score declares
+# at upstream/baselibs_rust/docs/baselibs_rust/containers_rust/architecture/index.rst.
+#
+# Run from this directory:
+#   rivet --schemas ../../vendor/rivet-schemas validate
+project:
+  name: pulseengine-fixvec
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+sources:
+  - path: artifacts
+    format: generic-yaml
