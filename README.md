@@ -1,4 +1,13 @@
-# `eclipse-score-fork` — eclipse-score in pulseengine shape
+# `playground-eclipse-score` — eclipse-score in pulseengine shape
+
+[![validate](https://github.com/pulseengine/playground-eclipse-score/actions/workflows/validate.yml/badge.svg)](https://github.com/pulseengine/playground-eclipse-score/actions/workflows/validate.yml)
+[![license: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
+> A pulseengine.eu playground that transforms eclipse-score's sphinx-needs
+> corpus into typed [rivet](https://github.com/pulseengine/rivet) YAML.
+> Not affiliated with the Eclipse Foundation. The upstream eclipse-score
+> repositories are pinned via `rivet.yaml` + `rivet.lock` and materialised
+> on demand by `make sync` (no upstream code is vendored into this repo).
 
 A trackable, rebase-friendly fork of four
 [Eclipse S-CORE](https://github.com/eclipse-score) repositories,

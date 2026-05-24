@@ -1,0 +1,110 @@
+# Live falsification oracle for the eclipse-score-fork.
+#
+# Runs `make sync && make convert && make validate` on every push +
+# every PR + nightly cron. The point: the workspace README claims
+# "2985 needs, PASS, 2507 warnings, 4/4 variants" — this workflow keeps
+# the claim true. Any drift between the upstream pins (rivet.yaml +
+# rivet.lock) and the converter / schema / variant model surfaces as a
+# red badge on the README within hours, not "whenever someone notices".
+#
+# This workflow uses NO untrusted input (PR titles, issue bodies, etc.),
+# only static make targets and the rivet binary built from a pinned
+# branch. No command-injection surface; all `run:` blocks are
+# deterministic.
+#
+# Two jobs:
+#   - validate-pinned:  uses the SHAs pinned in rivet.lock — should ALWAYS
+#                        pass. If it fails, the converter or schema has
+#                        regressed against the falsification baseline.
+#   - validate-rebased: nightly only, `make rebase && make convert &&
+#                        make validate`. Catches upstream changes that
+#                        break our converter (new need type, etc.).
+#                        Failure here is informational — it tells us
+#                        eclipse moved, not that we did.
+
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Nightly at 03:17 UTC.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-pinned:
+    name: corpus oracle (pinned SHAs)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+
+      - name: Install rivet
+        run: |
+          cargo install --git https://github.com/pulseengine/rivet \
+              --branch chore/score-schema-eclipse-comparison-update \
+              --bin rivet --locked
+          rivet --version
+
+      - name: Sync upstream eclipse-score repos at pinned SHAs
+        run: make sync
+
+      - name: Convert RST to rivet typed YAML
+        run: make convert
+
+      - name: Run corpus oracle (rivet validate + variant check-all)
+        run: make validate
+
+      - name: Surface coverage reports as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-reports
+          path: rivet/eclipse-score-*/coverage.md
+          retention-days: 30
+
+  validate-rebased:
+    name: corpus oracle (upstream HEADs - nightly only)
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+
+      - name: Install rivet
+        run: |
+          cargo install --git https://github.com/pulseengine/rivet \
+              --branch chore/score-schema-eclipse-comparison-update \
+              --bin rivet --locked
+
+      - name: Sync upstream and rebase to remote HEADs
+        run: |
+          make sync
+          make rebase
+          rivet lock --update
+
+      - name: Re-convert against new upstream state
+        run: make convert
+
+      - name: Run corpus oracle against rebased state
+        # Don't fail the workflow on rebased red - record divergence as
+        # informational. A red here means eclipse moved, not that we did.
+        continue-on-error: true
+        run: make validate
+
+      - name: Upload rebased coverage + pin diff for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rebased-state
+          path: |
+            rivet/eclipse-score-*/coverage.md
+            rivet.lock
+            rivet.yaml
+          retention-days: 14
