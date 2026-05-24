@@ -159,6 +159,9 @@ external forks `nlohmann_json` / `bazel_registry_ui` / `rules_rust`):
 | `needextend` rules processed | 114 |
 | `needextend` mutations baked into artifacts | **2504** |
 | Markdown documents emitted (alongside YAML) | **634** |
+| Feature-model dimensions captured (safety / security / req-type / process-area / standard / component) | 6 |
+| Named variants in `variants/bindings.yaml` | 4 |
+| `rivet variant check-all` | **4/4 PASS** |
 | `rivet validate` errors | **0** |
 | `rivet validate` warnings (all lifecycle gaps in eclipse data) | 2507 |
 
@@ -256,6 +259,76 @@ equivalents already exist and need no converter changes:
 
 Authors who want eclipse-style "tables and pies in the doc" should
 use these built-in rivet embeds inside the emitted markdown.
+
+## Variant / feature-model handling
+
+Eclipse-score declares variant management as a stakeholder requirement:
+
+```rst
+.. stkh_req:: Variant management
+   :id: stkh_req__overall_goals__variant_management
+   :rationale: tbd
+   :status: valid
+
+   The SW-platform shall provide variant management support.
+   ...
+```
+
+But ships **no metamodel construct for variants** — no `variant` need
+type, no `:variant:` option, no binding file format. The `:rationale:
+tbd` is explicit acknowledgement that this requirement is unsolved
+upstream.
+
+This fork fills the gap using rivet's existing product-line-engineering
+machinery (`rivet variant ...`, see `rivet docs schemas-overview`).
+The `variants/` directory holds:
+
+- `feature-model.yaml` — declares the variant axes already implicit in
+  eclipse's data: safety-classification (qm / asil-a..d), security
+  (yes/no), requirement-category (functional / non-functional /
+  interface / process), process-area (15 areas, or-group),
+  standards-compliance (iso26262 / iso-sae-21434 / aspice-40, or-group),
+  components (one leaf per upstream repo with needs, or-group). Plus
+  attribute-schema for typed attributes (asil-numeric, iso-clauses,
+  std-id, upstream-repo).
+- `bindings.yaml` — maps features to representative artifacts + source
+  globs, and declares 4 named variants demonstrating realistic build
+  configurations.
+
+Validate the model + all named variants:
+
+```sh
+$ make variant-check
+PASS  persistency-qm
+PASS  persistency-asil-b-secure
+PASS  platform-only
+PASS  aspice-assessment
+4/4 variants passed (0 failed)
+```
+
+Emit a GitHub Actions CI matrix from the named variants:
+
+```sh
+$ make variant-matrix
+matrix:
+  include:
+    - variant: persistency-asil-b-secure
+      features: "asil-b,components,iso-sae-21434,iso26262,persistency,..."
+      runner: ubuntu-latest
+    - ...
+```
+
+The named variants serve as worked starter examples; real consumers
+add their own `variants:` entries naming the build configuration they
+ship. Constraints in the feature model enforce eclipse's metamodel
+graph_checks (e.g. ASIL-B implies ISO 26262 compliance, security-
+required implies ISO/SAE 21434).
+
+**What this demonstrates**: rivet's variant subsystem (REQ-085, FEAT-106
+through FEAT-114) is the solved-form answer to eclipse-score's open
+stakeholder requirement. Pulseengine doesn't just round-trip eclipse's
+existing data — it offers a model for the part of eclipse's process
+that's currently TBD.
 
 ## Archived repos
 

@@ -1,0 +1,212 @@
+# Feature → artifact bindings for the eclipse-score implicit variant
+# model.
+#
+# Wiring strategy: features that correspond to a *whole upstream repo*
+# bind a representative artifact per repo (the `doc__*` wrapper need
+# that every persistency/kvs/etc. file declares).  Feature-level needs
+# are bound via the eclipse stakeholder/feature requirements whose
+# titles literally name the same dimension.
+#
+# This is a starter set — sufficient to demonstrate `rivet variant
+# check-all` against the four named variants below, not an exhaustive
+# mapping of every artifact to its dominant feature.
+
+variants:
+  # Smoke variant: just persistency at QM, no security, functional only.
+  # This is what you'd build to verify the bare conversion works.
+  # `iso26262` is selected even at QM because eclipse's metamodel still
+  # demands compliance traceability against ISO 26262 for non-safety
+  # artifacts (the standard scopes them as out-of-scope, but they must
+  # be classified — that's an `iso26262` compliance claim).
+  - name: persistency-qm
+    selects: [qm, security-not-required, functional, persistency,
+              process-description, implementation, iso26262]
+
+  # Realistic safety variant: persistency at ASIL-B with security,
+  # touching the safety-analysis process area, claiming ISO 26262 and
+  # ISO/SAE 21434.
+  - name: persistency-asil-b-secure
+    selects: [asil-b, security-required, functional, persistency,
+              process-description, safety-analysis,
+              security-analysis, iso26262, iso-sae-21434]
+
+  # Platform variant: the full platform-score repo plus its process
+  # backing.  No components beyond that.
+  - name: platform-only
+    selects: [asil-b, security-not-required, non-functional,
+              platform-score, process-description,
+              requirements-engineering, architecture-design,
+              iso26262]
+
+  # ASPICE assessment variant: process-only build, no components.
+  # Useful for running an ASPICE process audit without dragging the
+  # full component set through validation.
+  - name: aspice-assessment
+    selects: [qm, security-not-required, process,
+              process-description, process-management,
+              requirements-engineering, quality-management,
+              verification, aspice-40]
+
+bindings:
+
+  # ── Component features bind to a representative doc wrapper ──────
+
+  persistency:
+    artifacts:
+      - DOC__KVS_REQUIREMENTS
+      - DOC__KVS_ARCHITECTURE
+      - DOC__KVS_FMEA
+    source: ["upstream/eclipse-score-persistency/**"]
+
+  platform-score:
+    artifacts:
+      - STKH_REQ__OVERALL_GOALS__REUSE_OF_APP_SOFT
+      - STKH_REQ__OVERALL_GOALS__VARIANT_MANAGEMENT
+      - FEAT__PERSISTENCY
+    source: ["upstream/eclipse-score-score/**"]
+
+  process-description:
+    artifacts:
+      - WORKFLOW-ANALYSE-PLAT-FEATARCH
+    source: ["upstream/eclipse-score-process-description/**"]
+
+  baselibs:
+    artifacts: []
+    source: ["upstream/eclipse-score-baselibs/**"]
+
+  baselibs-rust:
+    artifacts: []
+    source: ["upstream/eclipse-score-baselibs_rust/**"]
+
+  lifecycle:
+    artifacts: []
+    source: ["upstream/eclipse-score-lifecycle/**"]
+
+  communication:
+    artifacts: []
+    source: ["upstream/eclipse-score-communication/**"]
+
+  feo:
+    artifacts: []
+    source: ["upstream/eclipse-score-feo/**"]
+
+  logging:
+    artifacts: []
+    source: ["upstream/eclipse-score-logging/**"]
+
+  orchestrator:
+    artifacts: []
+    source: ["upstream/eclipse-score-orchestrator/**"]
+
+  inc-security-crypto:
+    artifacts: []
+    source: ["upstream/eclipse-score-inc_security_crypto/**"]
+
+  inc-someip-gateway:
+    artifacts: []
+    source: ["upstream/eclipse-score-inc_someip_gateway/**"]
+
+  reference-integration:
+    artifacts: []
+    source: ["upstream/eclipse-score-reference_integration/**"]
+
+  module-template:
+    artifacts: []
+    source: ["upstream/eclipse-score-module_template/**"]
+
+  docs-as-code:
+    artifacts: []
+    source: ["upstream/eclipse-score-docs-as-code/**"]
+
+  # ── Safety-classification features bind to the stkh_req they realize ─
+
+  asil-b:
+    artifacts:
+      - FEAT_REQ__PERSISTENCY__DYNAMIC_MEMORY_ALLOC
+      - FEAT_REQ__PERSISTENCY__VARIANT_MANAGEMENT
+
+  qm:
+    artifacts:
+      - STKH_REQ__OVERALL_GOALS__REUSE_OF_APP_SOFT
+
+  # ── Security-classification features ──────────────────────────────
+
+  security-required:
+    artifacts: []
+    source: ["upstream/eclipse-score-inc_security_crypto/**"]
+
+  security-not-required:
+    artifacts: []
+
+  # ── Standards compliance features ─────────────────────────────────
+
+  iso26262:
+    artifacts: []
+    source: ["upstream/eclipse-score-process-description/process/standards/iso26262/**"]
+
+  iso-sae-21434:
+    artifacts: []
+    source: ["upstream/eclipse-score-process-description/process/standards/isosae21434/**"]
+
+  aspice-40:
+    artifacts: []
+    source: ["upstream/eclipse-score-process-description/process/standards/aspice_40/**"]
+
+  # ── Process-area features bind by upstream subdirectory ───────────
+
+  requirements-engineering:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/requirements_engineering/**"]
+
+  process-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/process_management/**"]
+
+  safety-analysis:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/safety_analysis/**"]
+
+  change-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/change_management/**"]
+
+  security-analysis:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/security_analysis/**"]
+
+  implementation:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/implementation/**"]
+
+  security-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/security_management/**"]
+
+  safety-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/safety_management/**"]
+
+  verification:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/verification/**"]
+
+  problem-resolution:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/problem_resolution/**"]
+
+  tool-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/tool_management/**"]
+
+  quality-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/quality_management/**"]
+
+  architecture-design:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/architecture_design/**"]
+
+  release-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/release_management/**"]
+
+  configuration-management:
+    source: ["upstream/eclipse-score-process-description/process/process_areas/configuration_management/**"]
+
+  # ── Requirement-category features intentionally unbound ────────────
+  #
+  # functional / non-functional / interface / process don't correspond
+  # to specific artifacts but to a *property* (`:reqtype:`) on every
+  # requirement.  Left unbound deliberately — they scope the variant
+  # but don't gate artifacts.
+
+  functional:     {}
+  non-functional: {}
+  interface:      {}
+  process:        {}

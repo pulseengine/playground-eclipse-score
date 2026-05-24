@@ -1,0 +1,284 @@
+# Eclipse S-CORE — implicit variant model, extracted from the converted
+# corpus by inspection of the fields and tags that eclipse already
+# populates on every need.
+#
+# Eclipse declares variant management as a stakeholder requirement
+# (`stkh_req__overall_goals__variant_management`, status: valid,
+# rationale: tbd) but has no metamodel construct for it: no `variant`
+# need type, no `:variant:` option, no binding file format. The
+# variability that *is* present lives implicitly in three field-level
+# enumerations and several tag-based axes (standard, process area,
+# component).
+#
+# This feature model materialises those implicit axes as a rivet
+# feature model so `rivet variant check / solve / features / matrix`
+# can scope validation, coverage, and CI runs to a chosen slice — the
+# capability eclipse declared as a requirement but has not yet
+# implemented in their tooling.
+#
+# Validate: rivet --schemas vendor/rivet-schemas variant check-all \
+#               --feature-model variants/feature-model.yaml \
+#               --bindings     variants/bindings.yaml
+
+kind: feature-model
+root: eclipse-score-build
+
+attribute-schema:
+  asil-numeric:
+    type: int
+    range: [0, 4]
+  iso-clauses:
+    type: string
+  upstream-repo:
+    type: string
+  std-id:
+    type: string
+
+features:
+
+  # Top of the feature model.  Every concrete variant binds one
+  # safety-classification, one security-classification, one
+  # requirement-category, plus any combination of process-areas,
+  # standards-compliance, and components.
+  eclipse-score-build:
+    group: mandatory
+    children:
+      - safety-classification
+      - security-classification
+      - requirement-category
+      - process-areas
+      - standards-compliance
+      - components
+
+  # ── Safety classification ──────────────────────────────────────────
+  #
+  # Eclipse's `:safety:` option uses only QM and ASIL_B today
+  # (`metamodel.yaml:142` regex: `^(QM|ASIL_B)$`).  ASIL-A/C/D are
+  # absent from the corpus but listed here so the feature model
+  # remains forward-compatible with eclipse extending the enum.
+  safety-classification:
+    group: alternative
+    children: [qm, asil-a, asil-b, asil-c, asil-d]
+
+  qm:
+    group: leaf
+    attributes:
+      asil-numeric: 0
+      iso-clauses: "none"
+  asil-a:
+    group: leaf
+    attributes:
+      asil-numeric: 1
+      iso-clauses: "26262-6:7"
+  asil-b:
+    group: leaf
+    attributes:
+      asil-numeric: 2
+      iso-clauses: "26262-6:7,26262-9:7"
+  asil-c:
+    group: leaf
+    attributes:
+      asil-numeric: 3
+      iso-clauses: "26262-6:7,26262-9:7-8"
+  asil-d:
+    group: leaf
+    attributes:
+      asil-numeric: 4
+      iso-clauses: "26262-6:7,26262-9:7-8,26262-6:9"
+
+  # ── Security classification ────────────────────────────────────────
+  #
+  # Eclipse's `:security:` option is binary (YES|NO).  Modelling it as
+  # an alternative so a variant must explicitly opt in or out (rather
+  # than forgetting the dimension entirely).
+  security-classification:
+    group: alternative
+    children: [security-required, security-not-required]
+  security-required:
+    group: leaf
+    attributes:
+      std-id: "iso-sae-21434"
+  security-not-required:
+    group: leaf
+
+  # ── Requirement category ───────────────────────────────────────────
+  #
+  # `:reqtype:` is one of (Functional|Non-Functional|Interface|Process).
+  # Useful for scoping a CI matrix that runs e.g. "non-functional
+  # requirements only" verification passes.
+  requirement-category:
+    group: alternative
+    children: [functional, non-functional, interface, process]
+  functional:        { group: leaf }
+  non-functional:    { group: leaf }
+  interface:         { group: leaf }
+  process:           { group: leaf }
+
+  # ── Process areas ──────────────────────────────────────────────────
+  #
+  # Tag-driven dimension: every need tagged with one of these process
+  # areas (by needextend on `process_areas/<area>/...`) joins the
+  # set.  Or-group because real builds touch multiple process areas
+  # at once.
+  process-areas:
+    group: or
+    children:
+      - requirements-engineering
+      - process-management
+      - safety-analysis
+      - change-management
+      - security-analysis
+      - implementation
+      - security-management
+      - safety-management
+      - verification
+      - problem-resolution
+      - tool-management
+      - quality-management
+      - architecture-design
+      - release-management
+      - configuration-management
+  requirements-engineering: { group: leaf }
+  process-management:       { group: leaf }
+  safety-analysis:          { group: leaf }
+  change-management:        { group: leaf }
+  security-analysis:        { group: leaf }
+  implementation:           { group: leaf }
+  security-management:      { group: leaf }
+  safety-management:        { group: leaf }
+  verification:             { group: leaf }
+  problem-resolution:       { group: leaf }
+  tool-management:          { group: leaf }
+  quality-management:       { group: leaf }
+  architecture-design:      { group: leaf }
+  release-management:       { group: leaf }
+  configuration-management: { group: leaf }
+
+  # ── Standards compliance ───────────────────────────────────────────
+  #
+  # Eclipse-score has `std_req` / `std_wp` artifacts for ISO 26262,
+  # ISO/SAE 21434, and ASPICE 4.0 (see process-description/process/
+  # standards/).  Or-group: a build may need to demonstrate compliance
+  # with several standards at once.
+  standards-compliance:
+    group: or
+    children: [iso26262, iso-sae-21434, aspice-40]
+  iso26262:
+    group: leaf
+    attributes:
+      std-id: "ISO_26262"
+  iso-sae-21434:
+    group: leaf
+    attributes:
+      std-id: "ISO_SAE_21434"
+  aspice-40:
+    group: leaf
+    attributes:
+      std-id: "ASPICE_4.0"
+
+  # ── Components ─────────────────────────────────────────────────────
+  #
+  # Each upstream eclipse-score repo with at least one need becomes a
+  # leaf feature.  Or-group so a variant picks the subset shipped in
+  # the build (e.g. "platform + persistency + lifecycle only").
+  components:
+    group: or
+    children:
+      - platform-score
+      - process-description
+      - persistency
+      - baselibs
+      - baselibs-rust
+      - lifecycle
+      - communication
+      - feo
+      - logging
+      - orchestrator
+      - inc-security-crypto
+      - inc-someip-gateway
+      - reference-integration
+      - module-template
+      - docs-as-code
+
+  platform-score:
+    group: leaf
+    attributes: { upstream-repo: "score" }
+  process-description:
+    group: leaf
+    attributes: { upstream-repo: "process_description" }
+  persistency:
+    group: leaf
+    attributes: { upstream-repo: "persistency" }
+  baselibs:
+    group: leaf
+    attributes: { upstream-repo: "baselibs" }
+  baselibs-rust:
+    group: leaf
+    attributes: { upstream-repo: "baselibs_rust" }
+  lifecycle:
+    group: leaf
+    attributes: { upstream-repo: "lifecycle" }
+  communication:
+    group: leaf
+    attributes: { upstream-repo: "communication" }
+  feo:
+    group: leaf
+    attributes: { upstream-repo: "feo" }
+  logging:
+    group: leaf
+    attributes: { upstream-repo: "logging" }
+  orchestrator:
+    group: leaf
+    attributes: { upstream-repo: "orchestrator" }
+  inc-security-crypto:
+    group: leaf
+    attributes: { upstream-repo: "inc_security_crypto" }
+  inc-someip-gateway:
+    group: leaf
+    attributes: { upstream-repo: "inc_someip_gateway" }
+  reference-integration:
+    group: leaf
+    attributes: { upstream-repo: "reference_integration" }
+  module-template:
+    group: leaf
+    attributes: { upstream-repo: "module_template" }
+  docs-as-code:
+    group: leaf
+    attributes: { upstream-repo: "docs-as-code" }
+
+# ── Constraints ──────────────────────────────────────────────────────
+#
+# Cross-feature rules implied by eclipse's metamodel and graph_checks.
+#
+constraints:
+  # ASIL-B and above must claim ISO 26262 compliance — eclipse's
+  # `tool_req__docs_common_attr_safety_link_check` would reject the
+  # alternative.
+  - "(implies asil-b iso26262)"
+  - "(implies asil-c iso26262)"
+  - "(implies asil-d iso26262)"
+
+  # If security is required, ISO/SAE 21434 compliance is mandatory.
+  - "(implies security-required iso-sae-21434)"
+
+  # Process-area selections imply at least one process artifact
+  # provider; here we assume process-description carries every process
+  # need (it does: 1257/2985 of the corpus).
+  - "(implies requirements-engineering process-description)"
+  - "(implies process-management        process-description)"
+  - "(implies safety-analysis           process-description)"
+  - "(implies change-management         process-description)"
+  - "(implies security-analysis         process-description)"
+  - "(implies implementation            process-description)"
+  - "(implies security-management       process-description)"
+  - "(implies safety-management         process-description)"
+  - "(implies verification              process-description)"
+  - "(implies problem-resolution        process-description)"
+  - "(implies tool-management           process-description)"
+  - "(implies quality-management        process-description)"
+  - "(implies architecture-design       process-description)"
+  - "(implies release-management        process-description)"
+  - "(implies configuration-management  process-description)"
+
+  # ASPICE compliance needs the process layer.
+  - "(implies aspice-40 process-description)"

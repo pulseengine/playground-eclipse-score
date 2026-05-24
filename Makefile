@@ -83,6 +83,23 @@ schemas-refresh:
 	@cp /Users/r/git/pulseengine/rivet/schemas/*.yaml $(SCHEMAS)/
 	@$(RIVET) --schemas $(SCHEMAS) schema validate
 
+# ── Variant feature-model checks ────────────────────────────────────────
+#
+# Eclipse-score declares variant management as a stakeholder requirement
+# but ships no variant model.  variants/feature-model.yaml + bindings.yaml
+# fill that gap using rivet's existing PLE machinery — see the README's
+# "Variant / feature-model handling" section.
+
+variant-check:
+	@$(RIVET) variant check-all \
+	    --model   variants/feature-model.yaml \
+	    --binding variants/bindings.yaml
+
+variant-matrix:
+	@$(RIVET) variant matrix \
+	    --model   variants/feature-model.yaml \
+	    --binding variants/bindings.yaml
+
 # ── Cleanup ─────────────────────────────────────────────────────────────
 clean:
 	@rm -f rivet/*/artifacts/imported.yaml rivet/*/coverage.md
