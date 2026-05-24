@@ -1,0 +1,20 @@
+# Eclipse S-CORE `docs-as-code` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/docs-as-code
+#         upstream/eclipse-score-docs-as-code/ holds the upstream working copy.
+#
+# This is the home of `score_metamodel/metamodel.yaml` — the upstream
+# source of truth for need types, link types, and graph checks. The
+# rivet conversion here is mostly tooling self-documentation
+# (`tsf`, `tool_req`, `gd_*` examples) but also a useful smoke test
+# that our converter handles the metamodel-driven examples themselves.
+project:
+  name: eclipse-score-docs-as-code
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

@@ -1,0 +1,14 @@
+# Upstream working copies are full git checkouts of eclipse-score
+# repositories. We never want to commit them into the outer fork repo —
+# they live as standalone clones, each with its own `origin` remote
+# pointing at github.com/eclipse-score/<repo>. To rebase, `cd upstream/<repo>`
+# and `git pull` (or `make rebase` from the workspace root).
+upstream/
+
+# Editor cruft.
+*.swp
+*.swo
+.DS_Store
+
+# Local-only converter scratch.
+/tmp-convert/

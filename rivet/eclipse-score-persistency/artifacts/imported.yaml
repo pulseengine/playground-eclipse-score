@@ -1,0 +1,889 @@
+artifacts:
+  - id: DOC__PERSISTENCY_SAFETY_MANUAL
+    type: doc
+    title: Persistency Safety Manual
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_MANUAL
+  - id: DOC__PERSISTENCY_SECURITY_MANUAL
+    type: doc
+    title: Persistency Security Manual
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__MODULE_SECURITY_MANUAL
+  - id: DOC__PERSISTENCY_RELEASE_NOTE
+    type: doc
+    title: Persistency Release Note
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SW_RELEASE_NOTE
+  - id: DOC__PERSISTENCY_CODEOWNERS
+    type: doc
+    title: Persistency Codeowners
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_PLAN
+  - id: DOC__MODULE_SAFETY_ANALYSIS_FDR
+    type: doc
+    title: Persistency Safety Analysis Checklist
+    status: draft
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__PERSISTENCY_SAFETY_PACKAGE_FDR
+    type: doc
+    title: Persistency Safety Package Formal Review
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__PERSISTENCY_SAFETY_PLAN
+    type: doc
+    title: Persistency Safety Plan
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__MODULE_SAFETY_PLAN
+  - id: DOC__PERSISTENCY_SAFETY_PLAN_FDR
+    type: doc
+    title: Persistency Safety Plan Formal Review
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__PERSISTENCY_SEC_PKG_FDR
+    type: doc
+    title: Persistency Security Package Formal Review
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__PERSISTENCY_SECURITY_PLAN
+    type: doc
+    title: Persistency Security Plan
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__MODULE_SECURITY_PLAN
+  - id: DOC__PERSISTENCY_SECURITY_PLAN_FDR
+    type: doc
+    title: Persistency Security Plan Formal Review
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__FDR_REPORTS
+  - id: DOC__PERSISTENCY_VERIFICATION_REPORT
+    type: doc
+    title: Persistency Verification Report
+    status: approved
+    tags: [persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__VERIFICATION_MODULE_VER_REPORT
+  - id: DOC__JSON_COMP_CLASS
+    type: doc
+    title: JSON Component Classification
+    status: approved
+    tags: [feature_persistency, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_CLASS
+  - id: DOC__PERSISTENCYJSON
+    type: doc
+    title: Persistency JSON
+    status: approved
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST
+  - id: DOC__KVS_ARC_INSPECTION
+    type: doc
+    title: KVS Architecture Inspection Checklist
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__SW_ARCH_VERIFICATION
+  - id: DOC__KVS_ARCHITECTURE
+    type: doc
+    title: KVS Module Architecture
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__COMPONENT_ARCH
+  - id: COMP_ARC_STA__KVS__STATIC_VIEW
+    type: comp-arc-sta
+    title: Component Name (Static View)
+    status: obsolete
+    description: |
+      .. needarch::
+      :scale: 50
+      :align: center
+      
+      {{ draw_component(need(), needs) }}
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+      - type: fulfils
+        target: COMP_REQ__KVS__KEY_NAMING
+  - id: COMP_ARC_DYN__KVS__DYNAMIC_VIEW
+    type: comp-arc-dyn
+    title: Dynamic View
+    status: obsolete
+    description: |
+      put here a sequence diagram
+    fields:
+      security: "YES"
+      safety-level: ASIL_B
+    links:
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+      - type: fulfils
+        target: COMP_REQ__KVS__KEY_NAMING
+  - id: COMP_ARC_STA__KVS__2
+    type: comp-arc-sta
+    title: Component Name 2
+    status: obsolete
+    description: |
+      no architecture but detailed design
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+      - type: fulfils
+        target: COMP_REQ__KVS__KEY_NAMING
+  - id: DOC__KVS_IMPL_INSPECTION
+    type: doc
+    title: KVS Implementation Inspection Checklist
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION_INSPECTION
+  - id: DOC__KVS_DETAILED_DESIGN
+    type: doc
+    title: KVS Detailed Design
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_IMPLEMENTATION
+  - id: DOC__KVS_REQ_INSPECTION
+    type: doc
+    title: KVS Requirements Inspection Checklist
+    status: draft
+    tags: [template, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "YES"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_INSPECT
+  - id: DOC__KVS_REQUIREMENTS
+    type: doc
+    title: KVS Requirements
+    status: approved
+    tags: ["eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__REQUIREMENTS_COMP
+  - id: COMP_REQ__KVS__KEY_NAMING
+    type: comp-req
+    title: Key Naming
+    status: approved
+    description: |
+      The component shall accept keys that consist solely of alphanumeric characters, underscores, or dashes.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_KEYS
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__KEY_ENCODING
+    type: comp-req
+    title: Key Encoding
+    status: approved
+    description: |
+      The component shall encode each key as valid UTF-8.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_KEYS
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__KEY_UNIQUENESS
+    type: comp-req
+    title: Key Uniqueness
+    status: approved
+    description: |
+      The component shall guarantee that each key is unique.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_KEYS
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__KEY_LENGTH
+    type: comp-req
+    title: Key Length
+    status: approved
+    description: |
+      The component shall limit the maximum length of a key to 32 bytes.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_KEYS
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__VALUE_DATA_TYPES
+    type: comp-req
+    title: Value Data Types
+    status: approved
+    description: |
+      The component shall accept only values of the following data types: Number,
+      String, Null, Array[Value], or Dictionary{Key:Value}.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_VALUE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__VALUE_SERIALIZE
+    type: comp-req
+    title: Value Serialization
+    status: approved
+    description: |
+      The component shall serialize and deserialize all values to and from JSON.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_VALUE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__VALUE_LENGTH
+    type: comp-req
+    title: Value Length
+    status: approved
+    description: |
+      The component shall limit the maximum length of a value to 1024 bytes.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_VALUE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__VALUE_DEFAULT
+    type: comp-req
+    title: Value Default
+    status: approved
+    description: |
+      The component shall support unset values and shall provide a default value
+      when a value is unset.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_VALUE
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__VALUE_RESET
+    type: comp-req
+    title: Value Reset
+    status: approved
+    description: |
+      The component shall allow resetting a value to its default if a default is
+      defined.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SUPPORT_DATATYPE_VALUE
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__DEFAULT_VALUE_TYPES
+    type: comp-req
+    title: Default Value Datatypes
+    status: approved
+    description: |
+      The component shall accept default values of only permitted value data
+      types.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_GET
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__RESET_TO_DEFAULT
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_FILE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__DEFAULT_VALUE_QUERY
+    type: comp-req
+    title: Default Value Query
+    status: approved
+    description: |
+      The component shall provide an API to retrieve default values.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_GET
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__RESET_TO_DEFAULT
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_FILE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__DEFAULT_VALUE_CFG
+    type: comp-req
+    title: Default Value Config
+    status: approved
+    description: |
+      The component shall allow configuration of default values in code or in a
+      separate configuration file.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_GET
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__RESET_TO_DEFAULT
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_FILE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__DEFAULT_VAL_CHKSUM
+    type: comp-req
+    title: Default Value Checksum
+    status: approved
+    description: |
+      The component shall secure the configuration file for default values with an
+      associated checksum file when default values are stored in a file.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUES
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_GET
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__RESET_TO_DEFAULT
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEFAULT_VALUE_FILE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__CONSTRAINTS
+    type: comp-req
+    title: Constraint Configuration
+    status: approved
+    description: |
+      The component shall allow configuration of KVS constraints at compile-time
+      using source code constants or at runtime using a configuration file.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__CFG
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__CONCURRENCY
+    type: comp-req
+    title: Concurrency
+    status: approved
+    description: |
+      The component shall implement thread-safe mechanisms to enable concurrent
+      access to data without data races.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__CONCURRENCY
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__MULTI_INSTANCE
+    type: comp-req
+    title: Multi-Instance
+    status: approved
+    description: |
+      The component shall manage all runtime variables within an instance to
+      enable creation and use of multiple KVS instances concurrently within a
+      single software architecture element.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__MULTIPLE_KVS
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERSIST_DATA_COM
+    type: comp-req
+    title: Persistent Data Storage Components
+    status: approved
+    description: |
+      The component shall use the file API and the JSON data format to persist data.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__INTEGRITY_CHECK
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__STORE_DATA
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_CSUM
+    type: comp-req
+    title: Persistent Data Storage Checksum Write
+    status: approved
+    description: |
+      The component shall generate a checksum for each data file and shall store
+      it alongside the data.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__INTEGRITY_CHECK
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__STORE_DATA
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_CSUM_VRFY
+    type: comp-req
+    title: Persistent Data Storage Checksum Verify
+    status: approved
+    description: |
+      The component shall verify the checksum when loading data.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__INTEGRITY_CHECK
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__LOAD_DATA
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_STORE_BND
+    type: comp-req
+    title: Persistent Data Storage Backend
+    status: approved
+    description: |
+      The component shall use the file API to persist data.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__INTEGRITY_CHECK
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__STORE_DATA
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_STORE_FMT
+    type: comp-req
+    title: Persistent Data Storage Format
+    status: approved
+    description: |
+      The component shall use the JSON data format to persist data.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__INTEGRITY_CHECK
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__STORE_DATA
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_VERSION
+    type: comp-req
+    title: Persistent Data Versioning
+    status: approved
+    description: |
+      The component shall not provide built-in versioning.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__VERSIONING
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__UPDATE_MECHANISM
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERS_DATA_SCHEMA
+    type: comp-req
+    title: Persistent Data Schema
+    status: approved
+    description: |
+      The component shall use a JSON file storage format that enables the
+      application to implement versioning, including upgrade and downgrade paths,
+      as needed.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__VERSIONING
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__UPDATE_MECHANISM
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_CREATION
+    type: comp-req
+    title: Snapshot Creation
+    status: approved
+    description: |
+      The component shall create a snapshot each time data is stored.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_CREATE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_MAX_NUM
+    type: comp-req
+    title: Snapshot Maximum Number
+    status: approved
+    description: |
+      The component shall maintain a configurable maximum number of snapshots.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__CFG
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_ID
+    type: comp-req
+    title: Snapshot IDs
+    status: approved
+    description: |
+      The component shall assign the ID 1 to the newest snapshot and shall increment the IDs of older snapshots accordingly.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_CREATE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_ROTATE
+    type: comp-req
+    title: Snapshot Rotation
+    status: approved
+    description: |
+      The component shall rotate and delete the oldest snapshot when the maximum number is reached.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_REMOVE
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_RESTORE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_RESTORE
+    type: comp-req
+    title: Snapshot Restore
+    status: approved
+    description: |
+      The component shall allow restoration of a snapshot by its ID.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_RESTORE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__SNAPSHOT_DELETE
+    type: comp-req
+    title: Snapshot Deletion
+    status: approved
+    description: |
+      The component shall allow deletion of individual snapshots.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__SNAPSHOT_REMOVE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__ENG_MODE
+    type: comp-req
+    title: Engineering Mode
+    status: approved
+    description: |
+      The component shall provide an engineering mode that can be enabled during
+      build time to display debugging and internal information.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__DEV_MODE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__FIELD_MODE
+    type: comp-req
+    title: Field Mode
+    status: approved
+    description: |
+      The component shall provide a field mode that can be enabled during build
+      time to restrict access as much as possible.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__PROD_MODE
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__ASYNC_API
+    type: comp-req
+    title: Async API
+    status: approved
+    description: |
+      The component shall provide an asynchronous API in addition to the standard API.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__ASYNC_API
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERMISSION_CONTROL
+    type: comp-req
+    title: Permission Control
+    status: approved
+    description: |
+      The component shall rely on the underlying filesystem for access and
+      permission management and shall not implement its own access or permission
+      controls.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__ACCESS_CONTROL
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__PERMISSION_ERR_HNDL
+    type: comp-req
+    title: Permission Error Handling
+    status: approved
+    description: |
+      The component shall report any access or permission errors encountered at
+      the filesystem level to the application.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__ACCESS_CONTROL
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: COMP_REQ__KVS__CALLBACK_SUPPORT
+    type: comp-req
+    title: Callback Support
+    status: approved
+    description: |
+      The component shall provide an API for registering callbacks that are triggered by data change events.
+    fields:
+      req-type: Functional
+      security: "NO"
+      safety-level: ASIL_B
+    links:
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__ASYNC_API
+      - type: satisfies
+        target: FEAT_REQ__PERSISTENCY__ASYNC_COMPLETION
+      - type: belongs-to
+        target: COMP__PERSISTENCY_KVS
+  - id: DOC__KVS_DFA
+    type: doc
+    title: KVS DFA
+    status: approved
+    tags: [Persistency KVS, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_DFA
+  - id: DOC__KVS_FMEA
+    type: doc
+    title: KVS FMEA
+    status: approved
+    tags: [Persistency KVS, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__SW_COMPONENT_FMEA
+  - id: DOC__KVS
+    type: doc
+    title: KVS
+    status: approved
+    tags: [Persistency KVS, "eclipse:document"]
+    fields:
+      safety-level: ASIL_B
+      security: "NO"
+    links:
+      - type: realizes
+        target: WP__CMPT_REQUEST

@@ -1,0 +1,1147 @@
+artifacts:
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_ID
+    type: tool-req
+    title: Enforces need ID uniqueness
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that all Need IDs are globally unique across all included
+      documentation instances.
+      
+      .. note::
+      Within each docs-instance (as managed by sphinx-needs), IDs are guaranteed to be unique.
+      When linking across instances, unique prefixes are automatically applied to maintain global uniqueness.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_UID
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_UID
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTRIBUTE_UID
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_UID
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_ID_SCHEME
+    type: tool-req
+    title: Enforces need ID scheme
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that Need IDs follow the following naming scheme:
+      
+      * A prefix indicating the need type (e.g. `feature__`)
+      * A middle part matching the hierarchical structure of the need:
+      * For requirements: a portion of the feature tree or a component acronym
+      * For architecture elements: the structural element (e.g. a part of the feature tree, component acronym)
+      * For safety analysis (FMEA, DFA): name of analyzed structural element (e.g. Persistency, FEO, etc.)
+      * Additional descriptive text to ensure human readability
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "NO: cannot check non-existent \"doc__naming_conventions\" in gd_req__req_attr_uid"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_UID
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTRIBUTE_UID
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_UID
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_TITLE
+    type: tool-req
+    title: Enforces title wording rules
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that all needs have titles and titles do not contain the following words:
+      
+      * shall
+      * must
+      * will
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "NO: Can not ensure summary"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_TITLE
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_TITLE
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_DESCRIPTION
+    type: tool-req
+    title: Enforces presence of description
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that each need of type :need:`tool_req__docs_req_types` has a description (content)
+    fields:
+      parent-covered: "NO: Can not cover 'ISO/IEC/IEEE/29148'"
+      version: "1"
+      implemented: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_DESCRIPTION
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_DESC_WORDING
+    type: tool-req
+    title: Enforces description wording rules
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that requirement descriptions do not contain the following weak words:
+      ju-st, ab-out, rea-lly, so-me, th-ing, absol-utely
+      
+      This rule applies to:
+      
+      * all requirement types defined in :need:`tool_req__docs_req_types`, except process requirements.
+      
+      .. note::
+      Artificial "-" added to avoid triggering violation of this requirment in this document.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_DESC_WEAK
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_SECURITY
+    type: tool-req
+    title: "Security: enforce classification"
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that the ``security`` attribute has one of the following values:
+      
+      * YES
+      * NO
+      
+      This rule applies to:
+      
+      * all requirement types defined in :need:`tool_req__docs_req_types`, except process and tool requirements.
+      * all architecture elements defined in :need:`tool_req__docs_arch_types`.
+    fields:
+      implemented: "YES"
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_SECURITY
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_SECURITY
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_SAFETY
+    type: tool-req
+    title: "Safety: enforce classification"
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that the ``safety`` attribute has one of the following values:
+      
+      * QM
+      * ASIL_B
+      
+      This rule applies to:
+      
+      * all requirement types defined in :need:`tool_req__docs_req_types`, except process and tool requirements.
+      * all architecture elements defined in :need:`tool_req__docs_arch_types`.
+    fields:
+      implemented: "YES"
+      parent-covered: "YES"
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_SAFETY
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_SAFETY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_STATUS
+    type: tool-req
+    title: "Status: enforce attribute"
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall enforce that the ``status`` attribute has one of the following values:
+      
+      * valid
+      * invalid
+      
+      This rule applies to:
+      
+      * all requirement types defined in :need:`tool_req__docs_req_types`, except process and tool requirements.
+      * all architecture elements defined in :need:`tool_req__docs_arch_types`.
+      * all safety analysis elements defined in :need:`tool_req__docs_saf_types`.
+    fields:
+      implemented: "YES"
+      parent-covered: "NO: gd_req__saf_attr_status has additional constraints"
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_STATUS
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_STATUS
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_STATUS
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_VERSION
+    type: tool-req
+    title: "Versioning: enforce attribute"
+    tags: [Common Attributes]
+    description: |
+      Docs-As-Code shall enable and enforce a versioning attribute for all needs.
+      
+      .. note::
+      Current implementation is handled mainly by sphinx-needs.
+      In our enviroment it supports whole numbers e.g. (1,2,10,34)
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "NO: to be checked after demo"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_VERSION
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_SUSPICIOUS
+    type: tool-req
+    title: "Suspicious: Enforce attribute"
+    status: obsolete
+    tags: [Common Attributes]
+    description: |
+      Docs-as-Code shall check if linked parent needs have different versions, compared to
+      the version the need was originally linked to.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO: parent talks about setting covered to false, but we want to issue a build error."
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_SUSPICIOUS
+  - id: TOOL_REQ__DOCS_DOC_TYPES
+    type: tool-req
+    title: Document Types
+    tags: [Documents]
+    description: |
+      Docs-as-Code shall support the following document types:
+      
+      * Generic Document (document)
+      * Tool Verification Report (doc_tool)
+      * Change Request is also a generic document
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__DOC_TYPES
+  - id: TOOL_REQ__DOCS_DOC_GENERIC_MANDATORY
+    type: tool-req
+    title: Mandatory attributes of Generic Documents
+    tags: [Documents]
+    description: |
+      gd_req__doc_attributes_manual,
+      gd_req__change_attr_impact_safety
+      :parent_covered: YES
+      
+      Docs-as-Code shall enforce that each Generic Document ``doc__*`` has the following attributes:
+      
+      * status
+      * security
+      * safety
+      * realizes
+    fields:
+      implemented: PARTIAL
+      version: "1"
+  - id: TOOL_REQ__DOCS_DOC_ATTR
+    type: tool-req
+    title: Mandatory Document attributes
+    tags: [Documents]
+    description: |
+      gd_req__doc_author,
+      gd_req__doc_approver,
+      gd_req__doc_reviewer,
+      gd_req__change_attr_title,
+      :parent_covered: NO, process requirement has changed and we do not understand the new wording.
+      :status: invalid
+      
+      Docs-as-Code shall enforce that each :need:`tool_req__docs_doc_types` has the
+      following attributes:
+      
+      * title (implicitly enforced by sphinx-needs)
+      * author
+      * approver
+      * reviewer
+    fields:
+      implemented: "NO"
+      version: "1"
+  - id: TOOL_REQ__DOCS_DOC_ATTR_AUTHOR_AUTOFILL
+    type: tool-req
+    title: Document author is autofilled
+    status: obsolete
+    tags: [Documents]
+    description: |
+      Docs-as-Code shall provide an automatic mechanism to determine document authors.
+      
+      Contributors responsible for more than 50% of the content shall be considered the
+      document author. Contributors are accumulated over all commits to the file containing
+      the document.
+      
+      .. note::
+      The requirement is currently invalid as it's currently unclear how the contribution
+      % are counted and how to accumulate %.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+    links:
+      - type: satisfies
+        target: GD_REQ__DOC_AUTHOR
+  - id: TOOL_REQ__DOCS_DOC_ATTR_APPROVER_AUTOFILL
+    type: tool-req
+    title: Document approver is autofilled
+    status: obsolete
+    tags: [Documents]
+    description: |
+      Docs-as-Code shall provide an automatic mechanism to determine the document approver.
+      
+      The approver shall be the approvers listed in *CODEOWNERS* of the last pull request of
+      the file containing the document.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+    links:
+      - type: satisfies
+        target: GD_REQ__DOC_APPROVER
+  - id: TOOL_REQ__DOCS_DOC_ATTR_REVIEWER_AUTOFILL
+    type: tool-req
+    title: Document reviewer is autofilled
+    status: obsolete
+    tags: [Documents]
+    description: |
+      Docs-as-Code shall provide an automatic mechanism to determine the document reviewers.
+      
+      The reviewer shall be the approvers NOT listed in *CODEOWNERS* of the last pull
+      request of the file containing the document.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+    links:
+      - type: satisfies
+        target: GD_REQ__DOC_REVIEWER
+  - id: TOOL_REQ__DOCS_REQ_TYPES
+    type: tool-req
+    title: Requirements Types
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall support the following requirement types:
+      
+      * Stakeholder requirement (stkh_req)
+      * Feature requirement (feat_req)
+      * Component requirement (comp_req)
+      * Assumption of use requirement (aou_req)
+      * Process requirement (gd_req)
+      * Tool requirement (tool_req)
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES: Together with tool_req__docs_linkage"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_STRUCTURE
+  - id: TOOL_REQ__DOCS_REQ_ATTR_RATIONALE
+    type: tool-req
+    title: Enforces rationale attribute
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall enforce that each stakeholder requirement (stkh_req) contains a ``rationale`` attribute.
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "NO: Can not ensure correct reasoning"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_RATIONALE
+      - type: satisfies
+        target: GD_REQ__REQ_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_REQ_ATTR_REQTYPE
+    type: tool-req
+    title: Enforces requirement type classification
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall enforce that each need of type :need:`tool_req__docs_req_types`
+      except process and tool requirements has a ``reqtype`` attribute with one of the
+      following values:
+      
+      * Functional
+      * Interface
+      * Process
+      * Non-Functional
+    fields:
+      implemented: "YES"
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_TYPE
+  - id: TOOL_REQ__DOCS_REQ_ATTR_REQCOV
+    type: tool-req
+    title: Enables marking requirements as "covered"
+    tags: [Requirements]
+    description: |
+      Docs as code shall shall enable marking requirements as covered by their linked children.
+      
+      Attribute ``reqcov`` must be one of the following values:
+      * Yes
+      * No
+      
+      .. note::
+      No concept yet, as parents are generally not aware of their children.
+    fields:
+      implemented: PARTIAL
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_REQ_COV
+  - id: TOOL_REQ__DOCS_REQ_ATTR_TESTCOV
+    type: tool-req
+    title: Support requirements test coverage
+    status: obsolete
+    tags: [Requirements]
+    description: |
+      Docs-As-Code shall allow for every need of type :need:`tool_req__docs_req_types` to
+      have a ``testcovered`` attribute, which must be one of:
+      
+      * Yes
+      * No
+      
+      .. note::
+      No concept yet
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_TEST_COVERED
+  - id: TOOL_REQ__DOCS_REQ_ATTR_VALIDITY_CORRECTNESS
+    type: tool-req
+    title: Enforce validity attribute correctness
+    status: approved
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall enforce that the ``valid_from`` and ``valid_until`` attributes of stakeholder and feature requirements are correct.
+      
+      The format of a milestone is something like "v0.5" or "v1.0.1".
+      No suffixes like "-SNAPSHOT" or "-beta" are allowed.
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_VALIDITY
+  - id: TOOL_REQ__DOCS_REQ_ATTR_VALIDITY_CONSISTENCY
+    type: tool-req
+    title: Enforce validity start is before end
+    status: approved
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall enforce that ``valid_from`` is before ``valid_until`` attribute in stakeholder and feature requirements.
+      We consider "from" is inclusive but "until" is exclusive, so from v0.5 until v1.0 means valid for v0.5 but not for v1.0.
+      If either attribute is missing, no check is performed.
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_VALIDITY
+  - id: TOOL_REQ__DOCS_REQ_LINK_SATISFIES_ALLOWED
+    type: tool-req
+    title: Enables needs linking via satisfies attribute
+    status: obsolete
+    tags: [Requirements]
+    description: |
+      Docs-as-Code shall enforce that linking between model elements via the ``satisfies``
+      attribute follows defined rules. Having at least one link is mandatory.
+      
+      Allowed source and target combinations are defined in the following table:
+      
+      .. table::
+      :widths: auto
+      
+      ================================ ========================================================
+      Source Type                      Allowed Link Target
+      ================================ ========================================================
+      Feature Requirements             Stakeholder Requirements
+      Component Requirements           Feature Requirements
+      Process Requirements             Workflows
+      Tooling Requirements             Process-, Stakeholder-, Feature-, Component Requirements
+      ================================ ========================================================
+      
+      .. note::
+      Certain tool requirements do not have a matching process requirement.
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_LINKAGE
+      - type: satisfies
+        target: GD_REQ__REQ_TRACEABILITY
+  - id: TOOL_REQ__DOCS_COMMON_ATTR_SAFETY_LINK_CHECK
+    type: tool-req
+    title: "Safety: enforce safe linking"
+    tags: [Common Attributes]
+    description: |
+      QM requirements (safety == QM) shall not be linked to safety requirements (safety != QM) via the ``satisfies`` attribute.
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_LINKAGE_SAFETY
+  - id: TOOL_REQ__DOCS_REQ_LINK_COVERS_AOU
+    type: tool-req
+    title: Requirement linkage to AoU via covers
+    description: |
+      Feature requirements (feat_req) and component requirements (comp_req)
+      link to Assumptions of Use (aou_req) via the ``covers`` attribute.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_LINKAGE_AOU
+  - id: TOOL_REQ__DOCS_ARCH_TYPES
+    type: tool-req
+    title: Architecture Types
+    status: obsolete
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall support the following architecture element types:
+      
+      * Feature Static View (feat_arc_sta)
+      * Feature (feat)
+      * Logical Interface (logic_arc_int)
+      * Logical Interface Operation (logic_arc_int_op)
+      * Component Static View (comp_arc_sta)
+      * Component (comp)
+      * Interface (real_arc_int)
+      * Interface Operation (real_arc_int_op)
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_HIERARCHICAL_STRUCTURE
+      - type: satisfies
+        target: GD_REQ__ARCH_BUILD_BLOCKS
+  - id: TOOL_REQ__DOCS_ARCH_ATTR_MANDATORY
+    type: tool-req
+    title: Architecture Mandatory Attributes
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enforce that the following attributes are present in all needs of type :need:`tool_req__docs_arch_types`
+      
+      * Fulfils
+      * Safety
+      * Security
+      * Status
+      * UID
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "YES"
+      parent-has-problem: "YES: Metamodel & Process aren't the same. Some definitions are not consistent in Process"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_MANDATORY
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_FULFILS
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_MANDATORY
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_FULFILS
+  - id: TOOL_REQ__DOCS_ARCH_LINK_FULFILS
+    type: tool-req
+    title: "Mandatory Architecture Attribute: fulfils"
+    tags: [Architecture]
+    description: |
+      gd_req__arch_linkage_requirement_type,
+      gd_req__arch_attr_fulfils,
+      gd_req__arch_traceability,
+      gd_req__req_linkage_fulfill
+      :parent_covered: YES
+      
+      Docs-as-Code shall enforce that linking via the ``fulfils`` attribute follows defined rules.
+      
+      Allowed source and target combinations are defined in the following table:
+      
+      .. table::
+      :widths: auto
+      
+      ====================================  ==========================================
+      Link Source                           Allowed Link Target
+      ====================================  ==========================================
+      feat_arc_sta                          feat_req, aou_req
+      feat_arc_dyn                          feat_req
+      logic_arc_int                         feat_req
+      comp_arc_sta                          comp_req, aou_req
+      comp_arc_dyn                          comp_req
+      real_arc_int                          comp_req
+      ====================================  ==========================================
+    fields:
+      implemented: "YES"
+      version: "2"
+  - id: TOOL_REQ__DOCS_ARCH_LINK_FULFILS_AOU
+    type: tool-req
+    title: Architecture fulfils linkage to AoU
+    description: |
+      Architectural static views (feat_arc_sta, comp_arc_sta)
+      link to Assumptions of Use (aou_req) via the ``fulfils`` attribute.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_ATTR_FULFILS_AOU
+  - id: TOOL_REQ__DOCS_ARCH_LINK_AOU_CHECK
+    type: tool-req
+    title: Check Architecture linkage to AoU
+    description: |
+      Architectural static views (feat_arc_sta, comp_arc_sta)
+      are not linked to their own AoU via the ``fulfils`` attribute.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_LINKAGE_AOU
+  - id: TOOL_REQ__DOCS_ARCH_LINK_SAFETY_TO_REQ
+    type: tool-req
+    title: Ensure safety architecture elements link a safety requirement
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enforce that architecture elements of type
+      :need:`tool_req__docs_arch_types` with ``safety != QM`` are linked to at least one
+      requirements of type :need:`tool_req__docs_req_types` with the exact same ``safety``
+      value.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_LINKAGE_REQUIREMENT
+  - id: TOOL_REQ__DOCS_ARCH_LINK_QM_TO_SAFETY_REQ
+    type: tool-req
+    title: Ensure qm architecture elements do not fulfill safety requirements
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enforce that architecture elements of type
+      :need:`tool_req__docs_arch_types` with ``safety == QM`` are not linked to requirements
+      of type :need:`tool_req__docs_req_types` with ``safety != QM``.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_LINKAGE_REQUIREMENT
+  - id: TOOL_REQ__DOCS_REQ_ARCH_LINK_SAFETY_TO_ARCH
+    type: tool-req
+    title: Restrict links for safety requirements
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enforce that valid safety architectural elements (Safety != QM) can
+      only be linked against valid safety architectural elements.
+    fields:
+      implemented: PARTIAL
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_LINKAGE_SAFETY_TRACE
+      - type: satisfies
+        target: GD_REQ__REQ_LINKAGE_SAFETY
+  - id: TOOL_REQ__DOCS_ARCH_LINK_SECURITY
+    type: tool-req
+    title: "Security: Restrict linkage"
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enforce that security relevant :need:`tool_req__docs_arch_types` (Security ==
+      YES) can only be linked against security relevant :need:`tool_req__docs_arch_types`.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_LINKAGE_SECURITY_TRACE
+  - id: TOOL_REQ__DOCS_ARCH_VIEWS
+    type: tool-req
+    title: Support Diagram drawing of architecture
+    tags: [Architecture]
+    description: |
+      Docs-as-Code shall enable the rendering of diagrams for the following architecture views:
+      
+      * Feature Package Diagram (feat_arc_sta)
+      * Feature Sequence Diagram (feat_arc_dyn)
+      * Feature Interface View (logic_arc_int)
+      * Component Package Diagram (comp_arc_sta)
+      * Component Sequence Diagram (comp_arc_dyn)
+      * Component Interface (real_arc_int)
+      * Module View (mod_view_sta)
+      
+      .. note::
+      feat_arc_sta, comp_arc_sta, logic_arc_int, real_arc_int are architecture views,
+      but are still defined as architectural elements, which means they have the properties of
+      architectural elements.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__ARCH_VIEWPOINTS
+  - id: TOOL_REQ__DOCS_DD_LINK_SOURCE_CODE_LINK
+    type: tool-req
+    title: Supports linking to source code
+    tags: ["Detailed Design & Code"]
+    description: |
+      Docs-as-Code shall allow source code to link to requirement sphinx-needs objects.
+      
+      A link to the corresponding source code location in GitHub shall be generated in the
+      generated documentation within the linked requirement.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "NO: we only enable linking, we do not link"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_IMPL
+  - id: TOOL_REQ__DOCS_DD_FEATURE_FLAG
+    type: tool-req
+    title: Feature Flags
+    tags: ["Detailed Design & Code"]
+    description: |
+      Docs-as-Code shall allow for a to-be-defined list of checks to be non-fatal for non
+      release builds. These are typically better suited for metrics than for checks.
+      
+      e.g. gd_req__req_linkage_architecture
+    fields:
+      version: "1"
+      implemented: "NO"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_LINKAGE_ARCHITECTURE_SWITCH
+  - id: TOOL_REQ__DOCS_DD_STA
+    type: tool-req
+    title: Static Diagram for Unit Interactions
+    tags: ["Detailed Design & Code"]
+    description: |
+      Provide needs type ``dd_sta`` for static diagrams showing unit interactions as UML.
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__IMPL_STATIC_DIAGRAM
+  - id: TOOL_REQ__DOCS_TEST_LINK_TESTCASE
+    type: tool-req
+    title: Supports linking to test cases
+    tags: [Testing]
+    description: |
+      Docs-as-Code shall allow requirements of type :need:`tool_req__docs_req_types` to
+      include a ``testlink`` attribute.
+      
+      This attribute shall support linking test cases to requirements.
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__REQ_ATTR_TESTLINK
+  - id: TOOL_REQ__DOCS_TEST_METADATA_MANDATORY_1
+    type: tool-req
+    title: Extract Metadata from Tests
+    tags: [Testing]
+    description: |
+      Docs-as-Code shall ensure that each test case has TestType and DerivationTechnique set.
+    fields:
+      version: "1"
+      implemented: "NO"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__VERIFICATION_CHECKS
+  - id: TOOL_REQ__DOCS_TEST_METADATA_MANDATORY_2
+    type: tool-req
+    title: Extract Metadata from Tests
+    status: obsolete
+    tags: [Testing]
+    description: |
+      Docs-as-Code shall ensure that each test case has a non empty description.
+      
+      .. note:: this will probably be implemented outside of docs-as-code.
+    fields:
+      version: "1"
+      implemented: "NO"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__VERIFICATION_CHECKS
+  - id: TOOL_REQ__DOCS_TEST_METADATA_LINK_LEVELS
+    type: tool-req
+    title: Extract Metadata from Tests
+    status: obsolete
+    tags: [Testing]
+    description: |
+      Docs-as-Code shall ensure that test cases link to requirements on the correct level:
+      
+      - If Partially/FullyVerifies are set in Feature Integration Test these shall link to Feature Requirements
+      - If Partially/FullyVerifies are set in Component Integration Test these shall link to Component Requirements
+      - If Partially/FullyVerifies are set in Unit Test these shall link to Component Requirements
+    fields:
+      version: "1"
+      implemented: "NO"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__VERIFICATION_CHECKS
+  - id: TOOL_REQ__DOCS_TVR_SAFETY
+    type: tool-req
+    title: Enforce safety classification
+    tags: [Tool Verification Reports]
+    description: |
+      Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
+      ``safety_affected`` attribute with one of the following values:
+      
+      * YES
+      * NO
+    fields:
+      version: "1"
+      implemented: "YES"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_SAFETY_AFFECTED
+      - type: satisfies
+        target: GD_REQ__TOOL_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_TVR_SECURITY
+    type: tool-req
+    title: Enforce security classification
+    tags: [Tool Verification Reports]
+    description: |
+      Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
+      `security_affected` attribute with one of the following values:
+      
+      * YES
+      * NO
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_SECURITY_AFFECTED
+      - type: satisfies
+        target: GD_REQ__TOOL_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_TVR_STATUS
+    type: tool-req
+    title: Enforce status classification
+    tags: [Tool Verification Reports]
+    description: |
+      Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
+      `status` attribute with one of the following values:
+      
+      * draft
+      * evaluated
+      * qualified
+      * released
+      * rejected
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_STATUS
+      - type: satisfies
+        target: GD_REQ__TOOL_CHECK_MANDATORY
+  - id: TOOL_REQ__DOCS_TVR_VERSION
+    type: tool-req
+    title: Enforce version attribute
+    tags: [Tool Verification Reports]
+    description: |
+      Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
+      `version` attribute.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_VERSION
+  - id: TOOL_REQ__DOCS_TVR_CONFIDENCE_LEVEL
+    type: tool-req
+    title: Enforce confidence level classification
+    tags: [Tool Verification Reports]
+    description: |
+      Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
+      `tcl` attribute with one of the following values:
+      
+      * LOW
+      * HIGH
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__TOOL_ATTR_TCL
+  - id: TOOL_REQ__DOCS_WF_TYPES
+    type: tool-req
+    title: Workflow Types
+    tags: [Process / Other]
+    description: |
+      Docs-as-Code shall support the following workflow types:
+      
+      * Workflow (wf)
+    fields:
+      implemented: "YES"
+      version: "1"
+    links:
+      - type: satisfies
+        target: GD_REQ__PROCESS_MANAGEMENT_BUILD_BLOCKS_ATTR
+      - type: satisfies
+        target: GD_REQ__PROCESS_MANAGEMENT_BUILD_BLOCKS_LINK
+  - id: TOOL_REQ__DOCS_STDREQ_TYPES
+    type: tool-req
+    title: Standard Requirement Types
+    tags: [Process / Other]
+    description: |
+      Docs-as-Code shall support the following requirement types:
+      
+      * Standard requirement (std_req)
+    fields:
+      version: "1"
+      implemented: "YES"
+  - id: TOOL_REQ__DOCS_SAF_TYPES
+    type: tool-req
+    title: Safety Analysis Need Types
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall support the following need types:
+      
+      * Feature FMEA (Failure Modes and Effect Analysis) -> ``feat_saf_fmea``
+      * Component FMEA (Failure Modes and Effect Analysis) -> ``comp_saf_fmea``
+      * Feature DFA (Dependend Failure Analysis) -> ``feat_saf_dfa``
+      * Component DFA (Dependent Failure Analysis) -> ``comp_saf_dfa``
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_STRUCTURE
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_UID
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_MANDATORY
+    type: tool-req
+    title: Safety Analysis Mandatory Attributes
+    tags: [Safety Analysis]
+    description: |
+      All safety analysis elements in :need:`tool_req__docs_saf_types`
+      shall have the following mandatory attributes:
+      
+      * DFA-only attribute: ``failure_id``
+      * FMEA-only attribute: ``fault_id``
+      * attribute: ``failure_effect``
+      * attribute: ``status``
+      * attribute: ``sufficient``
+      * attribute: ``title`` (all Needs elements have a title)
+      * attribute: ``id`` (all Needs elements have an id)
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_MANDATORY
+      - type: satisfies
+        target: GD_REQ__SEC_ATTR_MANDATORY
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_MITIGATED_BY
+    type: tool-req
+    title: Safety Analysis Mitigation Attribute
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce valid needs (`status` == `valid`) of type
+      :need:`tool_req__docs_saf_types` to have at least one `mitigated_by` link to a
+      requirement on the corresponding level.
+      
+      At least one of the linked requirements must have
+      the same ASIL level or a higher one.
+      
+      It can be ``comp_req`` or ``aou_req``.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_MITIGATED_BY
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_REQUIREMENTS
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_REQUIREMENTS_CHECK
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_AOU
+      - type: satisfies
+        target: GD_REQ__SAF_LINKAGE_SAFETY
+      - type: satisfies
+        target: GD_REQ__SEC_ATTR_MITIGATED_BY
+      - type: satisfies
+        target: GD_REQ__SEC_ATTR_REQUIREMENTS_CHECK
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_MITIGATION_ISSUE
+    type: tool-req
+    title: Safety Analysis Mitigation Issue Attribute
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall allow needs of type :need:`tool_req__docs_saf_types` to have a
+      `mitigation_issue` attribute which links to a GitHub issue.
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_MITIGATION_ISSUE
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_SUFFICIENT
+    type: tool-req
+    title: Safety Analysis Sufficient Attribute
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce needs of type :need:`tool_req__docs_saf_types` to
+      have a `sufficient` attribute , which can have one of the following values:
+      
+      * yes
+      * no
+    fields:
+      implemented: "YES"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_SUFFICIENT
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_SUFFICIENT_CHECK
+    type: tool-req
+    title: Safety Analysis Sufficient Check
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall ensure needs of type :need:`tool_req__docs_saf_types` with
+      `sufficient` == `yes` have a `mitigated_by` entry.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_SUFFICIENT
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_CONTENT
+    type: tool-req
+    title: Safety Analysis Mandatory Content
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce needs of type :need:`tool_req__docs_saf_types` to have a
+      non empty content.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ARGUMENT
+  - id: TOOL_REQ__DOCS_SAF_ATTRS_VIOLATES
+    type: tool-req
+    title: Safety Analysis Linkage Violates
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce that needs of type :need:`tool_req__docs_saf_types` have a
+      `violates` links to at least one dynamic / static diagram according to the table.
+      
+      .. table::
+      :widths: auto
+      
+      =============  ===================
+      Link Source    Allowed Link Target
+      =============  ===================
+      feat_saf_dfa   feat_arc_sta
+      comp_saf_dfa   comp_arc_sta
+      feat_saf_fmea  feat_arc_dyn
+      comp_saf_fmea  comp_arc_dyn
+      =============  ===================
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "YES"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_LINKAGE_CHECK
+      - type: satisfies
+        target: GD_REQ__SAF_LINKAGE
+      - type: satisfies
+        target: GD_REQ__SEC_LINKAGE_CHECK
+  - id: TOOL_REQ__DOCS_SAF_ATTR_FMEA_FAULT_ID
+    type: tool-req
+    title: "FMEA: fault id attribute"
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce that needs of type DFA (see
+      :need:`tool_req__docs_saf_types`) have a `fault_id` attribute.
+      
+      Allowed values are listed as ID in tables at :need:`gd_guidl__dfa_failure_initiators`.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_FAULT_ID
+  - id: TOOL_REQ__DOCS_SAF_ATTR_DFA_FAILURE_ID
+    type: tool-req
+    title: "DFA: failure id attribute"
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce that needs of type DFA (see
+      :need:`tool_req__docs_saf_types`) have a `fault_id` attribute.
+      
+      Allowed values are listed as ID in tables at :need:`gd_guidl__dfa_failure_initiators`.
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_FAILURE_ID
+  - id: TOOL_REQ__DOCS_SAF_ATTR_FMEA_FAILURE_EFFECT
+    type: tool-req
+    title: Failure Effect
+    status: obsolete
+    tags: [Safety Analysis]
+    description: |
+      Docs-As-Code shall enforce that every Safety Analysis has a short description of the failure effect (e.g. failure lead to an unintended actuation of the analysed element)
+    fields:
+      implemented: "NO"
+      version: "1"
+      parent-covered: "NO"
+    links:
+      - type: satisfies
+        target: GD_REQ__SAF_ATTR_FEFFECT

@@ -1,0 +1,20 @@
+# Eclipse S-CORE `score` platform repo (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/score
+#         upstream/eclipse-score-score/ holds the upstream working copy.
+#
+# This rivet project is *generated* by `tools/score_import.py`. Do not
+# hand-edit `artifacts/imported.yaml` — re-run the converter after rebase.
+#
+# Run from this directory:
+#   rivet --schemas ../../../rivet/schemas validate
+project:
+  name: eclipse-score-score
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml

@@ -1,0 +1,34 @@
+# Combined corpus view: all four upstream eclipse-score repos loaded
+# as a single rivet project. This is the *falsification oracle* for
+# "can rivet's typed traceability cope with eclipse-score's scope?"
+#
+# Per-repo rivet.yaml files (in rivet/<repo>/rivet.yaml) give a
+# narrower view if you want to inspect one fork in isolation; the
+# eventual production shape would have each repo's rivet.yaml declare
+# the others via `externals:` (mirroring eclipse-score's sphinx-needs
+# `external_needs`).
+#
+# Run from this directory:
+#   rivet --schemas /Users/r/git/pulseengine/rivet/schemas validate
+#
+# To rebase + reconvert (per upstream repo):
+#   git -C upstream/eclipse-score-score fetch origin && \
+#     git -C upstream/eclipse-score-score merge origin/main
+#   make convert       # re-runs tools/score_import.py for all four
+#   rivet validate     # mechanical gate
+project:
+  name: eclipse-score-fork
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: rivet/eclipse-score-score/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-process-description/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-persistency/artifacts
+    format: generic-yaml
+  - path: rivet/eclipse-score-docs-as-code/artifacts
+    format: generic-yaml

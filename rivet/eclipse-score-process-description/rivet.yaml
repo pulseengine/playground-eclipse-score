@@ -1,0 +1,16 @@
+# Eclipse S-CORE `process_description` (forked into pulseengine).
+#
+# Source: https://github.com/eclipse-score/process_description
+#         upstream/eclipse-score-process-description/ holds the upstream working copy.
+#
+# Process layer: workflows, roles, workproducts, gd_*, std_*.
+project:
+  name: eclipse-score-process-description
+  version: "0.1.0"
+  schemas:
+    - common
+    - score
+
+sources:
+  - path: artifacts
+    format: generic-yaml
