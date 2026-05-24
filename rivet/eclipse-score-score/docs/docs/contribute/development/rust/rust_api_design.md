@@ -1,5 +1,5 @@
 ---
-id: DOC-RUST-API-DESIGN-56311
+id: DOC-RUST-API-DESIGN-2668
 title: Rust Api Design
 type: specification
 status: approved

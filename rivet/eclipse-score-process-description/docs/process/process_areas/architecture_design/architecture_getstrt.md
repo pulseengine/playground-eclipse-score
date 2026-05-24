@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-GETSTRT-54637
+id: DOC-ARCHITECTURE-GETSTRT-31644
 title: Architecture Getstrt
 type: specification
 status: approved

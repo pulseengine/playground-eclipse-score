@@ -67,21 +67,46 @@ Result: PASS (2507 warnings)
 See [`tools/falsification-journey.md`](tools/falsification-journey.md)
 for the path from "naïve conversion = 1476 errors" to "PASS."
 
+## Reproducibility — `rivet externals` pins every upstream
+
+The fork uses rivet's own `externals:` machinery (see `rivet docs cross-repo`)
+to pin all 58 upstream eclipse-score repos by exact commit SHA. The
+authoritative pin source is the `externals:` block at the bottom of
+`rivet.yaml` plus the generated `rivet.lock`. Anyone with a checkout
+and internet access can materialise the exact corpus state this fork
+was validated against:
+
+```sh
+git clone <fork-url>
+cd eclipse-score-fork
+make sync         # rivet sync + create upstream/ symlinks
+make convert      # run the RST→YAML converter
+make validate     # mechanical oracle: PASS (2507 warnings)
+```
+
+The 58 upstream clones land under `.rivet/repos/<short-name>/` (rivet-
+managed cache, gitignored). The Makefile creates `upstream/eclipse-score-<X>/`
+symlinks pointing at them so the converter's paths stay readable.
+
 ## Rebase / reconvert workflow
 
 Once a quarter (or whenever upstream cuts a release):
 
 ```sh
-# 1. Pull each upstream repo (origin remote points at eclipse-score org).
+# 1. Pull each upstream repo to its remote HEAD.
 make rebase                                 # equivalent to:
 git -C upstream/eclipse-score-score fetch origin
 git -C upstream/eclipse-score-score merge --ff-only origin/main
-# …repeat for the other three.
+# …repeat for the other 57. Or write the new SHAs into rivet.yaml
+# directly and re-run `make sync`.
 
-# 2. Re-run the converter against the new RST.
+# 2. Write the new HEADs back into the pin file.
+make update-pins                            # rivet lock --update
+
+# 3. Re-run the converter against the new RST.
 make convert
 
-# 3. Mechanical oracle — should still pass.
+# 4. Mechanical oracle — should still pass.
 make validate
 
 # 4. If it does NOT pass, the corpus oracle just falsified our schema or

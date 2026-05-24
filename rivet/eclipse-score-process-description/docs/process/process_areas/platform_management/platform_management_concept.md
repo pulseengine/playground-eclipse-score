@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-CONCEPT-90175
+id: DOC-PLATFORM-MANAGEMENT-CONCEPT-92462
 title: Platform Management Concept
 type: specification
 status: approved

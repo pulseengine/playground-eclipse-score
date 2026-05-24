@@ -1,5 +1,5 @@
 ---
-id: DOC-TOOL-MANAGEMENT-WORKFLOW-47547
+id: DOC-TOOL-MANAGEMENT-WORKFLOW-12798
 title: Tool Management Workflow
 type: specification
 status: approved

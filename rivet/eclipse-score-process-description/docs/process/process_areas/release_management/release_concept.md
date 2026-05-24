@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-CONCEPT-46405
+id: DOC-RELEASE-CONCEPT-47978
 title: Release Concept
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-WORKPRODUCTS-17522
+id: DOC-PROBLEM-RESOLUTION-WORKPRODUCTS-96849
 title: Problem Resolution Workproducts
 type: specification
 status: approved

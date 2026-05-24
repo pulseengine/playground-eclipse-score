@@ -1,5 +1,5 @@
 ---
-id: DOC-GTEST-98545
+id: DOC-GTEST-75282
 title: Gtest
 type: specification
 status: approved

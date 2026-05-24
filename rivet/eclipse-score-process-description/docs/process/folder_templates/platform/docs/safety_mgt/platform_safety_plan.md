@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-PLAN-35139
+id: DOC-PLATFORM-SAFETY-PLAN-26974
 title: Platform Safety Plan
 type: specification
 status: approved

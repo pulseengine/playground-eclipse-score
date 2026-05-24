@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-MANAGEMENT-9848
+id: DOC-DOCUMENTATION-MANAGEMENT-74287
 title: Documentation Management
 type: specification
 status: approved

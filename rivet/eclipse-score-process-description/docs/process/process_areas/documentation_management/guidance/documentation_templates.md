@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-TEMPLATES-11759
+id: DOC-DOCUMENTATION-TEMPLATES-83924
 title: Documentation Templates
 type: specification
 status: approved

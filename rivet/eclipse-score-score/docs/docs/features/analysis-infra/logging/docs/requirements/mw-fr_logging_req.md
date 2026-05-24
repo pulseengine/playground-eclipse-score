@@ -1,5 +1,5 @@
 ---
-id: DOC-MW-FR-LOGGING-REQ-1107
+id: DOC-MW-FR-LOGGING-REQ-20663
 title: Mw-Fr Logging Req
 type: specification
 status: approved

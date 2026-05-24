@@ -199,3 +199,237 @@ docs:
   - rivet/eclipse-score-toolchains_rust/docs
   - rivet/eclipse-score-tooling/docs
   - rivet/eclipse-score-tools/docs
+
+externals:
+  eclipse-score-.eclipsefdn:
+    git: https://github.com/eclipse-score/.eclipsefdn
+    ref: d66a320e8c1f1c1223c800116c12de1542ab95d8
+    prefix: .eclipsefdn
+  eclipse-score-.github:
+    git: https://github.com/eclipse-score/.github
+    ref: 3db20f1e843d4974fb39752fc0caafaa0dc2e4e0
+    prefix: .github
+  eclipse-score-apt-install:
+    git: https://github.com/eclipse-score/apt-install
+    ref: 9c2c119bab091fb5ee54627492ecd2ac685b29cb
+    prefix: apt-install
+  eclipse-score-baselibs:
+    git: https://github.com/eclipse-score/baselibs
+    ref: a3fd388a0713bfaab43af3c4f1869076a16f056b
+    prefix: baselibs
+  eclipse-score-baselibs_rust:
+    git: https://github.com/eclipse-score/baselibs_rust
+    ref: 4050b62f298b639d27c092f63858642c3d08f9a0
+    prefix: baselibs_rust
+  eclipse-score-bazel-tools-cc:
+    git: https://github.com/eclipse-score/bazel-tools-cc
+    ref: 1fac3ddc3eb9ed4524efc3ac7cb8829f0919c98f
+    prefix: bazel-tools-cc
+  eclipse-score-bazel-tools-python:
+    git: https://github.com/eclipse-score/bazel-tools-python
+    ref: 2873c8d1f96bd7a86df5b9af9a43765960ff0a4d
+    prefix: bazel-tools-python
+  eclipse-score-bazel_cpp_toolchains:
+    git: https://github.com/eclipse-score/bazel_cpp_toolchains
+    ref: 171d42dae73e3da040daad66d7886336d1ea9382
+    prefix: bazel_cpp_toolchains
+  eclipse-score-bazel_platforms:
+    git: https://github.com/eclipse-score/bazel_platforms
+    ref: 82b6df6ce93fb2960c52d992939fc6c3cf0e1f0f
+    prefix: bazel_platforms
+  eclipse-score-bazel_registry:
+    git: https://github.com/eclipse-score/bazel_registry
+    ref: f1ceddade38ee74d2aa9f030edbb51b9bd85b591
+    prefix: bazel_registry
+  eclipse-score-cicd-actions:
+    git: https://github.com/eclipse-score/cicd-actions
+    ref: a2b3c36fc7d1b9d03880d19935c7ac9cfffe58c6
+    prefix: cicd-actions
+  eclipse-score-cicd-workflows:
+    git: https://github.com/eclipse-score/cicd-workflows
+    ref: 39939c97ac17f9e262860cf325bdd52d4a2d21a5
+    prefix: cicd-workflows
+  eclipse-score-communication:
+    git: https://github.com/eclipse-score/communication
+    ref: 215e95485a91552639381db0fe3b19a70e3ea12e
+    prefix: communication
+  eclipse-score-config_management:
+    git: https://github.com/eclipse-score/config_management
+    ref: 244a539d796afc75d3e9d0aaee010d0cb608ea32
+    prefix: config_management
+  eclipse-score-dash-license-scan:
+    git: https://github.com/eclipse-score/dash-license-scan
+    ref: 78ef92b865b5f2edededf84d7b222ee958c919e5
+    prefix: dash-license-scan
+  eclipse-score-dev_playground:
+    git: https://github.com/eclipse-score/dev_playground
+    ref: 14884cd55496c6ef2484f76285d4adc2a4b92cb8
+    prefix: dev_playground
+  eclipse-score-devcontainer:
+    git: https://github.com/eclipse-score/devcontainer
+    ref: f2ee44b10e301c403bc5e8cd7a0be9310b91bf5c
+    prefix: devcontainer
+  eclipse-score-docs-as-code:
+    git: https://github.com/eclipse-score/docs-as-code
+    ref: 1a1cd799b999a055164645998cf28aba7b022c42
+    prefix: docs-as-code
+  eclipse-score-eclipse-score-website:
+    git: https://github.com/eclipse-score/eclipse-score-website
+    ref: d88243997fcf7719f6232d11a9452103e5d15dd7
+    prefix: eclipse-score-website
+  eclipse-score-eclipse-score-website-preview:
+    git: https://github.com/eclipse-score/eclipse-score-website-preview
+    ref: cb8e80985cb0cfccf661d7b14d5457b5b8e299ad
+    prefix: eclipse-score-website-preview
+  eclipse-score-eclipse-score-website-published:
+    git: https://github.com/eclipse-score/eclipse-score-website-published
+    ref: b7f38a3ac9656a57df58e2812ed564864263cad1
+    prefix: eclipse-score-website-published
+  eclipse-score-eclipse-score.github.io:
+    git: https://github.com/eclipse-score/eclipse-score.github.io
+    ref: e4f21db4a08169577b98553d9b0bd70dc0580f48
+    prefix: eclipse-score.github.io
+  eclipse-score-feo:
+    git: https://github.com/eclipse-score/feo
+    ref: 242a28c5de30bee532e4d9094325a30ccabaca37
+    prefix: feo
+  eclipse-score-ferrocene_toolchain_builder:
+    git: https://github.com/eclipse-score/ferrocene_toolchain_builder
+    ref: 7c7da75615d5f1b59f64a4ed797ba66f4f2bbdf4
+    prefix: ferrocene_toolchain_builder
+  eclipse-score-inc_daal:
+    git: https://github.com/eclipse-score/inc_daal
+    ref: cf5153829fd7191a3035f97a1bebd8190c55b198
+    prefix: inc_daal
+  eclipse-score-inc_diagnostics:
+    git: https://github.com/eclipse-score/inc_diagnostics
+    ref: 3635a79b86a6a9dacf8b2b4138aa31bbd5674f84
+    prefix: inc_diagnostics
+  eclipse-score-inc_os_autosd:
+    git: https://github.com/eclipse-score/inc_os_autosd
+    ref: f73030a494665a0ca68033626188356ae39675d6
+    prefix: inc_os_autosd
+  eclipse-score-inc_security_crypto:
+    git: https://github.com/eclipse-score/inc_security_crypto
+    ref: 4598855874c91c17fae9dd86bd904972c6fc1bbe
+    prefix: inc_security_crypto
+  eclipse-score-inc_someip_gateway:
+    git: https://github.com/eclipse-score/inc_someip_gateway
+    ref: aaa17b07822afd2f0750ca05aa91a6e3f460d966
+    prefix: inc_someip_gateway
+  eclipse-score-inc_time:
+    git: https://github.com/eclipse-score/inc_time
+    ref: f7f3b00b246e2cecf3d8415c4ecd3699a9cf25b6
+    prefix: inc_time
+  eclipse-score-infrastructure:
+    git: https://github.com/eclipse-score/infrastructure
+    ref: 1088bc4c31c2d190c41233b1eebba75f15d8c24f
+    prefix: infrastructure
+  eclipse-score-itf:
+    git: https://github.com/eclipse-score/itf
+    ref: d1ff92b3930c83ddc4fd0dbbcfdc7bbce980f8af
+    prefix: itf
+  eclipse-score-kyron:
+    git: https://github.com/eclipse-score/kyron
+    ref: fc9218cc23d5fc62dd45b2e9dfcc9403e71ab27a
+    prefix: kyron
+  eclipse-score-lifecycle:
+    git: https://github.com/eclipse-score/lifecycle
+    ref: 056699849d4142a20852d929babf4f60d9d33a5a
+    prefix: lifecycle
+  eclipse-score-logging:
+    git: https://github.com/eclipse-score/logging
+    ref: f519a9797f47df52e4257bf939e27e9542cb4b08
+    prefix: logging
+  eclipse-score-mcp-servers:
+    git: https://github.com/eclipse-score/mcp-servers
+    ref: 26c1e7f075e39e595d2ea00986d046c9a30f2977
+    prefix: mcp-servers
+  eclipse-score-module_template:
+    git: https://github.com/eclipse-score/module_template
+    ref: 61d0c81ce5616c059371da85b7403337b54ea72b
+    prefix: module_template
+  eclipse-score-more-disk-space:
+    git: https://github.com/eclipse-score/more-disk-space
+    ref: cfeef8814fba3c92fc3c1d0d6bbc848c051f4cce
+    prefix: more-disk-space
+  eclipse-score-orchestrator:
+    git: https://github.com/eclipse-score/orchestrator
+    ref: c5bcbd39fc6e124a26b1d66abbfc696a3319c2a4
+    prefix: orchestrator
+  eclipse-score-os_images:
+    git: https://github.com/eclipse-score/os_images
+    ref: d616a3808534ad5f13538acc965869e330341230
+    prefix: os_images
+  eclipse-score-persistency:
+    git: https://github.com/eclipse-score/persistency
+    ref: fcdb7357767bf3b5a3bb4255f0444b1a52cdc5da
+    prefix: persistency
+  eclipse-score-process-description:
+    git: https://github.com/eclipse-score/process-description
+    ref: b5d98e957fdd33a5a175595a1fafff523efdb627
+    prefix: process-description
+  eclipse-score-qnx_unit_tests:
+    git: https://github.com/eclipse-score/qnx_unit_tests
+    ref: e3d111af273658eff8df588aaa5bb517417378ed
+    prefix: qnx_unit_tests
+  eclipse-score-reference_integration:
+    git: https://github.com/eclipse-score/reference_integration
+    ref: 07e75c498545b2eef8116f1aff3f006646f90f93
+    prefix: reference_integration
+  eclipse-score-rules_imagefs:
+    git: https://github.com/eclipse-score/rules_imagefs
+    ref: 3bd4262947661d32ffe9326f3e2eb0fe6306bac4
+    prefix: rules_imagefs
+  eclipse-score-sbom-tool:
+    git: https://github.com/eclipse-score/sbom-tool
+    ref: 98e1c7d9a42b38e147c97afed682b29b5507f95d
+    prefix: sbom-tool
+  eclipse-score-score:
+    git: https://github.com/eclipse-score/score
+    ref: 0b8257991935c191106cf2221b0b3279bf7ec42b
+    prefix: score
+  eclipse-score-score-crates:
+    git: https://github.com/eclipse-score/score-crates
+    ref: 9cf610cfbf2ba02a1e4845bd058b89fa147e0937
+    prefix: score-crates
+  eclipse-score-score_cpp_policies:
+    git: https://github.com/eclipse-score/score_cpp_policies
+    ref: 6348b27a04d64936d7e828c9dd3d04667109104a
+    prefix: score_cpp_policies
+  eclipse-score-score_rust_policies:
+    git: https://github.com/eclipse-score/score_rust_policies
+    ref: 9bdc50bc842acc7962e120d17add19860e9bcfaa
+    prefix: score_rust_policies
+  eclipse-score-scrample:
+    git: https://github.com/eclipse-score/scrample
+    ref: 7208f89949a1306102c1aa4afa3c3ea45cec96f8
+    prefix: scrample
+  eclipse-score-testing_tools:
+    git: https://github.com/eclipse-score/testing_tools
+    ref: fec712d490ff5d46fae91332bafac4777b300026
+    prefix: testing_tools
+  eclipse-score-toolchains_gcc:
+    git: https://github.com/eclipse-score/toolchains_gcc
+    ref: 551bce670c363f1192f82e3912c23469fafe0c95
+    prefix: toolchains_gcc
+  eclipse-score-toolchains_gcc_packages:
+    git: https://github.com/eclipse-score/toolchains_gcc_packages
+    ref: 563cde1915d9f0a6d44bc9caf8d9dd2e07fad813
+    prefix: toolchains_gcc_packages
+  eclipse-score-toolchains_qnx:
+    git: https://github.com/eclipse-score/toolchains_qnx
+    ref: 820d8df5c26fd2a3b731d2f08952788e7f5915c5
+    prefix: toolchains_qnx
+  eclipse-score-toolchains_rust:
+    git: https://github.com/eclipse-score/toolchains_rust
+    ref: eb3f14b9036798e15e21c3b4621687c99d8f7b5a
+    prefix: toolchains_rust
+  eclipse-score-tooling:
+    git: https://github.com/eclipse-score/tooling
+    ref: b98d44c778b0bd0fd177fc18bc906ea1c2e04e1a
+    prefix: tooling
+  eclipse-score-tools:
+    git: https://github.com/eclipse-score/tools
+    ref: afef72b135165fdcab1f899a00ca49ba33e74354
+    prefix: tools

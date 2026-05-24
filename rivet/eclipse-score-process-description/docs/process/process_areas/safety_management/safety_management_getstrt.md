@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-GETSTRT-40051
+id: DOC-SAFETY-MANAGEMENT-GETSTRT-5413
 title: Safety Management Getstrt
 type: specification
 status: approved

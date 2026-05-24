@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-WORKPRODUCTS-41017
+id: DOC-CONFIGURATION-WORKPRODUCTS-36642
 title: Configuration Workproducts
 type: specification
 status: approved

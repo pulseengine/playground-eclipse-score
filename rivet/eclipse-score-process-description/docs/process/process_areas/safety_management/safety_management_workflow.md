@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANAGEMENT-WORKFLOW-246
+id: DOC-SAFETY-MANAGEMENT-WORKFLOW-88868
 title: Safety Management Workflow
 type: specification
 status: approved

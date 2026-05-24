@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-TEMPLATES-74203
+id: DOC-CONFIGURATION-TEMPLATES-92376
 title: Configuration Templates
 type: specification
 status: approved

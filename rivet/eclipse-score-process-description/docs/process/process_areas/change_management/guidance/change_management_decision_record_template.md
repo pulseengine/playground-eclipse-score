@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-DECISION-RECORD-TEMPLATE-62750
+id: DOC-CHANGE-MANAGEMENT-DECISION-RECORD-TEMPLATE-23523
 title: Change Management Decision Record Template
 type: specification
 status: approved

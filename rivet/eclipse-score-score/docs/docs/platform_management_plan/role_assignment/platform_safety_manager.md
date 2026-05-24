@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-MANAGER-37410
+id: DOC-PLATFORM-SAFETY-MANAGER-63763
 title: Platform Safety Manager
 type: specification
 status: approved

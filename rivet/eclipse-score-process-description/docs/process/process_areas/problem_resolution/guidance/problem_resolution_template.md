@@ -1,5 +1,5 @@
 ---
-id: DOC-PROBLEM-RESOLUTION-TEMPLATE-35338
+id: DOC-PROBLEM-RESOLUTION-TEMPLATE-7107
 title: Problem Resolution Template
 type: specification
 status: approved

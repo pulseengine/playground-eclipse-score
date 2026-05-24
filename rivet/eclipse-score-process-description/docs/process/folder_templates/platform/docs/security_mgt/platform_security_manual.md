@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-MANUAL-31526
+id: DOC-PLATFORM-SECURITY-MANUAL-47496
 title: Platform Security Manual
 type: specification
 status: approved

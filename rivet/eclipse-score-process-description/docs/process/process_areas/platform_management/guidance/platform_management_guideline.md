@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-GUIDELINE-52918
+id: DOC-PLATFORM-MANAGEMENT-GUIDELINE-32977
 title: Platform Management Guideline
 type: specification
 status: approved

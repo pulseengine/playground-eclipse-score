@@ -1,5 +1,5 @@
 ---
-id: DOC-HEALTH-MONITOR-3300
+id: DOC-HEALTH-MONITOR-51126
 title: Health Monitor
 type: specification
 status: approved

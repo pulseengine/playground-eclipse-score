@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-MODELS-GUIDELINE-21171
+id: DOC-SECURITY-ANALYSIS-THREAT-MODELS-GUIDELINE-12665
 title: Security Analysis Threat Models Guideline
 type: specification
 status: approved

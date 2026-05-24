@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-GETSTRT-14760
+id: DOC-VERIFICATION-GETSTRT-67702
 title: Verification Getstrt
 type: specification
 status: approved

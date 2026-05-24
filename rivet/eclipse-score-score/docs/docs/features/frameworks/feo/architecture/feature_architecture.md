@@ -1,5 +1,5 @@
 ---
-id: DOC-FEATURE-ARCHITECTURE-51826
+id: DOC-FEATURE-ARCHITECTURE-57372
 title: Feature Architecture
 type: specification
 status: approved

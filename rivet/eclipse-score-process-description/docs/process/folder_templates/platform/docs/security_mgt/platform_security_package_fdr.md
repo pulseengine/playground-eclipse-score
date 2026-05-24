@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-PACKAGE-FDR-10954
+id: DOC-PLATFORM-SECURITY-PACKAGE-FDR-66792
 title: Platform Security Package Fdr
 type: specification
 status: approved

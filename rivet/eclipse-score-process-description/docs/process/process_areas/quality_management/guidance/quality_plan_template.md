@@ -1,5 +1,5 @@
 ---
-id: DOC-QUALITY-PLAN-TEMPLATE-40978
+id: DOC-QUALITY-PLAN-TEMPLATE-56256
 title: Quality Plan Template
 type: specification
 status: approved

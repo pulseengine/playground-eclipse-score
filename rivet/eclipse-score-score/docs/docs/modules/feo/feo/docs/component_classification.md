@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-CLASSIFICATION-3703
+id: DOC-COMPONENT-CLASSIFICATION-84334
 title: Component Classification
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-GETSTRT-51483
+id: DOC-DOCUMENTATION-GETSTRT-32077
 title: Documentation Getstrt
 type: specification
 status: approved

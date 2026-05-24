@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-WORKPRODUCTS-56190
+id: DOC-SECURITY-MANAGEMENT-WORKPRODUCTS-75671
 title: Security Management Workproducts
 type: specification
 status: approved

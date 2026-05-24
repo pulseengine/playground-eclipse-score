@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-NOTE-SCORE-07-85824
+id: DOC-RELEASE-NOTE-SCORE-07-93476
 title: Release Note Score 07
 type: specification
 status: approved

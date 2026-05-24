@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-PLAN-88246
+id: DOC-PLATFORM-SECURITY-PLAN-79723
 title: Platform Security Plan
 type: specification
 status: approved

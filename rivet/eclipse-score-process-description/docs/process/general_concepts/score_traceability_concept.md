@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-TRACEABILITY-CONCEPT-76699
+id: DOC-SCORE-TRACEABILITY-CONCEPT-28224
 title: Score Traceability Concept
 type: specification
 status: approved

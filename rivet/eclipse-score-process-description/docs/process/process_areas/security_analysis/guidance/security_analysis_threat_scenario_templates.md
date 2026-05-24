@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIO-TEMPLATES-99325
+id: DOC-SECURITY-ANALYSIS-THREAT-SCENARIO-TEMPLATES-57003
 title: Security Analysis Threat Scenario Templates
 type: specification
 status: approved

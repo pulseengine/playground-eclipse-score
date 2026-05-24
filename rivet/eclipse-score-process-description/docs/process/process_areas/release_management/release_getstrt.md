@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-GETSTRT-96803
+id: DOC-RELEASE-GETSTRT-76590
 title: Release Getstrt
 type: specification
 status: approved

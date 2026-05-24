@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-REVIEW-CONCEPT-19208
+id: DOC-SCORE-REVIEW-CONCEPT-30048
 title: Score Review Concept
 type: specification
 status: approved

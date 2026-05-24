@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-MANAGEMENT-WORKPRODUCTS-47947
+id: DOC-PLATFORM-MANAGEMENT-WORKPRODUCTS-22087
 title: Platform Management Workproducts
 type: specification
 status: approved

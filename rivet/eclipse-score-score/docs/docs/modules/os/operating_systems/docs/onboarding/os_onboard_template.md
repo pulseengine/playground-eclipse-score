@@ -1,5 +1,5 @@
 ---
-id: DOC-OS-ONBOARD-TEMPLATE-8410
+id: DOC-OS-ONBOARD-TEMPLATE-47359
 title: Os Onboard Template
 type: specification
 status: approved

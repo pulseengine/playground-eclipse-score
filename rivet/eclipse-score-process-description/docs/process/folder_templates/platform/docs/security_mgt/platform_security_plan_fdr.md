@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-PLAN-FDR-22170
+id: DOC-PLATFORM-SECURITY-PLAN-FDR-6089
 title: Platform Security Plan Fdr
 type: specification
 status: approved

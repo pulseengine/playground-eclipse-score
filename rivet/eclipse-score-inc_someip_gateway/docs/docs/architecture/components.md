@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENTS-87228
+id: DOC-COMPONENTS-79813
 title: Components
 type: specification
 status: approved

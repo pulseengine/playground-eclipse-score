@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-VERIFICATION-REPORT-43558
+id: DOC-PLATFORM-VERIFICATION-REPORT-10601
 title: Platform Verification Report
 type: specification
 status: approved

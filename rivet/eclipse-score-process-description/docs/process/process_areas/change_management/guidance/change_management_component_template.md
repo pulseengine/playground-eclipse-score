@@ -1,5 +1,5 @@
 ---
-id: DOC-CHANGE-MANAGEMENT-COMPONENT-TEMPLATE-87510
+id: DOC-CHANGE-MANAGEMENT-COMPONENT-TEMPLATE-55206
 title: Change Management Component Template
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-REQUIREMENTS-GETSTRT-86695
+id: DOC-REQUIREMENTS-GETSTRT-29117
 title: Requirements Getstrt
 type: specification
 status: approved

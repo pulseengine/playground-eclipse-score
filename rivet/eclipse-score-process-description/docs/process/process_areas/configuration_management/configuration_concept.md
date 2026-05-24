@@ -1,5 +1,5 @@
 ---
-id: DOC-CONFIGURATION-CONCEPT-1392
+id: DOC-CONFIGURATION-CONCEPT-56297
 title: Configuration Concept
 type: specification
 status: approved

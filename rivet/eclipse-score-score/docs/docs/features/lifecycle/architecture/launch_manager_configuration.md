@@ -1,5 +1,5 @@
 ---
-id: DOC-LAUNCH-MANAGER-CONFIGURATION-62271
+id: DOC-LAUNCH-MANAGER-CONFIGURATION-14706
 title: Launch Manager Configuration
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-TEMPLATE-SAFETY-MANUAL-44139
+id: DOC-TEMPLATE-SAFETY-MANUAL-2532
 title: Template Safety Manual
 type: specification
 status: approved

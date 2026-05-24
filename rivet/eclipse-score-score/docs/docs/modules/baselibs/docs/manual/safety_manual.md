@@ -1,5 +1,5 @@
 ---
-id: DOC-SAFETY-MANUAL-66766
+id: DOC-SAFETY-MANUAL-36279
 title: Safety Manual
 type: specification
 status: approved

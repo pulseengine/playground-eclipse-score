@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-WORKFLOW-37044
+id: DOC-SECURITY-MANAGEMENT-WORKFLOW-74816
 title: Security Management Workflow
 type: specification
 status: approved

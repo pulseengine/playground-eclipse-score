@@ -12,3 +12,6 @@ upstream/
 
 # Local-only converter scratch.
 /tmp-convert/
+
+# Rivet external project cache
+.rivet/

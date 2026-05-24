@@ -1,5 +1,5 @@
 ---
-id: DOC-ARCHITECTURE-INSPECTION-CHECKLIST-56261
+id: DOC-ARCHITECTURE-INSPECTION-CHECKLIST-72064
 title: Architecture Inspection Checklist
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SAFETY-MANUAL-47764
+id: DOC-PLATFORM-SAFETY-MANUAL-22700
 title: Platform Safety Manual
 type: specification
 status: approved

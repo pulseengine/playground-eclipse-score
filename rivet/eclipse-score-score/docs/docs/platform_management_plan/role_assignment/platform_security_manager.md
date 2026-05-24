@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-MANAGER-56836
+id: DOC-PLATFORM-SECURITY-MANAGER-61606
 title: Platform Security Manager
 type: specification
 status: approved

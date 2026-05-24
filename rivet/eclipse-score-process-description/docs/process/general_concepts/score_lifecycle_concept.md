@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-LIFECYCLE-CONCEPT-58053
+id: DOC-SCORE-LIFECYCLE-CONCEPT-51082
 title: Score Lifecycle Concept
 type: specification
 status: approved

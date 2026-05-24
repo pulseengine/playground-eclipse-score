@@ -1,5 +1,5 @@
 ---
-id: DOC-DETAILED-DESIGN-EXAMPLE-48273
+id: DOC-DETAILED-DESIGN-EXAMPLE-9331
 title: Detailed Design Example
 type: specification
 status: approved

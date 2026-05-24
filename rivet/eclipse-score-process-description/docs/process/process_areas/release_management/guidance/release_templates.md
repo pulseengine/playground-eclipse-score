@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-TEMPLATES-8779
+id: DOC-RELEASE-TEMPLATES-5850
 title: Release Templates
 type: specification
 status: approved

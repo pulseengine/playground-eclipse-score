@@ -1,5 +1,5 @@
 ---
-id: DOC-SCORE-V0-5-BETA-84285
+id: DOC-SCORE-V0-5-BETA-95056
 title: Score V0 5 Beta
 type: specification
 status: approved

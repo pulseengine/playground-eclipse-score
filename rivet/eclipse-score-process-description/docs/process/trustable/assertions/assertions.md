@@ -1,5 +1,5 @@
 ---
-id: DOC-ASSERTIONS-91576
+id: DOC-ASSERTIONS-75050
 title: Assertions
 type: specification
 status: approved

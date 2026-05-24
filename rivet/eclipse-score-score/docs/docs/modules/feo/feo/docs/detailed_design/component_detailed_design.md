@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-DETAILED-DESIGN-16376
+id: DOC-COMPONENT-DETAILED-DESIGN-99165
 title: Component Detailed Design
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-MISRA-2023-RULE-MAPPING-96422
+id: DOC-MISRA-2023-RULE-MAPPING-95020
 title: Misra 2023 Rule Mapping
 type: specification
 status: approved

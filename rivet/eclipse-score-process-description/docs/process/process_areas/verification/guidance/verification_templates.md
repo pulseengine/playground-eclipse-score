@@ -1,5 +1,5 @@
 ---
-id: DOC-VERIFICATION-TEMPLATES-70714
+id: DOC-VERIFICATION-TEMPLATES-99299
 title: Verification Templates
 type: specification
 status: approved

@@ -1,5 +1,5 @@
 ---
-id: DOC-RELEASE-GUIDELINE-10770
+id: DOC-RELEASE-GUIDELINE-71548
 title: Release Guideline
 type: specification
 status: approved

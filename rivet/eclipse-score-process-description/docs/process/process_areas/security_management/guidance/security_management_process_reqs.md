@@ -1,5 +1,5 @@
 ---
-id: DOC-SECURITY-MANAGEMENT-PROCESS-REQS-75958
+id: DOC-SECURITY-MANAGEMENT-PROCESS-REQS-55526
 title: Security Management Process Reqs
 type: specification
 status: approved

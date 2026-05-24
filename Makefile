@@ -79,7 +79,33 @@ validate-%:
 	@echo "→ rivet validate rivet/$* …"
 	@cd rivet/$* && $(RIVET) --schemas $(CURDIR)/$(SCHEMAS) validate || true
 
-# ── Rebase every upstream against its origin ────────────────────────────
+# ── Materialise upstreams from rivet.yaml `externals:` block ────────────
+#
+# `rivet sync` clones each upstream-score repo into .rivet/repos/<short>/
+# at the SHA pinned in rivet.yaml + rivet.lock. Idempotent.  Then
+# `make link-upstream` creates upstream/eclipse-score-<short> symlinks
+# pointing at the rivet-managed locations so the converter keeps its
+# canonical naming convention.  Two targets, one workflow:
+#
+#   make sync              First-time materialise or refresh after a pin bump
+#   make rebase            Advance every upstream to its remote HEAD
+#                          (run `make update-pins` afterwards to commit)
+#   make update-pins       Write current upstream HEADs back into rivet.yaml
+#                          via `rivet lock --update`
+#
+sync:
+	@$(RIVET) --schemas $(SCHEMAS) sync
+	@$(MAKE) -s link-upstream
+
+link-upstream:
+	@mkdir -p upstream
+	@for d in .rivet/repos/* .rivet/repos/.*; do \
+	    short=$$(basename $$d); \
+	    [ "$$short" = "." ] || [ "$$short" = ".." ] && continue; \
+	    [ -d "$$d" ] || continue; \
+	    ln -sfn "../.rivet/repos/$$short" "upstream/eclipse-score-$$short"; \
+	done
+
 rebase: $(addprefix rebase-,$(REPOS))
 
 rebase-%:
@@ -87,6 +113,10 @@ rebase-%:
 	@git -C upstream/$* fetch origin
 	@git -C upstream/$* merge --ff-only origin/HEAD || \
 	    echo "  (no ff-only path — inspect upstream/$* manually)"
+
+update-pins:
+	@$(RIVET) --schemas $(SCHEMAS) lock --update
+	@echo "rivet.lock updated; review + commit"
 
 # ── Refresh the pinned rivet schemas from a local rivet checkout ───────
 schemas-refresh:

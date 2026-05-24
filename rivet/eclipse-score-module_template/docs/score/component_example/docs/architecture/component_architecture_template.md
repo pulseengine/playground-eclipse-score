@@ -1,5 +1,5 @@
 ---
-id: DOC-COMPONENT-ARCHITECTURE-TEMPLATE-75825
+id: DOC-COMPONENT-ARCHITECTURE-TEMPLATE-25998
 title: Component Architecture Template
 type: specification
 status: approved

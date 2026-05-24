@@ -1,5 +1,5 @@
 ---
-id: DOC-STAKEHOLDER-67271
+id: DOC-STAKEHOLDER-70484
 title: Stakeholder
 type: specification
 status: approved

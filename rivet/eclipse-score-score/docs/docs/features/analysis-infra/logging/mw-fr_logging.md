@@ -1,5 +1,5 @@
 ---
-id: DOC-MW-FR-LOGGING-26662
+id: DOC-MW-FR-LOGGING-83474
 title: Mw-Fr Logging
 type: specification
 status: approved

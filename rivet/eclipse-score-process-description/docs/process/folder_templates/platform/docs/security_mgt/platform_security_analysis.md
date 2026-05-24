@@ -1,5 +1,5 @@
 ---
-id: DOC-PLATFORM-SECURITY-ANALYSIS-62851
+id: DOC-PLATFORM-SECURITY-ANALYSIS-96707
 title: Platform Security Analysis
 type: specification
 status: approved

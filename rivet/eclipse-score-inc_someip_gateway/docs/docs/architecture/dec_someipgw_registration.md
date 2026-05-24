@@ -1,5 +1,5 @@
 ---
-id: DOC-DEC-SOMEIPGW-REGISTRATION-91912
+id: DOC-DEC-SOMEIPGW-REGISTRATION-16425
 title: Dec Someipgw Registration
 type: specification
 status: approved

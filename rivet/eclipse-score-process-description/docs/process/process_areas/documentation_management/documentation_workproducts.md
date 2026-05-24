@@ -1,5 +1,5 @@
 ---
-id: DOC-DOCUMENTATION-WORKPRODUCTS-8033
+id: DOC-DOCUMENTATION-WORKPRODUCTS-4617
 title: Documentation Workproducts
 type: specification
 status: approved
