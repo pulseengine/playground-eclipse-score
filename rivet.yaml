@@ -686,7 +686,7 @@ externals:
     ref: fcdb7357767bf3b5a3bb4255f0444b1a52cdc5da
     prefix: persistency
   eclipse-score-process-description:
-    git: https://github.com/eclipse-score/process-description
+    git: https://github.com/eclipse-score/process_description
     ref: b5d98e957fdd33a5a175595a1fafff523efdb627
     prefix: process-description
   eclipse-score-qnx_unit_tests:
