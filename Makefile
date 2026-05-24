@@ -38,7 +38,9 @@ REPOS := \
   eclipse-score-toolchains_qnx eclipse-score-toolchains_rust \
   eclipse-score-tooling eclipse-score-tools
 
-RIVET   := /Users/r/.cargo/bin/rivet
+# Resolved from PATH by default. Override for a specific install:
+#   make RIVET=/usr/local/bin/rivet validate
+RIVET   ?= rivet
 SCHEMAS := vendor/rivet-schemas
 PYTHON  := python3
 
