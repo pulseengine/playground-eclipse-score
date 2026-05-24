@@ -1439,7 +1439,7 @@ artifacts:
     type: doc
     title: Baselibs Architecture Inspection Checklist
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1450,7 +1450,7 @@ artifacts:
     type: doc
     title: Baselibs Architecture
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1461,6 +1461,7 @@ artifacts:
     type: feat
     title: Baselibs
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -1519,7 +1520,7 @@ artifacts:
     type: feat-arc-sta
     title: Baselibs Static View
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -1586,6 +1587,7 @@ artifacts:
     type: feat-arc-dyn
     title: Baselibs Dynamic View
     status: approved
+    tags: [baselibs]
     description: |
       not needed, simple caller/callee sequence
     fields:
@@ -1600,7 +1602,7 @@ artifacts:
     type: doc
     title: Baselibs Requirements Inspection Checklist
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1611,7 +1613,7 @@ artifacts:
     type: doc
     title: Baselibs Requirements
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1622,6 +1624,7 @@ artifacts:
     type: feat-req
     title: Core Software Utilities
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall include core software utilities and common infrastructure components needed by multiple platform modules.
     fields:
@@ -1635,6 +1638,7 @@ artifacts:
     type: feat-req
     title: Safety Relevance
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall implement functionality necessary to support safety-relevant platform components up to ASIL-B for selected functionalities.
     fields:
@@ -1650,6 +1654,7 @@ artifacts:
     type: feat-req
     title: Multi-Language APIs
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide APIs for C++, Rust, or both, depending on the requirements of consuming platform components.
     fields:
@@ -1667,6 +1672,7 @@ artifacts:
     type: feat-req
     title: Consistent APIs
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide consistent APIs while respecting language-specific idioms.
     fields:
@@ -1684,6 +1690,7 @@ artifacts:
     type: feat-req
     title: Maintainable Design
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall be designed for maintainability and code reuse.
     fields:
@@ -1699,6 +1706,7 @@ artifacts:
     type: feat-req
     title: Security Robustness
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall adhere to secure coding standards to prevent vulnerabilities across platform components.
     fields:
@@ -1712,6 +1720,7 @@ artifacts:
     type: feat-req
     title: JSON-Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide a JSON-Library with parsing functionality.
     fields:
@@ -1725,6 +1734,7 @@ artifacts:
     type: feat-req
     title: FlatBuffers-Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide a FlatBuffers-Library with serialization, read access, and structural verification of FlatBuffers data.
       
@@ -1742,6 +1752,7 @@ artifacts:
     type: feat-req
     title: Exception-Free Development Support
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide error handling mechanisms that enable development without relying on C++ exceptions.
     fields:
@@ -1755,6 +1766,7 @@ artifacts:
     type: feat-req
     title: Container Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide a container library offering additional container types not present in the C++ standard library.
     fields:
@@ -1768,6 +1780,7 @@ artifacts:
     type: feat-req
     title: Bit Manipulation Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide bit manipulation utilities for low-level operations on integral types.
     fields:
@@ -1781,6 +1794,7 @@ artifacts:
     type: feat-req
     title: Filesystem-Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide a filesystem library with file and directory manipulation functionality.
     fields:
@@ -1796,6 +1810,7 @@ artifacts:
     type: feat-req
     title: Memory Library
     status: approved
+    tags: [baselibs]
     description: |
       The baselibs shall provide a memory management library that includes utilities for shared memory operations, polymorphic memory resources, position-independent pointers, endianness conversion, and inter-process synchronization mechanisms.
     fields:
@@ -1809,6 +1824,7 @@ artifacts:
     type: feat-req
     title: Concurrency Library
     status: approved
+    tags: [baselibs]
     description: |
       The base libraries shall provide a library for parallel execution of C++ callables with thread pool management.
     fields:
@@ -1822,7 +1838,7 @@ artifacts:
     type: doc
     title: Baselibs DFA
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1833,7 +1849,7 @@ artifacts:
     type: dfa-entry
     title: memory access
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       All the baselibs components have to be developed to ASIL_B standard to maintain Freedom From Interference,
       out of bounds access should be detected by unit testing/sanitizers.
@@ -1849,7 +1865,7 @@ artifacts:
     type: dfa-entry
     title: locked ressource
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       Only components "filesystem" and "memory_shared" should have the problem ("bitmanipulation" should not be affected due to shortness of execution)
       "memory_shared" cares for this by above linked feature requirement and :need:`comp_req__memory__atomic_ops`.
@@ -1869,7 +1885,7 @@ artifacts:
     type: dfa-entry
     title: concurrent file access
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       The user has to care for concurrent file access. This is not covered by the filesytem library.
     fields:
@@ -1885,7 +1901,7 @@ artifacts:
     type: dfa-entry
     title: concurrent memory access
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       The user has to care for concurrent memory access. This is not covered by the bitmanipulation library.
     fields:
@@ -1901,7 +1917,7 @@ artifacts:
     type: dfa-entry
     title: blocked execution
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       All the baselibs components have to be developed to ASIL_B standard to maintain Freedom From Interference,
       all blocks should be detected by unit testing.
@@ -1917,7 +1933,7 @@ artifacts:
     type: dfa-entry
     title: CPU starvation
     status: approved
-    tags: ["eclipse:feat_saf_dfa"]
+    tags: [baselibs, "eclipse:feat_saf_dfa"]
     description: |
       Some care is taken to avoid using too much CPU time, but this cannot be covered fully.
       Platform level AoU asks applications with timing requirements to cover this by program flow monitoring.
@@ -1934,7 +1950,7 @@ artifacts:
     type: doc
     title: Baselibs FMEA
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1945,7 +1961,7 @@ artifacts:
     type: doc
     title: Baselibs Safety WPs
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -1956,7 +1972,7 @@ artifacts:
     type: doc
     title: Base Libraries
     status: approved
-    tags: [feature_request, "eclipse:document"]
+    tags: [feature_request, baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -2112,6 +2128,7 @@ artifacts:
     type: feat
     title: Communication Feature
     status: approved
+    tags: [com]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -2122,6 +2139,7 @@ artifacts:
     type: feat-arc-sta
     title: Feature Architecture Communication
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -2143,6 +2161,7 @@ artifacts:
     type: logic-arc-int
     title: Communication User Interface
     status: approved
+    tags: [communication]
     description: |
       .. needarch::
       :scale: 50
@@ -2159,7 +2178,7 @@ artifacts:
     type: doc
     title: Communication Requirements
     status: approved
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -2170,6 +2189,7 @@ artifacts:
     type: feat-req
     title: Support for Time-based Architecture
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide API to support a time-based architecture.
     fields:
@@ -2187,6 +2207,7 @@ artifacts:
     type: feat-req
     title: Support for Data-driven Architecture
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide API to support a data-driven architecture.
     fields:
@@ -2202,6 +2223,7 @@ artifacts:
     type: feat-req
     title: Support for Request-driven Architecture
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide API to support a request-driven architecture.
     fields:
@@ -2217,6 +2239,7 @@ artifacts:
     type: feat-req
     title: Communication Interfaces
     status: approved
+    tags: [com]
     description: |
       A communication interface consists of a combination of any number of the following elements:
       
@@ -2242,6 +2265,7 @@ artifacts:
     type: feat-req
     title: Event Type
     status: approved
+    tags: [com]
     description: |
       An event-type is part of a communication interface and has:
       
@@ -2263,6 +2287,7 @@ artifacts:
     type: feat-req
     title: Method
     status: approved
+    tags: [com]
     description: |
       A method is part of a communication interface and has:
       
@@ -2290,6 +2315,7 @@ artifacts:
     type: feat-req
     title: Signal
     status: approved
+    tags: [com]
     description: |
       A signal is part of a communication interface and has:
       
@@ -2316,6 +2342,7 @@ artifacts:
     type: feat-req
     title: Producer-Consumer Pattern
     status: approved
+    tags: [com]
     description: |
       Communication shall be cached based on the producer-consumer pattern.
     fields:
@@ -2333,6 +2360,7 @@ artifacts:
     type: feat-req
     title: Service Instance
     status: approved
+    tags: [com]
     description: |
       Multiple service instances shall be able to offer the same interface.
       
@@ -2351,6 +2379,7 @@ artifacts:
     type: feat-req
     title: Service Instance Names
     status: approved
+    tags: [com]
     description: |
       A service instance is offered under one or more unique names by which it can be discovered.
       Names follow a POSIX path style.
@@ -2371,6 +2400,7 @@ artifacts:
     type: feat-req
     title: Versioning
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support versioning of service instances:
       
@@ -2392,6 +2422,7 @@ artifacts:
     type: feat-req
     title: Service location transparency
     status: approved
+    tags: [com]
     description: |
       The interface to access service instances is agnostic to the binding used to communicate with the service.
       
@@ -2410,6 +2441,7 @@ artifacts:
     type: feat-req
     title: Stateless communication
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support stateless communication.
       
@@ -2429,6 +2461,7 @@ artifacts:
     type: feat-req
     title: Service instance_granularity
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support multiple service instances per software architecture element.
       
@@ -2447,6 +2480,7 @@ artifacts:
     type: feat-req
     title: Service discovery
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide service discovery to find available services during runtime. Service discovery shall consider version compatibility. Service discovery shall be handled implicitly (where possible).
       
@@ -2465,6 +2499,7 @@ artifacts:
     type: feat-req
     title: Safe communication over criticality levels
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support safe communication involving communication partners on the same or multiple
       criticality levels.
@@ -2481,6 +2516,7 @@ artifacts:
     type: feat-req
     title: Data Corruption
     status: approved
+    tags: [com]
     description: |
       Consumers with lower criticality shall not be able to corrupt data consumed by partners with higher criticality.
     fields:
@@ -2496,6 +2532,7 @@ artifacts:
     type: feat-req
     title: Data Reordering
     status: approved
+    tags: [com]
     description: |
       Consumers with lower criticality shall not be able to modify the order of data consumed by partners with higher
       criticality.
@@ -2512,6 +2549,7 @@ artifacts:
     type: feat-req
     title: Data Repetition
     status: approved
+    tags: [com]
     description: |
       Consumers with lower criticality shall not be able to duplicate data consumed by other communication partners with
       higher criticality.
@@ -2528,6 +2566,7 @@ artifacts:
     type: feat-req
     title: Data Loss
     status: approved
+    tags: [com]
     description: |
       Consumers with lower criticality shall not be able to drop data before it is consumed by partners with higher
       criticality.
@@ -2544,6 +2583,7 @@ artifacts:
     type: feat-req
     title: Zero-Copy Approach
     status: approved
+    tags: [com]
     description: |
       The communication framework shall enable Zero-Copy communication without copying to-be-transferred data.
       
@@ -2564,6 +2604,7 @@ artifacts:
     type: feat-req
     title: Support for multiple programming languages
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide a public API for each supported programming language of S-CORE.
     fields:
@@ -2577,6 +2618,7 @@ artifacts:
     type: feat-req
     title: Support for programming language idioms
     status: approved
+    tags: [com]
     description: |
       Each public API shall support the idioms of the programming language it is written in.
     fields:
@@ -2590,6 +2632,7 @@ artifacts:
     type: feat-req
     title: Use programming language infrastructure
     status: approved
+    tags: [com]
     description: |
       Each public API shall use core infrastructure of its programming language and accompanying standard libraries,
       whenever possible and meaningful.
@@ -2607,6 +2650,7 @@ artifacts:
     type: feat-req
     title: Fully mockable public API
     status: approved
+    tags: [com]
     description: |
       The public API shall be fully mockable.
     fields:
@@ -2620,6 +2664,7 @@ artifacts:
     type: feat-req
     title: Fake binding
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide a fake binding.
     fields:
@@ -2633,6 +2678,7 @@ artifacts:
     type: feat-req
     title: Multi-binding support
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support multiple bindings.
       
@@ -2649,6 +2695,7 @@ artifacts:
     type: feat-req
     title: Binding-agnostic public API
     status: approved
+    tags: [com]
     description: |
       The public API of the communication framework shall be binding-agnostic.
       
@@ -2665,6 +2712,7 @@ artifacts:
     type: feat-req
     title: Multi-binding deployment configuration
     status: approved
+    tags: [com]
     description: |
       The association of a service instance and the appropriate binding shall be specified in the deployment configuration.
     fields:
@@ -2678,6 +2726,7 @@ artifacts:
     type: feat-req
     title: One-way data sharing into a VM
     status: approved
+    tags: [com]
     description: |
       The system shall support one-way data sharing into a Virtual Machine (VM) for vehicle state read-only for the VM (snapshot state).
     fields:
@@ -2692,6 +2741,7 @@ artifacts:
     type: feat-req
     title: Read-only access for VM
     status: approved
+    tags: [com]
     description: |
       The consumer (VM) shall have read-only access to the shared data.
     fields:
@@ -2706,6 +2756,7 @@ artifacts:
     type: feat-req
     title: Consistent data-sets
     status: approved
+    tags: [com]
     description: |
       The system shall support consistent data-sets, allowing the consumer to obtain a consistent version of related data items.
     fields:
@@ -2720,6 +2771,7 @@ artifacts:
     type: feat-req
     title: Lock-free access
     status: approved
+    tags: [com]
     description: |
       Consistent access to data must be lock-free.
     fields:
@@ -2734,6 +2786,7 @@ artifacts:
     type: feat-req
     title: Producer time stamps
     status: approved
+    tags: [com]
     description: |
       Producer time stamps shall be available for related data-sets.
     fields:
@@ -2748,6 +2801,7 @@ artifacts:
     type: feat-req
     title: Streamed data based on shared queues
     status: approved
+    tags: [com]
     description: |
       The system shall support streamed data based on shared queues (stream of events or data).
     fields:
@@ -2762,6 +2816,7 @@ artifacts:
     type: feat-req
     title: Configurable queues
     status: approved
+    tags: [com]
     description: |
       Queues shall be configurable by the client (VM), including the number of elements and buffer allocation.
     fields:
@@ -2776,6 +2831,7 @@ artifacts:
     type: feat-req
     title: Lock-free queue access
     status: approved
+    tags: [com]
     description: |
       Queues shall support lock-free access to data elements.
     fields:
@@ -2790,6 +2846,7 @@ artifacts:
     type: feat-req
     title: Bi-directional communication
     status: approved
+    tags: [com]
     description: |
       The system shall support bi-directional communication via writable data elements by the client.
     fields:
@@ -2804,6 +2861,7 @@ artifacts:
     type: feat-req
     title: Asynchronous support
     status: approved
+    tags: [com]
     description: |
       The system shall provide asynchronous bi-directional support via multiple queues.
     fields:
@@ -2818,6 +2876,7 @@ artifacts:
     type: feat-req
     title: Shared memory chunks
     status: approved
+    tags: [com]
     description: |
       The system shall support multiple chunks of shared memory to allow required access control.
     fields:
@@ -2832,6 +2891,7 @@ artifacts:
     type: feat-req
     title: Data update notifications
     status: approved
+    tags: [com]
     description: |
       Notifications for data updates shall be available (virtual IRQs in a VM).
     fields:
@@ -2846,6 +2906,7 @@ artifacts:
     type: feat-req
     title: Configurable notifications
     status: approved
+    tags: [com]
     description: |
       Notifications shall be configurable by consumers of data (using flags or watermarks in shared memory from client to producer).
     fields:
@@ -2860,6 +2921,7 @@ artifacts:
     type: feat-req
     title: Deployment configuration at runtime
     status: approved
+    tags: [com]
     description: |
       Deployment configuration shall be read from an integrity-checked configuration file at runtime.
     fields:
@@ -2875,6 +2937,7 @@ artifacts:
     type: feat-req
     title: Support for Tracing
     status: approved
+    tags: [com]
     description: |
       The communication framework shall provide infrastructure to enable binding-agnostic, zero-copy, read-only tracing of
       communication.
@@ -2891,6 +2954,7 @@ artifacts:
     type: feat-req
     title: Access Control List Placement
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support an Access Control Lists in the deployment configuration.
     fields:
@@ -2906,6 +2970,7 @@ artifacts:
     type: feat-req
     title: Access Control List per service instance
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support an Access Control List per service instance.
     fields:
@@ -2921,6 +2986,7 @@ artifacts:
     type: feat-req
     title: Access Control List for producer
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support an Access Control List for the communication partner offering a service
       instance (producer).
@@ -2938,6 +3004,7 @@ artifacts:
     type: feat-req
     title: Access Control List for consumer
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support an Access Control List for the communication partner consuming a service
       instance.
@@ -2955,6 +3022,7 @@ artifacts:
     type: feat-req
     title: Communication ASIL level
     status: approved
+    tags: [com]
     description: |
       The communication framework shall support safe communication up to ASIL-B.
     fields:
@@ -2981,7 +3049,7 @@ artifacts:
     type: doc
     title: IPC Architecture
     status: approved
-    tags: ["eclipse:document"]
+    tags: [ipc, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -2992,6 +3060,7 @@ artifacts:
     type: feat-arc-dyn
     title: Dynamic Architecture
     status: approved
+    tags: [ipc, communication]
     description: |
       .. uml:: _assets/dyn_arch.puml
       :scale: 50
@@ -3008,7 +3077,7 @@ artifacts:
     type: doc
     title: IPC Requirements
     status: approved
-    tags: ["eclipse:document"]
+    tags: [ipc, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -3019,6 +3088,7 @@ artifacts:
     type: feat-req
     title: Zero-Copy Approach
     status: approved
+    tags: [ipc]
     description: |
       IPC communication shall be possible without copying to-be-transferred data.
     fields:
@@ -3034,6 +3104,7 @@ artifacts:
     type: feat-req
     title: IPC Confidentiality
     status: approved
+    tags: [ipc]
     description: |
       The IPC binding shall ensure confidentiality of its communication.
     fields:
@@ -3047,6 +3118,7 @@ artifacts:
     type: feat-req
     title: IPC Integrity
     status: approved
+    tags: [ipc]
     description: |
       The IPC binding shall ensure integrity of its communication.
     fields:
@@ -3060,6 +3132,7 @@ artifacts:
     type: feat-req
     title: IPC Availability
     status: approved
+    tags: [ipc]
     description: |
       The IPC binding shall ensure availability of its communication, so that the availability is independent per
       criticality level.
@@ -3074,7 +3147,7 @@ artifacts:
     type: doc
     title: IPC DFA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [ipc, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -3085,7 +3158,7 @@ artifacts:
     type: doc
     title: IPC FMEA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [ipc, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -3096,7 +3169,7 @@ artifacts:
     type: doc
     title: Communication IPC Safety WPs
     status: draft
-    tags: ["eclipse:document"]
+    tags: [com, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -3107,7 +3180,7 @@ artifacts:
     type: doc
     title: Inter-process Communication
     status: approved
-    tags: [contribution_request, feature_request, "eclipse:document"]
+    tags: [contribution_request, feature_request, com, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -3822,7 +3895,7 @@ artifacts:
     type: doc
     title: FEO Feature Architecture Inspection Checklist
     status: draft
-    tags: [frameworks_feo, "eclipse:document"]
+    tags: [frameworks_feo, frameworks_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -3833,7 +3906,7 @@ artifacts:
     type: doc
     title: FEO Feature Architecture
     status: approved
-    tags: ["eclipse:document"]
+    tags: [frameworks_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -3844,6 +3917,7 @@ artifacts:
     type: feat
     title: Feature FEO
     status: approved
+    tags: [frameworks_feo]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -3860,6 +3934,7 @@ artifacts:
     type: feat-arc-sta
     title: Static Architecture
     status: approved
+    tags: [frameworks_feo]
     description: |
       .. uml:: _assets/stat_arch.puml
       :scale: 50
@@ -3890,6 +3965,7 @@ artifacts:
     type: feat-arc-dyn
     title: Dynamic Architecture
     status: approved
+    tags: [frameworks_feo]
     description: |
       .. uml:: _assets/dyn_arch.puml
       :scale: 50
@@ -3912,6 +3988,7 @@ artifacts:
     type: logic-arc-int
     title: Activity
     status: approved
+    tags: [frameworks_feo]
     description: |
       See static architecture.
     fields:
@@ -3926,6 +4003,7 @@ artifacts:
     type: logic-arc-int
     title: Primary Agent
     status: approved
+    tags: [frameworks_feo]
     description: |
       See static architecture.
     fields:
@@ -3944,6 +4022,7 @@ artifacts:
     type: logic-arc-int
     title: Secondary Agent
     status: approved
+    tags: [frameworks_feo]
     description: |
       See static architecture.
     fields:
@@ -3962,6 +4041,7 @@ artifacts:
     type: logic-arc-int
     title: Lifecycle Listener
     status: approved
+    tags: [frameworks_feo]
     description: |
       See static architecture.
     fields:
@@ -3985,7 +4065,7 @@ artifacts:
     type: doc
     title: FEO Assumptions of Use Requirements
     status: draft
-    tags: ["eclipse:document"]
+    tags: [frameworks_feo, frameworks_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -3996,6 +4076,7 @@ artifacts:
     type: aou-req
     title: FEO something
     status: obsolete
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       Something shall be done.
     fields:
@@ -4006,7 +4087,7 @@ artifacts:
     type: doc
     title: FEO Feature Requirements Inspection Checklist
     status: draft
-    tags: [frameworks_feo, "eclipse:document"]
+    tags: [frameworks_feo, frameworks_feo, frameworks_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -4017,7 +4098,7 @@ artifacts:
     type: doc
     title: FEO Feature Requirements
     status: approved
-    tags: ["eclipse:document"]
+    tags: [frameworks_feo, frameworks_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -4028,6 +4109,7 @@ artifacts:
     type: feat-req
     title: "Definition: Application"
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       An application consists of one or more activities.
       
@@ -4050,6 +4132,7 @@ artifacts:
     type: feat-req
     title: "Definition: Activity"
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       Activities are mapped to threads within primary or secondary processes.
       Each activity is mapped to exactly one thread and provides the following functions:
@@ -4072,6 +4155,7 @@ artifacts:
     type: feat-req
     title: "Definition: Task Chain"
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       All activities within an application are arranged within a `Task Chain`.
       There is exactly one task chain per application.
@@ -4098,6 +4182,7 @@ artifacts:
     type: feat-req
     title: "Definition: Service Activity"
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       * Service activities are a means to interact with the outside world, e.g. via
       network communication, direct sensor input or direct actuator output
@@ -4116,6 +4201,7 @@ artifacts:
     type: feat-req
     title: "Definition: Agent"
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       In order to execute activities in secondary processes, the executor makes
       use of an `Agent` for each secondary process and possibly also the primary process.
@@ -4141,6 +4227,7 @@ artifacts:
     type: feat-req
     title: "The lifecycle of an `Application` consists of 3 phases: Init, Run and Shutdown."
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       The Application Lifecycle consists of 3 phases: Init, Run and Shutdown.
     fields:
@@ -4158,6 +4245,7 @@ artifacts:
     type: feat-req
     title: Initialization of activities
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       Initialization of activities is done during application initialization.
       
@@ -4180,6 +4268,7 @@ artifacts:
     type: feat-req
     title: Stepping of activities
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       Each activity is stepped once within each execution of the task chain they belong to.
       
@@ -4199,6 +4288,7 @@ artifacts:
     type: feat-req
     title: Shutdown of activities
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       Shutdown of activities is done during application shutdown.
       
@@ -4220,6 +4310,7 @@ artifacts:
     type: feat-req
     title: Alive supervision
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       The framework shall provide the functionality to enable the reporting of
       alive supervision checkpoint to an external health management system
@@ -4239,6 +4330,7 @@ artifacts:
     type: feat-req
     title: Support of deadline supervision checkpoints
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       The framework shall provide the functionality to enable the reporting of
       deadline supervision checkpoints to an external health management system
@@ -4258,6 +4350,7 @@ artifacts:
     type: feat-req
     title: Support of logical supervision
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       The framework shall provide the functionality to enable the reporting of
       logical supervision checkpoints to an external health management system
@@ -4277,6 +4370,7 @@ artifacts:
     type: feat-req
     title: Trustable computation
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       The framework shall provide mechanisms to check after the computation of
       an Activity if the result is trustable.
@@ -4298,6 +4392,7 @@ artifacts:
     type: feat-req
     title: Response to termination request
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If the primary process receives a termination signal, it shall call the shutdown
       function of all remaining activities in arbitrary sequence and terminate itself.
@@ -4318,6 +4413,7 @@ artifacts:
     type: feat-req
     title: Secondary connection timeout
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If not all secondary processes connect to the primary in time, the primary shall terminate itself.
       The startup functions shall not be triggered.
@@ -4336,6 +4432,7 @@ artifacts:
     type: feat-req
     title: Activity startup error
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If an error occurs during the execution of a startup function, the primary process shall abort calling
       startup functions and terminate itself. For all of the activities
@@ -4356,6 +4453,7 @@ artifacts:
     type: feat-req
     title: Activity resource allocation error
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       During initialization (i.e. in the startup function of an activity), activities shall check for resource allocation
       and report an error to the executor in case of failure.
@@ -4374,6 +4472,7 @@ artifacts:
     type: feat-req
     title: Activity timeout
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If a timeout occurs during startup, stepping or shutdown of an activity, the primary process shall shutdown all
       successfully started activities in arbitrary sequence and terminate itself.
@@ -4394,6 +4493,7 @@ artifacts:
     type: feat-req
     title: Startup timeout
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If not all activities reach their initialized state within a certain period of time (startup timeout),
       the primary process shall shutdown all successfully started activities in arbitrary sequence and terminate itself.
@@ -4412,6 +4512,7 @@ artifacts:
     type: feat-req
     title: Activity stepping error
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If an activity fails in the step function, the primary process shall call shutdown for all activities
       in arbitrary sequence and terminate itself.
@@ -4430,6 +4531,7 @@ artifacts:
     type: feat-req
     title: Activity shutdown error
     status: approved
+    tags: [frameworks_feo, frameworks_feo]
     description: |
       If an activity fails in the shutdown function, the primary process shall shutdown all remaining activities
       in arbitrary sequence and terminate itself.
@@ -6286,7 +6388,7 @@ artifacts:
     type: doc
     title: Orchestration Requirements
     status: approved
-    tags: [orchestration, "eclipse:document"]
+    tags: [orchestration, orchestration, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -6297,6 +6399,7 @@ artifacts:
     type: feat-req
     title: Async Cooperative Task Runtime
     status: approved
+    tags: [orchestration]
     description: |
       The executor shall provide a cooperative task runtime for async programming based on the definition of Rust's async model (see `Asynchronous Programming in Rust <https://rust-lang.github.io/async-book>`).
     fields:
@@ -6310,6 +6413,7 @@ artifacts:
     type: feat-req
     title: Yielding Guidelines for Long Operations
     status: approved
+    tags: [orchestration]
     description: |
       The executor shall provide guidelines for dividing long-running operations into smaller, cooperatively yielding segments.
     fields:
@@ -6323,6 +6427,7 @@ artifacts:
     type: feat-req
     title: Dedicated Threads for Blocking Operations
     status: approved
+    tags: [orchestration]
     description: |
       The system shall support execution of tasks containing blocking calls on dedicated OS threads isolated from cooperative scheduling.
     fields:
@@ -6336,6 +6441,7 @@ artifacts:
     type: feat-req
     title: Preemptive Scheduling for Safety Tasks
     status: obsolete
+    tags: [orchestration]
     description: |
       The Executor shall support preemptive scheduling of special safety-critical tasks, guaranteeing their execution.
     fields:
@@ -6351,6 +6457,7 @@ artifacts:
     type: feat-req
     title: Separate Priority for Safety Tasks
     status: obsolete
+    tags: [orchestration]
     description: |
       Safety-critical tasks shall be prioritized separately from standard cooperative tasks.
     fields:
@@ -6366,6 +6473,7 @@ artifacts:
     type: feat-req
     title: Fixed-Size Thread Pool
     status: approved
+    tags: [orchestration]
     description: |
       Executor instances shall run tasks on a statically configured thread pool with a fixed thread count.
     fields:
@@ -6379,6 +6487,7 @@ artifacts:
     type: feat-req
     title: Uniform OS Priority for Non-Safety Threads
     status: approved
+    tags: [orchestration]
     description: |
       Threads within an Executor not involved in safety-critical tasks shall share identical OS-level priority.
     fields:
@@ -6392,6 +6501,7 @@ artifacts:
     type: feat-req
     title: Configurable Thread Affinity
     status: approved
+    tags: [orchestration]
     description: |
       Thread affinity to CPU cores shall be configurable per Executor instance.
     fields:
@@ -6405,6 +6515,7 @@ artifacts:
     type: feat-req
     title: Isolated Thread Pools
     status: approved
+    tags: [orchestration]
     description: |
       Executor instances shall isolate their thread pools from each other.
     fields:
@@ -6418,6 +6529,7 @@ artifacts:
     type: feat-req
     title: No Internal Priorities for Cooperative Tasks
     status: approved
+    tags: [orchestration]
     description: |
       Cooperative tasks within an Executor shall execute without internal priority distinctions.
     fields:
@@ -6431,6 +6543,7 @@ artifacts:
     type: feat-req
     title: FIFO or Fairness Scheduling
     status: approved
+    tags: [orchestration]
     description: |
       The Executor shall support FIFO or fairness-based scheduling among cooperative tasks.
     fields:
@@ -6444,6 +6557,7 @@ artifacts:
     type: feat-req
     title: Scale via Additional Executors
     status: approved
+    tags: [orchestration]
     description: |
       Scaling of Executor resources shall be achieved through additional Executor instances rather than dynamic thread scaling.
     fields:
@@ -6457,6 +6571,7 @@ artifacts:
     type: feat-req
     title: Static Program Execution Graphs
     status: approved
+    tags: [orchestration]
     description: |
       The Orchestrator shall provide a runtime-static Program abstraction representing computation logic as execution graphs.
     fields:
@@ -6472,6 +6587,7 @@ artifacts:
     type: feat-req
     title: Explicit Control Flows and Timing
     status: approved
+    tags: [orchestration]
     description: |
       Programs shall explicitly define sequential, parallel, conditional execution flows, loops, and timing contracts.
     fields:
@@ -6487,6 +6603,7 @@ artifacts:
     type: feat-req
     title: Event-Based Synchronization
     status: approved
+    tags: [orchestration]
     description: |
       Programs shall support explicit event-based synchronization and trigger conditions.
     fields:
@@ -6502,6 +6619,7 @@ artifacts:
     type: feat-req
     title: Fault-Handling and Monitors
     status: approved
+    tags: [orchestration]
     description: |
       Programs shall contain integrated fault-handling logic and execution monitors to enforce timing constraints.
     fields:
@@ -6517,6 +6635,7 @@ artifacts:
     type: feat-req
     title: Code-First Integration API
     status: approved
+    tags: [orchestration]
     description: |
       The Orchestrator shall offer a code-first API to integrate directly with application logic without external DSL/IDL.
     fields:
@@ -6532,6 +6651,7 @@ artifacts:
     type: feat-req
     title: Single-Executor Deployment
     status: approved
+    tags: [orchestration]
     description: |
       Each Program shall be deployed exclusively on a single Executor instance.
     fields:
@@ -6547,6 +6667,7 @@ artifacts:
     type: feat-req
     title: Multi-Program Support per Executor
     status: approved
+    tags: [orchestration]
     description: |
       Executors may host multiple Programs to support resource sharing.
     fields:
@@ -6562,6 +6683,7 @@ artifacts:
     type: feat-req
     title: Event-Only Communication
     status: approved
+    tags: [orchestration]
     description: |
       Programs shall communicate exclusively through explicitly defined events.
     fields:
@@ -6577,6 +6699,7 @@ artifacts:
     type: feat-req
     title: Safety Tasks in Programs
     status: obsolete
+    tags: [orchestration]
     description: |
       Critical timing or safety paths within Programs shall be executed via preemptive special tasks provided by the Executor.
     fields:
@@ -6592,6 +6715,7 @@ artifacts:
     type: feat-req
     title: Trace Correlation Points
     status: approved
+    tags: [orchestration]
     description: |
       The Executor and Orchestrator shall expose structured tracing points correlating user-space task scheduling with OS-level scheduling.
     fields:
@@ -6607,6 +6731,7 @@ artifacts:
     type: feat-req
     title: Task Lifecycle and Queue Metrics
     status: approved
+    tags: [orchestration]
     description: |
       Observability shall capture task lifecycle events, Executor queue metrics, and mapping of user-space tasks to OS threads.
     fields:
@@ -6622,6 +6747,7 @@ artifacts:
     type: feat-req
     title: Program Flow and Timing Visibility
     status: approved
+    tags: [orchestration]
     description: |
       Observability shall provide visibility into Program execution flow, event synchronization points, and timing violations.
     fields:
@@ -6637,6 +6763,7 @@ artifacts:
     type: feat-req
     title: Integration with Tracing Frameworks
     status: approved
+    tags: [orchestration]
     description: |
       Tracing points shall integrate seamlessly with established tracing frameworks like Perfetto and LTTng.
     fields:
@@ -6652,6 +6779,7 @@ artifacts:
     type: feat-req
     title: Health Indicators Export
     status: approved
+    tags: [orchestration]
     description: |
       Executor and Orchestrator frameworks shall expose health indicators for integration with external supervisory systems.
     fields:
@@ -6665,6 +6793,7 @@ artifacts:
     type: feat-req
     title: Internal Task Health Verification
     status: approved
+    tags: [orchestration]
     description: |
       Frameworks shall internally verify task-level health status based on timing constraints and fault-handling execution.
     fields:
@@ -6678,6 +6807,7 @@ artifacts:
     type: feat-req
     title: Determinism and Scalability
     status: approved
+    tags: [orchestration]
     description: |
       The Executor and Orchestrator shall maintain determinism and scalability suitable for mixed-criticality environments.
     fields:
@@ -6691,6 +6821,7 @@ artifacts:
     type: feat-req
     title: Explicit Preemption Activation
     status: obsolete
+    tags: [orchestration]
     description: |
       Preemptive scheduling shall only be activated explicitly for tasks with safety or critical timing constraints.
     fields:
@@ -6706,6 +6837,7 @@ artifacts:
     type: feat-req
     title: Exclusive Use of IPC Feature for Inter Process Synchronization
     status: obsolete
+    tags: [orchestration]
     description: |
       The system shall use the approved IPC feature exclusively for all inter-process synchronization.
     fields:
@@ -6991,7 +7123,7 @@ artifacts:
     type: doc
     title: Persistency Requirements Inspection Checklist
     status: approved
-    tags: [persistency, "eclipse:document"]
+    tags: [persistency, persistency, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -7002,7 +7134,7 @@ artifacts:
     type: doc
     title: Persistency Requirements
     status: approved
-    tags: [persistency, "eclipse:document"]
+    tags: [persistency, persistency, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -7013,6 +7145,7 @@ artifacts:
     type: feat-req
     title: C++ and Rust language support
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall provide native API support for both C++ and Rust programming languages.
     fields:
@@ -7026,6 +7159,7 @@ artifacts:
     type: feat-req
     title: Operating system agnostic implementation
     status: approved
+    tags: [persistency, operating_system]
     description: |
       The Persistency shall be operating system agnostic.
     fields:
@@ -7039,6 +7173,7 @@ artifacts:
     type: feat-req
     title: Variant management support
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall ensure compatibility across different SW versions.
     fields:
@@ -7052,6 +7187,7 @@ artifacts:
     type: feat-req
     title: Dynamic memory allocation during runtime
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall not allocate dynamic memory during runtime. All required dynamic memory shall be allocated during initialization.
       
@@ -7070,6 +7206,7 @@ artifacts:
     type: feat-req
     title: Multiple KVS per application
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support multiple independent storages per application.
     fields:
@@ -7083,6 +7220,7 @@ artifacts:
     type: feat-req
     title: Access from multiple applications
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall prevent access to a single KVS instance from multiple OS processes.
       
@@ -7099,6 +7237,7 @@ artifacts:
     type: feat-req
     title: Separate data stores
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall ensure that only authorized applications can access individual data stores.
       
@@ -7116,7 +7255,7 @@ artifacts:
     type: feat-req
     title: Configuration
     status: approved
-    tags: [config]
+    tags: [config, persistency]
     description: |
       The Persistency shall support configuration via a configuration file.
       The configuration shall include:
@@ -7150,6 +7289,7 @@ artifacts:
     type: feat-req
     title: Supported datatypes (Keys)
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support UTF-8 encoded strings as valid key types.
     fields:
@@ -7163,7 +7303,7 @@ artifacts:
     type: feat-req
     title: Supported datatypes (Values)
     status: approved
-    tags: [persistency]
+    tags: [persistency, persistency]
     description: |
       The Persistency shall support storing both primitive and non-primitive (composite) datatypes as values.
     fields:
@@ -7177,6 +7317,7 @@ artifacts:
     type: feat-req
     title: Default values
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support predefined default values for keys.
     fields:
@@ -7190,6 +7331,7 @@ artifacts:
     type: feat-req
     title: Provisioning of default values via external file
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support import of default values using an external file.
       
@@ -7207,6 +7349,7 @@ artifacts:
     type: feat-req
     title: Retrieval of default values
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support retrieval of the default value associated with a key.
     fields:
@@ -7220,6 +7363,7 @@ artifacts:
     type: feat-req
     title: Reset to default values
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support reset of individual key or all keys to their default values.
       This is only applicable for existing keys that have a predefined default value.
@@ -7234,6 +7378,7 @@ artifacts:
     type: feat-req
     title: Store persistent data
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support storing of key-value pairs to persistent storage.
     fields:
@@ -7247,6 +7392,7 @@ artifacts:
     type: feat-req
     title: Reset resistant storage
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall ensure that write operations are reset resistant to prevent data corruption in case of expected or unexpected interruption.
       
@@ -7264,6 +7410,7 @@ artifacts:
     type: feat-req
     title: Recovery from reset
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall recover to a consistent state after reset.
       
@@ -7280,6 +7427,7 @@ artifacts:
     type: feat-req
     title: Atomic store operation
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support atomic write operation for entire storage to ensure data consistency.
       
@@ -7298,6 +7446,7 @@ artifacts:
     type: feat-req
     title: Write amplification minimization
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall minimize the write amplification during data storage operations to enhance performance and prolong the lifespan of the underlying storage medium.
       
@@ -7315,6 +7464,7 @@ artifacts:
     type: feat-req
     title: Load persistent data
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support loading of key-value pairs from persistent storage.
     fields:
@@ -7328,6 +7478,7 @@ artifacts:
     type: feat-req
     title: Cached access
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support caching mechanisms to improve access times for frequently accessed key-value pairs.
     fields:
@@ -7341,6 +7492,7 @@ artifacts:
     type: feat-req
     title: Direct access
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support direct access to key-value pairs without the necessity to load the entire storage to RAM in advance.
       
@@ -7357,6 +7509,7 @@ artifacts:
     type: feat-req
     title: Integrity check
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall detect and report data integrity issues.
     fields:
@@ -7370,6 +7523,7 @@ artifacts:
     type: feat-req
     title: Confidential storage
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support confidential storage of key-value pairs using encryption mechanisms.
       
@@ -7386,6 +7540,7 @@ artifacts:
     type: feat-req
     title: Multiple storage backends
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support multiple storage backends.
       More than one storage backend of the same type shall be optionally supported for the sake of redundancy.
@@ -7405,6 +7560,7 @@ artifacts:
     type: feat-req
     title: Asynchronous operation
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall provide an asynchronous API for time consuming operations like loading and storing of data.
     fields:
@@ -7420,6 +7576,7 @@ artifacts:
     type: feat-req
     title: Signalling completion of asynchronous operation
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall provide a mechanism to signal the completion of an asynchronous operations to the application.
     fields:
@@ -7433,6 +7590,7 @@ artifacts:
     type: feat-req
     title: Snapshot create
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support explicit creation of snapshots. Snapshots are identified by unique IDs.
       Snapshots shall also include the version of the data layout. See :need:`feat_req__persistency__versioning`.
@@ -7451,6 +7609,7 @@ artifacts:
     type: feat-req
     title: Snapshot restore
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support explicit restoration of snapshots.
     fields:
@@ -7464,6 +7623,7 @@ artifacts:
     type: feat-req
     title: Snapshot remove
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support explicit removal of snapshots.
     fields:
@@ -7477,6 +7637,7 @@ artifacts:
     type: feat-req
     title: Intra-Process data access
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support concurrent access to key-value pairs from multiple threads within the same process.
     fields:
@@ -7490,6 +7651,7 @@ artifacts:
     type: feat-req
     title: Versioning
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support versioning for different data representation of KVS.
       
@@ -7507,6 +7669,7 @@ artifacts:
     type: feat-req
     title: Update Mechanism
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall implement mechanisms to upgrade from one version to another, including multi-version jumps.
     fields:
@@ -7520,6 +7683,7 @@ artifacts:
     type: feat-req
     title: Random access time
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall ensure that random read access for key-value pair is completed with constant or logarithmic time complexity relative to the number of stored key-value pairs.
     fields:
@@ -7533,6 +7697,7 @@ artifacts:
     type: feat-req
     title: Tooling
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall provide tooling support for:
       
@@ -7549,6 +7714,7 @@ artifacts:
     type: feat-req
     title: Support development mode
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support the development mode.
       The development mode shall allow unrestricted data access and bypass security policies.
@@ -7563,6 +7729,7 @@ artifacts:
     type: feat-req
     title: Support production mode
     status: approved
+    tags: [persistency]
     description: |
       The Persistency shall support the production mode.
       The production mode should enforce the most restrictive data access controls feasible.
@@ -7577,7 +7744,7 @@ artifacts:
     type: aou-req
     title: Persistency Error handling
     status: approved
-    tags: [environment]
+    tags: [environment, persistency]
     description: |
       The application shall handle if the feature persistency is not available.
     fields:
@@ -7588,7 +7755,7 @@ artifacts:
     type: aou-req
     title: Application execution
     status: approved
-    tags: [environment]
+    tags: [environment, persistency]
     description: |
       The execution of persistency shall not be blocked by the application.
     fields:
@@ -8327,6 +8494,7 @@ artifacts:
     type: feat-req
     title: OS-Level Protection
     status: approved
+    tags: [operating_system]
     description: |
       The security component shall use system-level means (e.g., co-processor, HSM, TEE) to protect
       its memory and CPU from applications and the normal operating system.
@@ -8693,7 +8861,7 @@ artifacts:
     type: comp
     title: Bit Manipulation
     status: approved
-    tags: [baselibs_bit_manipulation]
+    tags: [baselibs_bit_manipulation, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -8714,6 +8882,7 @@ artifacts:
     type: comp-arc-sta
     title: Bit Manipulation Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -8740,6 +8909,7 @@ artifacts:
     type: logic-arc-int
     title: Bit Manipulation
     status: approved
+    tags: [baselibs]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8747,6 +8917,7 @@ artifacts:
     type: logic-arc-int
     title: Bit Mask Operator
     status: approved
+    tags: [baselibs]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8754,7 +8925,7 @@ artifacts:
     type: logic-arc-int
     title: Set Bit
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8763,7 +8934,7 @@ artifacts:
     type: logic-arc-int
     title: Clear Bit
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8772,7 +8943,7 @@ artifacts:
     type: logic-arc-int
     title: Toggle Bit
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8781,7 +8952,7 @@ artifacts:
     type: logic-arc-int
     title: Test Bit
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8790,7 +8961,7 @@ artifacts:
     type: logic-arc-int
     title: Set (Half)-Byte
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8799,7 +8970,7 @@ artifacts:
     type: logic-arc-int
     title: Extract (Half)-Byte
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8808,7 +8979,7 @@ artifacts:
     type: logic-arc-int
     title: OR operator
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8817,7 +8988,7 @@ artifacts:
     type: logic-arc-int
     title: AND operator
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8826,7 +8997,7 @@ artifacts:
     type: logic-arc-int
     title: XOR operator
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8835,7 +9006,7 @@ artifacts:
     type: logic-arc-int
     title: Complement operator
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8844,7 +9015,7 @@ artifacts:
     type: logic-arc-int
     title: Assignment Operators
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -8897,7 +9068,7 @@ artifacts:
     type: comp-req
     title: Support for Bit Operations
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The bit manipulation component shall provide an API for setting, clearing, toggling, and checking individual bits for any integral type up to 64 bits, returning boolean success status.
     fields:
@@ -8915,7 +9086,7 @@ artifacts:
     type: comp-req
     title: Support for Byte and Half-Byte Operations
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The bit manipulation component shall provide an API for extracting and setting bytes and half-bytes for any integral type up to 64 bits, returning boolean success status.
     fields:
@@ -8933,7 +9104,7 @@ artifacts:
     type: comp-req
     title: Support for Bitmask Operators for Enum Classes
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The bit manipulation library shall provide type-safe bitmask operations for scoped enumeration types.
     fields:
@@ -8951,7 +9122,7 @@ artifacts:
     type: comp-req
     title: Bounds and Safety Checks
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The bit manipulation functions shall validate input parameters against bounds and, on out-of-bounds access, shall leave the target value unmodified and return false.
     fields:
@@ -8969,7 +9140,7 @@ artifacts:
     type: comp-req
     title: Header-only API
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The bit manipulation API shall be header-only and not require external dependencies.
     fields:
@@ -8985,7 +9156,7 @@ artifacts:
     type: aou-req
     title: Integral Type Constraints
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The user shall use bit manipulation functions only with integral types (integers, enumerations) as specified in the library's type constraints.
       
@@ -8998,7 +9169,7 @@ artifacts:
     type: aou-req
     title: Bitmask Enum Value Constraints
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The user shall use scoped enumeration types (enum class) whose enumerators are defined as non-zero power-of-two values.
     fields:
@@ -9009,7 +9180,7 @@ artifacts:
     type: aou-req
     title: External Synchronization Required for Concurrent Access
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, bitmanipulation]
     description: |
       The user shall implement external synchronization mechanisms (e.g., mutexes, atomic operations, or locks) when accessing or modifying the same integral value from multiple threads concurrently.
       
@@ -9066,7 +9237,7 @@ artifacts:
     type: comp
     title: Concurrency
     status: approved
-    tags: [baselibs_concurrency]
+    tags: [baselibs_concurrency, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -9099,6 +9270,7 @@ artifacts:
     type: comp-arc-sta
     title: Concurrency Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -9151,6 +9323,7 @@ artifacts:
     type: logic-arc-int
     title: Promise
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9194,6 +9367,7 @@ artifacts:
     type: logic-arc-int
     title: Future
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9264,6 +9438,7 @@ artifacts:
     type: logic-arc-int
     title: Shared Future
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9289,6 +9464,7 @@ artifacts:
     type: logic-arc-int
     title: Executor
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9341,6 +9517,7 @@ artifacts:
     type: logic-arc-int
     title: Task
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9366,6 +9543,7 @@ artifacts:
     type: logic-arc-int
     title: Task Result
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9400,6 +9578,7 @@ artifacts:
     type: logic-arc-int
     title: Synchronized Queue
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9443,6 +9622,7 @@ artifacts:
     type: logic-arc-int
     title: Condition Variable
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9530,6 +9710,7 @@ artifacts:
     type: comp-req
     title: Asynchronous Task Execution
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall allow running tasks asynchronously.
     fields:
@@ -9549,6 +9730,7 @@ artifacts:
     type: comp-req
     title: Task Cancellation
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall allow cancelling tasks when needed.
     fields:
@@ -9568,6 +9750,7 @@ artifacts:
     type: comp-req
     title: Simple Task Implementation
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide implementation for executing callable objects without returning results, supporting fire-and-forget asynchronous operations.
     fields:
@@ -9587,6 +9770,7 @@ artifacts:
     type: comp-req
     title: Task Result Management
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide implementation to access the result of an asynchronously running task or to request aborting the task when the result is no longer needed.
     fields:
@@ -9604,6 +9788,7 @@ artifacts:
     type: comp-req
     title: Periodic Task Execution
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide implementation for executing callable objects at regular intervals with configurable first execution time and period duration.
     fields:
@@ -9621,6 +9806,7 @@ artifacts:
     type: comp-req
     title: Delayed Task Execution
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide implementation for executing callable objects after a specified delay with support for early cancellation.
     fields:
@@ -9638,6 +9824,7 @@ artifacts:
     type: comp-req
     title: Executor Interface
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide interface defining a common API for task submission operations, graceful shutdown, and maximum concurrency level reporting.
     fields:
@@ -9653,6 +9840,7 @@ artifacts:
     type: comp-req
     title: Thread Pool Implementation
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide implementation that manages submitted tasks in FIFO order.
     fields:
@@ -9670,6 +9858,7 @@ artifacts:
     type: comp-req
     title: Interruptible Condition Variable
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide an abortable mechanism for threads to wait for conditions.
     fields:
@@ -9687,6 +9876,7 @@ artifacts:
     type: comp-req
     title: Interruptible Wait Utilities
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide utilities offering APIs for sleep operations allowing early cancellation.
     fields:
@@ -9704,6 +9894,7 @@ artifacts:
     type: comp-req
     title: Notification Mechanism
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall allow one thread to notify another thread once, with a timeout option.
     fields:
@@ -9721,6 +9912,7 @@ artifacts:
     type: comp-req
     title: Synchronized Queue
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide a thread-safe container facilitating FIFO transmission of data in a N:1 communication pattern.
     fields:
@@ -9738,6 +9930,7 @@ artifacts:
     type: comp-req
     title: Long-Running Threads Container
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall provide a container for managing long-running threads, allowing addition and removal of threads.
     fields:
@@ -9755,6 +9948,7 @@ artifacts:
     type: comp-req
     title: Memory Usage Control
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall limit memory usage to prevent uncontrolled resource consumption.
     fields:
@@ -9770,6 +9964,7 @@ artifacts:
     type: comp-req
     title: Memory Reservation
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall allow reserving memory upfront for tasks to ensure predictable resource allocation.
     fields:
@@ -9785,6 +9980,7 @@ artifacts:
     type: comp-req
     title: Thread Count Reporting
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall report the maximum number of concurrent threads available for task execution.
     fields:
@@ -9800,6 +9996,7 @@ artifacts:
     type: comp-req
     title: Operation Timeout Protection
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall avoid indefinitely blocking, unabortable operations.
     fields:
@@ -9815,6 +10012,7 @@ artifacts:
     type: comp-req
     title: Future Error Handling
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       The concurrency module shall use error codes instead of throwing exceptions.
     fields:
@@ -9830,6 +10028,7 @@ artifacts:
     type: aou-req
     title: Cooperative Cancellation Handling
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       Users shall implement cancellation logic in long-running tasks to respond to stop_token signals.
     fields:
@@ -9840,6 +10039,7 @@ artifacts:
     type: aou-req
     title: Memory Management on Task Submission Failure
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       Users shall handle task submission failures when the bounded memory resource is exhausted and implement appropriate backpressure mechanisms.
     fields:
@@ -9850,6 +10050,7 @@ artifacts:
     type: aou-req
     title: Thread Pool Sizing
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       Users shall size ThreadPool according to task characteristics and avoid submitting blocking tasks that will starve the thread pool.
     fields:
@@ -9860,6 +10061,7 @@ artifacts:
     type: aou-req
     title: Thread Safety
     status: approved
+    tags: [baselibs, concurrency]
     description: |
       Users shall implement appropriate synchronization mechanisms when sharing state between tasks, as the library only guarantees thread-safe task submission and execution scheduling.
     fields:
@@ -9914,7 +10116,7 @@ artifacts:
     type: comp
     title: Containers
     status: approved
-    tags: [baselibs_containers]
+    tags: [baselibs_containers, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -9935,6 +10137,7 @@ artifacts:
     type: comp-arc-sta
     title: Containers Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -9961,6 +10164,7 @@ artifacts:
     type: logic-arc-int
     title: Dynamic Array
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9968,7 +10172,7 @@ artifacts:
     type: logic-arc-int
     title: Access
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, containers, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9977,7 +10181,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, containers, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9986,7 +10190,7 @@ artifacts:
     type: logic-arc-int
     title: Change
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, containers, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -9995,6 +10199,7 @@ artifacts:
     type: logic-arc-int
     title: Intrusive List
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10002,7 +10207,7 @@ artifacts:
     type: logic-arc-int
     title: Insert
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10011,7 +10216,7 @@ artifacts:
     type: logic-arc-int
     title: Remove
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10020,7 +10225,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10029,7 +10234,7 @@ artifacts:
     type: logic-arc-int
     title: Access
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10082,6 +10287,7 @@ artifacts:
     type: comp-req
     title: Dynamic Array
     status: approved
+    tags: [baselibs, containers]
     description: |
       The Containers library shall provide a fixed-size array container with construction-time size specification.
     fields:
@@ -10101,6 +10307,7 @@ artifacts:
     type: comp-req
     title: Intrusive List
     status: approved
+    tags: [baselibs, containers]
     description: |
       The Containers library shall provide an intrusive doubly-linked list based on the C++ standardization proposal P0406R1.
     fields:
@@ -10120,6 +10327,7 @@ artifacts:
     type: comp-req
     title: Type Safety
     status: approved
+    tags: [baselibs, containers]
     description: |
       The Containers library shall enforce compile-time type safety for all container operations.
     fields:
@@ -10137,6 +10345,7 @@ artifacts:
     type: comp-req
     title: Non-Relocatable Vector
     status: approved
+    tags: [baselibs, containers]
     description: |
       The Containers library shall provide a non-relocatable vector container that maintains stable element addresses.
     fields:
@@ -10156,6 +10365,7 @@ artifacts:
     type: comp-req
     title: Deterministic Behavior
     status: approved
+    tags: [baselibs, containers]
     description: |
       The Containers library shall provide deterministic behavior with no dynamic memory allocation.
     fields:
@@ -10173,6 +10383,7 @@ artifacts:
     type: aou-req
     title: Check Capacity
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall verify sufficient capacity or handle allocation failures before insertion operations to prevent exceeding container limits and undefined behavior.
     fields:
@@ -10183,6 +10394,7 @@ artifacts:
     type: aou-req
     title: Iterator Validity
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall ensure that iterators are not used after operations that invalidate them and refresh iterators after modifying operations.
     fields:
@@ -10193,6 +10405,7 @@ artifacts:
     type: aou-req
     title: Element Lifetime and Ownership
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall ensure that elements stored in containers remain valid throughout their lifetime in the container, and for intrusive containers, that element objects are not destroyed or moved while contained within the container.
     fields:
@@ -10203,6 +10416,7 @@ artifacts:
     type: aou-req
     title: Thread Safety
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall implement external synchronization mechanisms when accessing or modifying container objects from multiple threads concurrently, as the library provides no internal thread safety guarantees.
     fields:
@@ -10213,6 +10427,7 @@ artifacts:
     type: aou-req
     title: Index Bounds Checking
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall ensure that all index-based access operations use valid indices within the container's current size range to prevent out-of-bounds access and undefined behavior.
     fields:
@@ -10223,6 +10438,7 @@ artifacts:
     type: aou-req
     title: Container State Verification
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall verify container state before performing operations that depend on specific states, such as checking if a container is non-empty before accessing elements.
     fields:
@@ -10233,6 +10449,7 @@ artifacts:
     type: aou-req
     title: Memory Resource Management
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall provide sufficient memory resources for all container operations.
     fields:
@@ -10243,6 +10460,7 @@ artifacts:
     type: aou-req
     title: Element Type Requirements
     status: approved
+    tags: [baselibs, containers]
     description: |
       The user shall ensure that element types are copy constructible, move constructible and destructible, and additionally for intrusive containers that they provide the required intrusive node members.
     fields:
@@ -10275,6 +10493,7 @@ artifacts:
     type: mod
     title: Baselibs
     status: approved
+    tags: [baselibs]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -10300,6 +10519,7 @@ artifacts:
   - id: MOD_VIEW_STA__BASELIBS__BASELIBS
     type: mod-view-sta
     title: Baselibs Static View
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -10329,7 +10549,7 @@ artifacts:
     type: doc
     title: Baselibs Safety Manual
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -10340,7 +10560,7 @@ artifacts:
     type: doc
     title: Baselibs Release Note
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -10351,7 +10571,7 @@ artifacts:
     type: doc
     title: Baselibs Codeowners
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -10362,7 +10582,7 @@ artifacts:
     type: doc
     title: Baselibs Safety Analysis Checklist
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -10373,7 +10593,7 @@ artifacts:
     type: doc
     title: Baselibs Safety Package Formal Review
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -10384,7 +10604,7 @@ artifacts:
     type: doc
     title: Baselibs Safety Plan
     status: approved
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -10395,7 +10615,7 @@ artifacts:
     type: doc
     title: Baselibs Safety Plan Formal Review
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -10406,7 +10626,7 @@ artifacts:
     type: doc
     title: Baselibs Verification Report
     status: draft
-    tags: ["eclipse:document"]
+    tags: [baselibs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -10439,7 +10659,7 @@ artifacts:
     type: comp
     title: Filesystem
     status: approved
-    tags: [baselibs_filesystem]
+    tags: [baselibs_filesystem, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -10458,6 +10678,7 @@ artifacts:
     type: comp-arc-sta
     title: Filesystem Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -10488,6 +10709,7 @@ artifacts:
     type: logic-arc-int
     title: Filesystem
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10495,7 +10717,7 @@ artifacts:
     type: logic-arc-int
     title: Path Canonicalization
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10504,7 +10726,7 @@ artifacts:
     type: logic-arc-int
     title: File/Directory Existence Check
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10513,7 +10735,7 @@ artifacts:
     type: logic-arc-int
     title: File Type Detection
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10522,7 +10744,7 @@ artifacts:
     type: logic-arc-int
     title: File Status Query
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10531,7 +10753,7 @@ artifacts:
     type: logic-arc-int
     title: Copy File
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10540,7 +10762,7 @@ artifacts:
     type: logic-arc-int
     title: Remove File or Directory
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10549,7 +10771,7 @@ artifacts:
     type: logic-arc-int
     title: Modify File Permissions
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10558,7 +10780,7 @@ artifacts:
     type: logic-arc-int
     title: Create Directory
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10567,7 +10789,7 @@ artifacts:
     type: logic-arc-int
     title: Symlink Operations
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10576,7 +10798,7 @@ artifacts:
     type: logic-arc-int
     title: Hard Link Operations
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10585,7 +10807,7 @@ artifacts:
     type: logic-arc-int
     title: Last Write Time
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10594,7 +10816,7 @@ artifacts:
     type: logic-arc-int
     title: Current Path
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10603,7 +10825,7 @@ artifacts:
     type: logic-arc-int
     title: Empty Check
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10612,7 +10834,7 @@ artifacts:
     type: logic-arc-int
     title: Directory Creation with Permissions
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10621,7 +10843,7 @@ artifacts:
     type: logic-arc-int
     title: File Content Comparison
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10630,7 +10852,7 @@ artifacts:
     type: logic-arc-int
     title: Group Ownership Management
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10639,7 +10861,7 @@ artifacts:
     type: logic-arc-int
     title: Group Validation
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10648,7 +10870,7 @@ artifacts:
     type: logic-arc-int
     title: Check Filesystem
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10657,7 +10879,7 @@ artifacts:
     type: logic-arc-int
     title: Repair Filesystem
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10666,7 +10888,7 @@ artifacts:
     type: logic-arc-int
     title: Partition Formatting
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10675,7 +10897,7 @@ artifacts:
     type: logic-arc-int
     title: QNX Compatibility Check
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10684,7 +10906,7 @@ artifacts:
     type: logic-arc-int
     title: Directory Synchronization
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10693,7 +10915,7 @@ artifacts:
     type: logic-arc-int
     title: Unique File Creation
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -10746,6 +10968,7 @@ artifacts:
     type: comp-req
     title: Standard Filesystem Abstraction
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide filesystem API based on the C++ standardization.
     fields:
@@ -10763,6 +10986,7 @@ artifacts:
     type: comp-req
     title: Path Manipulation Utilities
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide type-safe utilities for path construction and manipulation.
     fields:
@@ -10780,6 +11004,7 @@ artifacts:
     type: comp-req
     title: Directory Iterators
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide directory iterator types for traversing directory contents.
     fields:
@@ -10795,6 +11020,7 @@ artifacts:
     type: comp-req
     title: File I/O Operations
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide functionality for reading from and writing to files, including buffered I/O operations.
     fields:
@@ -10810,6 +11036,7 @@ artifacts:
     type: comp-req
     title: Fully testable public API
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The public API of the library shall support dependency injection with test doubles.
       
@@ -10827,6 +11054,7 @@ artifacts:
     type: comp-req
     title: File Utility Functions
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide additional file utility functions, such as temporary file handling and file comparison.
     fields:
@@ -10842,6 +11070,7 @@ artifacts:
     type: comp-req
     title: Mock and Fake Implementations
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       The Filesystem library shall provide mock and fake implementations for unit testing and validation.
     fields:
@@ -10857,6 +11086,7 @@ artifacts:
     type: aou-req
     title: Low-Level Use Only
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       Users shall use this library only when they need to manipulate files, directories, and paths at the operating system level beyond what higher-level storage abstractions provide, accepting reduced portability to other platforms.
     fields:
@@ -10867,6 +11097,7 @@ artifacts:
     type: aou-req
     title: Supported Path Formats
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       Users shall not use Windows paths with this library.
     fields:
@@ -10877,6 +11108,7 @@ artifacts:
     type: aou-req
     title: Error Handling
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       Users shall handle all function return values and take appropriate action on errors.
     fields:
@@ -10887,6 +11119,7 @@ artifacts:
     type: aou-req
     title: Path Validation
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       User shall ensure that all paths passed to the filesystem library are valid and originate from trusted sources.
       
@@ -10899,6 +11132,7 @@ artifacts:
     type: aou-req
     title: Thread Safety
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       Users shall implement appropriate synchronization mechanisms when accessing shared filesystem resources concurrently.
     fields:
@@ -10909,6 +11143,7 @@ artifacts:
     type: aou-req
     title: Performance
     status: approved
+    tags: [baselibs, filesystem]
     description: |
       Users shall not assume any performance characteristics.
       
@@ -10943,6 +11178,7 @@ artifacts:
     type: comp
     title: FlatBuffers
     status: obsolete
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11084,6 +11320,7 @@ artifacts:
     type: comp-req
     title: FlatBuffers Serialization
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers-Library shall provide functionality to serialize data into the FlatBuffers binary format.
       
@@ -11105,6 +11342,7 @@ artifacts:
     type: comp-req
     title: FlatBuffers Access
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers-Library shall provide functionality to read FlatBuffers binary data.
       
@@ -11125,6 +11363,7 @@ artifacts:
     type: comp-req
     title: FlatBuffers Verification
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers-Library shall provide a verification mechanism to validate the structural well-formedness of a FlatBuffers buffer.
       
@@ -11146,6 +11385,7 @@ artifacts:
     type: comp-req
     title: Common Buffer Identification
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers-Library shall provide a common opt-in buffer identification mechanism consisting
       of a major version, a minor version, and a 4-character identifier.
@@ -11164,6 +11404,7 @@ artifacts:
     type: comp-req
     title: Common Version Check
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers-Library shall provide a common opt-in version check mechanism that validates
       the major version, minor version, and 4-character identifier of a FlatBuffers buffer.
@@ -11182,6 +11423,7 @@ artifacts:
     type: comp-req
     title: FlatBuffers library ASIL level
     status: approved
+    tags: [baselibs]
     description: |
       The FlatBuffers library shall be ASIL-B compliant for C++ and Rust language support.
     fields:
@@ -11199,6 +11441,7 @@ artifacts:
     type: aou-req
     title: FlatBuffers data integrity
     status: approved
+    tags: [baselibs]
     description: |
       The user shall provide FlatBuffers binary data as input which is not corrupted due to HW, QM SW, or communication channel errors.
       
@@ -11215,6 +11458,7 @@ artifacts:
     type: aou-req
     title: FlatBuffers access control
     status: approved
+    tags: [baselibs]
     description: |
       The user shall ensure access control and manipulation prevention on the FlatBuffers binary files.
       
@@ -11228,6 +11472,7 @@ artifacts:
     type: aou-req
     title: FlatBuffers buffer version check before access
     status: approved
+    tags: [baselibs]
     description: |
       The user shall apply the version check mechanism provided by :need:`comp_req__flatbuffers__version_check`
       to a loaded buffer and confirm a successful result before accessing any data from that buffer.
@@ -11243,6 +11488,7 @@ artifacts:
     type: aou-req
     title: FlatBuffers buffer verification before access
     status: approved
+    tags: [baselibs]
     description: |
       The user shall apply the verification mechanism provided by :need:`comp_req__flatbuffers__verification`
       to a loaded buffer and confirm a successful result before accessing any data from that buffer.
@@ -11281,6 +11527,7 @@ artifacts:
     type: comp
     title: JSON
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11294,6 +11541,7 @@ artifacts:
     type: comp-arc-sta
     title: JSON Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -11326,6 +11574,7 @@ artifacts:
     type: comp-arc-dyn
     title: JSON dynamic arch
     status: obsolete
+    tags: [baselibs]
     description: |
       put here a sequence diagram (TBD)
     fields:
@@ -11354,6 +11603,7 @@ artifacts:
     type: logic-arc-int
     title: IJson
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -11367,7 +11617,7 @@ artifacts:
     type: logic-arc-int
     title: Parse
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11376,7 +11626,7 @@ artifacts:
     type: logic-arc-int
     title: Write
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11385,6 +11635,7 @@ artifacts:
     type: comp
     title: JSON-Wrapper
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11397,6 +11648,7 @@ artifacts:
     type: comp
     title: nlohman-JSON
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11462,6 +11714,7 @@ artifacts:
     type: comp-req
     title: JSON Deserialization
     status: approved
+    tags: [baselibs, json]
     description: |
       The JSON-Library shall provide a service to deserialize JSON data according to RFC8259, i.e.
       parse and check for well-formedness.
@@ -11478,6 +11731,7 @@ artifacts:
     type: comp-req
     title: JSON Serialization
     status: approved
+    tags: [baselibs, json]
     description: |
       The JSON-Library shall provide a service to serialize user format into JSON data according to RFC8259.
     fields:
@@ -11493,6 +11747,7 @@ artifacts:
     type: comp-req
     title: Return data in user format
     status: approved
+    tags: [baselibs, json]
     description: |
       The JSON-Library shall return parsed data in a compatible user format.
       
@@ -11510,6 +11765,7 @@ artifacts:
     type: comp-req
     title: Support for programming language idioms
     status: approved
+    tags: [baselibs, json]
     description: |
       The public API shall support the idioms of the programming language it is written in.
     fields:
@@ -11527,6 +11783,7 @@ artifacts:
     type: comp-req
     title: Use programming language infrastructure
     status: approved
+    tags: [baselibs, json]
     description: |
       The public API shall use core infrastructure of its programming language and accompanying standard libraries,
       whenever possible and meaningful.
@@ -11545,6 +11802,7 @@ artifacts:
     type: comp-req
     title: Enforce strict type compatibility
     status: approved
+    tags: [baselibs, json]
     description: |
       The public API shall enforce strict type compatibility. When a user requests a value, the API shall
       validate that the requested return type is compatible with the type and value of the stored JSON data.
@@ -11563,6 +11821,7 @@ artifacts:
     type: comp-req
     title: Fully testable public API
     status: approved
+    tags: [baselibs, json]
     description: |
       The public API of the library shall support dependency injection with test doubles.
       
@@ -11580,6 +11839,7 @@ artifacts:
     type: comp-req
     title: JSON library ASIL level
     status: approved
+    tags: [baselibs, json]
     description: |
       The JSON library shall be ASIL-B compliant.
     fields:
@@ -11597,6 +11857,7 @@ artifacts:
     type: aou-req
     title: JSON data integrity
     status: approved
+    tags: [baselibs, json]
     description: |
       The user shall provide a string as input which is not corrupted due to HW or QM SW errors.
       
@@ -11609,6 +11870,7 @@ artifacts:
     type: aou-req
     title: Access control
     status: approved
+    tags: [baselibs, json]
     description: |
       The user shall ensure access control and manipulation prevention on the JSON files.
       
@@ -11654,7 +11916,7 @@ artifacts:
     type: doc
     title: Safecpp Architecture Inspection Checklist
     status: approved
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -11665,7 +11927,7 @@ artifacts:
     type: doc
     title: Safecpp Architecture
     status: approved
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -11676,7 +11938,7 @@ artifacts:
     type: comp
     title: SafeCpp
     status: approved
-    tags: [baselibs_safecpp]
+    tags: [baselibs_safecpp, baselibs, safecpp]
     description: |
       .. needarch::
       :scale: 50
@@ -11705,6 +11967,7 @@ artifacts:
     type: comp-arc-sta
     title: Safecpp Static view
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       .. needarch::
       :scale: 50
@@ -11733,6 +11996,7 @@ artifacts:
     type: logic-arc-int
     title: Aborts Upon Exception
     status: approved
+    tags: [baselibs, safecpp]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11740,7 +12004,7 @@ artifacts:
     type: logic-arc-int
     title: Allocate exception
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11749,6 +12013,7 @@ artifacts:
     type: logic-arc-int
     title: Coverage Termination Handler
     status: approved
+    tags: [baselibs, safecpp]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11756,7 +12021,7 @@ artifacts:
     type: logic-arc-int
     title: Terminate_handler
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11765,7 +12030,7 @@ artifacts:
     type: logic-arc-int
     title: Signal_handler
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11774,6 +12039,7 @@ artifacts:
     type: logic-arc-int
     title: Safe Math
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11781,7 +12047,7 @@ artifacts:
     type: logic-arc-int
     title: Add
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11790,7 +12056,7 @@ artifacts:
     type: logic-arc-int
     title: Subtract
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11799,7 +12065,7 @@ artifacts:
     type: logic-arc-int
     title: Multiply
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11808,7 +12074,7 @@ artifacts:
     type: logic-arc-int
     title: Divide
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11817,7 +12083,7 @@ artifacts:
     type: logic-arc-int
     title: Negate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11826,7 +12092,7 @@ artifacts:
     type: logic-arc-int
     title: Abs
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11835,7 +12101,7 @@ artifacts:
     type: logic-arc-int
     title: Cast
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11844,7 +12110,7 @@ artifacts:
     type: logic-arc-int
     title: Less
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11853,7 +12119,7 @@ artifacts:
     type: logic-arc-int
     title: Greater
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11862,7 +12128,7 @@ artifacts:
     type: logic-arc-int
     title: Equal
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11871,7 +12137,7 @@ artifacts:
     type: logic-arc-int
     title: Notequal
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11880,7 +12146,7 @@ artifacts:
     type: logic-arc-int
     title: Lessequal
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11889,7 +12155,7 @@ artifacts:
     type: logic-arc-int
     title: Greaterequal
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11898,6 +12164,7 @@ artifacts:
     type: logic-arc-int
     title: Safe Atomics
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11905,7 +12172,7 @@ artifacts:
     type: logic-arc-int
     title: Atomic Add
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11914,6 +12181,7 @@ artifacts:
     type: logic-arc-int
     title: Scoped Function
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11921,7 +12189,7 @@ artifacts:
     type: logic-arc-int
     title: Move Only Scoped Function
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11930,7 +12198,7 @@ artifacts:
     type: logic-arc-int
     title: Copyable Scoped Function
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11939,7 +12207,7 @@ artifacts:
     type: logic-arc-int
     title: Expire
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11948,6 +12216,7 @@ artifacts:
     type: logic-arc-int
     title: String View
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11955,7 +12224,7 @@ artifacts:
     type: logic-arc-int
     title: Null Termination Check
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, safecpp, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11964,7 +12233,7 @@ artifacts:
     type: doc
     title: Safecpp Implementation Inspection Checklist
     status: draft
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -11975,7 +12244,7 @@ artifacts:
     type: doc
     title: Safecpp Library
     status: draft
-    tags: [baselibs_safecpp, "eclipse:document"]
+    tags: [baselibs_safecpp, safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -11986,7 +12255,7 @@ artifacts:
     type: doc
     title: Safecpp Requirements Inspection Checklist
     status: draft
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -11997,7 +12266,7 @@ artifacts:
     type: doc
     title: Safecpp Requirements
     status: draft
-    tags: [requirements, "eclipse:document"]
+    tags: [requirements, safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -12008,6 +12277,7 @@ artifacts:
     type: comp-req
     title: C++ Exception Abort
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide a mechanism to abort the program upon C++ exception allocation,
       allowing users to prevent any exception object from being created and hence to guarantee that
@@ -12028,6 +12298,7 @@ artifacts:
     type: comp-req
     title: Safe Arithmetic Operations
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide arithmetic operations
       (addition, subtraction, multiplication, division, negation, absolute value, type casting, and comparison operations)
@@ -12046,6 +12317,7 @@ artifacts:
     type: comp-req
     title: Scoped Guards
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide scope-bound callable wrappers that prevent resource leaks.
     fields:
@@ -12061,6 +12333,7 @@ artifacts:
     type: comp-req
     title: Null-Terminated String
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide a view type which guarantees that an underlying character sequence is guaranteed to be null-terminated.
       Such views type's underlying character sequence shall not be possible to get modified via such view type's methods.
@@ -12079,6 +12352,7 @@ artifacts:
     type: comp-req
     title: Safe Atomic operations
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide a lock-free atomic addition operation for integral types with overflow detection.
     fields:
@@ -12096,6 +12370,7 @@ artifacts:
     type: comp-req
     title: Code Coverage Termination
     status: approved
+    tags: [baselibs, safecpp]
     description: |
       The safecpp library shall provide a mechanism which automatically registers a termination handler
       which ensures that code coverage data is also persisted upon any process exit (e.g. during gtest's Death Tests).
@@ -12112,7 +12387,7 @@ artifacts:
     type: doc
     title: SafeCpp DFA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -12123,7 +12398,7 @@ artifacts:
     type: doc
     title: SafeCpp FMEA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [safecpp, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -12134,6 +12409,7 @@ artifacts:
     type: comp
     title: Memory Shared
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -12158,6 +12434,7 @@ artifacts:
     type: comp-arc-sta
     title: Memory Shared Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -12200,6 +12477,7 @@ artifacts:
     type: logic-arc-int
     title: Memory Shared
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12207,7 +12485,7 @@ artifacts:
     type: logic-arc-int
     title: Open
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12216,7 +12494,7 @@ artifacts:
     type: logic-arc-int
     title: Update
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12225,7 +12503,7 @@ artifacts:
     type: logic-arc-int
     title: Lock
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12234,7 +12512,7 @@ artifacts:
     type: logic-arc-int
     title: Set Permissions
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12265,6 +12543,7 @@ artifacts:
     type: comp-req
     title: Shared Memory Management
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide capabilities for creating, opening and managing shared memory.
     fields:
@@ -12284,6 +12563,7 @@ artifacts:
     type: comp-req
     title: Polymorphic OffsetPtr Allocator
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide polymorphic memory resource allocators using offset pointers instead of raw pointers to enable allocation in shared memory regions accessible across multiple processes. The standard library's std::pmr::polymorphic_allocator is not applicable as it uses raw pointers that are invalid when shared memory is mapped at different virtual addresses in different processes.
     fields:
@@ -12303,6 +12583,7 @@ artifacts:
     type: comp-req
     title: Shared Memory Container
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide type aliases for STL containers (vector, map, string) that use offset pointers for shared memory storage.
     fields:
@@ -12322,6 +12603,7 @@ artifacts:
     type: comp-req
     title: Inter-Process Synchronization
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide file-based locking mechanisms for inter-process synchronization and mutual exclusion.
     fields:
@@ -12341,6 +12623,7 @@ artifacts:
     type: comp-req
     title: Memory Region Bounds Checking
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall track and validate memory region boundaries to prevent out-of-bounds access in shared memory.
     fields:
@@ -12358,6 +12641,7 @@ artifacts:
     type: comp-req
     title: Endianness Conversion
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide byte order conversion between host and network byte order (big/little endian).
     fields:
@@ -12375,6 +12659,7 @@ artifacts:
     type: comp-req
     title: Sealed Shared Memory
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide immutable shared memory segments that become read-only after initialization.
     fields:
@@ -12394,6 +12679,7 @@ artifacts:
     type: comp-req
     title: Typed Memory
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide an interface to allocate shared memory from typed memory regions.
     fields:
@@ -12411,6 +12697,7 @@ artifacts:
     type: comp-req
     title: Memory Resource Registry
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide a global registry for memory resource lookup and management.
     fields:
@@ -12428,6 +12715,7 @@ artifacts:
     type: comp-req
     title: String Utilities
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide zero-allocation string utilities including splitting, comparison, and compile-time literals.
     fields:
@@ -12445,6 +12733,7 @@ artifacts:
     type: comp-req
     title: Atomic Operations in Shared Memory
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall provide atomic operations on shared memory data for lock-free inter-process communication.
     fields:
@@ -12462,6 +12751,7 @@ artifacts:
     type: comp-req
     title: Deterministic Memory Allocation
     status: approved
+    tags: [baselibs, memory]
     description: |
       The shared memory allocation shall provide deterministic behavior with predictable execution time suitable for real-time automotive systems.
     fields:
@@ -12479,6 +12769,7 @@ artifacts:
     type: comp-req
     title: Process Address Space Independence
     status: approved
+    tags: [baselibs, memory]
     description: |
       The Memory library shall ensure shared memory data structures remain valid regardless of process virtual address space mappings.
     fields:
@@ -12529,7 +12820,7 @@ artifacts:
     type: comp
     title: Result
     status: approved
-    tags: [baselibs_result]
+    tags: [baselibs_result, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -12548,6 +12839,7 @@ artifacts:
     type: comp-arc-sta
     title: Result Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -12578,6 +12870,7 @@ artifacts:
     type: comp-arc-dyn
     title: Result Dynamic view
     status: approved
+    tags: [baselibs]
     description: |
       No need for sequence diagram. Simple caller callee flow.
     fields:
@@ -12604,6 +12897,7 @@ artifacts:
     type: logic-arc-int
     title: Result
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12611,7 +12905,7 @@ artifacts:
     type: logic-arc-int
     title: Set Result
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12620,7 +12914,7 @@ artifacts:
     type: logic-arc-int
     title: Get Value
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12629,7 +12923,7 @@ artifacts:
     type: logic-arc-int
     title: Get Error
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -12682,7 +12976,7 @@ artifacts:
     type: comp-req
     title: Result-Based Error Handling
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall provide an error handling mechanism that enables functions to return either successful values ("Get Value") or error information ("Get Error") without using C++ exceptions.
     fields:
@@ -12702,7 +12996,7 @@ artifacts:
     type: comp-req
     title: Set Result
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall provide a "Set Result" operation that accepts either a successful value of type T or an Error object.
     fields:
@@ -12718,7 +13012,7 @@ artifacts:
     type: comp-req
     title: Domain-Specific Error Information
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall support user-defined error domains and error codes.
     fields:
@@ -12738,7 +13032,7 @@ artifacts:
     type: comp-req
     title: Type-Safe Error Handling
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall enforce compile-time type safety for error handling operations.
     fields:
@@ -12756,7 +13050,7 @@ artifacts:
     type: comp-req
     title: Standard Library Integration
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall provide conversion utilities to transform Result objects into std::optional<T> types. The conversion shall require explicit handling of error cases before discarding error information, ensuring that errors cannot be silently ignored.
     fields:
@@ -12774,7 +13068,7 @@ artifacts:
     type: comp-req
     title: Deterministic Behavior
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall provide deterministic behavior with no dynamic memory allocation.
     fields:
@@ -12792,7 +13086,7 @@ artifacts:
     type: comp-req
     title: Exception-Free Operation
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The Result library shall operate without throwing C++ exceptions.
     fields:
@@ -12810,7 +13104,7 @@ artifacts:
     type: aou-req
     title: Error Domain Implementation
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The user shall implement error domain classes and error code enumerations according to the library's interface specification.
     fields:
@@ -12821,7 +13115,7 @@ artifacts:
     type: aou-req
     title: Result Value Handling
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The user shall check and handle both successful and error states of Result objects before accessing contained values to prevent undefined behavior.
     fields:
@@ -12832,7 +13126,7 @@ artifacts:
     type: aou-req
     title: Error Reaction and Safe State
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The user shall implement error reaction mechanisms that transition the system to a safe state when error conditions are detected in Result objects.
     fields:
@@ -12843,7 +13137,7 @@ artifacts:
     type: aou-req
     title: Thread Safety
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The user shall implement external synchronization mechanisms (e.g., mutexes, atomic operations, or locks) when accessing or modifying Result objects from multiple threads concurrently, as the library provides no internal thread safety guarantees.
     fields:
@@ -12854,7 +13148,7 @@ artifacts:
     type: aou-req
     title: Resource Lifetime
     status: approved
-    tags: [inspected]
+    tags: [inspected, baselibs, result_lib]
     description: |
       The user shall ensure that error domain objects and referenced resources remain valid throughout the entire lifetime of any dependent Result or Error objects.
     fields:
@@ -12887,7 +13181,7 @@ artifacts:
     type: fmea-entry
     title: Result Error Code Cross-Domain Misinterpretation
     status: approved
-    tags: ["eclipse:comp_saf_fmea"]
+    tags: [baselibs, result_lib, "eclipse:comp_saf_fmea"]
     description: |
       If the user relies on the error code not only for diagnostic purposes but for selecting an error reaction path,
       misinterpreting the code under a wrong domain could lead to an incorrect safety-relevant decision.
@@ -12904,7 +13198,7 @@ artifacts:
     type: fmea-entry
     title: Result Error Message Lifetime Violation
     status: approved
-    tags: ["eclipse:comp_saf_fmea"]
+    tags: [baselibs, result_lib, "eclipse:comp_saf_fmea"]
     description: |
       The existing Assumption of Use for resource lifetime addresses the validity of error domain objects
       and referenced resources. However, it does not explicitly cover the user-provided error message,
@@ -12924,7 +13218,7 @@ artifacts:
     type: fmea-entry
     title: Result Unchecked Value or Error Access
     status: approved
-    tags: ["eclipse:comp_saf_fmea"]
+    tags: [baselibs, result_lib, "eclipse:comp_saf_fmea"]
     description: |
       If the user accesses the value or the error without first verifying the state of the result,
       the program will deterministically terminate. The provided Assumptions of Use require the user to check and handle both states before access.
@@ -12943,7 +13237,7 @@ artifacts:
     type: fmea-entry
     title: Result Stop User
     status: approved
-    tags: ["eclipse:comp_saf_fmea"]
+    tags: [baselibs, result_lib, "eclipse:comp_saf_fmea"]
     description: |
       The Result library invokes user-provided operations synchronously during transformation of values or errors.
       Ensuring these operations terminate is outside the scope of the library and is the responsibility of the user via program flow monitoring,
@@ -12983,7 +13277,7 @@ artifacts:
     type: comp
     title: Static Reflection with Serialization
     status: approved
-    tags: [baselibs_static_reflection_serialization]
+    tags: [baselibs_static_reflection_serialization, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -13006,6 +13300,7 @@ artifacts:
     type: comp-arc-sta
     title: Static Reflection with Serialization Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -13034,6 +13329,7 @@ artifacts:
     type: logic-arc-int
     title: Static Reflection
     status: approved
+    tags: [baselibs]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13041,6 +13337,7 @@ artifacts:
     type: logic-arc-int
     title: Generic Serialization
     status: approved
+    tags: [baselibs]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13048,6 +13345,7 @@ artifacts:
     type: logic-arc-int
     title: Logging Serialization
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13055,7 +13353,7 @@ artifacts:
     type: logic-arc-int
     title: Visit
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13064,7 +13362,7 @@ artifacts:
     type: logic-arc-int
     title: Declare Struct Visitable
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13073,7 +13371,7 @@ artifacts:
     type: logic-arc-int
     title: Struct Introspection
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13082,7 +13380,7 @@ artifacts:
     type: logic-arc-int
     title: Serialize
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13091,7 +13389,7 @@ artifacts:
     type: logic-arc-int
     title: Deserialize
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13100,7 +13398,7 @@ artifacts:
     type: logic-arc-int
     title: Get Serialized Size
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13109,7 +13407,7 @@ artifacts:
     type: logic-arc-int
     title: Serialize
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13118,7 +13416,7 @@ artifacts:
     type: logic-arc-int
     title: Deserialize
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13127,7 +13425,7 @@ artifacts:
     type: logic-arc-int
     title: Get Serialized Size
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, "eclipse:logic_arc_int_op"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -13180,7 +13478,7 @@ artifacts:
     type: comp-req
     title: Static Reflection Support
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall provide compile-time reflection-based serialization and deserialization for C++ Data Structures.
     fields:
@@ -13198,7 +13496,7 @@ artifacts:
     type: comp-req
     title: Generic Visitor Pattern
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall provide a visitor pattern for traversal of C++ data structures.
     fields:
@@ -13218,7 +13516,7 @@ artifacts:
     type: comp-req
     title: Automatic Container Iteration
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall automatically traverse containers using appropriate iteration.
     fields:
@@ -13236,7 +13534,7 @@ artifacts:
     type: comp-req
     title: Nested Type Support
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall support serialization and visitation of nested data structures.
     fields:
@@ -13254,7 +13552,7 @@ artifacts:
     type: comp-req
     title: Header-Only Implementation
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall be implemented as a header-only library to enable compile-time optimizations and avoid runtime dependencies.
     fields:
@@ -13272,7 +13570,7 @@ artifacts:
     type: comp-req
     title: Compile-Time Efficiency
     status: approved
-    tags: [baselibs]
+    tags: [baselibs, static_reflect]
     description: |
       The library shall provide compile-time safety and efficiency of serialization operations with minimal runtime overhead.
     fields:
@@ -13334,7 +13632,7 @@ artifacts:
     type: comp
     title: Utils
     status: approved
-    tags: [baselibs_utils]
+    tags: [baselibs_utils, baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -13355,6 +13653,7 @@ artifacts:
     type: comp-arc-sta
     title: Utils Static view
     status: approved
+    tags: [baselibs]
     description: |
       .. needarch::
       :scale: 50
@@ -13377,6 +13676,7 @@ artifacts:
     type: logic-arc-int
     title: Base64
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13384,7 +13684,7 @@ artifacts:
     type: logic-arc-int
     title: Encode
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, utils, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13393,7 +13693,7 @@ artifacts:
     type: logic-arc-int
     title: Decode
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, utils, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13402,6 +13702,7 @@ artifacts:
     type: logic-arc-int
     title: Scoped Operation
     status: approved
+    tags: [baselibs]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13409,7 +13710,7 @@ artifacts:
     type: logic-arc-int
     title: Constructor
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, utils, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13418,7 +13719,7 @@ artifacts:
     type: logic-arc-int
     title: Destructor
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [baselibs, utils, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -13471,6 +13772,7 @@ artifacts:
     type: comp-req
     title: Base64 Encoding and Decoding
     status: approved
+    tags: [baselibs, utils]
     description: |
       The Utils component shall provide functions for encoding data to Base64 format and decoding Base64 data back to its original form.
     fields:
@@ -13488,6 +13790,7 @@ artifacts:
     type: comp-req
     title: Scoped Operation Management
     status: approved
+    tags: [baselibs, utils]
     description: |
       The Utils component shall provide a functionality that stores a callback and executes it automatically when the class is destructed
     fields:
@@ -13505,6 +13808,7 @@ artifacts:
     type: comp-req
     title: Deterministic Behavior
     status: approved
+    tags: [baselibs, utils]
     description: |
       The Utils component shall ensure that all operations complete in a predictable manner and without dynamic memory allocation.
     fields:
@@ -13544,6 +13848,7 @@ artifacts:
     type: comp
     title: Lola Configuration
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -13561,6 +13866,7 @@ artifacts:
   - id: MOD__COM_COMMUNICATION
     type: mod
     title: Communication
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -13586,7 +13892,7 @@ artifacts:
     type: doc
     title: Communication Safety Manual
     status: draft
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -13597,7 +13903,7 @@ artifacts:
     type: doc
     title: Communication Release Note
     status: approved
-    tags: [communication, "eclipse:document"]
+    tags: [communication, communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -13608,7 +13914,7 @@ artifacts:
     type: doc
     title: Communication Assumptions of Use
     status: approved
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -13619,6 +13925,7 @@ artifacts:
     type: aou-req
     title: Monotonic Semi-Dynamic Memory Allocation
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that enough memory is configured for shared memory instances,
       in order that LoLa can perform all necessary allocations (e.g. push-back on a Vector).
@@ -13630,6 +13937,7 @@ artifacts:
     type: aou-req
     title: Correctly Configured Maximum Number of Subscribers
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that correct maximum number of subscriber is configured for each
       event for each service instance.
@@ -13641,6 +13949,7 @@ artifacts:
     type: aou-req
     title: Correctly configured maximum number of maximum elements per subscriber
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that correct maximum number of elements per subscriber is
       configured for each event for each service instance.
@@ -13652,6 +13961,7 @@ artifacts:
     type: aou-req
     title: Correctly configured ASIL Level
     status: approved
+    tags: [communication]
     description: |
       The ASIL-Level is used to ensure Freedom from Interference (e.g. by configuring access rights).
       Without a proper configured level, this cannot be ensured.
@@ -13663,6 +13973,7 @@ artifacts:
     type: aou-req
     title: Only LoLa supported types
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured, that only types that are supported by LoLa are transmitted.
     fields:
@@ -13673,6 +13984,7 @@ artifacts:
     type: aou-req
     title: No APIs from Implementation Namespace
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that no API calls from the implementation namespace (e.g `impl`)
       are directly invoked or types from within are directly used.
@@ -13684,6 +13996,7 @@ artifacts:
     type: aou-req
     title: No guarantees for notifications
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that a miss behavior of event notification, will not harm a safety goal.
     fields:
@@ -13694,6 +14007,7 @@ artifacts:
     type: aou-req
     title: Checking for possible message overflow
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that a message overflow, which results in message loss will not harm a safety goal.
       If this is not possible, a check for message overflow and necessary actions need to be performed.
@@ -13705,6 +14019,7 @@ artifacts:
     type: aou-req
     title: Different user for ASIL and QM processes
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that processes with a different ASIL shall be executed within different user-ids.
     fields:
@@ -13715,6 +14030,7 @@ artifacts:
     type: aou-req
     title: Config on a safe filesystem
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that any configuration item that is read at runtime by LoLa is
       stored on a safety certified filesystem (according to the highest supported safety level).
@@ -13726,6 +14042,7 @@ artifacts:
     type: aou-req
     title: No static context support
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that LoLa is not used within static context within C++.
     fields:
@@ -13736,6 +14053,7 @@ artifacts:
     type: aou-req
     title: No guarantee in availability of services
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that no safety goal is harmed, because a service instance is not found.
     fields:
@@ -13746,6 +14064,7 @@ artifacts:
     type: aou-req
     title: No notification on termination of producer
     status: approved
+    tags: [communication]
     description: |
       It shall be ensure that termination (either gracefully or due to a malfunction)
       of a producer will not lead to a violation of a safety goal.
@@ -13757,6 +14076,7 @@ artifacts:
     type: aou-req
     title: Check for nullptr on Allocate()
     status: approved
+    tags: [communication]
     description: |
       It shall be checked if Allocate() on an event will return a nullptr. If a nullptr is returned,
       the system shall transition to safe state.
@@ -13768,6 +14088,7 @@ artifacts:
     type: aou-req
     title: One producer only one AllocateePtr
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that at any time a producer instance per event only holds one AllocateePtr.
     fields:
@@ -13778,6 +14099,7 @@ artifacts:
     type: aou-req
     title: No Copy-Send() while holding AllocateePtr.
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that Send(const& value) is not invoked while an AllocateePtr is held.
     fields:
@@ -13788,6 +14110,7 @@ artifacts:
     type: aou-req
     title: None reentrant methods per event instance
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that any LoLa API that is bound to a specific event
       instance is not called in a reentrant manner.
@@ -13799,6 +14122,7 @@ artifacts:
     type: aou-req
     title: Skeleton alive while its AllocateePtr being used
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that a Skeleton instance is still alive while any AllocateePtr returned by it is used.
     fields:
@@ -13809,6 +14133,7 @@ artifacts:
     type: aou-req
     title: Event Subscription active while holding SamplePtr
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that Unsubscribe() isn't called on a proxy eventinstance as long as
       any SamplePtr provided by it, is still held.
@@ -13820,6 +14145,7 @@ artifacts:
     type: aou-req
     title: Non-Terminating callbacks
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that any callback passed to LoLa for invocation is not throwing.
     fields:
@@ -13830,6 +14156,7 @@ artifacts:
     type: aou-req
     title: Valid callbacks while proxy alive
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that all callbacks passed towards LoLa are valid as long as the associated proxy is alive.
     fields:
@@ -13840,6 +14167,7 @@ artifacts:
     type: aou-req
     title: Quality of data is dependent on producer
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that the necessary quality of data is produced by the respective skeleton process.
     fields:
@@ -13850,6 +14178,7 @@ artifacts:
     type: aou-req
     title: Validity of pointer on LoLa pointer
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that no pointer, pointing to the memory of a SamplePtr
       or AllocateePtr is used once the SamplePtr or AllocateePtr are invalid.
@@ -13861,6 +14190,7 @@ artifacts:
     type: aou-req
     title: LoLa Memory only accessed through LoLa
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that no other code accesses the mapped memory managed by LoLa.
     fields:
@@ -13871,6 +14201,7 @@ artifacts:
     type: aou-req
     title: No shared memory allocation in namespace lola
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that no other code creates shared memory segments beginning with "lola".
     fields:
@@ -13881,6 +14212,7 @@ artifacts:
     type: aou-req
     title: LoLa specific QNX Messaging End-Points only accessed through LoLa
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that the LoLa specific QNX Message Passing end-points are only accessed through LoLa APIs.
     fields:
@@ -13891,6 +14223,7 @@ artifacts:
     type: aou-req
     title: aragen not safe
     status: approved
+    tags: [communication]
     description: |
       If aragen is being used to generate LoLa interfaces, any output produced by aragen
       shall be manually reviewed for its correctness.
@@ -13902,6 +14235,7 @@ artifacts:
     type: aou-req
     title: unsupported data-types
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that neither variants nor maps are sent via LoLa.
     fields:
@@ -13912,6 +14246,7 @@ artifacts:
     type: aou-req
     title: No guarantee on execution time
     status: approved
+    tags: [communication]
     description: |
       There is no guarantee on the execution time of any function call provided by LoLa.
     fields:
@@ -13922,6 +14257,7 @@ artifacts:
     type: aou-req
     title: Usage of configuration "oversubscription"
     status: approved
+    tags: [communication]
     description: |
       If event instance "oversubscription" is enabled. LoLa makes no warranty, that proxies/consumers
       can't suffer from data loss! It is the responsibility of the user to adapt scheduling/event-data
@@ -13936,6 +14272,7 @@ artifacts:
     type: aou-req
     title: Same compiler settings for provider and consumer side
     status: approved
+    tags: [communication]
     description: |
       All compiler settings having influence on the binary representation of data exchanged via
       mw::com/LoLa (event, field, service-method payloads) have to be identical for compilation of
@@ -13948,6 +14285,7 @@ artifacts:
     type: aou-req
     title: Event or Field reception via GenericProxy needs specific care
     status: approved
+    tags: [communication]
     description: |
       When receiving event or field data via untyped GenericProxyEvent or GenericProxyField, care has to
       be taken, when accessing the corresponding SamplePtr<void> delivered by calls to GetNewSamples():
@@ -13961,6 +14299,7 @@ artifacts:
     type: aou-req
     title: Correctly configured events/fields per service type
     status: approved
+    tags: [communication]
     description: |
       It shall be ensured that all safety relevant events/fields in the service type,
       are the same in all configurations.
@@ -13972,7 +14311,7 @@ artifacts:
     type: doc
     title: Communication Codeowners
     status: approved
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -13983,7 +14322,7 @@ artifacts:
     type: doc
     title: Communication Safety Package Formal Review
     status: draft
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -13994,7 +14333,7 @@ artifacts:
     type: doc
     title: Communication Safety Plan
     status: draft
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14005,7 +14344,7 @@ artifacts:
     type: doc
     title: Communication Safety Plan Formal Review
     status: draft
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14016,7 +14355,7 @@ artifacts:
     type: doc
     title: Communication Verification Report
     status: draft
-    tags: ["eclipse:document"]
+    tags: [communication, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14027,6 +14366,7 @@ artifacts:
     type: comp
     title: "mw::com Frontend"
     status: approved
+    tags: [com]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14043,6 +14383,7 @@ artifacts:
     type: comp-arc-sta
     title: "mw::com Frontend Architecture"
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -14065,7 +14406,7 @@ artifacts:
     type: logic-arc-int
     title: Initialize
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14074,7 +14415,7 @@ artifacts:
     type: logic-arc-int
     title: Offer Service
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14083,7 +14424,7 @@ artifacts:
     type: logic-arc-int
     title: Update
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14092,7 +14433,7 @@ artifacts:
     type: logic-arc-int
     title: Send
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14101,7 +14442,7 @@ artifacts:
     type: logic-arc-int
     title: StartFindService
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14110,7 +14451,7 @@ artifacts:
     type: logic-arc-int
     title: CreateProxy
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14119,7 +14460,7 @@ artifacts:
     type: logic-arc-int
     title: Subscribe
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14128,7 +14469,7 @@ artifacts:
     type: logic-arc-int
     title: GetNewSamples
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14137,6 +14478,7 @@ artifacts:
     type: comp-req
     title: Error logging
     status: approved
+    tags: [communication]
     description: |
       In case, that there is no related Event Type Info source provided in shared memory for a given Event enlisted in the deployment for the proxy, an ERROR message shall be logged.
     fields:
@@ -14152,6 +14494,7 @@ artifacts:
     type: comp
     title: IPC Binding
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -14178,7 +14521,7 @@ artifacts:
     type: doc
     title: LoLa Architecture
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14189,7 +14532,7 @@ artifacts:
     type: doc
     title: lola Component Classification
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14200,7 +14543,7 @@ artifacts:
     type: doc
     title: LoLa Detailed Design
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14211,7 +14554,7 @@ artifacts:
     type: doc
     title: LoLa
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14222,7 +14565,7 @@ artifacts:
     type: doc
     title: LoLa Requirements
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14233,7 +14576,7 @@ artifacts:
     type: doc
     title: lola DFA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14244,7 +14587,7 @@ artifacts:
     type: doc
     title: lola FMEA
     status: draft
-    tags: ["eclipse:document"]
+    tags: [lola, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14255,6 +14598,7 @@ artifacts:
     type: comp
     title: Message Passing
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -14275,6 +14619,7 @@ artifacts:
     type: logic-arc-int
     title: Message Passing
     status: approved
+    tags: [com]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14282,7 +14627,7 @@ artifacts:
     type: logic-arc-int
     title: Send Message
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [com, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14291,6 +14636,7 @@ artifacts:
     type: comp
     title: Mock binding
     status: approved
+    tags: [com]
     description: |
       .. needarch::
       :scale: 50
@@ -14441,7 +14787,7 @@ artifacts:
     type: doc
     title: FEO Component Architecture Inspection Checklist
     status: draft
-    tags: [component_feo, "eclipse:document"]
+    tags: [component_feo, component_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -14452,7 +14798,7 @@ artifacts:
     type: doc
     title: FEO Component Architecture
     status: draft
-    tags: [component_feo, "eclipse:document"]
+    tags: [component_feo, component_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -14463,6 +14809,7 @@ artifacts:
     type: comp
     title: FEO Main
     status: approved
+    tags: [component_feo]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -14473,6 +14820,7 @@ artifacts:
     type: comp-arc-sta
     title: Static Architecture
     status: approved
+    tags: [component_feo]
     description: |
       .. uml:: _assets/stat_arch.puml
       :scale: 50
@@ -14489,6 +14837,7 @@ artifacts:
     type: comp-arc-dyn
     title: Dynamic Architecture
     status: approved
+    tags: [component_feo]
     description: |
       The actual dynamic call sequence during the execution of a FEO application depends on the distribution
       of activities to processes as well as on the activity dependency graph defining the task chain.
@@ -14527,6 +14876,7 @@ artifacts:
     type: real-arc-int
     title: "feo::agent::PrimaryConfig"
     status: approved
+    tags: [component_feo]
     description: |
       See static architecture.
     fields:
@@ -14546,6 +14896,7 @@ artifacts:
     type: real-arc-int
     title: "feo::agent::Primary"
     status: approved
+    tags: [component_feo]
     description: |
       See static architecture.
     fields:
@@ -14565,6 +14916,7 @@ artifacts:
     type: real-arc-int
     title: "feo::agent::SecondaryConfig"
     status: approved
+    tags: [component_feo]
     description: |
       See static architecture.
     fields:
@@ -14584,6 +14936,7 @@ artifacts:
     type: real-arc-int
     title: "feo::agent::Secondary"
     status: approved
+    tags: [component_feo]
     description: |
       See static architecture.
     fields:
@@ -14603,6 +14956,7 @@ artifacts:
     type: real-arc-int
     title: "feo::activity::Activity"
     status: approved
+    tags: [component_feo]
     description: |
       See static architecture.
     fields:
@@ -14660,7 +15014,7 @@ artifacts:
     type: doc
     title: FEO Component Assumptions of Use Requirements
     status: draft
-    tags: [component_feo, "eclipse:document"]
+    tags: [component_feo, component_feo, component_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -14671,6 +15025,7 @@ artifacts:
     type: aou-req
     title: FEO something
     status: obsolete
+    tags: [component_feo, component_feo]
     description: |
       Anything shall be done.
     fields:
@@ -14681,7 +15036,7 @@ artifacts:
     type: doc
     title: FEO Component Requirements Inspection Checklist
     status: draft
-    tags: [component_feo, "eclipse:document"]
+    tags: [component_feo, component_feo, component_feo, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -14692,7 +15047,7 @@ artifacts:
     type: doc
     title: FEO Component Requirements
     status: draft
-    tags: [component_feo, "eclipse:document"]
+    tags: [component_feo, component_feo, component_feo, "eclipse:document"]
     fields:
       security: "NO"
       safety-level: ASIL_B
@@ -14703,6 +15058,7 @@ artifacts:
     type: comp-req
     title: Application Processes
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       An application consists of one or more activities executed in one or multiple operating system processes.
       
@@ -14718,10 +15074,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__APPLICATION
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACTIVITY
     type: comp-req
     title: Activity
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       Each activitiy is mapped to exactly one thread within the primary or one of the secondary processes.
       Each activity provides the following functions:
@@ -14736,10 +15095,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__TASK_CHAIN
     type: comp-req
     title: Task Chain
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       All activities within an application are arranged within a `Task Chain`.
       There is exactly one task chain per application.
@@ -14758,10 +15120,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__TASK_CHAIN
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__SCHEDULER
     type: comp-req
     title: Scheduler aka Executor
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall implement a scheduler (aka executor) that manages the execution of activities in correct order.
     fields:
@@ -14773,10 +15138,13 @@ artifacts:
         target: FEAT_REQ__FEO__APPLICATION
       - type: satisfies
         target: FEAT_REQ__FEO__AGENT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__SERVICE_ACTIVITY
     type: comp-req
     title: Service Activity
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall enable the implementation and execution of Service Activities, which are a means to interact
       with the outside world, e.g. via network communication, direct sensor input or direct actuator output.
@@ -14790,10 +15158,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__SERVICE_ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__AGENT
     type: comp-req
     title: Agent
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       In order to execute activities in secondary processes, the Scheduler shall use agents running in the secondary
       processes. There shall be exactly one agent for each secondary process.
@@ -14809,10 +15180,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__AGENT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACTIVITIY_THREAD
     type: comp-req
     title: Mapping of Activities to threads
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       Each activity shall be mapped to one thread. The mapping cannot be changed at runtime.
       Each activity's `init`, `step` and `shutdown` functions shall be executed in the assigned thread.
@@ -14829,10 +15203,13 @@ artifacts:
         target: FEAT_REQ__FEO__ACTIVITY_SHUTDOWN
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__APPLICATION_LIFECYCLE
     type: comp-req
     title: Application Lifecycle Phases
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The Application Lifecycle shall consists of 3 phases: Init, Run and Shutdown.
     fields:
@@ -14842,10 +15219,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__APPLICATION_LIFECYCLE
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACTIVITY_INIT
     type: comp-req
     title: Initialization of Activities
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       Initialization of Activities shall be done during application initialization.
       
@@ -14858,10 +15238,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY_INIT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACTIVITIY_STEP
     type: comp-req
     title: Stepping of Activities
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       Each Activity shall be stepped once within each execution of the Task Chain they belong to.
       Stepping is done by a call to an activity's `step` function. The `step` function shall be invoked
@@ -14877,10 +15260,13 @@ artifacts:
         target: FEAT_REQ__FEO__ACTIVITY_INIT
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACTIVITY_SHUTDOWN
     type: comp-req
     title: Shutdown of activities
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       Shutdown of activities shall be done during application shutdown.
       
@@ -14893,10 +15279,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY_SHUTDOWN
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__COMP_CFG
     type: comp-req
     title: Component Configuration
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall provide a configuration mechanism that supports configuring
       
@@ -14912,10 +15301,13 @@ artifacts:
         target: FEAT_REQ__FEO__ACTIVITY
       - type: satisfies
         target: FEAT_REQ__FEO__TASK_CHAIN
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__COMP_CFG_FILE
     type: comp-req
     title: Component Configuration from File
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       It shall be possible to define the component configuration in a pre-defined configuration file.
     fields:
@@ -14925,10 +15317,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_MAP_CFG
     type: comp-req
     title: Activity Mapping Configuration
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The mapping of activities to threads is done in the component configuration and cannot be changed at runtime.
     fields:
@@ -14938,10 +15333,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACTIVITY
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ALIVE_SUPERVISION
     type: comp-req
     title: Alive supervision
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall provide the functionality to enable the reporting of
       alive supervision checkpoint to an external health management system
@@ -14953,10 +15351,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ALIVE_SUPERVISION
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__DEADLINE_SUPERVISION
     type: comp-req
     title: Support of deadline supervision checkpoints
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall provide the functionality to enable the reporting of
       deadline supervision checkpoints to an external health management system
@@ -14968,10 +15369,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__DEADLINE_SUPERVISION
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__LOGICAL_SUPERVISION
     type: comp-req
     title: Support of logical supervision
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall provide the functionality to enable the reporting of
       logical supervision checkpoints to an external health management system
@@ -14983,10 +15387,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__LOGICAL_SUPERVISION
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__TRUSTABLE_COMPUTATION
     type: comp-req
     title: Trustable computation
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       The component shall provide mechanisms to check after the computation of
       an Activity if the result is trustable.
@@ -15000,10 +15407,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__TRUSTABLE_COMPUTATION
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__RESPONSE_TERM_REQUEST
     type: comp-req
     title: Response to termination request
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If the primary process receives a termination signal, it shall call the shutdown
       function of all remaining activities in arbitrary sequence and terminate itself.
@@ -15016,10 +15426,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__RESPONSE_TERM_REQUEST
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__SECONDARY_CONN_TIMEOUT
     type: comp-req
     title: Secondary connection timeout
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If not all secondary processes connect to the primary in time, the primary shall terminate itself.
       The startup functions shall not be triggered.
@@ -15030,10 +15443,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__SECONDARY_CONN_TIMEOUT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_STARTUP_ERROR
     type: comp-req
     title: Activity startup error
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If an error occurs during the execution of a startup function, the primary process shall abort calling
       startup functions and terminate itself. For all of the activities
@@ -15046,10 +15462,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACT_STARTUP_ERROR
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_ALLOC_ERROR
     type: comp-req
     title: Activity resource allocation error
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       During initialization (i.e. in the startup function of an activity), activities shall check for resource allocation
       and report an error to the executor in case of failure.
@@ -15060,10 +15479,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACT_ALLOC_ERROR
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_TIMEOUT
     type: comp-req
     title: Activity timeout
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If a timeout occurs during startup, stepping or shutdown of an activity, the primary process shall shutdown all
       successfully started activities in arbitrary sequence and terminate itself.
@@ -15074,10 +15496,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACT_TIMEOUT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__STARTUP_TIMEOUT
     type: comp-req
     title: Startup timeout
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If not all activities reach their initialized state within a certain period of time (startup timeout),
       the primary process shall shutdown all successfully started activities in arbitrary sequence and terminate itself.
@@ -15088,10 +15513,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__STARTUP_TIMEOUT
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_STEPPING_ERROR
     type: comp-req
     title: Activity stepping error
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If an activity fails in the step function, the primary process shall call shutdown for all activities
       in arbitrary sequence and terminate itself.
@@ -15102,10 +15530,13 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACT_STEPPING_ERROR
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: COMP_REQ__FEO__ACT_SHUTDOWN_ERROR
     type: comp-req
     title: Activity shutdown error
     status: approved
+    tags: [component_feo, component_feo]
     description: |
       If an activity fails in the shutdown function, the primary process shall shutdown all remaining activities
       in arbitrary sequence and terminate itself.
@@ -15116,6 +15547,8 @@ artifacts:
     links:
       - type: satisfies
         target: FEAT_REQ__FEO__ACT_SHUTDOWN_ERROR
+      - type: belongs-to
+        target: COMP__FEO_MAIN
   - id: DOC__SAFETY_ANALYSIS_INSPECTION_COMPONENT_FEO
     type: doc
     title: FEO Safety Analysis Inspection Checklist
@@ -15923,6 +16356,7 @@ artifacts:
   - id: MOD_VIEW_STA__OS__OS
     type: mod-view-sta
     title: OS (external)
+    tags: [operating_system]
     description: |
       The module "OS" is not a part of the S-CORE SW-Platform, but it is a crucial external SW element.
       Its components are modelled in S-CORE to be able to describe dependencies of S-CORE features to this external component.
@@ -15953,7 +16387,7 @@ artifacts:
     type: doc
     title: Operating System Assumptions of Use
     status: draft
-    tags: ["eclipse:document"]
+    tags: [operating_system, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -15964,6 +16398,7 @@ artifacts:
     type: aou-req
     title: No Root Privileges
     status: approved
+    tags: [operating_system]
     description: |
       No process running on the SW-platform shall request root privileges.
       
@@ -15976,6 +16411,7 @@ artifacts:
     type: aou-req
     title: Safe OS Function Use
     status: approved
+    tags: [operating_system]
     description: |
       If an application or SW-platform component is safety relevant and uses OS functions, it shall only use the safe functions.
       
@@ -15989,6 +16425,7 @@ artifacts:
     type: aou-req
     title: OS Public API Use
     status: approved
+    tags: [operating_system]
     description: |
       All components shall only use the public API of the OS components.
     fields:
@@ -15999,6 +16436,7 @@ artifacts:
     type: aou-req
     title: C++ Library Preference
     status: approved
+    tags: [operating_system]
     description: |
       All components should prefer the use of C++ standard lib over the C lib to call a functionality.
       If C lib must be used, it shall not be mixed with C++ lib for the same functionality.
@@ -16010,6 +16448,7 @@ artifacts:
     type: aou-req
     title: Minimal Process Privileges
     status: approved
+    tags: [operating_system]
     description: |
       All components shall only use the privileges that are indispensable for their function.
       
@@ -16026,7 +16465,7 @@ artifacts:
     type: doc
     title: QNX Assumptions of Use
     status: draft
-    tags: ["eclipse:document"]
+    tags: [operating_system, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -16037,6 +16476,7 @@ artifacts:
     type: aou-req
     title: RST-0001
     status: approved
+    tags: [operating_system]
     description: |
       see QNX OsSafetyManual, expect to be verified by requirements analysis
     fields:
@@ -16047,6 +16487,7 @@ artifacts:
     type: aou-req
     title: RST-0002
     status: obsolete
+    tags: [operating_system]
     description: |
       not relevant for S-CORE, no target HW
     fields:
@@ -16057,7 +16498,7 @@ artifacts:
     type: doc
     title: Operating System Requirements
     status: draft
-    tags: ["eclipse:document"]
+    tags: [operating_system, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -16068,6 +16509,7 @@ artifacts:
     type: comp
     title: libc
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16092,6 +16534,7 @@ artifacts:
     type: logic-arc-int
     title: fcntl
     status: approved
+    tags: [operating_system]
     description: |
       File Control
       
@@ -16107,7 +16550,7 @@ artifacts:
     type: logic-arc-int
     title: Open
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16116,7 +16559,7 @@ artifacts:
     type: logic-arc-int
     title: POSIX fallocate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16125,7 +16568,7 @@ artifacts:
     type: logic-arc-int
     title: Flock
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16134,6 +16577,7 @@ artifacts:
     type: logic-arc-int
     title: mman
     status: approved
+    tags: [operating_system]
     description: |
       Memory Mapping
       
@@ -16149,7 +16593,7 @@ artifacts:
     type: logic-arc-int
     title: SHM Open
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16158,7 +16602,7 @@ artifacts:
     type: logic-arc-int
     title: SHM Unlink
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16167,6 +16611,7 @@ artifacts:
     type: logic-arc-int
     title: stat
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16180,7 +16625,7 @@ artifacts:
     type: logic-arc-int
     title: fstat
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16189,7 +16634,7 @@ artifacts:
     type: logic-arc-int
     title: mkdir
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16198,7 +16643,7 @@ artifacts:
     type: logic-arc-int
     title: chmod
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16207,7 +16652,7 @@ artifacts:
     type: logic-arc-int
     title: fchmod
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16216,7 +16661,7 @@ artifacts:
     type: logic-arc-int
     title: umask
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16225,7 +16670,7 @@ artifacts:
     type: logic-arc-int
     title: fcomask
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16234,6 +16679,7 @@ artifacts:
     type: logic-arc-int
     title: unistd
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16247,7 +16693,7 @@ artifacts:
     type: logic-arc-int
     title: fork
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -16256,6 +16702,7 @@ artifacts:
     type: comp
     title: libcpp (C++ Std Library)
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16274,6 +16721,7 @@ artifacts:
     type: logic-arc-int
     title: Library headers (C++17)
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16287,6 +16735,7 @@ artifacts:
     type: comp
     title: "QNX::Message Passing"
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16305,6 +16754,7 @@ artifacts:
     type: logic-arc-int
     title: "OS::Message Passing"
     status: approved
+    tags: [operating_system]
     description: |
       .. needarch::
       :scale: 50
@@ -16318,7 +16768,7 @@ artifacts:
     type: logic-arc-int
     title: Reply
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: QM
@@ -16327,7 +16777,7 @@ artifacts:
     type: logic-arc-int
     title: Notify
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: QM
@@ -16336,7 +16786,7 @@ artifacts:
     type: logic-arc-int
     title: RequestDisconnect
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [operating_system, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: QM
@@ -16345,6 +16795,7 @@ artifacts:
     type: comp
     title: AutoSD
     status: approved
+    tags: [operating_system]
     fields:
       security: "YES"
       safety-level: QM
@@ -16355,6 +16806,7 @@ artifacts:
     type: comp
     title: EBcLfSA
     status: approved
+    tags: [operating_system]
     fields:
       security: "YES"
       safety-level: QM
@@ -16365,7 +16817,7 @@ artifacts:
     type: doc
     title: "[OS Name]"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, operating_system, "eclipse:document"]
     fields:
       safety-level: QM
       security: "YES"
@@ -16654,6 +17106,7 @@ artifacts:
     type: aou-req
     title: Integration manual
     status: approved
+    tags: [operating_system]
     description: |
       The supplier shall provide an integration manual.
     fields:
@@ -16952,7 +17405,7 @@ artifacts:
     type: aou-req
     title: OS safety functions
     status: approved
-    tags: [environment]
+    tags: [environment, operating_system]
     description: |
       If the system using the SW-platform has safety goals, the used os module shall offer the following safety related functions:
       
@@ -17588,6 +18041,7 @@ artifacts:
     type: stkh-req
     title: Inter-process Communication
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support inter-process communication.
     fields:
@@ -17599,6 +18053,7 @@ artifacts:
     type: stkh-req
     title: ABI Compatible Data Types
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support ABI compatible data types for zero-copy communication between Rust and C++ applications.
     fields:
@@ -17610,6 +18065,7 @@ artifacts:
     type: stkh-req
     title: Intra-process Communication
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support intra-process communication.
     fields:
@@ -17621,6 +18077,7 @@ artifacts:
     type: stkh-req
     title: Stable application interfaces
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall provide a framework to mitigate incompatible changes on
       external interfaces to keep application interfaces stable.
@@ -17633,6 +18090,7 @@ artifacts:
     type: stkh-req
     title: Extensible External Communication
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support external communication via well established protocols e.g. Zenoh, DDS.
     fields:
@@ -17644,7 +18102,7 @@ artifacts:
     type: stkh-req
     title: Safe Communication
     status: approved
-    tags: [safety_mechanism]
+    tags: [safety_mechanism, communication]
     description: |
       The SW-platform shall support safe communication.
       
@@ -17658,6 +18116,7 @@ artifacts:
     type: stkh-req
     title: Secure Communication
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support secure communication.
     fields:
@@ -17669,6 +18128,7 @@ artifacts:
     type: stkh-req
     title: Supported network protocols
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support the following automotive network
       protocols
@@ -17688,6 +18148,7 @@ artifacts:
     type: stkh-req
     title: Quality of service
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall provide a framework to ensure quality of service
       of applications deployed on the SW-platform. This includes but is not limited
@@ -17705,6 +18166,7 @@ artifacts:
     type: stkh-req
     title: Automotive diagnostics
     status: approved
+    tags: [communication]
     description: |
       The SW-platform shall support the following diagnostic protocols
       * SOVD (ISO 17978)

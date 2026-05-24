@@ -1,0 +1,139 @@
+---
+id: DOC-SECURITY-ANALYSIS-GUIDELINE-67780
+title: Security Analysis Guideline
+type: specification
+status: approved
+tags: [eclipse-score]
+---
+
+# Security Analysis Guidelines
+
+### Security Analysis Guideline
+
+{{artifact:GD_GUIDL__SECURITY_ANALYSIS:status,safety-level,security}}}}
+
+This document describes the general guidance for Security Analysis based on the concept
+which is defined Security Analysis Concept<doc_concept__security_analysis>.
+Use the platform Security Analysis as an input so that general security controls are
+only defined once and not in every single Security Analysis.
+
+# Workflow for Security Analysis
+
+The workflow of the Security Analysis is described in workflow_security_analysis.
+The single steps in these workflows are described in detail in the following sections.
+
+#### Step-by-Step-approach Security Analysis Feature/Component:
+
+The analysis is done by using the template security_analysis_threat_templates on
+the feature or component architectural diagrams. By using the threat models
+<[[GD_GUIDL__THREAT_MODELS_STRIDE]]> it can be ensured that the analysis is done in
+a structured way. Apply the threat model to the diagram and document the results in the
+template. Use the content of the document [[GD_TEMP__FEAT_SEC_ANA_THREAT]],
+[[GD_TEMP__COMP_SEC_ANA_THREAT]] to describe e.g. why a threat model is not
+applicable for the diagram. If a threat model can't be applied or diagram address the threats , the reason has to be documented
+in the analysis, so it can be recognized.
+
+The attributes of the template are described in process_requirements_security_analysis_attributes.
+
+**Steps:**
+
+#. For each of the security functions realized by an architecture element check if a threat from the threat model [[GD_GUIDL__THREAT_MODELS_STRIDE]] applies.
+#. If a threat model applies, use the template [[GD_TEMP__FEAT_SEC_ANA_THREAT]] or [[GD_TEMP__COMP_SEC_ANA_THREAT]] to perform the analysis.
+#. The title of the analysis should be easily recognizable e.g. "Component xy unauthorized access".
+#. Link the violated architecture with the "violates" attribute.
+#. Replace the placeholders in the "id" attribute with the name of the feature or component and a short description of the element so that it can be easily identified.
+#. Document the threat ID from the threat model [[GD_GUIDL__THREAT_MODELS_STRIDE]] that applies to the element in the "threat_id" attribute.
+#. Describe the threat effect of the threat model on the element in the "threat_effect" attribute. Use the threat description and enlarge it if it's applicable to the considered element.
+#. Document the mitigation. This can be (accept, avoid, reduce, share) of the threat.
+#. If there is no mitigation or existing mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
+#. The analysis is finished if for each identified threat a sufficient mitigation exists.
+#. Unless the attribute sufficient is yes, mitigation and argument attributes can be still empty.
+#. Continue the analysis until all applicable threat models are checked.
+#. The verification is done by applying the checklist [[GD_CHKLST__SECURITY_ANALYSIS]].
+
+.. note::
+   If there are changes they have to be analyzed with an impact analysis
+   [[GD_TEMP__CHANGE_IMPACT_ANALYSIS]]. If needed the Security Analysis has to be
+   updated accordingly. Therefore all necessary steps have to be repeated.
+
+#### Step-by-Step-approach Security Analysis Platform:
+
+The analysis is done by using the template [[DOC__PLATFORM_SECURITY_ANALYSIS]] on the
+platform diagrams using a list of threat scenarios <[[GD_GUIDL__SEC_ANA_THREAT_SCENARIOS]]>.
+Use the content of the document [[GD_TEMP__PLAT_THREAT_SCENARIO]],
+[[GD_TEMP__FEAT_SEC_ANA_THREAT]] or [[GD_TEMP__COMP_SEC_ANA_THREAT]] to describe
+e.g. why a threat scenario is not applicable for the diagram. If a threat scenario can't
+be applied, the reason has to be documented in the content of the document, so it
+can be recognized.
+
+The attributes of the template are described in process_requirements_security_analysis_attributes.
+
+The analysis is done by as described in the flowchart platform_security_analysis.
+
+**Steps:**
+
+#. Define the trust boundary model for the platform under analysis. An example trust boundary definition is given in trust_boundary_example. The trust boundary model should be defined in a way that it can be easily recognized which architectural elements are located in which trust boundary. The trust boundary model should be defined before starting the analysis and should be used as an input for the analysis. The trust boundary model should be updated if there are changes in the platform architecture or if there are changes in the threat scenarios.
+#. Identify the assets of the platform. The assets are the elements of the platform that have to be protected. The assets can be identified by using the trust boundary model and the platform architecture. The assets can be identified using the following questions:
+
+   - What are the critical
+      - features, interfaces, components (HW and SW), data of the platform?
+      - communication paths and interfaces of the platform?
+      - configurations of the platform?
+   - What critical information is shared between the components?
+   - Compromise of which assets can have an impact on security properties such as confidentiality, integrity, availability, authenticity, accountability, non-repudiation?
+   - What are the process assets such as development, production, maintenance processes that could be exploited by attackers?
+
+#. Identify how each asset flows through the features in the platform. The asset flow can be identified by using the platform architecture and the trust boundary model. The asset flow can be identified by using the following questions:
+
+   - How critical functions of the platform interact with each other?
+   - How critical data of the platform flow through the platform?
+   - How critical components of the platform interact with each other?
+   - How critical interfaces and communication paths are used in the platform?
+   - How critical information is shared between the functions/components of the platform?
+#. For each identified assets, identify the attack surfaces. The attack surfaces can be any interface or entry point that could be exploited by an attacker. Some examples are as follows:
+
+   - External communication interfaces
+     - Wireless: cellular, Wi‑Fi, Bluetooth, GNSS, V2X, keyless entry, NFC
+     - Wired: OBD-II, USB, Ethernet ports, charging connectors, dealer tools, external storage
+   - In-vehicle networks and internal interfaces
+     - CAN, LIN, FlexRay, Automotive Ethernet segments, gateway connections, debug ports
+     - API/IPC boundaries between SW components, service interfaces between ECUs
+   - User and physical interfaces
+     - HMI (touchscreen, buttons, voice), infotainment, smartphone apps, mobile keys
+     - Physical access to ECUs, sensors, actuators, wiring harness, debug/programming pins
+   - Backend, cloud and off-board systems
+     - Backend services for OTA, fleet management, mobile apps, web portals
+     - Data centers, PKI/signing services, identity and access management, APIs
+   - Development, production and service infrastructure
+     - Build servers, version control, CI/CD, signing infrastructure
+     - Manufacturing/test equipment, configuration tools, dealer/service tools, update media
+
+#. For each attack surface, identify the potential threats that can be used by an attacker to compromise the asset. The potential threats can be identified using the following sources as input:
+
+   - [[GD_GUIDL__SEC_ANA_THREAT_SCENARIOS]].
+   - `UN R155 Annex 5 <https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wiki.unece.org/download/attachments/179700184/TFCS-23-05%2520%2528OICA%252C%2520CLEPA%2529%2520R155%2520Annex5%2520table%2520C3%2520deletion.pdf%3Fapi%3Dv2&ved=2ahUKEwie0--t6IWTAxXXR_EDHbXrKDgQFnoECAQQAQ&usg=AOvVaw1XygSpmzqxlOxJ4Fb59a9w>`_
+   - `Auto ISAC Threat Catalog <https://atm.automotiveisac.com/home>`_
+   - `Capec Catalog of Attack Patterns <https://capec.mitre.org/data/index.html>`_
+   - `CWE Common Weakness Enumeration <https://cwe.mitre.org/data/index.html/>`_
+   - Other relevant sources such as security advisories, research papers, etc.
+
+#. If a threat scenario applies, use the template [[GD_TEMP__PLAT_THREAT_SCENARIO]] to perform the analysis.
+#. For each identified potential threat, identify and document the potential mitigations. The potential mitigations are security requirements, which then serve as the stakeholder requirements for features.
+#. Document the Security assumptions derived from this process.
+#. Risk treatment can be done by using the following options: accept, avoid, reduce, share. The chosen risk treatment shall be documented.
+#. If there is no mitigation or the mitigation is not sufficient, a mitigation issue has to be created in the Issue Tracking system and linked in the "mitigation_issue" attribute.
+#. The analysis shall continue until all applicable threat scenarios for each attack surface of each asset has been evaluated.
+#. The verification is done by applying the checklist [[GD_CHKLST__SECURITY_ANALYSIS]].
+
+.. note::
+   If there are changes they have to be analyzed with an impact analysis
+   [[GD_TEMP__CHANGE_IMPACT_ANALYSIS]]. If needed the Security Analysis has to be
+   updated accordingly. Therefore all necessary steps have to be repeated.
+
+# Examples for Security Analysis at feature level
+
+The security analysis shall be used to analyze whether the security goals of a feature can be compromised. This could be an unauthorized tranimission of a control message between two components of feature, for example due to missing authentication or insufficient access control.
+
+# Examples for Security Analysis at component level
+
+The security analysis shall be used to analyze whether the vulnerabilities within the component can be exploited. This could be unintended privilege escalation between two sub-components, allowing unauthorized access to senstive data or security-critical functions.  

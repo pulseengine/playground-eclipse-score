@@ -2,6 +2,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_ID
     type: tool-req
     title: Enforces need ID uniqueness
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that all Need IDs are globally unique across all included
@@ -14,6 +15,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_UID
@@ -26,6 +29,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_ID_SCHEME
     type: tool-req
     title: Enforces need ID scheme
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that Need IDs follow the following naming scheme:
@@ -40,6 +44,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "NO: cannot check non-existent \"doc__naming_conventions\" in gd_req__req_attr_uid"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_UID
@@ -52,6 +58,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_TITLE
     type: tool-req
     title: Enforces title wording rules
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that all needs have titles and titles do not contain the following words:
@@ -63,6 +70,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "NO: Can not ensure summary"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_TITLE
@@ -71,6 +80,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_DESCRIPTION
     type: tool-req
     title: Enforces presence of description
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that each need of type :need:`tool_req__docs_req_types` has a description (content)
@@ -78,6 +88,8 @@ artifacts:
       parent-covered: "NO: Can not cover 'ISO/IEC/IEEE/29148'"
       version: "1"
       implemented: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_DESCRIPTION
@@ -86,6 +98,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_DESC_WORDING
     type: tool-req
     title: Enforces description wording rules
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that requirement descriptions do not contain the following weak words:
@@ -101,12 +114,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_DESC_WEAK
   - id: TOOL_REQ__DOCS_COMMON_ATTR_SECURITY
     type: tool-req
     title: "Security: enforce classification"
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that the ``security`` attribute has one of the following values:
@@ -121,6 +137,8 @@ artifacts:
     fields:
       implemented: "YES"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_SECURITY
@@ -131,6 +149,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_SAFETY
     type: tool-req
     title: "Safety: enforce classification"
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that the ``safety`` attribute has one of the following values:
@@ -146,6 +165,8 @@ artifacts:
       implemented: "YES"
       parent-covered: "YES"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_CHECK_MANDATORY
@@ -156,6 +177,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_STATUS
     type: tool-req
     title: "Status: enforce attribute"
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-as-Code shall enforce that the ``status`` attribute has one of the following values:
@@ -172,6 +194,8 @@ artifacts:
       implemented: "YES"
       parent-covered: "NO: gd_req__saf_attr_status has additional constraints"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_STATUS
@@ -184,6 +208,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_VERSION
     type: tool-req
     title: "Versioning: enforce attribute"
+    status: approved
     tags: [Common Attributes]
     description: |
       Docs-As-Code shall enable and enforce a versioning attribute for all needs.
@@ -195,6 +220,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "NO: to be checked after demo"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_VERSION
@@ -210,12 +237,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO: parent talks about setting covered to false, but we want to issue a build error."
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_SUSPICIOUS
   - id: TOOL_REQ__DOCS_DOC_TYPES
     type: tool-req
     title: Document Types
+    status: approved
     tags: [Documents]
     description: |
       Docs-as-Code shall support the following document types:
@@ -227,12 +257,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__DOC_TYPES
   - id: TOOL_REQ__DOCS_DOC_GENERIC_MANDATORY
     type: tool-req
     title: Mandatory attributes of Generic Documents
+    status: approved
     tags: [Documents]
     description: |
       gd_req__doc_attributes_manual,
@@ -248,9 +281,12 @@ artifacts:
     fields:
       implemented: PARTIAL
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
   - id: TOOL_REQ__DOCS_DOC_ATTR
     type: tool-req
     title: Mandatory Document attributes
+    status: approved
     tags: [Documents]
     description: |
       gd_req__doc_author,
@@ -270,6 +306,8 @@ artifacts:
     fields:
       implemented: "NO"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
   - id: TOOL_REQ__DOCS_DOC_ATTR_AUTHOR_AUTOFILL
     type: tool-req
     title: Document author is autofilled
@@ -289,6 +327,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__DOC_AUTHOR
@@ -306,6 +346,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__DOC_APPROVER
@@ -323,12 +365,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO, process requirement has changed and we do not understand the new wording."
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__DOC_REVIEWER
   - id: TOOL_REQ__DOCS_REQ_TYPES
     type: tool-req
     title: Requirements Types
+    status: approved
     tags: [Requirements]
     description: |
       Docs-as-Code shall support the following requirement types:
@@ -343,12 +388,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES: Together with tool_req__docs_linkage"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_STRUCTURE
   - id: TOOL_REQ__DOCS_REQ_ATTR_RATIONALE
     type: tool-req
     title: Enforces rationale attribute
+    status: approved
     tags: [Requirements]
     description: |
       Docs-as-Code shall enforce that each stakeholder requirement (stkh_req) contains a ``rationale`` attribute.
@@ -356,6 +404,8 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "NO: Can not ensure correct reasoning"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_RATIONALE
@@ -364,6 +414,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_REQ_ATTR_REQTYPE
     type: tool-req
     title: Enforces requirement type classification
+    status: approved
     tags: [Requirements]
     description: |
       Docs-as-Code shall enforce that each need of type :need:`tool_req__docs_req_types`
@@ -377,12 +428,15 @@ artifacts:
     fields:
       implemented: "YES"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_TYPE
   - id: TOOL_REQ__DOCS_REQ_ATTR_REQCOV
     type: tool-req
     title: Enables marking requirements as "covered"
+    status: approved
     tags: [Requirements]
     description: |
       Docs as code shall shall enable marking requirements as covered by their linked children.
@@ -396,6 +450,8 @@ artifacts:
     fields:
       implemented: PARTIAL
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_REQ_COV
@@ -417,6 +473,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_TEST_COVERED
@@ -434,6 +492,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_VALIDITY
@@ -450,6 +510,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_VALIDITY
@@ -482,6 +544,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_LINKAGE
@@ -490,6 +554,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_COMMON_ATTR_SAFETY_LINK_CHECK
     type: tool-req
     title: "Safety: enforce safe linking"
+    status: approved
     tags: [Common Attributes]
     description: |
       QM requirements (safety == QM) shall not be linked to safety requirements (safety != QM) via the ``satisfies`` attribute.
@@ -497,12 +562,15 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_LINKAGE_SAFETY
   - id: TOOL_REQ__DOCS_REQ_LINK_COVERS_AOU
     type: tool-req
     title: Requirement linkage to AoU via covers
+    status: approved
     description: |
       Feature requirements (feat_req) and component requirements (comp_req)
       link to Assumptions of Use (aou_req) via the ``covers`` attribute.
@@ -510,6 +578,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_LINKAGE_AOU
@@ -533,6 +603,8 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_HIERARCHICAL_STRUCTURE
@@ -541,6 +613,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_ARCH_ATTR_MANDATORY
     type: tool-req
     title: Architecture Mandatory Attributes
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enforce that the following attributes are present in all needs of type :need:`tool_req__docs_arch_types`
@@ -555,6 +628,8 @@ artifacts:
       implemented: "YES"
       parent-covered: "YES"
       parent-has-problem: "YES: Metamodel & Process aren't the same. Some definitions are not consistent in Process"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_ATTR_MANDATORY
@@ -567,6 +642,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_ARCH_LINK_FULFILS
     type: tool-req
     title: "Mandatory Architecture Attribute: fulfils"
+    status: approved
     tags: [Architecture]
     description: |
       gd_req__arch_linkage_requirement_type,
@@ -595,9 +671,12 @@ artifacts:
     fields:
       implemented: "YES"
       version: "2"
+      safety-level: ASIL_B
+      security: "NO"
   - id: TOOL_REQ__DOCS_ARCH_LINK_FULFILS_AOU
     type: tool-req
     title: Architecture fulfils linkage to AoU
+    status: approved
     description: |
       Architectural static views (feat_arc_sta, comp_arc_sta)
       link to Assumptions of Use (aou_req) via the ``fulfils`` attribute.
@@ -605,12 +684,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_ATTR_FULFILS_AOU
   - id: TOOL_REQ__DOCS_ARCH_LINK_AOU_CHECK
     type: tool-req
     title: Check Architecture linkage to AoU
+    status: approved
     description: |
       Architectural static views (feat_arc_sta, comp_arc_sta)
       are not linked to their own AoU via the ``fulfils`` attribute.
@@ -618,12 +700,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_LINKAGE_AOU
   - id: TOOL_REQ__DOCS_ARCH_LINK_SAFETY_TO_REQ
     type: tool-req
     title: Ensure safety architecture elements link a safety requirement
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enforce that architecture elements of type
@@ -634,12 +719,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_LINKAGE_REQUIREMENT
   - id: TOOL_REQ__DOCS_ARCH_LINK_QM_TO_SAFETY_REQ
     type: tool-req
     title: Ensure qm architecture elements do not fulfill safety requirements
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enforce that architecture elements of type
@@ -649,12 +737,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_LINKAGE_REQUIREMENT
   - id: TOOL_REQ__DOCS_REQ_ARCH_LINK_SAFETY_TO_ARCH
     type: tool-req
     title: Restrict links for safety requirements
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enforce that valid safety architectural elements (Safety != QM) can
@@ -663,6 +754,8 @@ artifacts:
       implemented: PARTIAL
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_LINKAGE_SAFETY_TRACE
@@ -671,6 +764,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_ARCH_LINK_SECURITY
     type: tool-req
     title: "Security: Restrict linkage"
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enforce that security relevant :need:`tool_req__docs_arch_types` (Security ==
@@ -679,12 +773,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_LINKAGE_SECURITY_TRACE
   - id: TOOL_REQ__DOCS_ARCH_VIEWS
     type: tool-req
     title: Support Diagram drawing of architecture
+    status: approved
     tags: [Architecture]
     description: |
       Docs-as-Code shall enable the rendering of diagrams for the following architecture views:
@@ -705,12 +802,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__ARCH_VIEWPOINTS
   - id: TOOL_REQ__DOCS_DD_LINK_SOURCE_CODE_LINK
     type: tool-req
     title: Supports linking to source code
+    status: approved
     tags: ["Detailed Design & Code"]
     description: |
       Docs-as-Code shall allow source code to link to requirement sphinx-needs objects.
@@ -721,12 +821,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "NO: we only enable linking, we do not link"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_IMPL
   - id: TOOL_REQ__DOCS_DD_FEATURE_FLAG
     type: tool-req
     title: Feature Flags
+    status: approved
     tags: ["Detailed Design & Code"]
     description: |
       Docs-as-Code shall allow for a to-be-defined list of checks to be non-fatal for non
@@ -737,12 +840,15 @@ artifacts:
       version: "1"
       implemented: "NO"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_LINKAGE_ARCHITECTURE_SWITCH
   - id: TOOL_REQ__DOCS_DD_STA
     type: tool-req
     title: Static Diagram for Unit Interactions
+    status: approved
     tags: ["Detailed Design & Code"]
     description: |
       Provide needs type ``dd_sta`` for static diagrams showing unit interactions as UML.
@@ -750,12 +856,15 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__IMPL_STATIC_DIAGRAM
   - id: TOOL_REQ__DOCS_TEST_LINK_TESTCASE
     type: tool-req
     title: Supports linking to test cases
+    status: approved
     tags: [Testing]
     description: |
       Docs-as-Code shall allow requirements of type :need:`tool_req__docs_req_types` to
@@ -766,12 +875,15 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__REQ_ATTR_TESTLINK
   - id: TOOL_REQ__DOCS_TEST_METADATA_MANDATORY_1
     type: tool-req
     title: Extract Metadata from Tests
+    status: approved
     tags: [Testing]
     description: |
       Docs-as-Code shall ensure that each test case has TestType and DerivationTechnique set.
@@ -779,6 +891,8 @@ artifacts:
       version: "1"
       implemented: "NO"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__VERIFICATION_CHECKS
@@ -795,6 +909,8 @@ artifacts:
       version: "1"
       implemented: "NO"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__VERIFICATION_CHECKS
@@ -813,12 +929,15 @@ artifacts:
       version: "1"
       implemented: "NO"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__VERIFICATION_CHECKS
   - id: TOOL_REQ__DOCS_TVR_SAFETY
     type: tool-req
     title: Enforce safety classification
+    status: approved
     tags: [Tool Verification Reports]
     description: |
       Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
@@ -830,6 +949,8 @@ artifacts:
       version: "1"
       implemented: "YES"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__TOOL_ATTR_SAFETY_AFFECTED
@@ -838,6 +959,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_TVR_SECURITY
     type: tool-req
     title: Enforce security classification
+    status: approved
     tags: [Tool Verification Reports]
     description: |
       Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
@@ -849,6 +971,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__TOOL_ATTR_SECURITY_AFFECTED
@@ -857,6 +981,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_TVR_STATUS
     type: tool-req
     title: Enforce status classification
+    status: approved
     tags: [Tool Verification Reports]
     description: |
       Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
@@ -871,6 +996,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__TOOL_ATTR_STATUS
@@ -879,6 +1006,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_TVR_VERSION
     type: tool-req
     title: Enforce version attribute
+    status: approved
     tags: [Tool Verification Reports]
     description: |
       Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
@@ -887,12 +1015,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__TOOL_ATTR_VERSION
   - id: TOOL_REQ__DOCS_TVR_CONFIDENCE_LEVEL
     type: tool-req
     title: Enforce confidence level classification
+    status: approved
     tags: [Tool Verification Reports]
     description: |
       Docs-as-Code shall enforce that every Tool Verification Report (`doc_tool`) includes a
@@ -904,12 +1035,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__TOOL_ATTR_TCL
   - id: TOOL_REQ__DOCS_WF_TYPES
     type: tool-req
     title: Workflow Types
+    status: approved
     tags: [Process / Other]
     description: |
       Docs-as-Code shall support the following workflow types:
@@ -918,6 +1052,8 @@ artifacts:
     fields:
       implemented: "YES"
       version: "1"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__PROCESS_MANAGEMENT_BUILD_BLOCKS_ATTR
@@ -926,6 +1062,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_STDREQ_TYPES
     type: tool-req
     title: Standard Requirement Types
+    status: approved
     tags: [Process / Other]
     description: |
       Docs-as-Code shall support the following requirement types:
@@ -934,9 +1071,12 @@ artifacts:
     fields:
       version: "1"
       implemented: "YES"
+      safety-level: ASIL_B
+      security: "NO"
   - id: TOOL_REQ__DOCS_SAF_TYPES
     type: tool-req
     title: Safety Analysis Need Types
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall support the following need types:
@@ -949,6 +1089,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_STRUCTURE
@@ -957,6 +1099,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_SAF_ATTRS_MANDATORY
     type: tool-req
     title: Safety Analysis Mandatory Attributes
+    status: approved
     tags: [Safety Analysis]
     description: |
       All safety analysis elements in :need:`tool_req__docs_saf_types`
@@ -973,6 +1116,8 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_MANDATORY
@@ -981,6 +1126,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_SAF_ATTRS_MITIGATED_BY
     type: tool-req
     title: Safety Analysis Mitigation Attribute
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce valid needs (`status` == `valid`) of type
@@ -995,6 +1141,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_MITIGATED_BY
@@ -1013,6 +1161,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_SAF_ATTRS_MITIGATION_ISSUE
     type: tool-req
     title: Safety Analysis Mitigation Issue Attribute
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall allow needs of type :need:`tool_req__docs_saf_types` to have a
@@ -1021,12 +1170,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_MITIGATION_ISSUE
   - id: TOOL_REQ__DOCS_SAF_ATTRS_SUFFICIENT
     type: tool-req
     title: Safety Analysis Sufficient Attribute
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce needs of type :need:`tool_req__docs_saf_types` to
@@ -1038,12 +1190,15 @@ artifacts:
       implemented: "YES"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_SUFFICIENT
   - id: TOOL_REQ__DOCS_SAF_ATTRS_SUFFICIENT_CHECK
     type: tool-req
     title: Safety Analysis Sufficient Check
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall ensure needs of type :need:`tool_req__docs_saf_types` with
@@ -1052,12 +1207,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_SUFFICIENT
   - id: TOOL_REQ__DOCS_SAF_ATTRS_CONTENT
     type: tool-req
     title: Safety Analysis Mandatory Content
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce needs of type :need:`tool_req__docs_saf_types` to have a
@@ -1066,12 +1224,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ARGUMENT
   - id: TOOL_REQ__DOCS_SAF_ATTRS_VIOLATES
     type: tool-req
     title: Safety Analysis Linkage Violates
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce that needs of type :need:`tool_req__docs_saf_types` have a
@@ -1092,6 +1253,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "YES"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_LINKAGE_CHECK
@@ -1102,6 +1265,7 @@ artifacts:
   - id: TOOL_REQ__DOCS_SAF_ATTR_FMEA_FAULT_ID
     type: tool-req
     title: "FMEA: fault id attribute"
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce that needs of type DFA (see
@@ -1112,12 +1276,15 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_FAULT_ID
   - id: TOOL_REQ__DOCS_SAF_ATTR_DFA_FAILURE_ID
     type: tool-req
     title: "DFA: failure id attribute"
+    status: approved
     tags: [Safety Analysis]
     description: |
       Docs-As-Code shall enforce that needs of type DFA (see
@@ -1128,6 +1295,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_FAILURE_ID
@@ -1142,6 +1311,8 @@ artifacts:
       implemented: "NO"
       version: "1"
       parent-covered: "NO"
+      safety-level: ASIL_B
+      security: "NO"
     links:
       - type: satisfies
         target: GD_REQ__SAF_ATTR_FEFFECT

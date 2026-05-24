@@ -226,6 +226,29 @@ class ParsedNeed:
         return self.options.get("id", "")
 
 
+@dataclass
+class NeedExtend:
+    """A `.. needextend:: <filter>\n   :+key: value` directive.
+
+    Sphinx-needs evaluates the filter against every need in the build
+    and applies the mutations to matches.  Eclipse uses this purely as
+    write-time DRY — bulk-tagging by file path or ID substring.  We
+    resolve at conversion time so the emitted artifacts carry the
+    mutated attributes statically; no dynamic graph at render time.
+
+    Supported filter shapes (covers all 114 occurrences in upstream):
+      * `docname is not None and "<path>" in docname`
+      * `"<sub>" in id`
+      * `c.this_doc()`               (== docname matches source file)
+      * any of the above combined with `and type == "<X>"`
+      * any of the above combined with `and not status` etc.
+    """
+    filter_expr: str
+    mutations: list   # list of (key, value, append_bool)
+    source: str       # the RST file that declared the needextend
+
+
+
 def parse_rst(path: pathlib.Path) -> list[ParsedNeed]:
     """Pull every `.. <type>::` need directive out of an RST file.
 
@@ -361,6 +384,170 @@ def parse_rst(path: pathlib.Path) -> list[ParsedNeed]:
     return needs
 
 
+# ── needextend parser + filter evaluator ────────────────────────────────
+
+NEEDEXTEND_RE = re.compile(
+    r"^(?P<indent>[ \t]*)\.\. needextend:: ?(?P<filter>.*?)$",
+    re.MULTILINE,
+)
+
+
+def parse_needextends(path: pathlib.Path) -> list[NeedExtend]:
+    """Pull every `.. needextend:: <filter>` directive out of an RST file.
+
+    Body is `:+key: value` (append) or `:key: value` (replace) lines
+    indented under the directive.  We only see `:+tags:` and
+    `:+belongs_to:` across the entire upstream corpus.
+    """
+    text = path.read_text(encoding="utf-8", errors="replace")
+    lines = text.splitlines()
+    out: list[NeedExtend] = []
+    i = 0
+    while i < len(lines):
+        m = NEEDEXTEND_RE.match(lines[i])
+        if not m:
+            i += 1
+            continue
+        directive_indent = len(m.group("indent"))
+        filter_expr = m.group("filter").strip()
+        i += 1
+        muts: list = []
+        opt_re = re.compile(r"^[ \t]+:(?P<plus>\+)?(?P<key>[a-zA-Z_][a-zA-Z_0-9]*):\s*(?P<val>.*?)\s*$")
+        while i < len(lines):
+            line = lines[i]
+            if not line.strip():
+                i += 1
+                break
+            leading = len(line) - len(line.lstrip())
+            if leading <= directive_indent:
+                break
+            om = opt_re.match(line)
+            if not om:
+                break
+            muts.append((om.group("key"), om.group("val"), om.group("plus") == "+"))
+            i += 1
+        if filter_expr and muts:
+            out.append(NeedExtend(filter_expr=filter_expr, mutations=muts, source=str(path)))
+    return out
+
+
+def _eval_atom(node, ctx: dict) -> bool:
+    """Tiny safe evaluator for the 5 sphinx-needs filter shapes that
+    appear in eclipse-score.  Refuses anything outside the supported
+    set so a future eclipse expression doesn't get silently mis-evaluated.
+    """
+    import ast as _ast
+    if isinstance(node, _ast.BoolOp):
+        results = [_eval_atom(v, ctx) for v in node.values]
+        return all(results) if isinstance(node.op, _ast.And) else any(results)
+    if isinstance(node, _ast.UnaryOp) and isinstance(node.op, _ast.Not):
+        return not _eval_atom(node.operand, ctx)
+    if isinstance(node, _ast.Compare):
+        left = _eval_value(node.left, ctx)
+        result = True
+        for op, comparator in zip(node.ops, node.comparators):
+            right = _eval_value(comparator, ctx)
+            if isinstance(op, _ast.Eq):
+                result = result and (left == right)
+            elif isinstance(op, _ast.NotEq):
+                result = result and (left != right)
+            elif isinstance(op, _ast.In):
+                result = result and (left in (right or ""))
+            elif isinstance(op, _ast.NotIn):
+                result = result and (left not in (right or ""))
+            elif isinstance(op, _ast.Is):
+                result = result and (left is right)
+            elif isinstance(op, _ast.IsNot):
+                result = result and (left is not right)
+            else:
+                raise ValueError(f"unsupported comparison: {type(op).__name__}")
+            left = right
+        return result
+    if isinstance(node, _ast.Call):
+        # The only call sphinx-needs uses in eclipse-score is `c.this_doc()`.
+        if (isinstance(node.func, _ast.Attribute)
+                and isinstance(node.func.value, _ast.Name)
+                and node.func.value.id == "c"
+                and node.func.attr == "this_doc"):
+            # `c.this_doc()` = "needs declared in the file that contains
+            # this needextend directive".  We track that as ctx['this_doc'].
+            return ctx.get("docname", "") == ctx.get("this_doc", "")
+        raise ValueError(f"unsupported call: {_ast.dump(node)[:80]}")
+    if isinstance(node, _ast.Name):
+        # Bare name = truthiness check on the context variable.
+        return bool(ctx.get(node.id, ""))
+    raise ValueError(f"unsupported expression: {type(node).__name__}")
+
+
+def _eval_value(node, ctx: dict):
+    """Resolve an expression node to a Python value (string / None / bool)."""
+    import ast as _ast
+    if isinstance(node, _ast.Constant):
+        return node.value
+    if isinstance(node, _ast.Name):
+        if node.id == "None":
+            return None
+        return ctx.get(node.id, "")
+    if isinstance(node, _ast.Attribute):
+        # Eclipse only uses `c.this_doc()` (handled in _eval_atom) — no
+        # other attribute access.  Fall through to error.
+        raise ValueError(f"unsupported attribute access: {_ast.dump(node)[:80]}")
+    raise ValueError(f"unsupported value: {type(node).__name__}")
+
+
+def filter_matches(extend: NeedExtend, need: ParsedNeed, need_docname: str) -> bool:
+    """Evaluate the needextend filter against one need.
+
+    `need_docname` is sphinx-needs' notion of "document name": the
+    relative path of the RST file (without the .rst extension), used
+    in expressions like `"persistency/kvs/docs/requirements" in docname`.
+    """
+    import ast as _ast
+    ctx = {
+        "docname": need_docname,
+        "id": need.id,
+        "type": need.eclipse_type,
+        "status": need.options.get("status", ""),
+        "tags": need.options.get("tags", ""),
+        "this_doc": pathlib.Path(extend.source).with_suffix("").as_posix(),
+    }
+    try:
+        tree = _ast.parse(extend.filter_expr, mode="eval")
+        return _eval_atom(tree.body, ctx)
+    except (SyntaxError, ValueError) as exc:
+        # Log once per unsupported filter shape so we know what to add.
+        msg = f"  WARN: needextend filter unsupported, skipping: {extend.filter_expr!r} ({exc})"
+        print(msg, file=sys.stderr)
+        return False
+
+
+def apply_needextends(extends: list, needs_with_source: list) -> int:
+    """Apply each needextend mutation to every matching need (in-place).
+
+    `needs_with_source` is a list of (need, docname) tuples where
+    `docname` is the cross-repo sphinx docname (e.g.
+    `persistency/score/kvs/docs/requirements/index`) — bare, no `.rst`.
+    Returns the total mutation-application count for stats.
+    """
+    applied = 0
+    for extend in extends:
+        for need, need_docname in needs_with_source:
+            if not filter_matches(extend, need, need_docname):
+                continue
+            for key, value, is_append in extend.mutations:
+                if is_append:
+                    existing = need.options.get(key, "")
+                    if existing:
+                        new = existing + ", " + value
+                    else:
+                        new = value
+                    need.options[key] = new
+                else:
+                    need.options[key] = value
+                applied += 1
+    return applied
+
+
 # ── Conversion ──────────────────────────────────────────────────────────
 
 @dataclass
@@ -368,10 +555,14 @@ class CoverageStats:
     converted: int = 0
     skipped_unknown_type: collections.Counter = field(default_factory=collections.Counter)
     skipped_no_id: int = 0
+    needextend_rules: int = 0
+    needextend_mutations: int = 0
     unknown_links: collections.Counter = field(default_factory=collections.Counter)
     unknown_options: collections.Counter = field(default_factory=collections.Counter)
     by_type: collections.Counter = field(default_factory=collections.Counter)
     files_scanned: int = 0
+    docs_emitted: int = 0
+    inline_need_refs_rewritten: int = 0
 
 
 def normalise_id(raw: str) -> str:
@@ -382,6 +573,203 @@ def normalise_id(raw: str) -> str:
     Uppercase is purely cosmetic and matches rivet's house style.
     """
     return raw.strip().upper().replace(" ", "")
+
+
+# ── Markdown emission ───────────────────────────────────────────────────
+#
+# For every RST file that contains at least one need directive, we also
+# emit a parallel markdown file under `rivet/<repo>/docs/<same-path>.md`.
+# This preserves the *narrative* eclipse wraps around the typed needs
+# (sections, prose, inline cross-references) — the part that lives in
+# RST and not in the converted YAML.
+#
+# The markdown emission is intentionally minimal:
+#   * Section headings (RST underline syntax) → `#` / `##` / `###`
+#   * Need directives → `### {title}` + `{{artifact:<ID>}}` embed
+#       (rivet renders that as the compact artifact card; richer
+#       per-field embeds — `{{artifact:ID:status,safety-level}}` —
+#       are a proposed rivet enhancement, see follow-up design doc)
+#   * Inline `:need:`<id>`` → `[[<ID-uppercase>]]`
+#       (rivet `[[ID]]` syntax is already supported — see `rivet docs documents`)
+#   * Body paragraphs → passthrough markdown
+#   * `..` comment blocks, code-blocks, UML, includes → skipped
+#
+# v1 limitations: no RST table conversion, no `.. note::` admonition
+# rendering, no `.. needtable::`/`.. needpie::` conversion (those are
+# computed by rivet's existing `{{coverage}}` / `{{matrix}}` / `{{table}}`
+# embeds — point the user there).
+
+_INLINE_NEED_RE = re.compile(r":need:`([A-Za-z0-9_:\-/]+)`")
+_RST_ROLE_RE = re.compile(r":[a-z]+:`([^`]+)`")
+_HEADING_LINE_RE = re.compile(r"^([=\-~`#*\^\"+_])\1{2,}$")
+
+
+def emit_markdown_for_rst(rst_path: pathlib.Path, md_path: pathlib.Path,
+                          stats: CoverageStats) -> bool:
+    """Convert one RST file to a minimal markdown document.
+
+    Returns True iff at least one need directive was rendered into the
+    output (we skip emitting docs for RST files with no traceable
+    content — e.g. pure tutorial pages).
+    """
+    text = rst_path.read_text(encoding="utf-8", errors="replace")
+    lines = text.splitlines()
+    out: list[str] = []
+    rendered_any_need = False
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        # Skip `..` comment blocks: an `..` line followed by indented lines.
+        if stripped == ".." or stripped.startswith(".. "):
+            # Could be a directive or a comment.  Check what follows.
+            if stripped == ".." or (
+                stripped.startswith(".. ")
+                and not stripped.startswith(".. _")
+                and "::" not in stripped
+            ):
+                # Pure comment block — skip directive line + indented body.
+                i += 1
+                while i < len(lines) and (not lines[i].strip()
+                                          or lines[i].startswith((" ", "\t"))):
+                    i += 1
+                continue
+
+        # Directive?
+        m = DIRECTIVE_RE.match(line)
+        if m:
+            etype = m.group("type")
+            indent = len(m.group("indent"))
+            title = m.group("title").strip()
+
+            # Skip non-need directives and structural directives.
+            if etype not in TYPE_MAP:
+                # Skip the whole directive block (option lines + indented body).
+                i += 1
+                while i < len(lines):
+                    l = lines[i]
+                    if not l.strip():
+                        i += 1
+                        # Bail if next non-blank is dedented.
+                        while i < len(lines) and not lines[i].strip():
+                            i += 1
+                        if i < len(lines):
+                            leading = len(lines[i]) - len(lines[i].lstrip())
+                            if leading <= indent:
+                                break
+                        continue
+                    leading = len(l) - len(l.lstrip())
+                    if leading <= indent:
+                        break
+                    i += 1
+                continue
+
+            # It's a need directive — extract id from option block, render.
+            i += 1
+            need_id = ""
+            while i < len(lines):
+                l = lines[i]
+                if not l.strip():
+                    i += 1
+                    break
+                leading = len(l) - len(l.lstrip())
+                if leading <= indent:
+                    break
+                om = re.match(r"[ \t]+:([a-zA-Z_][a-zA-Z_0-9]*):\s*(.*?)\s*$", l)
+                if om and om.group(1) == "id":
+                    need_id = om.group(2)
+                i += 1
+            # Skip the body paragraph too — it's now in the YAML
+            # `description:` field, and rivet's artifact card will show
+            # it on hover/click.
+            while i < len(lines):
+                l = lines[i]
+                if not l.strip():
+                    out.append("")
+                    i += 1
+                    continue
+                leading = len(l) - len(l.lstrip())
+                if leading <= indent:
+                    break
+                i += 1
+
+            if need_id:
+                heading_level = "###"
+                out.append(f"{heading_level} {title}")
+                out.append("")
+                # Per-field projection: ask rivet to render the id +
+                # context fields that compliance authors care about.
+                # `status,safety-level,security` is the eclipse-score
+                # default; renders as a compact link card today (those
+                # fields are silently dropped) and as id+title+fields
+                # once the proposed embed extension lands — see
+                # rivet `docs/design/artifact-embed-with-fields.md`.
+                out.append(
+                    f"{{{{artifact:{normalise_id(need_id)}:"
+                    "status,safety-level,security}}}}"
+                )
+                out.append("")
+                rendered_any_need = True
+            continue
+
+        # Section heading? Pattern: <title>\n<underline>
+        # RST uses sequences like `===`, `---`, `~~~`, `###` to underline.
+        if (i + 1 < len(lines)
+                and _HEADING_LINE_RE.match(lines[i + 1])
+                and stripped
+                and not stripped.startswith(".")):
+            underline_char = lines[i + 1][0]
+            # Map RST underline characters to markdown heading levels.
+            # Eclipse uses sphinx's adornment convention; in practice the
+            # most common patterns are `#` (file title / level 1),
+            # `-` (level 2 subsection), `~` (level 3), `^` (level 4).
+            level = {"#": "#", "*": "#", "=": "#", "-": "##",
+                     "~": "###", "^": "####", "+": "####",
+                     "`": "#####", '"': "#####"}.get(underline_char, "##")
+            out.append(f"{level} {stripped}")
+            out.append("")
+            i += 2  # skip title + underline
+            continue
+
+        # Inline RST role rewriting on prose lines.
+        if ":" in line:
+            # Inline `:need:`...`` → `[[...]]`.
+            def _rewrite_need(match):
+                nonlocal stats
+                stats.inline_need_refs_rewritten += 1
+                return f"[[{normalise_id(match.group(1))}]]"
+            new = _INLINE_NEED_RE.sub(_rewrite_need, line)
+            # Strip other RST roles (`:term:`, `:ref:` etc.) keeping content only.
+            new = _RST_ROLE_RE.sub(lambda m: m.group(1), new)
+            line = new
+
+        out.append(line)
+        i += 1
+
+    if not rendered_any_need:
+        return False
+
+    # Compact: collapse 3+ blank lines to 2.
+    md = re.sub(r"\n{3,}", "\n\n", "\n".join(out))
+
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    # Frontmatter so rivet picks up the file as a Document with id/title.
+    doc_id = "DOC-" + rst_path.stem.upper().replace("_", "-")
+    title = rst_path.stem.replace("_", " ").title()
+    frontmatter = (
+        "---\n"
+        f"id: {doc_id}-{abs(hash(str(rst_path))) % 100000}\n"
+        f"title: {title}\n"
+        "type: specification\n"
+        "status: approved\n"
+        "tags: [eclipse-score]\n"
+        "---\n\n"
+    )
+    md_path.write_text(frontmatter + md + "\n")
+    stats.docs_emitted += 1
+    return True
 
 
 def convert_need(need: ParsedNeed, stats: CoverageStats) -> dict | None:
@@ -459,9 +847,29 @@ def convert_need(need: ParsedNeed, stats: CoverageStats) -> dict | None:
 
 
 def convert_repo(root: pathlib.Path, out_yaml: pathlib.Path,
-                 report_md: pathlib.Path | None) -> CoverageStats:
+                 report_md: pathlib.Path | None,
+                 docs_out: pathlib.Path | None = None) -> CoverageStats:
     stats = CoverageStats()
     artifacts: list = []
+    # Eclipse's sphinx builds use cross-repo paths in `docname` — i.e. a
+    # file under upstream/eclipse-score-persistency/score/kvs/...
+    # is referenced by sphinx as `persistency/score/kvs/...` because the
+    # downstream Bazel `docs(...)` macro mounts each external repo at
+    # `<repo-short-name>/...` in the source tree.  needextend filters
+    # written upstream rely on that convention (e.g.
+    # `"persistency/kvs/docs/requirements" in docname`).  Reproduce it
+    # here by prefixing every docname with the repo's short name.
+    repo_short = root.name
+    for prefix in ("eclipse-score-", "score-", "score_"):
+        if repo_short.startswith(prefix):
+            repo_short = repo_short[len(prefix):]
+            break
+    # Two-pass: first scan every RST file, collect needs AND needextend
+    # rules.  Then apply needextend mutations to the parsed needs in
+    # memory (bakes the dynamic-graph mutations into static attributes).
+    # Then convert each need to a rivet artifact.
+    needs_with_source: list = []
+    extends: list = []
     for path in sorted(root.rglob("*.rst")):
         # Skip vendored docs / build outputs / upstream test fixtures.
         # Two categories of upstream test data trip up the corpus oracle:
@@ -484,10 +892,60 @@ def convert_repo(root: pathlib.Path, out_yaml: pathlib.Path,
         except Exception as exc:
             print(f"  WARN: failed to parse {path}: {exc}", file=sys.stderr)
             continue
+        rel = path.relative_to(root).as_posix()
+        # docname uses the cross-repo convention (see comment above) and
+        # drops the .rst suffix to match sphinx's bare-docname format.
+        # Eclipse-score's per-component repos place their docs under a
+        # `score/<component>/...` subtree but in the merged cross-repo
+        # sphinx build, the mount point becomes `<repo-short>/...`
+        # WITHOUT the `score/` prefix.  Strip it when present so
+        # docname matches what eclipse's `needextend` filters expect.
+        rel_for_docname = rel
+        if rel_for_docname.startswith("score/"):
+            rel_for_docname = rel_for_docname[len("score/"):]
+        docname = f"{repo_short}/{rel_for_docname}".removesuffix(".rst")
         for need in needs:
-            art = convert_need(need, stats)
-            if art is not None:
-                artifacts.append(art)
+            needs_with_source.append((need, docname))
+        try:
+            file_extends = parse_needextends(path)
+        except Exception as exc:
+            print(f"  WARN: failed to parse needextend in {path}: {exc}",
+                  file=sys.stderr)
+            file_extends = []
+        # Re-anchor `source` to the cross-repo docname for `c.this_doc()`
+        # comparison parity with `docname` (which uses the same form).
+        ext_docname = f"{repo_short}/{rel_for_docname}".removesuffix(".rst")
+        for ext in file_extends:
+            ext.source = ext_docname
+        extends.extend(file_extends)
+
+    stats.needextend_rules = len(extends)
+    stats.needextend_mutations = apply_needextends(extends, needs_with_source)
+
+    for need, _ in needs_with_source:
+        art = convert_need(need, stats)
+        if art is not None:
+            artifacts.append(art)
+
+    # Emit markdown documents (one per RST file that contains needs).
+    # Mirrors the upstream directory layout so cross-references resolve
+    # by file path the same way they do in sphinx-needs.
+    if docs_out is not None:
+        for path in sorted(root.rglob("*.rst")):
+            spath = str(path)
+            if ("/_build/" in spath
+                    or "/.git/" in spath
+                    or "/score_metamodel/tests/" in spath
+                    or "/test/fixtures/" in spath
+                    or "/tests/fixtures/" in spath):
+                continue
+            rel = path.relative_to(root).as_posix()
+            md_path = docs_out / rel.replace(".rst", ".md")
+            try:
+                emit_markdown_for_rst(path, md_path, stats)
+            except Exception as exc:
+                print(f"  WARN: failed to emit markdown for {path}: {exc}",
+                      file=sys.stderr)
 
     # De-dup by ID (eclipse occasionally has the same need re-declared
     # in multiple files for inclusion machinery; keep the first).
@@ -559,6 +1017,10 @@ def render_report(root: pathlib.Path, stats: CoverageStats, total_emitted: int) 
         f"- Artifacts emitted (after de-dup): **{total_emitted}**",
         f"- Needs skipped (unknown eclipse type): **{sum(stats.skipped_unknown_type.values())}**",
         f"- Needs skipped (no `:id:`): **{stats.skipped_no_id}**",
+        f"- `needextend` rules found: **{stats.needextend_rules}**",
+        f"- `needextend` mutations applied (baked into artifacts): **{stats.needextend_mutations}**",
+        f"- Markdown documents emitted: **{stats.docs_emitted}**",
+        f"- Inline `:need:` refs rewritten to `[[ID]]`: **{stats.inline_need_refs_rewritten}**",
         "",
         "## Falsification surface",
         "",
@@ -613,13 +1075,15 @@ def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("root", type=pathlib.Path, help="upstream/<repo> directory")
     ap.add_argument("out",  type=pathlib.Path, help="output rivet YAML path")
+    ap.add_argument("--docs-out", type=pathlib.Path, default=None,
+                    help="emit parallel markdown documents under this directory")
     ap.add_argument("--report", type=pathlib.Path, default=None,
                     help="optional markdown coverage report path")
     ap.add_argument("--json", action="store_true",
                     help="emit stats to stdout as JSON instead of human text")
     args = ap.parse_args(argv)
 
-    stats = convert_repo(args.root, args.out, args.report)
+    stats = convert_repo(args.root, args.out, args.report, args.docs_out)
     payload = {
         "files_scanned": stats.files_scanned,
         "converted": stats.converted,
@@ -631,10 +1095,14 @@ def main(argv: list[str]) -> int:
     if args.json:
         print(json.dumps(payload, indent=2))
     else:
-        print(f"  scanned {stats.files_scanned} RST files, "
-              f"converted {stats.converted} needs "
-              f"({len(stats.skipped_unknown_type)} unknown types, "
-              f"{len(stats.unknown_options)} unknown options) → {args.out}")
+        print(
+            f"  scanned {stats.files_scanned} RST files, "
+            f"converted {stats.converted} needs "
+            f"({len(stats.skipped_unknown_type)} unknown types, "
+            f"{len(stats.unknown_options)} unknown options), "
+            f"{stats.needextend_rules} needextend rules → "
+            f"{stats.needextend_mutations} mutations applied → {args.out}"
+        )
     return 0
 
 

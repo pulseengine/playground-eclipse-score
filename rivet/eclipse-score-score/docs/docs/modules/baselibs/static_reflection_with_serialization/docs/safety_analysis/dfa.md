@@ -1,0 +1,27 @@
+---
+id: DOC-DFA-62046
+title: Dfa
+type: specification
+status: approved
+tags: [eclipse-score]
+---
+
+# DFA (Dependent Failure Analysis)
+
+### Static Reflection DFA
+
+{{artifact:DOC__STATIC_REFLECTION_DFA:status,safety-level,security}}}}
+
+## Dependent Failure Initiators
+
+.. code-block:: rst
+
+### <Title>
+
+{{artifact:COMP_SAF_DFA__<COMPONENT>__<ELEMENTDESCRIPTOR>:status,safety-level,security}}}}
+
+.. attention::
+    The above directive must be updated according to your component DFA.
+
+    - The above "code-block" directive must be updated
+    - Fill in all the needed information in the <brackets>

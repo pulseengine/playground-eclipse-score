@@ -1,0 +1,272 @@
+---
+id: DOC-REQUIREMENTS-CONCEPT-54168
+title: Requirements Concept
+type: specification
+status: approved
+tags: [eclipse-score]
+---
+
+# Concept Description
+
+### Requirements Concept
+
+{{artifact:DOC_CONCEPT__REQ_PROCESS:status,safety-level,security}}}}
+
+In this section a concept for the requirements management will be discussed. Inputs for this concepts are both the requirements of ISO26262 Part-8 and ASPICE Requirements from SWE.1 additionally including the requirements of the different stakeholders for the requirement process.
+
+# Inputs
+
+#. Stakeholders for the requirements?
+#. Who needs which information?
+#. Which Requirement Levels can we derive from that?
+#. Which Attributes are required?
+#. How do the different requirement levels correlate to each other?
+
+# Stakeholders for the requirements
+
+#. Project Lead Circle <rl__project_lead>
+
+   * Define specification and content for the platform
+   * Creation of a project timeline
+   * Track project progress
+
+#. SW Architect <rl__committer>
+
+   * Break down the platform specification into features (High Level)
+   * Derive feature/component architecture for each feature
+   * Allocate requirements to architecture elements for specification of features/components
+   * Define AoUs which arise from architecture
+
+#. Tester <rl__committer>
+
+   * Verify that the specification is satisfied by the elements under test
+   * Consider AoUs for test case specification
+
+#. Safety Architect <rl__safety_engineer>
+
+   * *Dependent Failure Analysis*
+
+     * Requires inputs towards independence and interference of the element under investigation
+     * Initiates additional requirements and AoU to cover failures
+
+   * *Qualitative safety analysis* (e.g. FMEA)
+
+     * Detailed element description to identify systematic errors within the element under investigation
+     * Initiates additional requirements and AoU to cover failures
+
+#. Security Architect <rl__security_engineer>
+
+   * Trust Boundary Analysis
+   * Defense in Depth Analysis
+   * Qualitative Security Analysis (TARA or at least Attack Potential Analysis with impact category Safety)
+
+#. Module/Tooling SW Developer <rl__delivery_team>
+
+   * Implement the SW according to its specification
+   * Create traceability by linking its specification to code
+   * Consider AoUs of other components
+   * Create AoUs for component under development
+
+#. Feature User
+
+   * Get detailed information concerning the specification of a feature
+   * Be informed about its boundary conditions (AoUs)
+
+#. Platform SW Developer of the Reference Integration <rl__platform_team>
+
+   * Implements Requirements for Integration
+
+As the platform is developed in an open source working mode, in principle every [[RL__CONTRIBUTOR]]
+can create SW requirements (as can be seen in requirements_workflows) but always
+a [[RL__COMMITTER]] or [[RL__PROJECT_LEAD]] has to approve.
+In practice the expectation is that the above stakeholders also define requirements,
+mostly the SW Architect <rl__committer> and competent persons from the module's [[RL__DELIVERY_TEAM]].
+The person responsible is planned in the issue tickets for requirements definition.
+
+# Standard Requirements
+
+Also requirements of standards need to be taken into consideration:
+
+* ISO26262
+* ASPICE
+* ISO SAE 21434
+
+# Requirement Levels
+
+Based on the inputs of the previous chapter the types of requirements which need to be implemented in the project can be derived. The defined levels are shown in the Traceability Concept <score_wp_traceability>.
+
+# Stakeholder Requirements
+
+On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content (functionality and safety mechanisms) the platform needs to contain, and serve as a project description of the top-level functionality. An example could be:
+
+.. code-block:: text
+
+   The platform shall support configuration of applications via files (e.g. yaml, json)
+
+Note that the *Stakeholder Requirements* represent the assumed technical safety requirements for the platform SEooC,
+i.e. the assumption on what content is needed, which shall be matched by the user to their expectations.
+
+# Feature Requirements
+
+The *Feature Requirements* derived from stakeholder requirements address mainly the integration level of SW components. These shall describe the behaviour of the feature on platform level independent from a decomposition into components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators. Example:
+
+.. code-block:: text
+
+   The feature shall use JSON formatted string according to RFC-8259 for configuration.
+
+However the detailed interaction of the underlying components itself which is required to form a feature shall be defined in the feature architecture.
+
+# Component Requirements
+
+The lowest abstraction level is represented by the *component requirements*. They are derived from *feature requirements* and describe component specific implementation details. It is described which behaviour a component itself needs to satisfy in the context of the feature, for example:
+
+.. code-block:: text
+
+   The component shall provide API calls to read and interpret every field of a JSON body in C++.
+
+# Assumption of Use Requirements
+
+Last but not least a requirement type is needed which describes e.g. the boundary conditions which need to be fulfilled when using a software element. Those requirements are called *Assumption of Use* (AoUs) and can be defined on every level (stakeholder/SW-platform, feature, component). Example:
+
+.. code-block:: text
+
+   The user shall provide a string as input which is not corrupted due to HW or QM SW errors.
+
+# Process Requirements
+
+Besides those four types of requirements which describe the contents of the platform also a type, describing the requirements towards the tooling from a process point of view, needs to be specified. These *process requirements* can be derived from a process description. Here it is defined which part of the process need to be performed manually and which parts of the process should be implemented by tooling. Example:
+
+.. code-block:: text
+
+   It shall be checked that safety requirements (Safety != QM) can only be linked against safety requirements.
+
+.. _attributes of the requirements:
+
+# Attributes of the Requirements
+
+The required attributes for the requirements are defined in this subchapter. On the top level we can distinguish between attributes which need to be filled manually and attributes which are generated during the *docs build*.
+
+Following attributes need to be filled manually for each requirement:
+
+.. list-table:: Manual Attributes
+   :header-rows: 1
+   :widths: 15,85
+
+   * - Attribute
+     - Description
+   * - Status
+     - The status for a requirement can either be valid or invalid. The reasoning for this is that the goal is to only have valid requirements in the main branch. So a status *draft* is not required. It is obvious that the requirement is in the status draft as long as the PR is not merged.
+   * - Unique ID
+     - The unique id consist of a prefix for the requirement type followed by a keyword for the feature/component and a short keyword describing its content. It is used as a unique identifier for a requirement which can be used e.g. for linking the requirements.
+   * - Title
+     - The title of the requirement shall be expressive and rely to the description of the requirement.
+   * - Description
+     - In this attribute the content for the requirement will be specified. Please be aware that a note in a requirement is not part of the requirement itself. This means that notes should only be used to give additional explanation or context to the requirement.
+   * - Rationale / Linkage
+     - In either of those attributes the reasoning for the requirement is included.
+       For *Stakeholder Requirements* a rationale which provides some more background infos shall be provided.
+       For any other requirement the reasoning can be deduced from the top level requirement.
+   * - Safety
+     - This attribute describes the impact of the requirement on functional safety. Currently only following values are defined [QM, ASIL_B]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
+   * - Security
+     - This attribute describes if the requirement has any impact on security of the platform.
+   * - Requirements Type
+     - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Non-Functional]
+
+       - Functional: If implemented can be verified by a test (unit, integration)
+       - Interface: Does not define a functionality but the API provided to use the functionality
+       - Process: If implemented can be verified by reviewing the process description (sub-type of non-functional)
+       - Non-Functional: If implemented can be checked by review/analysis (of e.g. code, documentation)
+
+       Note that the linking to the requirements is affected by these types, see [[GD_REQ__REQ_LINKAGE_ARCHITECTURE]].
+
+Following attributes are automatically generated:
+
+.. list-table:: Automated Attributes
+   :header-rows: 1
+   :widths: 15,70,15
+
+   * - Attribute
+     - Description
+     - Tool
+   * - Derives
+     - This attribute is automatically generated into the parent requirement based on the attribute derived_from of the current requirement
+     - Docs-as-Code
+   * - Hash
+     - This attribute contains a hash value which is calculated over all mandatory requirement attributes. However this script needs to be executed manually, as this information is required to be present in the rst file.
+     - Script
+   * - Derived Hash
+     - It contains the hash of the parent requirement. If the parent requirement is changed the hash will also change and the linkage has to be revisited again. A more detailed description is provided here: [[GD_REQ__REQ_ATTR_VERSION]]
+     - Script
+   * - Implemented by
+     - During Build the code files are parsed for a defined tag which includes the requirement id. If this is located a link to the code will be added in the requirement
+     - Docs-as-Code
+   * - Verified by
+     - During build the test files are parsed for a defined marker which includes the requirement id. If the marker is located in the test a link to the test case will be added to the requirement
+     - Docs-as-Code
+   * - Requirement Covered
+     - During build it will be checked if the requirements hashes which are mentioned in the coverage file match the hashes of the linked child requirements. If so then this attribute will be set to yes.
+     - Docs-as-Code
+
+More details about the generation of the automated attributes are explained in the following chapter where the general workflow for generating requirements including their status is shown.
+
+.. _requirement_versioning:
+
+# Requirements Versioning
+
+# Individual Requirements
+
+For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a change in the mandatory attributes of a requirement.
+
+#### Calculate hash for current requirements
+
+For each requirement a hash shall be calculated and stored in its dedicated own attribute *Hash* in the RST file. It shall include all mandatory manual attributes:
+
+.. _requirement_mandatory_attributes:
+
+There shall be a tooling available which can be executed by the user during the creation of the requirements. This tooling shall calculate the hashes based on the mandatory attributes, calculate the hash values and enter the calculated hash values into the rst file for each requirement in the attribute *hash*.
+
+During docs build it shall be checked if the attribute hash matches the actual has value of the requirement.
+
+#### Linking child requirements including hashes
+
+If a requirement is linked to a top level requirement also the hash of the target requirement shall be part of the link. It shall automatically be written into the attribute *derived hash*. Upon docs build it shall be checked if the attribute *derived hash* matches the calculated hash of the requirement which is linked via *derived_from*.
+
+As this check is included in the docs build as a warning it can be guaranteed that a change of a parent requirement can only be merged if the `linkhashes` in the requirements are also updated in a `Depends-On` PR.
+
+# Sets of Requirements / Baselines
+
+Version management tooling standard functionality provides the means to version sets of requirements, as those are collected in files:
+
+* The files commit history can be displayed, to show change date, author and differences
+* Also the changes on every line are available (e.g. via git "Blame")
+
+Requirement baseline generation is part of the configuration management, it is done by tagging a complete set of artifacts/files in a repository.
+
+.. _reviews of the requirements:
+
+# Reviews of the Requirements
+
+Some of the checks cannot be performed automatically. Therefore a manual inspection of the requirements is needed. The requirement review itself is triggered when a contributor wants to trigger a requirement review.
+
+In the general for the reviews a guideline <review_concept> exists.
+
+.. _coverage_of_requirements:
+
+# Coverage of Requirements
+
+According to the standards, requirements shall be derived from top to bottom. This means that at the point in time when the parent requirement is generated the coverage for itself can not be evaluated. In a second step all the parent requirements need to be broken down into child requirements which are linked to the parent requirement again. If during the creation of the child requirements any of the parent requirements would be touched again the hash value of the parent requirement would change and the linkage from the child to the parent requirement would be invalid again.
+
+Therefore the information concerning requirement coverage is stored in a config file located in the same folder as the requirements file. It contains the parent requirements and its links to child requirements including hashes to the of the child requirements. If it is merged to the main branch it will specify exactly the coverage of child requirements which are required to fulfil the coverage of the parent requirement.
+
+If this file will now be merged to the main branch a review will be triggered again. During this review it will only be checked if the parent requirement is covered by its child requirements.
+
+Additionally during build it shall be checked if exactly the requirements and hashes which are specified in this file are linked to the requirement in the current documentation. If all items match then the requirement can be seen as covered. If now a child requirement is changed its hash will also be changed and the requirement coverage needs to be revisited again.
+
+.. _traceability concept for requirements:
+
+# Traceability Concept for Requirements
+
+The standards require that a requirement can be traced throughout the complete hierarchy levels including its implementation <implementation> and verification <process_verification>. In this project it is implemented the following way:
+
+In general the traceability is visualized in main development work product traceability model (general_concepts_traceability).

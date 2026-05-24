@@ -54,6 +54,7 @@ convert-%:
 	@$(PYTHON) tools/score_import.py \
 	    upstream/$* \
 	    rivet/$*/artifacts/imported.yaml \
+	    --docs-out rivet/$*/docs \
 	    --report rivet/$*/coverage.md
 
 # ── Mechanical oracle — corpus-scale rivet validate ─────────────────────

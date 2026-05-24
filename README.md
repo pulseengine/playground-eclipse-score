@@ -156,6 +156,9 @@ external forks `nlohmann_json` / `bazel_registry_ui` / `rules_rust`):
 | Repos with zero needs (toolchain / CI / pure Doxygen) | 44 |
 | Unknown eclipse need types | 0 |
 | Unknown option keys | 7 |
+| `needextend` rules processed | 114 |
+| `needextend` mutations baked into artifacts | **2504** |
+| Markdown documents emitted (alongside YAML) | **634** |
 | `rivet validate` errors | **0** |
 | `rivet validate` warnings (all lifecycle gaps in eclipse data) | 2507 |
 
@@ -195,6 +198,64 @@ They split into:
 These are kept in the corpus so cross-repo ID references that target
 them resolve cleanly, and so any future addition of sphinx-needs
 content lands automatically in the next `make convert`.
+
+## Sphinx-needs feature parity
+
+The converter resolves three operational features beyond directive-only
+extraction:
+
+### `needextend` resolution (baked into artifacts)
+
+Eclipse uses sphinx-needs' `.. needextend::` directive as a write-time
+DRY shortcut to bulk-tag needs by file-path filter (e.g. "every need
+declared under `process_areas/safety_analysis/` also gets `+tags:
+safety_analysis`"). 114 such rules across the upstream corpus produce
+2504 tag/`belongs_to` mutations on the converted artifacts. The
+converter resolves the filter expressions at conversion time and bakes
+the mutations into the static YAML — so `rivet coverage --tag iso26262`
+queries match what eclipse's `needpie` shows.
+
+Supported filter shapes (covers all 114 occurrences):
+- `docname is not None and "<path>" in docname`
+- `"<sub>" in id`
+- `c.this_doc()`
+- combinations with `and type == "<X>"` and `and not status`
+
+Mutation keys supported: `+tags`, `+belongs_to` (the only two eclipse
+actually uses).
+
+### Markdown documents (alongside YAML)
+
+For every RST file containing at least one need directive, the
+converter emits a parallel markdown file under
+`rivet/<repo>/docs/<same-path>.md`. Section structure is preserved
+(`#` for RST `#` / `*` underlines, `##` for `=`, `###` for `-`),
+need directives become `### {title}` headings followed by an
+`{{artifact:ID:status,safety-level,security}}` embed, and inline
+sphinx-needs `:need:`X`` roles are rewritten to rivet's `[[X]]`
+syntax. 634 documents in total.
+
+Rivet's `rivet serve` dashboard picks them up via the `docs:` block
+in each per-repo `rivet.yaml`, and `rivet export --format html`
+includes them in the static compliance bundle.
+
+### Compliance rendering — rivet's existing surface
+
+Eclipse uses `.. needtable::` and `.. needpie::` directives to embed
+filtered tables and coverage pies directly in their RST docs. Rivet's
+equivalents already exist and need no converter changes:
+
+- `{{coverage}}` / `{{coverage:rule-name}}` → coverage bars per rule
+- `{{matrix}}` / `{{matrix:source:target}}` → traceability matrices
+- `{{table:TYPE:FIELDS}}` → filtered tables of artifacts by type
+- `{{stats}}` / `{{stats:types}}` / `{{stats:status}}` → metrics
+- `/api/v1/{stats,coverage,artifacts,diagnostics}` → Grafana JSON API
+  with permissive CORS (`FEAT-073`)
+- `rivet export --format html` → 11+ self-contained pages including
+  `matrix.html`, `coverage.html`, `validation.html`
+
+Authors who want eclipse-style "tables and pies in the doc" should
+use these built-in rivet embeds inside the emitted markdown.
 
 ## Archived repos
 

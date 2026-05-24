@@ -547,7 +547,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Architecture Inspection Checklist"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -558,6 +558,7 @@ artifacts:
     type: real-arc-int
     title: Component Interface 1
     status: approved
+    tags: [component_name]
     description: |
       .. needarch::
       :scale: 50
@@ -572,7 +573,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Architecture"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -583,6 +584,7 @@ artifacts:
     type: comp
     title: Component Name
     status: obsolete
+    tags: [component_name]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -594,6 +596,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name (Static View)
     status: obsolete
+    tags: [component_name]
     description: |
       .. needarch::
       :scale: 50
@@ -612,6 +615,7 @@ artifacts:
     type: comp-arc-dyn
     title: Dynamic View
     status: obsolete
+    tags: [component_name]
     description: |
       Put here a sequence diagram
     fields:
@@ -626,6 +630,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name Static View
     status: obsolete
+    tags: [component_name]
     description: |
       No architecture but detailed design
     fields:
@@ -640,7 +645,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Component Classification"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -651,7 +656,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Implementation Inspection Checklist"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -686,7 +691,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Detailed Design"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -697,7 +702,7 @@ artifacts:
     type: doc
     title: "[Your Component Name]"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -708,7 +713,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Requirements Inspection Checklist"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -719,7 +724,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] Requirements"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -730,6 +735,7 @@ artifacts:
     type: comp-req
     title: Some Title
     status: obsolete
+    tags: [component_name]
     description: |
       The Component shall do xyz to another component to bring it to this condition at this time
       
@@ -747,6 +753,7 @@ artifacts:
     type: aou-req
     title: Next Title
     status: obsolete
+    tags: [component_name]
     description: |
       The Component User shall do xyz to use the component safely/securely
     fields:
@@ -757,7 +764,7 @@ artifacts:
     type: aou-req
     title: Another Title
     status: obsolete
-    tags: [environment]
+    tags: [environment, component_name]
     description: |
       The Component shall only be used in a xyz environment to ensure its proper functioning.
     fields:
@@ -768,7 +775,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] DFA"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -779,7 +786,7 @@ artifacts:
     type: doc
     title: "[Your Component Name] FMEA"
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, component_name, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"

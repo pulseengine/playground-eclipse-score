@@ -1,0 +1,91 @@
+---
+id: DOC-PLATFORM-SAFETY-MANUAL-92912
+title: Platform Safety Manual
+type: specification
+status: approved
+tags: [eclipse-score]
+---
+
+# Platform Safety Manual
+
+### Platform Safety Manual
+
+{{artifact:DOC__PLATFORM_SAFETY_MANUAL:status,safety-level,security}}}}
+
+.. attention::
+    The above directive must be updated.
+
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``tags`` according to your needs
+
+## Introduction/Scope
+
+| **<Put here explanatory text introducing origin, scope, rationale, main functionalities, overall description (with special regard on safety); e.g. link to platform architecture picture>**
+
+## Assumed Platform Safety Requirements
+
+| For the Platform the following safety related stakeholder requirements are assumed to define the top level functionality (purpose) of the Platform. I.e. from these all the feature and component requirements implemented are derived.
+| **<List here all the stakeholder requirements, with safety not equal to QM. For the platform all are relevant.>**
+
+## Assumptions of Use
+
+#### Assumptions on the Environment
+
+| Generally the assumption of the project platform SEooC is that it is integrated in a safe system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the platform safety concept.
+| **<List here all the OS calls the project platform expects to be safe.>**
+
+List of AoUs expected from the environment the platform runs on:
+
+.. needtable::
+   :style: table
+   :columns: title;id;status
+   :colwidths: 25,25,25
+   :sort: title
+
+   results = []
+
+   for need in needs.filter_types(["aou_req"]):
+      if need and "environment" in need["tags"]:
+                results.append(need)
+
+.. attention::
+    Make sure these AoU are here for a safety reason, i.e. every one "mitigates" a safety analysis entry.
+
+#### Assumptions on the User
+
+| As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder requirements is expected to be performed by the user of the platform SEooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform SEooC safety package.
+| Additionally the components of the platform may have additional specific assumptions how they are used. These are part of every module documentation: <link to add>. Assumptions from components to their users can be fulfilled in two ways:
+| 1. There are assumption which need to be fulfilled by all SW components, e.g. "every user of an IPC mechanism needs to make sure that he provides correct data (including appropriate ASIL level)" - in this case the AoU is marked as "platform".
+| 2. There are assumption which can be fulfilled by a safety mechanism realized by some other project platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module SEooC stand-alone - in this case the AoU is marked as "module". An example would be the "JSON read" which requires "The user shall provide a string as input which is not corrupted due to HW or QM SW errors." - which is covered when using together with safe project platform persistency feature.
+
+**List of AoUs on the user of the platform:**
+
+**Note: Platform safety manual collects all platform wide AoU (have to be fulfilled by the user for any feature).**
+
+.. needtable::
+   :style: table
+   :columns: title;id;status
+   :colwidths: 25,25,25
+   :sort: title
+
+   results = []
+
+   for need in needs.filter_types(["aou_req"]):
+      if need and "environment" not in need["tags"]:
+                results.append(need)
+
+.. attention::
+    Make sure these AoU are here for a safety reason, i.e. every one "mitigates" a safety analysis entry.
+
+## Safety concept of the SEooC
+
+| **<Describe here the safety concept incl. which faults are taken care of, reactions of the implemented functions under anomalous operating conditions>**
+
+## Safety Anomalies
+
+| Anomalies (bugs in ASIL SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform release notes **<add link to release note>**.
+
+## References
+
+| **<link to the user manual>**
+| **<other links>**

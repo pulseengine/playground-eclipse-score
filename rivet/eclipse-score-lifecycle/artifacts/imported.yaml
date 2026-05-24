@@ -3,7 +3,7 @@ artifacts:
     type: doc
     title: HealthMonitor Architecture
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -14,6 +14,7 @@ artifacts:
     type: comp
     title: Health Monitor
     status: approved
+    tags: [health_monitor]
     description: |
       Health Monitor component provides a set of functionalities to verify the health of the system and its components. It includes monitoring deadlines, logic, and heartbeats to ensure proper system functioning.
     fields:
@@ -54,6 +55,7 @@ artifacts:
     type: comp-arc-sta
     title: Health Monitor
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/hm_static_architecture.puml
     fields:
@@ -68,6 +70,7 @@ artifacts:
     type: comp-arc-dyn
     title: HealthMonitor Creation
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/hm_creation.puml
     fields:
@@ -138,6 +141,7 @@ artifacts:
     type: comp-arc-dyn
     title: Health Monitoring Startup Interaction
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/hm_startup.puml
     fields:
@@ -152,6 +156,7 @@ artifacts:
     type: comp-arc-dyn
     title: Health Monitoring Shutdown Interaction
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/hm_shutdown.puml
     fields:
@@ -205,6 +210,7 @@ artifacts:
     type: real-arc-int
     title: HealthMonitor Interface
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/hmb_interface.puml
     fields:
@@ -218,7 +224,7 @@ artifacts:
     type: doc
     title: Health Monitor Component Classification
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -229,7 +235,7 @@ artifacts:
     type: doc
     title: HealthMonitor Detailed Design
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -240,6 +246,7 @@ artifacts:
     type: dd-sta
     title: Class Diagram
     status: approved
+    tags: [health_monitor]
     description: |
       .. uml::  assets/static_diagram.puml
     fields:
@@ -258,7 +265,7 @@ artifacts:
     type: doc
     title: HealthMonitor
     status: draft
-    tags: [health_monitor, "eclipse:document"]
+    tags: [health_monitor, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -269,7 +276,7 @@ artifacts:
     type: doc
     title: HealthMonitor Requirements
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -304,6 +311,7 @@ artifacts:
     type: comp-req
     title: Dummy Component
     status: obsolete
+    tags: [health_monitor]
     description: |
       The Feature shall do xyz to the user to bring him to this condition at this time
       
@@ -321,6 +329,7 @@ artifacts:
     type: aou-req
     title: Dummy AoU
     status: obsolete
+    tags: [health_monitor]
     description: |
       The Feature User shall do xyz to use the feature safely
     fields:
@@ -331,7 +340,7 @@ artifacts:
     type: doc
     title: Health Monitor DFA
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -342,7 +351,7 @@ artifacts:
     type: doc
     title: Health Monitor FMEA
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, health_monitor, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"

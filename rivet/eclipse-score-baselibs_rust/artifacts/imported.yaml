@@ -39,6 +39,7 @@ artifacts:
     type: logic-arc-int
     title: Fixed-Capacity Vector
     status: approved
+    tags: [log]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -46,7 +47,7 @@ artifacts:
     type: logic-arc-int
     title: Push
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -55,7 +56,7 @@ artifacts:
     type: logic-arc-int
     title: Pop
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -64,7 +65,7 @@ artifacts:
     type: logic-arc-int
     title: Clear
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -73,7 +74,7 @@ artifacts:
     type: logic-arc-int
     title: Index
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -82,7 +83,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -91,6 +92,7 @@ artifacts:
     type: logic-arc-int
     title: Inline-Storage Vector
     status: approved
+    tags: [log]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -98,7 +100,7 @@ artifacts:
     type: logic-arc-int
     title: Push
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -107,7 +109,7 @@ artifacts:
     type: logic-arc-int
     title: Pop
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -116,7 +118,7 @@ artifacts:
     type: logic-arc-int
     title: Clear
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -125,7 +127,7 @@ artifacts:
     type: logic-arc-int
     title: Index
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -134,7 +136,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -143,6 +145,7 @@ artifacts:
     type: logic-arc-int
     title: Fixed-Capacity Queue
     status: approved
+    tags: [log]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -150,7 +153,7 @@ artifacts:
     type: logic-arc-int
     title: Push Front
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -159,7 +162,7 @@ artifacts:
     type: logic-arc-int
     title: Push Back
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -168,7 +171,7 @@ artifacts:
     type: logic-arc-int
     title: Pop Front
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -177,7 +180,7 @@ artifacts:
     type: logic-arc-int
     title: Pop Back
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -186,7 +189,7 @@ artifacts:
     type: logic-arc-int
     title: Clear
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -195,7 +198,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -204,6 +207,7 @@ artifacts:
     type: logic-arc-int
     title: Inline-Storage Queue
     status: approved
+    tags: [log]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -211,7 +215,7 @@ artifacts:
     type: logic-arc-int
     title: Push Front
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -220,7 +224,7 @@ artifacts:
     type: logic-arc-int
     title: Push Back
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -229,7 +233,7 @@ artifacts:
     type: logic-arc-int
     title: Pop Front
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -238,7 +242,7 @@ artifacts:
     type: logic-arc-int
     title: Pop Back
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -247,7 +251,7 @@ artifacts:
     type: logic-arc-int
     title: Clear
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -256,7 +260,7 @@ artifacts:
     type: logic-arc-int
     title: Iterate
     status: approved
-    tags: ["eclipse:logic_arc_int_op"]
+    tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -555,7 +559,7 @@ artifacts:
     type: doc
     title: Log Architecture
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -566,6 +570,7 @@ artifacts:
     type: comp-arc-sta
     title: Log (Static View)
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/static_view.puml
     fields:
@@ -580,6 +585,7 @@ artifacts:
     type: comp-arc-dyn
     title: Register global logger
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/register_global_logger.puml
     fields:
@@ -594,6 +600,7 @@ artifacts:
     type: comp-arc-dyn
     title: Log with global logger instance
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/log_with_global_logger.puml
     fields:
@@ -608,6 +615,7 @@ artifacts:
     type: comp-arc-dyn
     title: Log with local logger instance
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/log_with_local_logger.puml
     fields:
@@ -622,6 +630,7 @@ artifacts:
     type: real-arc-int
     title: Log interface
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/interface.puml
     fields:
@@ -635,7 +644,7 @@ artifacts:
     type: doc
     title: Log Component Classification
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -646,7 +655,7 @@ artifacts:
     type: doc
     title: Log Detailed Design
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -657,6 +666,7 @@ artifacts:
     type: dd-sta
     title: Log class diagram
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/class_diagram.puml
     fields:
@@ -671,6 +681,7 @@ artifacts:
     type: dd-dyn
     title: Log operation
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/log_op.puml
     fields:
@@ -685,6 +696,7 @@ artifacts:
     type: dd-dyn
     title: Log to level
     status: approved
+    tags: [log]
     description: |
       .. uml:: _assets/log_to_level.puml
     fields:
@@ -699,7 +711,7 @@ artifacts:
     type: doc
     title: Log
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -710,7 +722,7 @@ artifacts:
     type: doc
     title: Log Requirements
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -721,6 +733,7 @@ artifacts:
     type: comp-req
     title: Log requirements placeholder
     status: obsolete
+    tags: [log]
     description: |
       Requirement placeholder for diagram rendering.
       To be replaced with actual requirements.
@@ -737,7 +750,7 @@ artifacts:
     type: doc
     title: Log DFA
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -748,7 +761,7 @@ artifacts:
     type: doc
     title: Log FMEA
     status: draft
-    tags: [log, "eclipse:document"]
+    tags: [log, log, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"

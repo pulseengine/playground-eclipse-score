@@ -247,7 +247,7 @@ artifacts:
     type: doc
     title: KVS Requirements Inspection Checklist
     status: draft
-    tags: [template, "eclipse:document"]
+    tags: [template, kvs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "YES"
@@ -258,7 +258,7 @@ artifacts:
     type: doc
     title: KVS Requirements
     status: approved
-    tags: ["eclipse:document"]
+    tags: [kvs, "eclipse:document"]
     fields:
       safety-level: ASIL_B
       security: "NO"
@@ -269,6 +269,7 @@ artifacts:
     type: comp-req
     title: Key Naming
     status: approved
+    tags: [kvs]
     description: |
       The component shall accept keys that consist solely of alphanumeric characters, underscores, or dashes.
     fields:
@@ -284,6 +285,7 @@ artifacts:
     type: comp-req
     title: Key Encoding
     status: approved
+    tags: [kvs]
     description: |
       The component shall encode each key as valid UTF-8.
     fields:
@@ -299,6 +301,7 @@ artifacts:
     type: comp-req
     title: Key Uniqueness
     status: approved
+    tags: [kvs]
     description: |
       The component shall guarantee that each key is unique.
     fields:
@@ -314,6 +317,7 @@ artifacts:
     type: comp-req
     title: Key Length
     status: approved
+    tags: [kvs]
     description: |
       The component shall limit the maximum length of a key to 32 bytes.
     fields:
@@ -329,6 +333,7 @@ artifacts:
     type: comp-req
     title: Value Data Types
     status: approved
+    tags: [kvs]
     description: |
       The component shall accept only values of the following data types: Number,
       String, Null, Array[Value], or Dictionary{Key:Value}.
@@ -345,6 +350,7 @@ artifacts:
     type: comp-req
     title: Value Serialization
     status: approved
+    tags: [kvs]
     description: |
       The component shall serialize and deserialize all values to and from JSON.
     fields:
@@ -360,6 +366,7 @@ artifacts:
     type: comp-req
     title: Value Length
     status: approved
+    tags: [kvs]
     description: |
       The component shall limit the maximum length of a value to 1024 bytes.
     fields:
@@ -375,6 +382,7 @@ artifacts:
     type: comp-req
     title: Value Default
     status: approved
+    tags: [kvs]
     description: |
       The component shall support unset values and shall provide a default value
       when a value is unset.
@@ -393,6 +401,7 @@ artifacts:
     type: comp-req
     title: Value Reset
     status: approved
+    tags: [kvs]
     description: |
       The component shall allow resetting a value to its default if a default is
       defined.
@@ -411,6 +420,7 @@ artifacts:
     type: comp-req
     title: Default Value Datatypes
     status: approved
+    tags: [kvs]
     description: |
       The component shall accept default values of only permitted value data
       types.
@@ -433,6 +443,7 @@ artifacts:
     type: comp-req
     title: Default Value Query
     status: approved
+    tags: [kvs]
     description: |
       The component shall provide an API to retrieve default values.
     fields:
@@ -454,6 +465,7 @@ artifacts:
     type: comp-req
     title: Default Value Config
     status: approved
+    tags: [kvs]
     description: |
       The component shall allow configuration of default values in code or in a
       separate configuration file.
@@ -476,6 +488,7 @@ artifacts:
     type: comp-req
     title: Default Value Checksum
     status: approved
+    tags: [kvs]
     description: |
       The component shall secure the configuration file for default values with an
       associated checksum file when default values are stored in a file.
@@ -498,6 +511,7 @@ artifacts:
     type: comp-req
     title: Constraint Configuration
     status: approved
+    tags: [kvs]
     description: |
       The component shall allow configuration of KVS constraints at compile-time
       using source code constants or at runtime using a configuration file.
@@ -514,6 +528,7 @@ artifacts:
     type: comp-req
     title: Concurrency
     status: approved
+    tags: [kvs]
     description: |
       The component shall implement thread-safe mechanisms to enable concurrent
       access to data without data races.
@@ -530,6 +545,7 @@ artifacts:
     type: comp-req
     title: Multi-Instance
     status: approved
+    tags: [kvs]
     description: |
       The component shall manage all runtime variables within an instance to
       enable creation and use of multiple KVS instances concurrently within a
@@ -547,6 +563,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Storage Components
     status: approved
+    tags: [kvs]
     description: |
       The component shall use the file API and the JSON data format to persist data.
     fields:
@@ -564,6 +581,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Storage Checksum Write
     status: approved
+    tags: [kvs]
     description: |
       The component shall generate a checksum for each data file and shall store
       it alongside the data.
@@ -582,6 +600,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Storage Checksum Verify
     status: approved
+    tags: [kvs]
     description: |
       The component shall verify the checksum when loading data.
     fields:
@@ -599,6 +618,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Storage Backend
     status: approved
+    tags: [kvs]
     description: |
       The component shall use the file API to persist data.
     fields:
@@ -616,6 +636,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Storage Format
     status: approved
+    tags: [kvs]
     description: |
       The component shall use the JSON data format to persist data.
     fields:
@@ -633,6 +654,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Versioning
     status: approved
+    tags: [kvs]
     description: |
       The component shall not provide built-in versioning.
     fields:
@@ -650,6 +672,7 @@ artifacts:
     type: comp-req
     title: Persistent Data Schema
     status: approved
+    tags: [kvs]
     description: |
       The component shall use a JSON file storage format that enables the
       application to implement versioning, including upgrade and downgrade paths,
@@ -669,6 +692,7 @@ artifacts:
     type: comp-req
     title: Snapshot Creation
     status: approved
+    tags: [kvs]
     description: |
       The component shall create a snapshot each time data is stored.
     fields:
@@ -684,6 +708,7 @@ artifacts:
     type: comp-req
     title: Snapshot Maximum Number
     status: approved
+    tags: [kvs]
     description: |
       The component shall maintain a configurable maximum number of snapshots.
     fields:
@@ -699,6 +724,7 @@ artifacts:
     type: comp-req
     title: Snapshot IDs
     status: approved
+    tags: [kvs]
     description: |
       The component shall assign the ID 1 to the newest snapshot and shall increment the IDs of older snapshots accordingly.
     fields:
@@ -714,6 +740,7 @@ artifacts:
     type: comp-req
     title: Snapshot Rotation
     status: approved
+    tags: [kvs]
     description: |
       The component shall rotate and delete the oldest snapshot when the maximum number is reached.
     fields:
@@ -731,6 +758,7 @@ artifacts:
     type: comp-req
     title: Snapshot Restore
     status: approved
+    tags: [kvs]
     description: |
       The component shall allow restoration of a snapshot by its ID.
     fields:
@@ -746,6 +774,7 @@ artifacts:
     type: comp-req
     title: Snapshot Deletion
     status: approved
+    tags: [kvs]
     description: |
       The component shall allow deletion of individual snapshots.
     fields:
@@ -761,6 +790,7 @@ artifacts:
     type: comp-req
     title: Engineering Mode
     status: approved
+    tags: [kvs]
     description: |
       The component shall provide an engineering mode that can be enabled during
       build time to display debugging and internal information.
@@ -777,6 +807,7 @@ artifacts:
     type: comp-req
     title: Field Mode
     status: approved
+    tags: [kvs]
     description: |
       The component shall provide a field mode that can be enabled during build
       time to restrict access as much as possible.
@@ -793,6 +824,7 @@ artifacts:
     type: comp-req
     title: Async API
     status: approved
+    tags: [kvs]
     description: |
       The component shall provide an asynchronous API in addition to the standard API.
     fields:
@@ -808,6 +840,7 @@ artifacts:
     type: comp-req
     title: Permission Control
     status: approved
+    tags: [kvs]
     description: |
       The component shall rely on the underlying filesystem for access and
       permission management and shall not implement its own access or permission
@@ -825,6 +858,7 @@ artifacts:
     type: comp-req
     title: Permission Error Handling
     status: approved
+    tags: [kvs]
     description: |
       The component shall report any access or permission errors encountered at
       the filesystem level to the application.
@@ -841,6 +875,7 @@ artifacts:
     type: comp-req
     title: Callback Support
     status: approved
+    tags: [kvs]
     description: |
       The component shall provide an API for registering callbacks that are triggered by data change events.
     fields:

@@ -1,0 +1,109 @@
+---
+id: DOC-RELEASE-CONCEPT-40369
+title: Release Concept
+type: specification
+status: approved
+tags: [eclipse-score]
+---
+
+# Concept Description
+
+### Concept Description
+
+{{artifact:DOC_CONCEPT__REL_PROCESS:status,safety-level,security}}}}
+
+This section describes the general concept for the release management process.
+The release process can be separated into two parts. On the first level are the software module
+releases. These are independent from the platform and can be separated over various repositories.
+Once a software module is released it can be contained within a platform release which
+can include multiple software module releases within a platform release scope.
+
+# Inputs
+
+#. Module safety package
+#. Platform safety package
+#. Module verification report
+#. Platform verification report
+#. Issue tracking system
+#. Platform Management Plan
+
+# Outputs
+
+#. Module release plan
+#. Module release note
+#. Platform release plan
+#. Platform release note
+
+# Platform Release Plan
+
+The platform release plan provides a reliable plan on what software modules can be expected in the
+upcoming platform release. The platform release plan is reflected by feature requests which are
+demanded. Therefore it is of importance that the *Project Leads* on platform level are aligned with
+the various software *Module Leads* and to align the platform release
+plan properly with the module release plan as the platform release plan has a clear dependency on
+its output.
+
+#. Project Lead Circle <rl__project_lead>
+
+   * Defines and proposes scope of individual module release
+   * Creates and maintains the platform release plan
+   * Aligns module release timeline with platform release plan
+   * Approves the platform release plan
+
+# Platform Release
+
+The Platform Release contains the full <Project> scope which spans over many modules. The releases
+are proposed and approved by *Project Leads*. Every software module
+is located in one repository (= delivery container) which contains multiple components, their requirements, architecture,
+implementation and tests. There may be more than one software module (=dependable element) in one repository,
+but this is not the recommended configuration.
+
+#. Project Lead Circle <rl__project_lead>
+
+   * Define and proposes scope of release
+   * Writes platform release notes
+   * Approves the platform release notes
+   * Adds and removes delivery containers to the platform
+   * Releases the platform
+
+# Module Release Plan
+
+The module release plan gives a guidance when certain features can be expected on a module level.
+It is created by the respective *Module Leads*.
+
+#. Committer (acting as Module Lead) <rl__committer>
+
+   * Define and proposes scope of individual module Release
+   * Creates and maintains the module release plan
+
+#. Project Lead Circle <rl__project_lead>
+
+   * Approves the module release plan
+
+# Module Release
+
+Each software module needs to have its dedicated release and the accompanying release notes.
+Only released software modules can be included into a platform release.
+
+#. Committer (acting as Module Lead) <rl__committer>
+
+   * Provides the software module release notes
+
+#. Project Lead Circle <rl__project_lead>
+
+   * Approves the module release notes
+   * Adds and removes delivery containers to the Platform
+   * Releases the module
+
+# Branching Strategy
+
+Branches:
+
+* main: for implementation and documentation in development phase.
+* release/\*: Branches for distinct releases, named release/<version-number>, no functional changes, only bugfixes, quality and documentation improvements.
+
+Workflow:
+
+#. When ready for a new release, create a branch release/<version-number> from main (if needed).
+#. Perform final testing and adjustments on the release branch (test results should be available continuously, but maybe not all).
+#. Tag the release in the release branch.
