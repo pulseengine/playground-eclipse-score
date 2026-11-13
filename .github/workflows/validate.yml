@@ -84,10 +84,14 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Install rivet
+        # Same rivet release as the pinned job, so a red here isolates
+        # upstream eclipse drift. The former chore branch merged in
+        # pulseengine/rivet#320 and was deleted.
         run: |
           cargo install --git https://github.com/pulseengine/rivet \
-              --branch chore/score-schema-eclipse-comparison-update \
-              --bin rivet --locked
+              --tag v0.13.0 \
+              rivet-cli --bin rivet --locked
+          rivet --version
 
       - name: Sync upstream and rebase to remote HEADs
         run: |
