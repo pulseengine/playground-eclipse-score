@@ -58,6 +58,29 @@ jobs:
               rivet-cli --bin rivet --locked
           rivet --version
 
+      - name: rivet.lock matches rivet.yaml externals
+        # rivet v0.13.0 has no `sync --locked`: it checks out each
+        # external's `ref:` from rivet.yaml and only warns if that differs
+        # from rivet.lock. This step makes the lock binding: every
+        # external's ref must be a 40-hex SHA and equal its rivet.lock pin.
+        shell: bash
+        run: |
+          set -euo pipefail
+          pairs() { awk -v sect="$2" -v key="$3" '
+            $0 == sect":" { on=1; next }
+            on && /^[^ #]/ { on=0 }
+            on && /^  [^ ].*:$/ { name=$1; sub(/:$/, "", name) }
+            on && $1 == key":" { print name, $2 }' "$1" | sort; }
+          yaml=$(pairs rivet.yaml externals ref)
+          lock=$(pairs rivet.lock pins commit)
+          test -n "$yaml"
+          bad=$(printf '%s\n' "$yaml" | awk '$2 !~ /^[0-9a-f]{40}$/')
+          if [ -n "$bad" ]; then echo "ref is not a 40-hex SHA:"; echo "$bad"; exit 1; fi
+          if ! diff <(printf '%s\n' "$yaml") <(printf '%s\n' "$lock"); then
+            echo "rivet.lock does not match rivet.yaml externals (< yaml, > lock)"; exit 1
+          fi
+          echo "rivet.lock matches all $(printf '%s\n' "$yaml" | wc -l | tr -d ' ') externals in rivet.yaml"
+
       - name: Sync upstream eclipse-score repos at pinned SHAs
         run: make sync
 
