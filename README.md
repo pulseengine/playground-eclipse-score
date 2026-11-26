@@ -122,7 +122,7 @@ Result: PASS (3718 warnings)
 | Named worked variants | 4 |
 | `rivet variant check-all` result | 4/4 pass |
 | `rivet validate` errors | 0 |
-| `rivet validate` warnings | 2507 (all lifecycle gaps in eclipse data, not schema issues) |
+| `rivet validate` warnings | 3718 on rivet 0.41.1: traceability-rule gaps in the eclipse data, plus lint findings such as enum value case (`Functional` vs `functional`) and link-type direction |
 
 **Per-repo (top 14 by need count, remaining 44 report 0 needs by design):**
 
