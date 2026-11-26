@@ -94,7 +94,7 @@ validate-%:
 # ── Materialise upstreams from rivet.yaml `externals:` block ────────────
 #
 # `rivet sync` clones each upstream-score repo into .rivet/repos/<short>/
-# at the SHA pinned in rivet.yaml + rivet.lock. Idempotent.  Then
+# at the commit pinned in rivet.lock (`sync --locked`). Idempotent.  Then
 # `make link-upstream` creates upstream/eclipse-score-<short> symlinks
 # pointing at the rivet-managed locations so the converter keeps its
 # canonical naming convention.  Two targets, one workflow:
@@ -106,7 +106,7 @@ validate-%:
 #                          via `rivet lock --update`
 #
 sync:
-	@$(RIVET) --schemas $(SCHEMAS) sync
+	@$(RIVET) --schemas $(SCHEMAS) sync --locked
 	@$(MAKE) -s link-upstream
 
 link-upstream:

@@ -46,23 +46,19 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       - name: Install rivet
-        # Pin to a published rivet release. v0.13.0 is the first
-        # release after the eclipse-score schema deltas (chore branch)
-        # were expected to land. If validate fails because the score
-        # schema doesn't have the deltas yet, bump to the release that
-        # does — the chore branch was published as: rounds 1+2 + the
-        # docs-check allowlist on `chore/score-schema-eclipse-comparison-update`.
+        # Pin to a published rivet release. v0.41.1 has `sync --locked`
+        # (used by `make sync`) and matches example-kvs.
         run: |
           cargo install --git https://github.com/pulseengine/rivet \
-              --tag v0.13.0 \
+              --tag v0.41.1 \
               rivet-cli --bin rivet --locked
           rivet --version
 
       - name: rivet.lock matches rivet.yaml externals
-        # rivet v0.13.0 has no `sync --locked`: it checks out each
-        # external's `ref:` from rivet.yaml and only warns if that differs
-        # from rivet.lock. This step makes the lock binding: every
-        # external's ref must be a 40-hex SHA and equal its rivet.lock pin.
+        # `make sync` checks out rivet.lock's commits (`sync --locked`).
+        # This step keeps rivet.yaml honest against that lock: every
+        # external's ref must be a 40-hex SHA and equal its rivet.lock pin,
+        # so a plain `rivet sync` lands on the same commits.
         shell: bash
         run: |
           set -euo pipefail
@@ -112,7 +108,7 @@ jobs:
         # pulseengine/rivet#320 and was deleted.
         run: |
           cargo install --git https://github.com/pulseengine/rivet \
-              --tag v0.13.0 \
+              --tag v0.41.1 \
               rivet-cli --bin rivet --locked
           rivet --version
 
