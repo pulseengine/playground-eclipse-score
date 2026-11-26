@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SECURITY-ANALYSIS-49331
 title: Platform Security Analysis
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

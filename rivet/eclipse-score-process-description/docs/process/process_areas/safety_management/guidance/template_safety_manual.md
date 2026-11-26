@@ -2,7 +2,7 @@
 id: DOC-TEMPLATE-SAFETY-MANUAL-81943
 title: Template Safety Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

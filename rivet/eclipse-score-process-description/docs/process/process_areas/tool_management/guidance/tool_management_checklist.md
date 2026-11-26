@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-CHECKLIST-44956
 title: Tool Management Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

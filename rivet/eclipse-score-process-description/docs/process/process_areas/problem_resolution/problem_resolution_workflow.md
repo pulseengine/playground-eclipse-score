@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-WORKFLOW-12312
 title: Problem Resolution Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

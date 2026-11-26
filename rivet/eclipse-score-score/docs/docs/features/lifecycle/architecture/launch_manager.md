@@ -2,7 +2,7 @@
 id: DOC-LAUNCH-MANAGER-96146
 title: Launch Manager
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

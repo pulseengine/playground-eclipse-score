@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-PLAN-FDR-80988
 title: Platform Safety Plan Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

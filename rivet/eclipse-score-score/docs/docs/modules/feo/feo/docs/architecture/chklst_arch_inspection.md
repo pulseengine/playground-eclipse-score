@@ -2,7 +2,7 @@
 id: DOC-CHKLST-ARCH-INSPECTION-99792
 title: Chklst Arch Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

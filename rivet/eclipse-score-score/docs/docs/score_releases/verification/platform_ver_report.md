@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-VER-REPORT-3214
 title: Platform Ver Report
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

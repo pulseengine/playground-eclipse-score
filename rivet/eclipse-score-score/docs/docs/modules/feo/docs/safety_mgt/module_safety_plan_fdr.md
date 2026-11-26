@@ -2,7 +2,7 @@
 id: DOC-MODULE-SAFETY-PLAN-FDR-58287
 title: Module Safety Plan Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

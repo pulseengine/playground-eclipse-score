@@ -2,7 +2,7 @@
 id: DOC-DOC-AS-CODE-36167
 title: Doc As Code
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

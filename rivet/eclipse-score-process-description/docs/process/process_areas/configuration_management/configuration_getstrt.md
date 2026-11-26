@@ -2,7 +2,7 @@
 id: DOC-CONFIGURATION-GETSTRT-57619
 title: Configuration Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-FAULT-MODELS-GUIDELINE-7314
 title: Fault Models Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

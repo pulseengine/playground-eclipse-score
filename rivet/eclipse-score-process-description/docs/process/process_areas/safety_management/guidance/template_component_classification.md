@@ -2,7 +2,7 @@
 id: DOC-TEMPLATE-COMPONENT-CLASSIFICATION-7344
 title: Template Component Classification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

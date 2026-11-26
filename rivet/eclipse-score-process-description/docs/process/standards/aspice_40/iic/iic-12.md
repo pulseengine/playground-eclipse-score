@@ -2,7 +2,7 @@
 id: DOC-IIC-12-40972
 title: Iic-12
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

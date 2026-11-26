@@ -2,7 +2,7 @@
 id: DOC-RUST-API-DESIGN-74254
 title: Rust Api Design
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

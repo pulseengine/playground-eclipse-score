@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-ROLES-97220
 title: Security Analysis Roles
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

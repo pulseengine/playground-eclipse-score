@@ -2,7 +2,7 @@
 id: DOC-RELEASE-NOTE-V-0-2-0-2897
 title: Release Note V 0 2 0
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-FEATURE-ARCHITECTURE-19775
 title: Feature Architecture
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

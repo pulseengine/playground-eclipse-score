@@ -2,7 +2,7 @@
 id: DOC-SUP.9-17745
 title: Sup.9
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

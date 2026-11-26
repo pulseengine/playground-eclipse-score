@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-GETSTRT-60773
 title: Documentation Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

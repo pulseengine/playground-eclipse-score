@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-CHECKLIST-6282
 title: Implementation Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

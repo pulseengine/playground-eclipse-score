@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-GETSTRT-44028
 title: Security Analysis Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-RELEASE-WORKPRODUCTS-63836
 title: Release Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

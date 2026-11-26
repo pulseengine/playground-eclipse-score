@@ -2,7 +2,7 @@
 id: DOC-SOFTWARE-DEVELOPMENT-79878
 title: Software Development
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

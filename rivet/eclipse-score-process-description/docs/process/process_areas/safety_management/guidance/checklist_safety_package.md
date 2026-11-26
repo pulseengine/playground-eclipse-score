@@ -2,7 +2,7 @@
 id: DOC-CHECKLIST-SAFETY-PACKAGE-85896
 title: Checklist Safety Package
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

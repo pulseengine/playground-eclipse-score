@@ -2,7 +2,7 @@
 id: DOC-EXPLICIT-INIT-76123
 title: Explicit Init
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

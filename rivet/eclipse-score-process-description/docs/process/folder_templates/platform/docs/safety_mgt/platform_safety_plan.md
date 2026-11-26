@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-PLAN-56931
 title: Platform Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

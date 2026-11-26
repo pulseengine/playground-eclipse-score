@@ -2,7 +2,7 @@
 id: DOC-DYNAMIC-ARCHITECTURE-88922
 title: Dynamic Architecture
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

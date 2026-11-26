@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-WORKFLOW-55092
 title: Safety Analysis Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

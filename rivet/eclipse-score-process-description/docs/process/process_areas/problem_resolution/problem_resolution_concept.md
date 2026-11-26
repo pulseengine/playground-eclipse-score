@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-CONCEPT-54158
 title: Problem Resolution Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-GETSTRT-8
 title: Architecture Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

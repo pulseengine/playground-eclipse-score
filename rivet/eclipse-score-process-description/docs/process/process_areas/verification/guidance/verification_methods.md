@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-METHODS-38859
 title: Verification Methods
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-SPECIFICATION-34371
 title: Verification Specification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

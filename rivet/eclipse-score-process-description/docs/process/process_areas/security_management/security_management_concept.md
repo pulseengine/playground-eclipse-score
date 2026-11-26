@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANAGEMENT-CONCEPT-68131
 title: Security Management Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

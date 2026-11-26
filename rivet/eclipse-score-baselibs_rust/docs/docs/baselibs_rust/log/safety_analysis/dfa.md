@@ -2,7 +2,7 @@
 id: DOC-DFA-97554
 title: Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

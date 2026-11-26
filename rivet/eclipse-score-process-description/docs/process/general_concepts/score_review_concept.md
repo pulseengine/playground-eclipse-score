@@ -2,7 +2,7 @@
 id: DOC-SCORE-REVIEW-CONCEPT-16653
 title: Score Review Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

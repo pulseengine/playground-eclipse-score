@@ -2,7 +2,7 @@
 id: DOC-DFA-FAILURE-INITIATORS-33349
 title: Dfa Failure Initiators
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

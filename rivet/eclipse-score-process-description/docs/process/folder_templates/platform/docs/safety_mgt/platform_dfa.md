@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-DFA-65157
 title: Platform Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

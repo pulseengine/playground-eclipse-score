@@ -13,7 +13,7 @@ artifacts:
   - id: COMP_ARC_STA__BASELIBS_RUST__CONTAINERS_RUST
     type: comp-arc-sta
     title: Rust Containers
-    status: approved
+    status: valid
     tags: [baselibs_rust_containers_rust]
     description: |
       .. needarch::
@@ -38,7 +38,7 @@ artifacts:
   - id: LOGIC_ARC_INT__B_R__FIXVEC
     type: logic-arc-int
     title: Fixed-Capacity Vector
-    status: approved
+    status: valid
     tags: [log]
     fields:
       security: "YES"
@@ -46,7 +46,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_PUSH
     type: logic-arc-int
     title: Push
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -55,7 +55,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_POP
     type: logic-arc-int
     title: Pop
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -64,7 +64,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_CLEAR
     type: logic-arc-int
     title: Clear
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -73,7 +73,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_INDEX
     type: logic-arc-int
     title: Index
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -82,7 +82,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXVEC_ITERATE
     type: logic-arc-int
     title: Iterate
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -91,7 +91,7 @@ artifacts:
   - id: LOGIC_ARC_INT__B_R__INLINEVEC
     type: logic-arc-int
     title: Inline-Storage Vector
-    status: approved
+    status: valid
     tags: [log]
     fields:
       security: "YES"
@@ -99,7 +99,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_PUSH
     type: logic-arc-int
     title: Push
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -108,7 +108,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_POP
     type: logic-arc-int
     title: Pop
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -117,7 +117,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_CLEAR
     type: logic-arc-int
     title: Clear
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -126,7 +126,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_INDEX
     type: logic-arc-int
     title: Index
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -135,7 +135,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLINEVEC_ITERATE
     type: logic-arc-int
     title: Iterate
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -144,7 +144,7 @@ artifacts:
   - id: LOGIC_ARC_INT__B_R__FIXQUEUE
     type: logic-arc-int
     title: Fixed-Capacity Queue
-    status: approved
+    status: valid
     tags: [log]
     fields:
       security: "YES"
@@ -152,7 +152,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_PUSHFRONT
     type: logic-arc-int
     title: Push Front
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -161,7 +161,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_PUSHBACK
     type: logic-arc-int
     title: Push Back
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -170,7 +170,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_POPFRONT
     type: logic-arc-int
     title: Pop Front
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -179,7 +179,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_POPBACK
     type: logic-arc-int
     title: Pop Back
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -188,7 +188,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_CLEAR
     type: logic-arc-int
     title: Clear
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -197,7 +197,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__FIXQUEUE_ITERATE
     type: logic-arc-int
     title: Iterate
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -206,7 +206,7 @@ artifacts:
   - id: LOGIC_ARC_INT__B_R__INLQUEUE
     type: logic-arc-int
     title: Inline-Storage Queue
-    status: approved
+    status: valid
     tags: [log]
     fields:
       security: "YES"
@@ -214,7 +214,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_PUSHFRONT
     type: logic-arc-int
     title: Push Front
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -223,7 +223,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_PUSHBACK
     type: logic-arc-int
     title: Push Back
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -232,7 +232,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_POPFRONT
     type: logic-arc-int
     title: Pop Front
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -241,7 +241,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_POPBACK
     type: logic-arc-int
     title: Pop Back
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -250,7 +250,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_CLEAR
     type: logic-arc-int
     title: Clear
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -259,7 +259,7 @@ artifacts:
   - id: LOGIC_ARC_INT_OP__CONT__INLQUEUE_ITERATE
     type: logic-arc-int
     title: Iterate
-    status: approved
+    status: valid
     tags: [log, "eclipse:logic_arc_int_op"]
     fields:
       security: "YES"
@@ -290,7 +290,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_VECTOR
     type: comp-req
     title: Fixed-Capacity Vector
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated vector container with construction-time capacity specification.
     fields:
@@ -305,7 +305,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_VECTOR
     type: comp-req
     title: Inline-Storage Vector
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a vector container with a capacity determined at compile-time,
       which stores the elements within the data structure itself.
@@ -324,7 +324,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_STRING
     type: comp-req
     title: Fixed-Capacity String
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated, UTF-8 encoded string data type with construction-time capacity specification.
     fields:
@@ -339,7 +339,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_STRING
     type: comp-req
     title: Inline-Storage String
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a UTF-8 encoded string data type with a capacity determined at compile-time,
       which stores the codepoints within the data structure itself.
@@ -358,7 +358,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_QUEUE
     type: comp-req
     title: Fixed-Capacity Queue
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated double-ended queue container with construction-time capacity specification.
     fields:
@@ -373,7 +373,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_QUEUE
     type: comp-req
     title: Inline-Storage Queue
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a queue container with a capacity determined at compile-time,
       which stores the elements within the data structure itself.
@@ -392,7 +392,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_HASHMAP
     type: comp-req
     title: Fixed-Capacity Hashmap
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated hashmap container with construction-time capacity specification.
     fields:
@@ -407,7 +407,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_HASHMAP
     type: comp-req
     title: Inline-Storage Hashmap
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a hashmap container with a capacity determined at compile-time,
       which stores the elements within the data structure itself.
@@ -426,7 +426,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_HASHSET
     type: comp-req
     title: Fixed-Capacity Hashset
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated hashset container with construction-time capacity specification.
     fields:
@@ -441,7 +441,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_HASHSET
     type: comp-req
     title: Inline-Storage Hashset
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a hashset container with a capacity determined at compile-time,
       which stores the elements within the data structure itself.
@@ -460,7 +460,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_BTREE
     type: comp-req
     title: Fixed-Capacity B-Tree
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a heap-allocated B-tree container with construction-time capacity specification.
     fields:
@@ -475,7 +475,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_BTREE
     type: comp-req
     title: Inline-Storage B-Tree
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall provide a B-tree container with a capacity determined at compile-time,
       which stores the elements within the data structure itself.
@@ -494,7 +494,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__TYPE_SAFETY
     type: comp-req
     title: Type Safety
-    status: approved
+    status: valid
     description: |
       The Rust Containers library shall enforce compile-time type safety for all container operations.
     fields:
@@ -511,7 +511,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__DET_BEHAVIOR
     type: comp-req
     title: Deterministic Behavior
-    status: approved
+    status: valid
     description: |
       The Rust containers library shall provide deterministic behavior.
     fields:
@@ -528,7 +528,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__INLINE_NO_HEAP
     type: comp-req
     title: No Heap Allocation
-    status: approved
+    status: valid
     description: |
       Inline-storage containers shall never allocate heap memory.
     fields:
@@ -543,7 +543,7 @@ artifacts:
   - id: COMP_REQ__CONTAINERS_RUST__FIXED_NO_REALLOC
     type: comp-req
     title: No Reallocation
-    status: approved
+    status: valid
     description: |
       Fixed-capacity containers shall never allocate or re-allocate memory after their initial construction.
     fields:
@@ -569,7 +569,7 @@ artifacts:
   - id: COMP_ARC_STA__LOG__STATIC_VIEW
     type: comp-arc-sta
     title: Log (Static View)
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/static_view.puml
@@ -584,7 +584,7 @@ artifacts:
   - id: COMP_ARC_DYN__LOG__REGISTER_GLOBAL_LOGGER
     type: comp-arc-dyn
     title: Register global logger
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/register_global_logger.puml
@@ -599,7 +599,7 @@ artifacts:
   - id: COMP_ARC_DYN__LOG__LOG_WITH_GLOBAL_LOGGER
     type: comp-arc-dyn
     title: Log with global logger instance
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/log_with_global_logger.puml
@@ -614,7 +614,7 @@ artifacts:
   - id: COMP_ARC_DYN__LOG__LOG_WITH_LOCAL_LOGGER
     type: comp-arc-dyn
     title: Log with local logger instance
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/log_with_local_logger.puml
@@ -629,7 +629,7 @@ artifacts:
   - id: REAL_ARC_INT__LOG__INTERFACE
     type: real-arc-int
     title: Log interface
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/interface.puml
@@ -665,7 +665,7 @@ artifacts:
   - id: DD_STA__LOG__CLASS_DIAGRAM
     type: dd-sta
     title: Log class diagram
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/class_diagram.puml
@@ -680,7 +680,7 @@ artifacts:
   - id: DD_DYN__LOG__LOG_OP
     type: dd-dyn
     title: Log operation
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/log_op.puml
@@ -695,7 +695,7 @@ artifacts:
   - id: DD_DYN__LOG__LOG_TO_LEVEL
     type: dd-dyn
     title: Log to level
-    status: approved
+    status: valid
     tags: [log]
     description: |
       .. uml:: _assets/log_to_level.puml
@@ -782,7 +782,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__CORE_UTILITIES
     type: feat-req
     title: Core Software Utilities
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall include core software utilities and common infrastructure components needed by multiple platform modules.
     fields:
@@ -795,7 +795,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__SAFETY
     type: feat-req
     title: Safety Relevance
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall implement functionality necessary to support safety-relevant platform components up to ASIL-B for selected functionalities.
     fields:
@@ -810,7 +810,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__CONSISTENT_APIS
     type: feat-req
     title: Consistent APIs
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall provide consistent APIs while respecting language-specific idioms.
     fields:
@@ -827,7 +827,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__MAINTAINABLE_DESIGN
     type: feat-req
     title: Maintainable Design
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall be designed for maintainability and code reuse.
     fields:
@@ -842,7 +842,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__SECURITY
     type: feat-req
     title: Security Robustness
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall adhere to secure coding standards to prevent vulnerabilities across platform components.
     fields:
@@ -855,7 +855,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__RESULT_LIBRARY
     type: feat-req
     title: Panic-Free Development Support
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall provide error handling mechanisms that enable development without relying on Rust panics.
       Where an idiomatic interface requires panics, an additional non-panicking option shall be provided as well.
@@ -869,7 +869,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__CONTAINERS_RUST_LIB
     type: feat-req
     title: Rust Container Library
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall provide a library of container types that serve the specific needs of SW-platform components.
     fields:
@@ -882,7 +882,7 @@ artifacts:
   - id: FEAT_REQ__BASELIBS_RUST__ABI_CONTAINERS
     type: feat-req
     title: ABI-Compatible Containers
-    status: approved
+    status: valid
     description: |
       The Rust base libraries shall provide a library of containers that can serve as the basis for ABI-compatible container data structures.
     fields:

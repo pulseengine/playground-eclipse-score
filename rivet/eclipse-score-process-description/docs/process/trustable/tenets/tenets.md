@@ -2,7 +2,7 @@
 id: DOC-TENETS-92034
 title: Tenets
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-QUALITY-PLAN-TEMPLATE-44583
 title: Quality Plan Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

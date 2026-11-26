@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANAGEMENT-94824
 title: Security Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

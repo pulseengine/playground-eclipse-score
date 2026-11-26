@@ -2,7 +2,7 @@
 id: DOC-QUALITY-PROCESS-REQS-38827
 title: Quality Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

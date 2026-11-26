@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-GUIDELINE-43793
 title: Tool Management Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

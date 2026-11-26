@@ -2,7 +2,7 @@
 id: DOC-PROCESS-MANAGEMENT-CONCEPT-83649
 title: Process Management Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

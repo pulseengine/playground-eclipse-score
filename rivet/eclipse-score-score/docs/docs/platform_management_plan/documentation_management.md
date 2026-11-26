@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-MANAGEMENT-24423
 title: Documentation Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

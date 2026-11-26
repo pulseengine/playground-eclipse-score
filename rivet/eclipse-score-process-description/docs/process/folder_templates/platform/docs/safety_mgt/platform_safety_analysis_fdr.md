@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-ANALYSIS-FDR-49837
 title: Platform Safety Analysis Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

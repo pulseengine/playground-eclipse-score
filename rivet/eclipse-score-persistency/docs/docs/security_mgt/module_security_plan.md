@@ -2,7 +2,7 @@
 id: DOC-MODULE-SECURITY-PLAN-62535
 title: Module Security Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

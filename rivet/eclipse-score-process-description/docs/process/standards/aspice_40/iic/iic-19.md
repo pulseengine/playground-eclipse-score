@@ -2,7 +2,7 @@
 id: DOC-IIC-19-79464
 title: Iic-19
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-GUIDELINE-SAFETY-MANAGEMENT-57093
 title: Guideline Safety Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

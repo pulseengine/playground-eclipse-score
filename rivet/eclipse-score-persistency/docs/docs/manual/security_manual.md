@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANUAL-8180
 title: Security Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

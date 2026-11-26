@@ -2,7 +2,7 @@
 id: DOC-RUSTFMT-19985
 title: Rustfmt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

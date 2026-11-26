@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-WORKPRODUCTS-95174
 title: Change Management Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

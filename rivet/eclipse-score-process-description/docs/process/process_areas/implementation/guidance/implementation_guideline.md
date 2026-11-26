@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-GUIDELINE-37125
 title: Implementation Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

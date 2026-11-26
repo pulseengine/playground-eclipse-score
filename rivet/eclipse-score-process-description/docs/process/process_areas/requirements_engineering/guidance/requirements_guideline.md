@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-GUIDELINE-46636
 title: Requirements Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

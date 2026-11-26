@@ -2,7 +2,7 @@
 id: DOC-MODULE-SAFETY-PLAN-2650
 title: Module Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

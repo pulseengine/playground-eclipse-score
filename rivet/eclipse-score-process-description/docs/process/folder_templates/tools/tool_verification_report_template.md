@@ -2,7 +2,7 @@
 id: DOC-TOOL-VERIFICATION-REPORT-TEMPLATE-19594
 title: Tool Verification Report Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

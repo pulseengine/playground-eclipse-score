@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-CONCEPT-29362
 title: Safety Analysis Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

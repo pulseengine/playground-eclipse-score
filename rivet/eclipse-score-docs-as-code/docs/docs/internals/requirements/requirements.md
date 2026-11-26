@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-39484
 title: Requirements
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-DFA-TEMPLATES-363
 title: Dfa Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

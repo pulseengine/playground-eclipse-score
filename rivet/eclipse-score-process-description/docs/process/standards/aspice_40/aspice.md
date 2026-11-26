@@ -2,7 +2,7 @@
 id: DOC-ASPICE-10726
 title: Aspice
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

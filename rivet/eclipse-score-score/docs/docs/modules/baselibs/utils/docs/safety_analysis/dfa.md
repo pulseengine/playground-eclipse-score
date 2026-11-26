@@ -2,7 +2,7 @@
 id: DOC-DFA-510
 title: Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

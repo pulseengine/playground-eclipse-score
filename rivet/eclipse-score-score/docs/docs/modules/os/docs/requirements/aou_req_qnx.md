@@ -2,7 +2,7 @@
 id: DOC-AOU-REQ-QNX-2615
 title: Aou Req Qnx
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

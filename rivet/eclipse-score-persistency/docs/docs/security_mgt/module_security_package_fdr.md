@@ -2,7 +2,7 @@
 id: DOC-MODULE-SECURITY-PACKAGE-FDR-26710
 title: Module Security Package Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

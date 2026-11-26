@@ -2,7 +2,7 @@
 id: DOC-IIC-03-32059
 title: Iic-03
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

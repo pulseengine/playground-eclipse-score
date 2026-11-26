@@ -2,7 +2,7 @@
 id: DOC-SAFETY-MANAGEMENT-WORKFLOW-46730
 title: Safety Management Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

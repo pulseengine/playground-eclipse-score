@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-GUIDELINE-9849
 title: Problem Resolution Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

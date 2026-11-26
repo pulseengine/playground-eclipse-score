@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-WORKPRODUCTS-71292
 title: Safety Analysis Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

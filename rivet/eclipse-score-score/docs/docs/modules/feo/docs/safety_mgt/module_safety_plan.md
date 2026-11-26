@@ -2,7 +2,7 @@
 id: DOC-MODULE-SAFETY-PLAN-93755
 title: Module Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-MANAGEMENT-WORKPRODUCTS-24415
 title: Platform Management Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

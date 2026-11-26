@@ -2,7 +2,7 @@
 id: DOC-FDR-REPORTS-SAFETY-PLATFORM-SAFETY-PLAN-42746
 title: Fdr Reports Safety Platform Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

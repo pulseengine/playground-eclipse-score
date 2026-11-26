@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-CHECKLIST-2269
 title: Security Analysis Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

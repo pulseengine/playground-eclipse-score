@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-PLAN-TEMPLATE-82814
 title: Verification Plan Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

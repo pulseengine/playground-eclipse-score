@@ -2,7 +2,7 @@
 id: DOC-QUALITY-CONCEPT-92623
 title: Quality Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

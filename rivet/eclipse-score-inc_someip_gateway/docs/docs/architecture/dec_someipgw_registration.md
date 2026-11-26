@@ -2,7 +2,7 @@
 id: DOC-DEC-SOMEIPGW-REGISTRATION-22025
 title: Dec Someipgw Registration
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

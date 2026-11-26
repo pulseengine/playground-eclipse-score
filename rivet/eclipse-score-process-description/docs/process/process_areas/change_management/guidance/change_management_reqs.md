@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-REQS-10000
 title: Change Management Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

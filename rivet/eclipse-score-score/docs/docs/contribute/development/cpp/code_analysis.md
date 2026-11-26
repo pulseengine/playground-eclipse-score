@@ -2,7 +2,7 @@
 id: DOC-CODE-ANALYSIS-79771
 title: Code Analysis
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

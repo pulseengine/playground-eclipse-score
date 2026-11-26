@@ -2,7 +2,7 @@
 id: DOC-SCORE-TOOLS-EVALUATION-LIST-39189
 title: Score Tools Evaluation List
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

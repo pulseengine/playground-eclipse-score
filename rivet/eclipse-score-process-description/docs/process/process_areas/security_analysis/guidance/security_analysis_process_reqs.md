@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-PROCESS-REQS-87268
 title: Security Analysis Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-RELEASE-TEMPLATES-85760
 title: Release Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

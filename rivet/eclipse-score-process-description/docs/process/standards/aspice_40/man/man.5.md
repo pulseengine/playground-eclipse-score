@@ -2,7 +2,7 @@
 id: DOC-MAN.5-12850
 title: Man.5
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

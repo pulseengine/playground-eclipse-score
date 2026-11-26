@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-WORKPRODUCTS-8965
 title: Requirements Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

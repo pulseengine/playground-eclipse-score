@@ -2,7 +2,7 @@
 id: DOC-GIT-82945
 title: Git
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

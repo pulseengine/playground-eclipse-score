@@ -2,7 +2,7 @@
 id: DOC-FEATURE-FMEA-48775
 title: Feature Fmea
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

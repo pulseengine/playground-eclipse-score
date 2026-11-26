@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-GUIDELINE-46183
 title: Verification Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

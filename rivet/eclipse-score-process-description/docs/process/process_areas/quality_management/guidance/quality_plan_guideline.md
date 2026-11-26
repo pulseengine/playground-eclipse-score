@@ -2,7 +2,7 @@
 id: DOC-QUALITY-PLAN-GUIDELINE-57800
 title: Quality Plan Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

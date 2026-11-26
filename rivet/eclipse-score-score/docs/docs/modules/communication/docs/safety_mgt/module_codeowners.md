@@ -2,7 +2,7 @@
 id: DOC-MODULE-CODEOWNERS-62583
 title: Module Codeowners
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

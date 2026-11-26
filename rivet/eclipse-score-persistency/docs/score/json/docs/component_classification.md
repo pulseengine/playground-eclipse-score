@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-CLASSIFICATION-59218
 title: Component Classification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

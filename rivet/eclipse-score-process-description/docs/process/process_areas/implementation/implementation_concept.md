@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-CONCEPT-89632
 title: Implementation Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

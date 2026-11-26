@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-THREAT-MODELS-GUIDELINE-87363
 title: Security Analysis Threat Models Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

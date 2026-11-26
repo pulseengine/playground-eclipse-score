@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-WORKPRODUCTS-92534
 title: Verification Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

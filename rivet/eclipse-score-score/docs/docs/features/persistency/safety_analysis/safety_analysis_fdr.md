@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-FDR-54304
 title: Safety Analysis Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

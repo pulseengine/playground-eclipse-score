@@ -2,7 +2,7 @@
 id: DOC-RELEASE-GUIDELINE-47034
 title: Release Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

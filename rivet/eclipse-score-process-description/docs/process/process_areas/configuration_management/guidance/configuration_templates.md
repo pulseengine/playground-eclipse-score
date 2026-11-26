@@ -2,7 +2,7 @@
 id: DOC-CONFIGURATION-TEMPLATES-35425
 title: Configuration Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

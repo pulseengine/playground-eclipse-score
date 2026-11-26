@@ -2,7 +2,7 @@
 id: DOC-QUALITY-WORKFLOW-85980
 title: Quality Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

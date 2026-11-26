@@ -2,7 +2,7 @@
 id: DOC-CONFIG-MANAGEMENT-81782
 title: Config Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

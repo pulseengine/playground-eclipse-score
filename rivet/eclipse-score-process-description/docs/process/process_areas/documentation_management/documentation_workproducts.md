@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-WORKPRODUCTS-59788
 title: Documentation Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

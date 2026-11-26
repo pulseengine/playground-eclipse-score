@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANUAL-TEMPLATES-94653
 title: Security Manual Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

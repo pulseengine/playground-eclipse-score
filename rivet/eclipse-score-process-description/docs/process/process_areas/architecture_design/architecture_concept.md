@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-CONCEPT-46847
 title: Architecture Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-DESIGN-DECISIONS-60571
 title: Design Decisions
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

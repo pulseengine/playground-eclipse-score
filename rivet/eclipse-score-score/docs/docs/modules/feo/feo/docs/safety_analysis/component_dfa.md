@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-DFA-56503
 title: Component Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

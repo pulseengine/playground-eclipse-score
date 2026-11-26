@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-CLASSIFICATION-76792
 title: Component Classification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

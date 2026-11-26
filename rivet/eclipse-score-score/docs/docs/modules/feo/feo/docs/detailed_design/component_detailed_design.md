@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-DETAILED-DESIGN-69872
 title: Component Detailed Design
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

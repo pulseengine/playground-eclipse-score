@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-CONCEPT-15686
 title: Change Management Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

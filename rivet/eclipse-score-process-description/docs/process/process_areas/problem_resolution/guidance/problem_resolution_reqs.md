@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-REQS-55993
 title: Problem Resolution Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

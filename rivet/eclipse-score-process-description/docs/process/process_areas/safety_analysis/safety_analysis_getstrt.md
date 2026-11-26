@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-GETSTRT-3725
 title: Safety Analysis Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

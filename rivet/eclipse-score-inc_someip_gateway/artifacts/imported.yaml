@@ -2,14 +2,14 @@ artifacts:
   - id: COMP__GATEWAYD
     type: comp
     title: SOME/IP Gateway Daemon
-    status: approved
+    status: valid
     fields:
       safety-level: ASIL_B
       security: "NO"
   - id: COMP__SOMEIPD
     type: comp
     title: SOME/IP Network Daemon
-    status: approved
+    status: valid
     fields:
       safety-level: QM
       security: "NO"
@@ -24,7 +24,7 @@ artifacts:
   - id: FEAT_REQ__TC8_CONFORMANCE__CONFORMANCE
     type: feat-req
     title: TC8 SOME/IP Protocol Conformance
-    status: approved
+    status: valid
     tags: [tc8, conformance, someip, verification]
     description: |
       The SOME/IP Gateway project shall verify protocol conformance of its
@@ -42,7 +42,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__SD_OFFER_FORMAT
     type: comp-req
     title: TC8 SD Offer Entry Format Validation
-    status: approved
+    status: valid
     tags: [tc8, conformance, service_discovery]
     description: |
       The conformance test suite shall verify that ``someipd`` transmits
@@ -65,7 +65,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__SD_CYCLIC_TIMING
     type: comp-req
     title: TC8 SD Cyclic Offer Timing
-    status: approved
+    status: valid
     tags: [tc8, conformance, service_discovery, timing]
     description: |
       The conformance test suite shall verify that ``someipd`` repeats
@@ -87,7 +87,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__SD_FIND_RESPONSE
     type: comp-req
     title: TC8 SD FindService Response
-    status: approved
+    status: valid
     tags: [tc8, conformance, service_discovery]
     description: |
       The conformance test suite shall verify that ``someipd`` responds to
@@ -109,7 +109,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__SD_SUB_LIFECYCLE
     type: comp-req
     title: TC8 SD Subscribe Eventgroup Lifecycle
-    status: approved
+    status: valid
     tags: [tc8, conformance, service_discovery, eventgroup]
     description: |
       The conformance test suite shall verify that ``someipd`` correctly
@@ -134,7 +134,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__SD_PHASES_TIMING
     type: comp-req
     title: TC8 SD Initial Delay and Repetitions Phase
-    status: approved
+    status: valid
     tags: [tc8, conformance, service_discovery, timing]
     description: |
       The conformance test suite shall verify that ``someipd`` observes
@@ -157,7 +157,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__MSG_RESP_HEADER
     type: comp-req
     title: TC8 SOME/IP Response Header Validation
-    status: approved
+    status: valid
     tags: [tc8, conformance, message_format]
     description: |
       The conformance test suite shall verify that ``someipd`` returns
@@ -182,7 +182,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__MSG_ERROR_CODES
     type: comp-req
     title: TC8 SOME/IP Error Return Codes
-    status: approved
+    status: valid
     tags: [tc8, conformance, message_format, error_handling]
     description: |
       The conformance test suite shall verify that ``someipd`` returns
@@ -206,7 +206,7 @@ artifacts:
   - id: COMP_REQ__TC8_CONFORMANCE__EVT_SUBSCRIPTION
     type: comp-req
     title: TC8 Event Notification Subscription Lifecycle
-    status: approved
+    status: valid
     tags: [tc8, conformance, events, notification]
     description: |
       The conformance test suite shall verify that ``someipd`` delivers

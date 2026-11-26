@@ -2,7 +2,7 @@
 id: DOC-RELEASE-MANAGEMENT-1467
 title: Release Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

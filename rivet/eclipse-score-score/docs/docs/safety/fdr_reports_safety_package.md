@@ -2,7 +2,7 @@
 id: DOC-FDR-REPORTS-SAFETY-PACKAGE-40195
 title: Fdr Reports Safety Package
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

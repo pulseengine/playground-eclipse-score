@@ -76,8 +76,12 @@ regen-docs:
 # pass for the falsification claim to hold.
 validate: validate-corpus validate-variants
 
+# --skip-external-validation: the rivet.yaml externals are the raw
+# eclipse-score repos `make sync` checks out for `make convert`. They have
+# no rivet.yaml of their own, so there is no cross-repo graph to load; the
+# converted artifacts are validated here as one project via `sources:`.
 validate-corpus:
-	@$(RIVET) --schemas $(SCHEMAS) validate
+	@$(RIVET) --schemas $(SCHEMAS) validate --skip-external-validation
 
 validate-variants:
 	@$(RIVET) variant check-all \

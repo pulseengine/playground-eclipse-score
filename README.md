@@ -103,7 +103,7 @@ numbers in the table below stay live, not snapshot.
 
 ```
 $ make validate
-Result: PASS (2507 warnings)
+Result: PASS (3718 warnings)
 4/4 variants passed (0 failed)
 ```
 

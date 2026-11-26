@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-GUIDELINE-30833
 title: Architecture Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

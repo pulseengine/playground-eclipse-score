@@ -2,7 +2,7 @@
 id: DOC-IIC-17-60452
 title: Iic-17
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

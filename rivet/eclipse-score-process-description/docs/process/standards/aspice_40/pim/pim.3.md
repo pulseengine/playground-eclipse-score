@@ -2,7 +2,7 @@
 id: DOC-PIM.3-47369
 title: Pim.3
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-RELEASE-WORKFLOW-86869
 title: Release Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

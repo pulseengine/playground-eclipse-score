@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-WORKPRODUCTS-66167
 title: Implementation Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

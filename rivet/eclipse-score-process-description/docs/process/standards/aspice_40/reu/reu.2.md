@@ -2,7 +2,7 @@
 id: DOC-REU.2-29842
 title: Reu.2
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

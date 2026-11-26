@@ -2,7 +2,7 @@
 id: DOC-API-GUIDELINE-93142
 title: Api Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

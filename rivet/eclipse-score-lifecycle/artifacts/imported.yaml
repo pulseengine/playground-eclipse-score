@@ -13,7 +13,7 @@ artifacts:
   - id: COMP__HEALTH_MONITOR
     type: comp
     title: Health Monitor
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       Health Monitor component provides a set of functionalities to verify the health of the system and its components. It includes monitoring deadlines, logic, and heartbeats to ensure proper system functioning.
@@ -26,7 +26,7 @@ artifacts:
   - id: COMP_ARC_STA__DEADLINE_MONITOR__STATIC_VIEW
     type: comp-arc-sta
     title: Deadline Monitor
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/dm_static_architecture.puml
     fields:
@@ -40,7 +40,7 @@ artifacts:
   - id: COMP_ARC_STA__LOGIC_MONITOR__STATIC_VIEW
     type: comp-arc-sta
     title: Logic Monitor
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/lm_static_architecture.puml
     fields:
@@ -54,7 +54,7 @@ artifacts:
   - id: COMP_ARC_STA__HEALTH_MONITOR__STATIC_VIEW
     type: comp-arc-sta
     title: Health Monitor
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/hm_static_architecture.puml
@@ -69,7 +69,7 @@ artifacts:
   - id: COMP_ARC_DYN__HEALTH_MONITOR__DYNAMIC_VIEW
     type: comp-arc-dyn
     title: HealthMonitor Creation
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/hm_creation.puml
@@ -84,7 +84,7 @@ artifacts:
   - id: COMP_ARC_DYN__HEALTH_LIB_THREAD__DYNAMIC_VIEW
     type: comp-arc-dyn
     title: HealthMonitor background thread
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/hm_background_thread.puml
     fields:
@@ -98,7 +98,7 @@ artifacts:
   - id: COMP_ARC_DYN__DEADLINE_MONITOR__DYNAMIC_VIEW
     type: comp-arc-dyn
     title: DeadlineMonitor Usage
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/dm_usage.puml
     fields:
@@ -112,7 +112,7 @@ artifacts:
   - id: COMP_ARC_DYN__LOGIC_MONITOR__DYNAMIC_VIEW
     type: comp-arc-dyn
     title: LogicMonitor Usage
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/lm_usage.puml
     fields:
@@ -126,7 +126,7 @@ artifacts:
   - id: COMP_ARC_DYN__HEARTBEAT_MONITOR__DYNAMIC_VIEW
     type: comp-arc-dyn
     title: HeartbeatMonitor Usage
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/hbm_usage.puml
     fields:
@@ -140,7 +140,7 @@ artifacts:
   - id: COMP_ARC_DYN__HEALTH_MONITOR__STARTUP_VIEW
     type: comp-arc-dyn
     title: Health Monitoring Startup Interaction
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/hm_startup.puml
@@ -155,7 +155,7 @@ artifacts:
   - id: COMP_ARC_DYN__HEALTH_MONITOR__SHUTDOWN_VIEW
     type: comp-arc-dyn
     title: Health Monitoring Shutdown Interaction
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/hm_shutdown.puml
@@ -170,7 +170,7 @@ artifacts:
   - id: REAL_ARC_INT__DEADLINE_MONITOR__INTERFACE
     type: real-arc-int
     title: DeadlineMonitor Interface
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/dmb_interface.puml
     fields:
@@ -183,7 +183,7 @@ artifacts:
   - id: REAL_ARC_INT__LOGIC_MONITOR__INTERFACE
     type: real-arc-int
     title: LogicMonitor Interface
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/lmb_interface.puml
     fields:
@@ -196,7 +196,7 @@ artifacts:
   - id: REAL_ARC_INT__HEARTBEAT_MONITOR__INTERFACE
     type: real-arc-int
     title: HeartbeatMonitor Interface
-    status: approved
+    status: valid
     description: |
       .. uml::  assets/hbm_interface.puml
     fields:
@@ -209,7 +209,7 @@ artifacts:
   - id: REAL_ARC_INT__HEALTH_MONITOR__INTERFACE
     type: real-arc-int
     title: HealthMonitor Interface
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/hmb_interface.puml
@@ -245,7 +245,7 @@ artifacts:
   - id: DD_STA__HEALTH_MONITOR__CLASS_DIAGRAM
     type: dd-sta
     title: Class Diagram
-    status: approved
+    status: valid
     tags: [health_monitor]
     description: |
       .. uml::  assets/static_diagram.puml
@@ -361,7 +361,7 @@ artifacts:
   - id: DOC__LIFECYCLE_RELEASE_NOTE
     type: doc
     title: lifecycle Release Note
-    status: approved
+    status: valid
     tags: ["eclipse:document"]
     fields:
       safety-level: ASIL_B

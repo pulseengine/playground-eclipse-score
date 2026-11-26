@@ -2,7 +2,7 @@
 id: DOC-CHKLST-IMPL-INSPECTION-23923
 title: Chklst Impl Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

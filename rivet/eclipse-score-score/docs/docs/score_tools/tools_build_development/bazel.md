@@ -2,7 +2,7 @@
 id: DOC-BAZEL-79446
 title: Bazel
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

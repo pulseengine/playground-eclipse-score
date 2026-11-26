@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-WORKPRODUCTS-39783
 title: Problem Resolution Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

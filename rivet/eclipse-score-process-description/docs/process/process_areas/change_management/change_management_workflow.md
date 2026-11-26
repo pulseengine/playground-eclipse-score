@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-WORKFLOW-7837
 title: Change Management Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

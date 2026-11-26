@@ -2,7 +2,7 @@
 id: DOC-OS-ONBOARD-TEMPLATE-63262
 title: Os Onboard Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-GETSTRT-86612
 title: Implementation Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

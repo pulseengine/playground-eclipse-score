@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-CONCEPT-22175
 title: Requirements Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

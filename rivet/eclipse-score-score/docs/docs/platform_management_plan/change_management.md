@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-14230
 title: Change Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

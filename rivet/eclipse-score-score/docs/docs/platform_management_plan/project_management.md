@@ -2,7 +2,7 @@
 id: DOC-PROJECT-MANAGEMENT-20500
 title: Project Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

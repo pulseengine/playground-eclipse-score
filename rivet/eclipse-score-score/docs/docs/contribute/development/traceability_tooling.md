@@ -2,7 +2,7 @@
 id: DOC-TRACEABILITY-TOOLING-2394
 title: Traceability Tooling
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

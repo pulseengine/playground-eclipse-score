@@ -2,7 +2,7 @@ artifacts:
   - id: DOC__PASTEY_CRATE_COMP_CLASS
     type: doc
     title: Pastey Crate Component Classification
-    status: approved
+    status: valid
     tags: [pre-existing, software-component, classification, Rust, proc-macro, "eclipse:document"]
     fields:
       safety-level: ASIL_B

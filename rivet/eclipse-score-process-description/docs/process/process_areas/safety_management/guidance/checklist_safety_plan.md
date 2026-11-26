@@ -2,7 +2,7 @@
 id: DOC-CHECKLIST-SAFETY-PLAN-89932
 title: Checklist Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

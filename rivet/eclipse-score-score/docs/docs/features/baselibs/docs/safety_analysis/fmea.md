@@ -2,7 +2,7 @@
 id: DOC-FMEA-49987
 title: Fmea
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

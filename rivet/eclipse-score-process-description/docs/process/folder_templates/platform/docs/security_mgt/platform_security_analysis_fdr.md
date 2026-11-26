@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SECURITY-ANALYSIS-FDR-48424
 title: Platform Security Analysis Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

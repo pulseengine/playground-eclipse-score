@@ -2,7 +2,7 @@
 id: DOC-QUALITY-GETSTRT-55914
 title: Quality Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

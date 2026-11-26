@@ -2,7 +2,7 @@
 id: DOC-SUP.1-47024
 title: Sup.1
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-IIC-10-10301
 title: Iic-10
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

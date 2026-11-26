@@ -23,7 +23,7 @@ artifacts:
   - id: DOC__VAJSON
     type: doc
     title: vajson
-    status: approved
+    status: valid
     tags: [component_request, "eclipse:document"]
     fields:
       safety-level: ASIL_B
@@ -45,7 +45,7 @@ artifacts:
   - id: COMP_REQ__VAJSON__VALIDATION
     type: comp-req
     title: JSON Validation
-    status: approved
+    status: valid
     description: |
       VaJson checks the well-formedness of JSON data.
       Errors shall include the reason and location in the JSON document for malformed JSON.
@@ -61,7 +61,7 @@ artifacts:
   - id: COMP_REQ__VAJSON__TRAILING_COMMAS
     type: comp-req
     title: JSON Deserialization RFC extension trailing commas
-    status: approved
+    status: valid
     description: |
       VaJson shall ignore trailing commas.
       This behavior extends RFC 8259.
@@ -77,7 +77,7 @@ artifacts:
   - id: COMP_REQ__VAJSON__HEX_INTEGERS
     type: comp-req
     title: JSON Deserialization RFC extension hexadecimal integers
-    status: approved
+    status: valid
     description: |
       VaJson shall accept hexadecimal integers.
       This behavior extends RFC 8259.
@@ -93,7 +93,7 @@ artifacts:
   - id: COMP_REQ__VAJSON__UNICODE
     type: comp-req
     title: Unicode Support
-    status: approved
+    status: valid
     description: |
       VaJson shall encode and decode UTF-8 encoded strings.
     fields:
@@ -108,7 +108,7 @@ artifacts:
   - id: COMP_REQ__VAJSON__ASIL
     type: comp-req
     title: VaJson library ASIL level
-    status: approved
+    status: valid
     description: |
       The VaJson library shall be ASIL-B compliant.
     fields:

@@ -2,7 +2,7 @@
 id: DOC-MODULE-SAFETY-ANALYSIS-FDR-92383
 title: Module Safety Analysis Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

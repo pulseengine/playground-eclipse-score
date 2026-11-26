@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-MANAGEMENT-CONCEPT-1917
 title: Platform Management Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

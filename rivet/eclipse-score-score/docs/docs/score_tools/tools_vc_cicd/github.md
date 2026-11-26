@@ -2,7 +2,7 @@
 id: DOC-GITHUB-77205
 title: Github
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

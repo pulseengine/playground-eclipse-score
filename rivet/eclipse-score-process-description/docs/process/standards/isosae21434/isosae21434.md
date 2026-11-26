@@ -2,7 +2,7 @@
 id: DOC-ISOSAE21434-6113
 title: Isosae21434
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

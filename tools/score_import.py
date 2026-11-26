@@ -123,23 +123,24 @@ LINK_MAP = {
     # from the other side; skip here to avoid double-encoding.
 }
 
-# Eclipse status enum → rivet status enum.
+# Eclipse status enum → rivet status enum (rivet >= 0.41: draft, valid,
+# invalid, in_progress, obsolete).
 STATUS_MAP = {
-    "valid":       "approved",
+    "valid":       "valid",
     "draft":       "draft",
     "invalid":     "obsolete",
     "in_progress": "in_progress",
     "obsolete":    "obsolete",
     # dec_rec-specific
-    "accepted":    "approved",
+    "accepted":    "valid",
     "proposed":    "draft",
     "rejected":    "obsolete",
     "superseded":  "obsolete",
     "deprecated":  "obsolete",
     # doc_tool-specific
     "evaluated":   "draft",
-    "qualified":   "approved",
-    "released":    "approved",
+    "qualified":   "valid",
+    "released":    "valid",
 }
 
 # Fields that pass through into rivet `fields:` (rather than being
@@ -763,7 +764,7 @@ def emit_markdown_for_rst(rst_path: pathlib.Path, md_path: pathlib.Path,
         f"id: {doc_id}-{abs(hash(str(rst_path))) % 100000}\n"
         f"title: {title}\n"
         "type: specification\n"
-        "status: approved\n"
+        "status: valid\n"
         "tags: [eclipse-score]\n"
         "---\n\n"
     )
@@ -786,7 +787,7 @@ def convert_need(need: ParsedNeed, stats: CoverageStats) -> dict | None:
         "type":  rivet_type,
         "title": need.title or need.id,
     }
-    # Status mapping (eclipse `valid` → rivet `approved` etc.).
+    # Status mapping (eclipse `valid` → rivet `valid` etc.).
     raw_status = need.options.get("status", "").strip()
     if raw_status:
         art["status"] = STATUS_MAP.get(raw_status, "draft")

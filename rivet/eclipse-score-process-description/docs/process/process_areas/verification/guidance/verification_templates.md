@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-TEMPLATES-25604
 title: Verification Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

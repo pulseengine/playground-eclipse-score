@@ -2,7 +2,7 @@
 id: DOC-IIC-11-4538
 title: Iic-11
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

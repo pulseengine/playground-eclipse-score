@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-MANAGEMENT-TEMPLATE-44249
 title: Platform Management Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

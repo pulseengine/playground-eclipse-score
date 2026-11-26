@@ -2,7 +2,7 @@
 id: DOC-INTERFACES-83458
 title: Interfaces
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

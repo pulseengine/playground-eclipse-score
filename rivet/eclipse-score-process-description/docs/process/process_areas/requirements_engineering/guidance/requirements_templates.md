@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-TEMPLATES-5272
 title: Requirements Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

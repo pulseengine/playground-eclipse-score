@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-954
 title: Problem Resolution
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

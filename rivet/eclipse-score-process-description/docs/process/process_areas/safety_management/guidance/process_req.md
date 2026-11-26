@@ -2,7 +2,7 @@
 id: DOC-PROCESS-REQ-30273
 title: Process Req
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

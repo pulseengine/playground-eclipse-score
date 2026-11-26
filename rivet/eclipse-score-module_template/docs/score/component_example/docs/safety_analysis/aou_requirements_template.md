@@ -2,7 +2,7 @@
 id: DOC-AOU-REQUIREMENTS-TEMPLATE-91919
 title: Aou Requirements Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

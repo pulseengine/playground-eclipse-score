@@ -2,7 +2,7 @@
 id: DOC-SAFETY-MANAGEMENT-GETSTRT-33455
 title: Safety Management Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 
