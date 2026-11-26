@@ -229,7 +229,7 @@ artifacts:
     type: tool-req
     title: "Suspicious: Enforce attribute"
     status: obsolete
-    tags: [Common Attributes]
+    tags: [Common Attributes, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall check if linked parent needs have different versions, compared to
       the version the need was originally linked to.
@@ -312,7 +312,7 @@ artifacts:
     type: tool-req
     title: Document author is autofilled
     status: obsolete
-    tags: [Documents]
+    tags: [Documents, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall provide an automatic mechanism to determine document authors.
       
@@ -336,7 +336,7 @@ artifacts:
     type: tool-req
     title: Document approver is autofilled
     status: obsolete
-    tags: [Documents]
+    tags: [Documents, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall provide an automatic mechanism to determine the document approver.
       
@@ -355,7 +355,7 @@ artifacts:
     type: tool-req
     title: Document reviewer is autofilled
     status: obsolete
-    tags: [Documents]
+    tags: [Documents, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall provide an automatic mechanism to determine the document reviewers.
       
@@ -459,7 +459,7 @@ artifacts:
     type: tool-req
     title: Support requirements test coverage
     status: obsolete
-    tags: [Requirements]
+    tags: [Requirements, "eclipse-status:invalid"]
     description: |
       Docs-As-Code shall allow for every need of type :need:`tool_req__docs_req_types` to
       have a ``testcovered`` attribute, which must be one of:
@@ -519,7 +519,7 @@ artifacts:
     type: tool-req
     title: Enables needs linking via satisfies attribute
     status: obsolete
-    tags: [Requirements]
+    tags: [Requirements, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall enforce that linking between model elements via the ``satisfies``
       attribute follows defined rules. Having at least one link is mandatory.
@@ -587,7 +587,7 @@ artifacts:
     type: tool-req
     title: Architecture Types
     status: obsolete
-    tags: [Architecture]
+    tags: [Architecture, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall support the following architecture element types:
       
@@ -900,7 +900,7 @@ artifacts:
     type: tool-req
     title: Extract Metadata from Tests
     status: obsolete
-    tags: [Testing]
+    tags: [Testing, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall ensure that each test case has a non empty description.
       
@@ -918,7 +918,7 @@ artifacts:
     type: tool-req
     title: Extract Metadata from Tests
     status: obsolete
-    tags: [Testing]
+    tags: [Testing, "eclipse-status:invalid"]
     description: |
       Docs-as-Code shall ensure that test cases link to requirements on the correct level:
       
@@ -1304,7 +1304,7 @@ artifacts:
     type: tool-req
     title: Failure Effect
     status: obsolete
-    tags: [Safety Analysis]
+    tags: [Safety Analysis, "eclipse-status:invalid"]
     description: |
       Docs-As-Code shall enforce that every Safety Analysis has a short description of the failure effect (e.g. failure lead to an unintended actuation of the analysed element)
     fields:

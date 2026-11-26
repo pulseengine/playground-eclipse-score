@@ -733,7 +733,7 @@ artifacts:
     type: comp-req
     title: Log requirements placeholder
     status: obsolete
-    tags: [log]
+    tags: [log, "eclipse-status:invalid"]
     description: |
       Requirement placeholder for diagram rendering.
       To be replaced with actual requirements.

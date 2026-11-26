@@ -17,7 +17,7 @@ artifacts:
     type: decision-record
     title: Dynamic Registration for SOME/IP Gateway
     status: draft
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:proposed"]
     fields:
       decision: " Gateway processes will dynamically register their communication requirements (e.g., required services and events) with the central SOME/IP Communication Stack process. This will be achieved via a dedicated, message-based IPC interface."
       context: " The SOME/IP Gateway architecture separates the core communication stack from multiple gateway processes. This is necessary for safety separation (ASIL vs. QM) and to manage a single network socket, which can only be bound by one process. A mechanism is required for the gateway \"client\" processes to inform the central \"server\" stack of their routing needs at runtime."

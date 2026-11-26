@@ -3,7 +3,7 @@ artifacts:
     type: decision-record
     title: Explicit initialization of logging
     status: draft
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:proposed"]
     description: |
       Provide a library for explicit initialization of logging.
       

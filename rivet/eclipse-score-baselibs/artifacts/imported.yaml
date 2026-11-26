@@ -14,6 +14,7 @@ artifacts:
     type: comp
     title: VaJson
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     fields:
       security: "YES"
       safety-level: ASIL_B
