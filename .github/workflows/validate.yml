@@ -40,7 +40,7 @@ permissions:
 jobs:
   validate-pinned:
     name: corpus oracle (pinned SHAs)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout fork
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
@@ -101,7 +101,7 @@ jobs:
   validate-rebased:
     name: corpus oracle (upstream HEADs - nightly only)
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout fork
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
