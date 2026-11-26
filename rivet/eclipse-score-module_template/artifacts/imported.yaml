@@ -407,6 +407,7 @@ artifacts:
     type: comp
     title: Component 1
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Example Component 1 description.
     fields:
@@ -422,6 +423,7 @@ artifacts:
     type: comp
     title: Component 2
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Example Component 2 description.
     fields:
@@ -436,6 +438,7 @@ artifacts:
     type: comp
     title: Component 3
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Example Component 3 description.
     fields:
@@ -584,7 +587,7 @@ artifacts:
     type: comp
     title: Component Name
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -596,7 +599,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name (Static View)
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     description: |
       .. needarch::
       :scale: 50
@@ -615,7 +618,7 @@ artifacts:
     type: comp-arc-dyn
     title: Dynamic View
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     description: |
       Put here a sequence diagram
     fields:
@@ -630,7 +633,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name Static View
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     description: |
       No architecture but detailed design
     fields:
@@ -735,7 +738,7 @@ artifacts:
     type: comp-req
     title: Some Title
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     description: |
       The Component shall do xyz to another component to bring it to this condition at this time
       
@@ -753,7 +756,7 @@ artifacts:
     type: aou-req
     title: Next Title
     status: obsolete
-    tags: [component_name]
+    tags: [component_name, "eclipse-status:invalid"]
     description: |
       The Component User shall do xyz to use the component safely/securely
     fields:
@@ -764,7 +767,7 @@ artifacts:
     type: aou-req
     title: Another Title
     status: obsolete
-    tags: [environment, component_name]
+    tags: [environment, component_name, "eclipse-status:invalid"]
     description: |
       The Component shall only be used in a xyz environment to ensure its proper functioning.
     fields:

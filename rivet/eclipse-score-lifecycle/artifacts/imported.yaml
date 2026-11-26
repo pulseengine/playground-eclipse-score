@@ -287,6 +287,7 @@ artifacts:
     type: stkh-req
     title: Dummy Stakeholder
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The platform shall ...
     fields:
@@ -298,6 +299,7 @@ artifacts:
     type: feat-req
     title: Dummy Feature
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Dummy
     fields:
@@ -311,7 +313,7 @@ artifacts:
     type: comp-req
     title: Dummy Component
     status: obsolete
-    tags: [health_monitor]
+    tags: [health_monitor, "eclipse-status:invalid"]
     description: |
       The Feature shall do xyz to the user to bring him to this condition at this time
       
@@ -329,7 +331,7 @@ artifacts:
     type: aou-req
     title: Dummy AoU
     status: obsolete
-    tags: [health_monitor]
+    tags: [health_monitor, "eclipse-status:invalid"]
     description: |
       The Feature User shall do xyz to use the feature safely
     fields:

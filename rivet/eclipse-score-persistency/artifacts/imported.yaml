@@ -179,6 +179,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name (Static View)
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       .. needarch::
       :scale: 50
@@ -197,6 +198,7 @@ artifacts:
     type: comp-arc-dyn
     title: Dynamic View
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       put here a sequence diagram
     fields:
@@ -211,6 +213,7 @@ artifacts:
     type: comp-arc-sta
     title: Component Name 2
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       no architecture but detailed design
     fields:

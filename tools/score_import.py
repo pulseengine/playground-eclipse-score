@@ -799,6 +799,10 @@ def convert_need(need: ParsedNeed, stats: CoverageStats) -> dict | None:
     # Preserve eclipse type as a tag when rivet collapses it (e.g. gd_*).
     if need.eclipse_type != rivet_type.replace("-", "_"):
         tag_set.append(f"eclipse:{need.eclipse_type}")
+    # Preserve the eclipse status when the mapping changes it (e.g.
+    # qualified -> valid), so status + tag still recovers the input.
+    if raw_status and art["status"] != raw_status:
+        tag_set.append(f"eclipse-status:{raw_status}")
     if tag_set:
         art["tags"] = tag_set
 

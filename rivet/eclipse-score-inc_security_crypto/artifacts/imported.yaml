@@ -3,7 +3,7 @@ artifacts:
     type: decision-record
     title: ABI Compatibility for IPC Layer (Deferred Post-Stabilisation)
     status: draft
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:proposed"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -13,7 +13,7 @@ artifacts:
     type: decision-record
     title: CryptoResourceGuard Lifetime via Daemon-Side Reference Counting
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -23,7 +23,7 @@ artifacts:
     type: decision-record
     title: Shared-Connection Anchor for Persistent Resource ID Stability
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -33,7 +33,7 @@ artifacts:
     type: decision-record
     title: "AlgorithmId Represented as FixedCapacityString<64>"
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -43,7 +43,7 @@ artifacts:
     type: decision-record
     title: Synchronous-Only IPC Model
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -53,7 +53,7 @@ artifacts:
     type: decision-record
     title: Context Reset() for Streaming Context Reuse
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -63,7 +63,7 @@ artifacts:
     type: decision-record
     title: Two-Layer Per-Call Timeout with Daemon-Side Enforcement
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -73,7 +73,7 @@ artifacts:
     type: decision-record
     title: KeyOperationPermission as a Capability Bitmask
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -83,7 +83,7 @@ artifacts:
     type: decision-record
     title: Unified Cipher Context Rather Than Separate Encrypt/Decrypt Plus Symmetric/Asymmetric Split
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -93,7 +93,7 @@ artifacts:
     type: decision-record
     title: IMemoryAllocator Separated from ICryptoStack
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -103,7 +103,7 @@ artifacts:
     type: decision-record
     title: Control Plane IPC Boundary Copy with Daemon-Internal Zero-Copy References
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     fields:
       context: doc__crypto_architecture
       decision: The control plane IPC layer on the daemon side shall create exactly one owning copy of all incoming request data at the deserialization boundary. All subsequent daemon-internal processing shall operate on non-owning references into that single owned copy. This prevents time-of-check-time-of-use (TOCTOU) attacks on control information while minimising memory copies within the daemon. The data plane is explicitly excluded — it carries only opaque data payloads and may use zero-copy transfer.
@@ -111,7 +111,7 @@ artifacts:
     type: decision-record
     title: Per-Operation Parameter Structs with Dual Overloads
     status: draft
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:proposed"]
     description: |
       .. :affects: comp__crypto
     fields:
@@ -121,6 +121,7 @@ artifacts:
     type: comp-arc-dyn
     title: Dynamic View
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Dynamic interactions for typical crypto operations.
     fields:
@@ -145,6 +146,7 @@ artifacts:
     type: comp
     title: Crypto
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     fields:
       security: "YES"
       safety-level: QM
@@ -152,6 +154,7 @@ artifacts:
     type: real-arc-int
     title: ICryptoStack
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Application-level entry point for cryptographic operations. The
       underlying daemon connection is managed internally and shared across
@@ -170,6 +173,7 @@ artifacts:
     type: real-arc-int
     title: CryptoResourceGuard
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       RAII guard for transient ``CryptoResourceId`` handles. Returned
       by all resource-producing methods (``GenerateKey``, ``DeriveKey``,
@@ -194,6 +198,7 @@ artifacts:
     type: real-arc-int
     title: ICryptoContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Factory and resource resolution interface for a crypto daemon session.
       Resolves string resource identifiers to ``CryptoResourceId`` handles
@@ -219,6 +224,7 @@ artifacts:
     type: real-arc-int
     title: IMemoryAllocator
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Zero-copy shared-memory allocator. Allocates provider-compatible
       memory regions with optional type and provider hints. Provides
@@ -233,6 +239,7 @@ artifacts:
     type: real-arc-int
     title: Streaming Context Hierarchy
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       ``IContext`` → ``IStreamingContext`` → ``IStreamingOutputContext``
       base hierarchy.  All streaming methods (``Init()``, ``Update()``,
@@ -262,6 +269,7 @@ artifacts:
     type: real-arc-int
     title: IKeyManagementContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Key lifecycle management with dual-overload design. Each
       key-producing method (``GenerateKey``, ``DeriveKey``, ``AgreeKey``,
@@ -308,6 +316,7 @@ artifacts:
     type: real-arc-int
     title: ICertificateManagementContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Certificate lifecycle management — the certificate-domain mirror of
       ``IKeyManagementContext``. Handles: ``ParseCertificate`` /
@@ -331,6 +340,7 @@ artifacts:
     type: real-arc-int
     title: ICertificateVerificationContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Builder-style certificate chain verification. Configures
       certificate, chain, verification trust store, and revocation check
@@ -343,6 +353,7 @@ artifacts:
     type: real-arc-int
     title: ICsrGenerationContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Builder-style CSR generation. Configures subject key (as
       ``CryptoResourceId``), signature algorithm, subject DN, and
@@ -356,6 +367,7 @@ artifacts:
     type: real-arc-int
     title: Typed Object Hierarchy
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       ``ICryptoObject`` base with ``GetId()`` and ``GetType()``
       (both ``const noexcept``).  All trivial accessors returning
@@ -380,6 +392,7 @@ artifacts:
     type: real-arc-int
     title: CryptoResourceId
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Compact runtime handle for a daemon-managed crypto resource.
       Contains a daemon-assigned 64-bit identifier, resource type
@@ -397,6 +410,7 @@ artifacts:
     type: real-arc-int
     title: BaseContextConfig
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Common fluent builder base for all operation context configuration
       structs. Provides algorithm, provider, and timeout fields shared
@@ -420,6 +434,7 @@ artifacts:
     type: real-arc-int
     title: KdfParameters
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Structured parameters for key derivation functions.
       Contains typed fields: ``kdf_algorithm`` (``AlgorithmId``),
@@ -439,6 +454,7 @@ artifacts:
     type: real-arc-int
     title: Key Operation Parameter Structs
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Per-operation fluent-builder parameter structs for
       ``IKeyManagementContext`` methods. Each struct encapsulates the
@@ -469,6 +485,7 @@ artifacts:
     type: real-arc-int
     title: IHashContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Cryptographic hashing. Extends ``IStreamingOutputContext``;
       exposes ``Init()``, ``Update()``, ``Reset()``, and ``Finalize()``
@@ -483,6 +500,7 @@ artifacts:
     type: real-arc-int
     title: IMacContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Message authentication code generation (HMAC, CMAC, GMAC, etc.). Extends
       ``IStreamingOutputContext``; exposes ``Init()`` with the optional-IV
@@ -498,6 +516,7 @@ artifacts:
     type: real-arc-int
     title: ICipherContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Symmetric encryption and decryption. Extends
       ``IStreamingOutputContext``; exposes ``Init()``, ``Reset()``,
@@ -516,6 +535,7 @@ artifacts:
     type: real-arc-int
     title: IAeadContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Authenticated encryption with associated data. Extends
       ``IStreamingContext``; exposes ``Init()`` and ``Reset()`` from the
@@ -533,6 +553,7 @@ artifacts:
     type: real-arc-int
     title: ISignContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Digital signature generation. Extends ``IStreamingOutputContext``;
       exposes ``Init()``, ``Update()``, and ``Reset()`` from the base.
@@ -547,6 +568,7 @@ artifacts:
     type: real-arc-int
     title: IVerifySignatureContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Digital signature verification. Extends ``IStreamingContext``;
       exposes ``Init()``, ``Update()``, and ``Reset()`` from the base.
@@ -559,6 +581,7 @@ artifacts:
     type: real-arc-int
     title: IRandomContext
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Cryptographically secure random number generation. Provides
       ``Generate()`` for filling a caller-supplied buffer with entropy
@@ -571,7 +594,7 @@ artifacts:
     type: decision-record
     title: Central Data Node Manager
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       .. :affects: comp__crypto
     fields:

@@ -181,7 +181,7 @@ artifacts:
     type: decision-record
     title: Feature as Independent Delivery Product
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     description: |
       :Consequences: Process update required. Feature architecture and component artifacts are moved to SW-Module repositories. Feature requirements and logical feature interfaces remain in the S-CORE repository. The dependency rule is mandatory.
     fields:
@@ -191,7 +191,7 @@ artifacts:
     type: decision-record
     title: Bi-directional traceability in docs
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     fields:
       context: Infrastructure
       decision: Single documentation build
@@ -199,7 +199,7 @@ artifacts:
     type: decision-record
     title: Move examples to module_template repository
     status: valid
-    tags: ["eclipse:dec_rec"]
+    tags: ["eclipse:dec_rec", "eclipse-status:accepted"]
     fields:
       context: Infrastructure
       decision: Option 3
@@ -4076,7 +4076,7 @@ artifacts:
     type: aou-req
     title: FEO something
     status: obsolete
-    tags: [frameworks_feo, frameworks_feo]
+    tags: [frameworks_feo, frameworks_feo, "eclipse-status:invalid"]
     description: |
       Something shall be done.
     fields:
@@ -4691,6 +4691,7 @@ artifacts:
     type: feat-arc-dyn
     title: Application health monitoring
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       .. uml:: _assets/application_health_monitoring_dynamic.puml
       :scale: 50
@@ -4795,6 +4796,7 @@ artifacts:
     type: feat-arc-dyn
     title: Logical control flow monitoring
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       .. uml:: _assets/logical_sup.puml
       :scale: 50
@@ -5020,6 +5022,7 @@ artifacts:
     type: feat-req
     title: Support for launching processes
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching :term:`Processes <Process>`.
     fields:
@@ -5033,6 +5036,7 @@ artifacts:
     type: feat-req
     title: Process dependency handling
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for ordering the launching of
       :term:`Processes <Process>` based on the dependencies.
@@ -5047,6 +5051,7 @@ artifacts:
     type: feat-req
     title: Launching processes in parallel
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching :term:`Processes <Process>`
       in parallel.
@@ -5061,6 +5066,7 @@ artifacts:
     type: feat-req
     title: Control interface support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to wait for configurable custom
       conditions, which can be signaled from applications via :term:`Control Interface`.
@@ -5075,6 +5081,7 @@ artifacts:
     type: feat-req
     title: Forward process information
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to pass the output of one or
       multiple :term:`Processes <Process>` as input arguments to another process.
@@ -5089,6 +5096,7 @@ artifacts:
     type: feat-req
     title: Handling process args
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given set of arguments.
@@ -5103,6 +5111,7 @@ artifacts:
     type: feat-req
     title: Launching process in debug mode
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching process with a
       given set of debug arguments in debug mode.
@@ -5117,6 +5126,7 @@ artifacts:
     type: feat-req
     title: Launching process in state waiting for a debugger connection
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process in a state
       waiting for a debugger connection.
@@ -5131,6 +5141,7 @@ artifacts:
     type: feat-req
     title: "Process user, group IDs support"
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given :term:`UID`/:term:`GID` (user name/Group Identifier).
@@ -5145,6 +5156,7 @@ artifacts:
     type: feat-req
     title: Process priority support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given priority.
@@ -5159,6 +5171,7 @@ artifacts:
     type: feat-req
     title: CWD support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given :term:`Working Directory`.
@@ -5173,6 +5186,7 @@ artifacts:
     type: feat-req
     title: Launching terminal
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a terminal or a
       session leader.
@@ -5187,6 +5201,7 @@ artifacts:
     type: feat-req
     title: Standard handle redirection
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for stdin, stdout, stderr
       redirection.
@@ -5201,6 +5216,7 @@ artifacts:
     type: feat-req
     title: Non-root support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to be started with security
       policy as non-root.
@@ -5215,6 +5231,7 @@ artifacts:
     type: feat-req
     title: Configurable amount of retries
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support a configurable amount of retries in
       case error occurs during startup of a component (e.g. file not available) occurs.
@@ -5229,6 +5246,7 @@ artifacts:
     type: feat-req
     title: Process capability support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching :term:`Processes <Process>`
       with configured OS-specific capabilities and privileges.
@@ -5243,6 +5261,7 @@ artifacts:
     type: feat-req
     title: File descriptor inheritance support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with
       given :term:`File Descriptor` inheritance restrictions.
@@ -5257,6 +5276,7 @@ artifacts:
     type: feat-req
     title: Security policy support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given security policy.
@@ -5271,6 +5291,7 @@ artifacts:
     type: feat-req
     title: Supplementary group support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given set of supplementary groups.
@@ -5285,6 +5306,7 @@ artifacts:
     type: feat-req
     title: Scheduling support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with
       certain scheduling policy.
@@ -5299,6 +5321,7 @@ artifacts:
     type: feat-req
     title: CPU runmask support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given runmask.
@@ -5313,6 +5336,7 @@ artifacts:
     type: feat-req
     title: ASLR support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching process with
       :term:`ASLR` (Address Space Layout Randomization).
@@ -5327,6 +5351,7 @@ artifacts:
     type: feat-req
     title: Resource limit support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process with a
       given set of system resource limits (rlimit).
@@ -5341,6 +5366,7 @@ artifacts:
     type: feat-req
     title: Process detach from parent support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for launching a process to
       detach from parent.
@@ -5355,6 +5381,7 @@ artifacts:
     type: feat-req
     title: Conditional launching
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide launching processes based on conditions.
     fields:
@@ -5368,6 +5395,7 @@ artifacts:
     type: feat-req
     title: Conditionally launch of processes
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to conditionally start a process
       or process group based on the return value of a single or multiple :term:`Processes <Process>`
@@ -5383,6 +5411,7 @@ artifacts:
     type: feat-req
     title: Condition timeout
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for per condition configurable
       total wait time for launch conditions to be satisfied.
@@ -5397,6 +5426,7 @@ artifacts:
     type: feat-req
     title: Conditional launch polling interval
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for per condition configurable
       :term:`Polling Interval` for launch conditions to be checked.
@@ -5411,6 +5441,7 @@ artifacts:
     type: feat-req
     title: Pre-start validation
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall be able to validate the pre-start conditions of the executable using the conditions.
     fields:
@@ -5424,6 +5455,7 @@ artifacts:
     type: feat-req
     title: post-start validation
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall be able to validate the start of the executable using the conditions.
     fields:
@@ -5437,6 +5469,7 @@ artifacts:
     type: feat-req
     title: Launched Process status
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a way to store the status of the launched process.
     fields:
@@ -5450,6 +5483,7 @@ artifacts:
     type: feat-req
     title: Condition check based on status
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a method for condition check based on process state.
     fields:
@@ -5463,6 +5497,7 @@ artifacts:
     type: feat-req
     title: Configuration of action based on condition evaluation
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a way to configure actions based on condition evaluation i.e. to be able to configure SUCCESS and FAILURE case.
     fields:
@@ -5476,6 +5511,7 @@ artifacts:
     type: feat-req
     title: Condition check based on path
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a method for condition check for a path.
     fields:
@@ -5489,6 +5525,7 @@ artifacts:
     type: feat-req
     title: Condition check based on ENV
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a method for condition check for environment variable.
     fields:
@@ -5502,6 +5539,7 @@ artifacts:
     type: feat-req
     title: Condition check based on all dependency
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a method to check if all dependencies have been executed.
     fields:
@@ -5515,6 +5553,7 @@ artifacts:
     type: feat-req
     title: Condition check based on at least one dependency
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a method to check if at least one dependency has been executed.
     fields:
@@ -5528,6 +5567,7 @@ artifacts:
     type: feat-req
     title: Condition check for each SWC its dependencies
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a way to define for each :term:`SWC` (Software Components), its dependencies.
     fields:
@@ -5541,6 +5581,7 @@ artifacts:
     type: feat-req
     title: Condition check for each SWC its stop sequence
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall provide a way to define the stop sequence for each :term:`SWC` (Software Components).
     fields:
@@ -5554,6 +5595,7 @@ artifacts:
     type: feat-req
     title: Process adoption
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to adopt already running :term:`Processes <Process>`.
     fields:
@@ -5567,6 +5609,7 @@ artifacts:
     type: feat-req
     title: Dropping process responsibility
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to dropping all surveillance
       and failure reaction activities of :term:`Processes <Process>`.
@@ -5581,6 +5624,7 @@ artifacts:
     type: feat-req
     title: Multiple instance of executable
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall permit an executable to be launched more than once.
     fields:
@@ -5594,6 +5638,7 @@ artifacts:
     type: feat-req
     title: Invalid dependency
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall reject an inconsistent definition of set of executables dependencies.
     fields:
@@ -5607,6 +5652,7 @@ artifacts:
     type: feat-req
     title: Dangling dependency
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall be able to stop a process when all it's dependents are stopped if specified in the set of executables.
     fields:
@@ -5620,6 +5666,7 @@ artifacts:
     type: feat-req
     title: Coordination stop dependency
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall permit the stop order of non-dependent processes to be specified.
     fields:
@@ -5633,6 +5680,7 @@ artifacts:
     type: feat-req
     title: OCI Compliant
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall be compliant to the `OCI Specification v1.2.0 <https://github.com/opencontainers/runtime-spec/releases/tag/v1.2.0>`__.
     fields:
@@ -5646,6 +5694,7 @@ artifacts:
     type: feat-req
     title: Run target support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for :term:`run targets <Run target>` to define
       collections of :term:`Processes <Process>` that can be launched together.
@@ -5660,6 +5709,7 @@ artifacts:
     type: feat-req
     title: Launching run target
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to start a named :term:`Run target`.
     fields:
@@ -5673,6 +5723,7 @@ artifacts:
     type: feat-req
     title: Switch between run targets
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to switch between different :term:`run targets <Run target>`.
     fields:
@@ -5686,6 +5737,7 @@ artifacts:
     type: feat-req
     title: Process state
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall have a means for the launched :term:`Processes <Process>`
       to communicate a state, which represents the launched processes' internal state,
@@ -5701,6 +5753,7 @@ artifacts:
     type: feat-req
     title: Stop timeout
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for configurable timeout
       :term:`Interval` to wait for the process to be stopped.
@@ -5715,6 +5768,7 @@ artifacts:
     type: feat-req
     title: Terminating process
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for terminating :term:`Processes <Process>`.
     fields:
@@ -5728,6 +5782,7 @@ artifacts:
     type: feat-req
     title: Handling process dependency in termination
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall terminate the :term:`Processes <Process>` based on the
       dependency order.
@@ -5742,6 +5797,7 @@ artifacts:
     type: feat-req
     title: Configurable delay between SIGTERM and SIGKILL
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The time to wait, before SIGKILL is sent shall be configurable. In case "0" is
       stated, the SIGKILL shall be sent immediately.
@@ -5756,6 +5812,7 @@ artifacts:
     type: feat-req
     title: Normal shutdown
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support normal shutdown by terminating all
       process in the dependency order.
@@ -5770,6 +5827,7 @@ artifacts:
     type: feat-req
     title: Slow shutdown
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support slow shutdown by terminating the
       :term:`Processes <Process>` in the dependency order.
@@ -5784,6 +5842,7 @@ artifacts:
     type: feat-req
     title: Fast shutdown
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support fast shutdown by terminating itself
       without affecting the started :term:`Processes <Process>`.
@@ -5798,6 +5857,7 @@ artifacts:
     type: feat-req
     title: Launch Manager shutdown
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall exit after performing shutdown operation by
       stopping all the :term:`Processes <Process>` it owns in the dependency order when requested.
@@ -5812,6 +5872,7 @@ artifacts:
     type: feat-req
     title: Shutdown signal handling
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall implement a shutdown by sending a SIGTERM to
       the process. In case the process does not terminate itself, a SIGKILL shall be sent.
@@ -5826,6 +5887,7 @@ artifacts:
     type: feat-req
     title: Control commands
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for commands to control
       component states.
@@ -5840,6 +5902,7 @@ artifacts:
     type: feat-req
     title: Query commands
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for commands to query component
       states.
@@ -5854,6 +5917,7 @@ artifacts:
     type: feat-req
     title: Report "started/running/degraded"
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to report status on components via the
       :term:`Control Interface`.
@@ -5870,6 +5934,7 @@ artifacts:
     type: feat-req
     title: Request run target launch
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to start a named :term:`Run target` respecting the
       dependencies when requested.
@@ -5884,6 +5949,7 @@ artifacts:
     type: feat-req
     title: Process crash monitoring
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for monitoring abnormal
       termination of :term:`Processes <Process>`.
@@ -5898,6 +5964,7 @@ artifacts:
     type: feat-req
     title: Process state notification
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for external monitors to get
       notified on process life status.
@@ -5912,6 +5979,7 @@ artifacts:
     type: feat-req
     title: Recovery action
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support :term:`Recovery Action` for the
       abnormally terminated :term:`Processes <Process>`.
@@ -5926,6 +5994,7 @@ artifacts:
     type: feat-req
     title: Run target switch as recovery action
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support switching to a different :term:`Run target` as
       recovery action in case a single process terminated abnormally or lost its
@@ -5941,6 +6010,7 @@ artifacts:
     type: feat-req
     title: "Monitoring and recovery: watchdog support"
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support a smart :term:`Watchdog`, configurable
       per process.
@@ -5955,6 +6025,7 @@ artifacts:
     type: feat-req
     title: "Monitoring and recovery: recovery wait time"
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for configurable wait time
       that shall elapse before repeating :term:`Recovery Action`.
@@ -5969,6 +6040,7 @@ artifacts:
     type: feat-req
     title: "Monitoring and recovery: adopted process monitoring"
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for monitoring adopted
       :term:`Processes <Process>`.
@@ -5983,6 +6055,7 @@ artifacts:
     type: feat-req
     title: Process launch monitoring
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to detect and react to failure of the
       process launch.
@@ -5997,6 +6070,7 @@ artifacts:
     type: feat-req
     title: Process liveliness detection
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to detect and react to loss of
       :term:`Liveliness` of the :term:`Processes <Process>` it owns.
@@ -6011,6 +6085,7 @@ artifacts:
     type: feat-req
     title: Process monitoring
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall monitor the state of the :term:`Processes <Process>` as
       specified by the set of executables.
@@ -6025,6 +6100,7 @@ artifacts:
     type: feat-req
     title: Recovery
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to react to a process failure by
       optionally performing one of relaunching the process, stopping the process,
@@ -6041,6 +6117,7 @@ artifacts:
     type: feat-req
     title: Multi-instance
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall be able to run in multiple instances with its
       own configurations on a system.
@@ -6055,6 +6132,7 @@ artifacts:
     type: feat-req
     title: Launch manager self health check
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall implement time based cyclical monitoring of itself.
     fields:
@@ -6068,6 +6146,7 @@ artifacts:
     type: feat-req
     title: Launch manager external watchdog notification
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall trigger a notification to an external
       :term:`Watchdog` for each successful self monitoring test execution.
@@ -6082,6 +6161,7 @@ artifacts:
     type: feat-req
     title: Launch manager external watchdog notification - failed test
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall not trigger an external :term:`Watchdog`
       notification if an internal health check failed.
@@ -6096,6 +6176,7 @@ artifacts:
     type: feat-req
     title: Launch manager external monitoring configuration
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support configuring the :term:`Interval` of
       the internal health check executions.
@@ -6110,6 +6191,7 @@ artifacts:
     type: feat-req
     title: Logging slog2 and file support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall support OS specific logging facilities to analyze the early
       boot sequence.
@@ -6124,6 +6206,7 @@ artifacts:
     type: feat-req
     title: Logging state transitions
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for logging process launches,
       :term:`Processes <Process>` exit/recovery, internal tasks, and interaction with external monitor.
@@ -6138,6 +6221,7 @@ artifacts:
     type: feat-req
     title: Logging timestamp
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` logs shall contain timestamp information.
     fields:
@@ -6151,6 +6235,7 @@ artifacts:
     type: feat-req
     title: Logging DAG
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide the possibility to log the :term:`DAG`
       in a human readable format, triggered via :term:`Control Interface`.
@@ -6165,6 +6250,7 @@ artifacts:
     type: feat-req
     title: Configuration dependency view
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall have the means to log the current dependencies in a format that can be visualized when requested.
     fields:
@@ -6178,6 +6264,7 @@ artifacts:
     type: feat-req
     title: Configuration file support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The launch manager shall provide modular configuration file support to configure process attributes.
     fields:
@@ -6191,6 +6278,7 @@ artifacts:
     type: feat-req
     title: Runtime configuration compliance
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The launch manager shall provide modular configuration files support for configurations coming from `OCI runtime configuration<https://github.com/opencontainers/runtime-spec/blob/v1.2.0/config.md>`.
     fields:
@@ -6204,6 +6292,7 @@ artifacts:
     type: feat-req
     title: Updating configuration
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support for extending already running
       session with additional new configuration file.
@@ -6218,6 +6307,7 @@ artifacts:
     type: feat-req
     title: Module support
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The :term:`Launch Manager` shall provide support to clustering set of components
       as modules.
@@ -6232,6 +6322,7 @@ artifacts:
     type: feat-req
     title: Global process properties
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall be able to centrally define defaults for specific properties for the set of executables.
     fields:
@@ -6245,6 +6336,7 @@ artifacts:
     type: feat-req
     title: Lazy check of configured commands
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall check availability of executables in the filesystem only when the executable shall required to be executed.
     fields:
@@ -6258,6 +6350,7 @@ artifacts:
     type: feat-req
     title: Configuration Dependency view
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall have the means to generate the specified dependencies in a format that can be visualized.
     fields:
@@ -6271,6 +6364,7 @@ artifacts:
     type: feat-req
     title: Configuration Verification tool
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The Launch Manager shall have a means to validate the configuration offline.
     fields:
@@ -6309,6 +6403,7 @@ artifacts:
     type: feat-arc-sta
     title: Static View
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       .. needarch::
       :scale: 50
@@ -6441,7 +6536,7 @@ artifacts:
     type: feat-req
     title: Preemptive Scheduling for Safety Tasks
     status: obsolete
-    tags: [orchestration]
+    tags: [orchestration, "eclipse-status:invalid"]
     description: |
       The Executor shall support preemptive scheduling of special safety-critical tasks, guaranteeing their execution.
     fields:
@@ -6457,7 +6552,7 @@ artifacts:
     type: feat-req
     title: Separate Priority for Safety Tasks
     status: obsolete
-    tags: [orchestration]
+    tags: [orchestration, "eclipse-status:invalid"]
     description: |
       Safety-critical tasks shall be prioritized separately from standard cooperative tasks.
     fields:
@@ -6699,7 +6794,7 @@ artifacts:
     type: feat-req
     title: Safety Tasks in Programs
     status: obsolete
-    tags: [orchestration]
+    tags: [orchestration, "eclipse-status:invalid"]
     description: |
       Critical timing or safety paths within Programs shall be executed via preemptive special tasks provided by the Executor.
     fields:
@@ -6821,7 +6916,7 @@ artifacts:
     type: feat-req
     title: Explicit Preemption Activation
     status: obsolete
-    tags: [orchestration]
+    tags: [orchestration, "eclipse-status:invalid"]
     description: |
       Preemptive scheduling shall only be activated explicitly for tasks with safety or critical timing constraints.
     fields:
@@ -6837,7 +6932,7 @@ artifacts:
     type: feat-req
     title: Exclusive Use of IPC Feature for Inter Process Synchronization
     status: obsolete
-    tags: [orchestration]
+    tags: [orchestration, "eclipse-status:invalid"]
     description: |
       The system shall use the approved IPC feature exclusively for all inter-process synchronization.
     fields:
@@ -11178,7 +11273,7 @@ artifacts:
     type: comp
     title: FlatBuffers
     status: obsolete
-    tags: [baselibs]
+    tags: [baselibs, "eclipse-status:invalid"]
     fields:
       security: "YES"
       safety-level: ASIL_B
@@ -11574,7 +11669,7 @@ artifacts:
     type: comp-arc-dyn
     title: JSON dynamic arch
     status: obsolete
-    tags: [baselibs]
+    tags: [baselibs, "eclipse-status:invalid"]
     description: |
       put here a sequence diagram (TBD)
     fields:
@@ -14666,6 +14761,7 @@ artifacts:
     type: aou-req
     title: on_target_crates
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       Only the following crates of the FEO module shall be used to build code that runs on
       targets in release builds.
@@ -14692,6 +14788,7 @@ artifacts:
     type: aou-req
     title: rust_std_lib_modules
     status: obsolete
+    tags: ["eclipse-status:invalid"]
     description: |
       The following items from the Rust std library shall be safety qualified:
       
@@ -15025,7 +15122,7 @@ artifacts:
     type: aou-req
     title: FEO something
     status: obsolete
-    tags: [component_feo, component_feo]
+    tags: [component_feo, component_feo, "eclipse-status:invalid"]
     description: |
       Anything shall be done.
     fields:
@@ -15600,7 +15697,7 @@ artifacts:
     type: comp-req
     title: Lifecycle
     status: obsolete
-    tags: [lifecycle]
+    tags: [lifecycle, "eclipse-status:invalid"]
     description: |
       Dummy requirement
     fields:
@@ -16487,7 +16584,7 @@ artifacts:
     type: aou-req
     title: RST-0002
     status: obsolete
-    tags: [operating_system]
+    tags: [operating_system, "eclipse-status:invalid"]
     description: |
       not relevant for S-CORE, no target HW
     fields:
@@ -18887,7 +18984,7 @@ artifacts:
     type: doc
     title: Doc-as-Code
     status: draft
-    tags: [tool_management, tools_documentation, "eclipse:doc_tool"]
+    tags: [tool_management, tools_documentation, "eclipse:doc_tool", "eclipse-status:evaluated"]
     fields:
       version: v2.2.0
       tcl: LOW
@@ -18900,7 +18997,7 @@ artifacts:
     type: doc
     title: clang-format
     status: draft
-    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool"]
+    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool", "eclipse-status:evaluated"]
     fields:
       version: "19.1.1"
       tcl: HIGH
@@ -18913,7 +19010,7 @@ artifacts:
     type: doc
     title: clang-tidy
     status: draft
-    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool"]
+    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool", "eclipse-status:evaluated"]
     fields:
       version: "19.1.1"
       tcl: LOW
@@ -18926,7 +19023,7 @@ artifacts:
     type: doc
     title: clippy
     status: draft
-    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool"]
+    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool", "eclipse-status:evaluated"]
     fields:
       version: "1.90.0 (see [1])"
       tcl: HIGH
@@ -18939,7 +19036,7 @@ artifacts:
     type: doc
     title: rustfmt
     status: draft
-    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool"]
+    tags: [tool_management, tools_static_analysis_code_quality, "eclipse:doc_tool", "eclipse-status:evaluated"]
     fields:
       version: "1.8.0 (exact version shall be derived from qualified Rust compiler)"
       tcl: HIGH
