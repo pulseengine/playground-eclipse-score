@@ -2,7 +2,7 @@
 id: DOC-SOFTWARE-VERIFICATION-4329
 title: Software Verification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

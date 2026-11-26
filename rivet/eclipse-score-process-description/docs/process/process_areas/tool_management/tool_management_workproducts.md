@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-WORKPRODUCTS-84473
 title: Tool Management Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -76,8 +76,12 @@ regen-docs:
 # pass for the falsification claim to hold.
 validate: validate-corpus validate-variants
 
+# --skip-external-validation: the rivet.yaml externals are the raw
+# eclipse-score repos `make sync` checks out for `make convert`. They have
+# no rivet.yaml of their own, so there is no cross-repo graph to load; the
+# converted artifacts are validated here as one project via `sources:`.
 validate-corpus:
-	@$(RIVET) --schemas $(SCHEMAS) validate
+	@$(RIVET) --schemas $(SCHEMAS) validate --skip-external-validation
 
 validate-variants:
 	@$(RIVET) variant check-all \
@@ -94,7 +98,7 @@ validate-%:
 # ── Materialise upstreams from rivet.yaml `externals:` block ────────────
 #
 # `rivet sync` clones each upstream-score repo into .rivet/repos/<short>/
-# at the SHA pinned in rivet.yaml + rivet.lock. Idempotent.  Then
+# at the commit pinned in rivet.lock (`sync --locked`). Idempotent.  Then
 # `make link-upstream` creates upstream/eclipse-score-<short> symlinks
 # pointing at the rivet-managed locations so the converter keeps its
 # canonical naming convention.  Two targets, one workflow:
@@ -106,7 +110,7 @@ validate-%:
 #                          via `rivet lock --update`
 #
 sync:
-	@$(RIVET) --schemas $(SCHEMAS) sync
+	@$(RIVET) --schemas $(SCHEMAS) sync --locked
 	@$(MAKE) -s link-upstream
 
 link-upstream:

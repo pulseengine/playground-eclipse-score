@@ -2,7 +2,7 @@
 id: DOC-SUP.10-70692
 title: Sup.10
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

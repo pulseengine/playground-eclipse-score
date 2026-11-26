@@ -2,7 +2,7 @@
 id: DOC-DR-001-PROC-24545
 title: Dr-001-Proc
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

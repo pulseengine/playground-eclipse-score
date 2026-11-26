@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-REPORT-TEMPLATE-5642
 title: Verification Report Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

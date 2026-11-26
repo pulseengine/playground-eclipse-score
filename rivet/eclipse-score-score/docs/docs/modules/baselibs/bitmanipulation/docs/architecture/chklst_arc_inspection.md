@@ -2,7 +2,7 @@
 id: DOC-CHKLST-ARC-INSPECTION-61458
 title: Chklst Arc Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

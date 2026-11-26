@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANAGEMENT-GUIDELINE-92134
 title: Security Management Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

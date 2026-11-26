@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-23248
 title: Tool Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-VERIFICATION-REPORT-99957
 title: Platform Verification Report
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

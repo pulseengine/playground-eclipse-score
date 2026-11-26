@@ -12,7 +12,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__CRY_RES_GRD_LIFETIME
     type: decision-record
     title: CryptoResourceGuard Lifetime via Daemon-Side Reference Counting
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -22,7 +22,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__CONN_ANCHOR_PERSISTENT_IDS
     type: decision-record
     title: Shared-Connection Anchor for Persistent Resource ID Stability
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -32,7 +32,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__ALG_ID_FIXED_CAP_STR
     type: decision-record
     title: "AlgorithmId Represented as FixedCapacityString<64>"
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -42,7 +42,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__SYNCHRONOUS_IPC
     type: decision-record
     title: Synchronous-Only IPC Model
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -52,7 +52,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__CONTEXT_RESET_REUSE
     type: decision-record
     title: Context Reset() for Streaming Context Reuse
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -62,7 +62,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__TWO_LAYER_TIMEOUT
     type: decision-record
     title: Two-Layer Per-Call Timeout with Daemon-Side Enforcement
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -72,7 +72,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__KEY_OP_PERMISSION_BITMASK
     type: decision-record
     title: KeyOperationPermission as a Capability Bitmask
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -82,7 +82,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__UNIFIED_ENC_DEC_CONTEXTS
     type: decision-record
     title: Unified Cipher Context Rather Than Separate Encrypt/Decrypt Plus Symmetric/Asymmetric Split
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -92,7 +92,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__MEMORY_ALLOCATOR_SEPARATION
     type: decision-record
     title: IMemoryAllocator Separated from ICryptoStack
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto
@@ -102,7 +102,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__IPC_BOUNDARY_COPY
     type: decision-record
     title: Control Plane IPC Boundary Copy with Daemon-Internal Zero-Copy References
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     fields:
       context: doc__crypto_architecture
@@ -570,7 +570,7 @@ artifacts:
   - id: DEC_REC__CRYPTO__CENTRAL_DATA_NODE_MANAGER
     type: decision-record
     title: Central Data Node Manager
-    status: approved
+    status: valid
     tags: ["eclipse:dec_rec"]
     description: |
       .. :affects: comp__crypto

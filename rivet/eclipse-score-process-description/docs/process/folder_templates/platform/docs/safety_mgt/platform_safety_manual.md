@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-MANUAL-13539
 title: Platform Safety Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

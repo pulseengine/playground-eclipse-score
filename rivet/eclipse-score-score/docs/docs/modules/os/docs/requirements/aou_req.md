@@ -2,7 +2,7 @@
 id: DOC-AOU-REQ-27820
 title: Aou Req
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-FEATURE-DFA-56871
 title: Feature Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

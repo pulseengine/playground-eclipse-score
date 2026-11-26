@@ -2,7 +2,7 @@
 id: DOC-SOFTWARE-DEVELOPMENT-TEMPLATE-85577
 title: Software Development Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

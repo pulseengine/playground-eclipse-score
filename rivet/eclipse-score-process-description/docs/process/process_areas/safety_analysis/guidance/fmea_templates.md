@@ -2,7 +2,7 @@
 id: DOC-FMEA-TEMPLATES-70710
 title: Fmea Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

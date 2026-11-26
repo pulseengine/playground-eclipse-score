@@ -2,7 +2,7 @@
 id: DOC-PROCESS-MANAGEMENT-REQS-53559
 title: Process Management Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

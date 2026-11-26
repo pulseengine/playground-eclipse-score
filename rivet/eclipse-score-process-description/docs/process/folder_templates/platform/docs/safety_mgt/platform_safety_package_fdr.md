@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-PACKAGE-FDR-35805
 title: Platform Safety Package Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

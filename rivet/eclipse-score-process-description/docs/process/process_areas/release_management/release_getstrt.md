@@ -2,7 +2,7 @@
 id: DOC-RELEASE-GETSTRT-57110
 title: Release Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

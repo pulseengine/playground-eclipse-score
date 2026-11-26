@@ -2,7 +2,7 @@
 id: DOC-IIC-01-91121
 title: Iic-01
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-IIC-08-96354
 title: Iic-08
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

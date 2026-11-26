@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-GUIDELINE-45351
 title: Change Management Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

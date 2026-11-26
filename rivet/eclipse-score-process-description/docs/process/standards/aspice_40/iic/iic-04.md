@@ -2,7 +2,7 @@
 id: DOC-IIC-04-37316
 title: Iic-04
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

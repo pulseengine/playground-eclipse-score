@@ -2,7 +2,7 @@
 id: DOC-STAKEHOLDER-54603
 title: Stakeholder
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

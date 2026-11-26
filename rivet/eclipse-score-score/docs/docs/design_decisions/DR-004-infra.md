@@ -2,7 +2,7 @@
 id: DOC-DR-004-INFRA-59572
 title: Dr-004-Infra
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

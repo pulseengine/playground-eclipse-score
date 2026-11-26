@@ -2,7 +2,7 @@
 id: DOC-MW-FR-LOGGING-REQ-79308
 title: Mw-Fr Logging Req
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

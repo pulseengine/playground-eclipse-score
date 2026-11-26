@@ -2,7 +2,7 @@
 id: DOC-CHECKLIST-SECURITY-PLAN-26591
 title: Checklist Security Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

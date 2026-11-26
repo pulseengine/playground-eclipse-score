@@ -2,7 +2,7 @@
 id: DOC-GUIDELINE-COMPONENT-CLASSIFICATION-90843
 title: Guideline Component Classification
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

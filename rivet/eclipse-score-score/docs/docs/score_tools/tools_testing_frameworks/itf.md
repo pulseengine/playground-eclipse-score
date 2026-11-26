@@ -2,7 +2,7 @@
 id: DOC-ITF-69682
 title: Itf
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

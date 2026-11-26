@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-PROCESS-REQS-44896
 title: Architecture Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

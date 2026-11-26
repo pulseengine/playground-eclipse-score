@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-27783
 title: Requirements
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

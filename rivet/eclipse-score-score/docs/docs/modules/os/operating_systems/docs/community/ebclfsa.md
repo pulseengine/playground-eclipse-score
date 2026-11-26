@@ -2,7 +2,7 @@
 id: DOC-EBCLFSA-24793
 title: Ebclfsa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

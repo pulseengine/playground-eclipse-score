@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-PROCESS-REQS-34113
 title: Verification Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

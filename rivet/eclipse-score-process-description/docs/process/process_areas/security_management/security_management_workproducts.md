@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANAGEMENT-WORKPRODUCTS-96348
 title: Security Management Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

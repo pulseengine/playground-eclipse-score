@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-MANUAL-60439
 title: Platform Safety Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-MODULE-SAFETY-ANALYSIS-FDR-20071
 title: Module Safety Analysis Fdr
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

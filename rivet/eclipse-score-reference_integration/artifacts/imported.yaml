@@ -2,7 +2,7 @@ artifacts:
   - id: DOC__SCORE_V07_RELEASE_NOTE
     type: doc
     title: S-CORE v0.7 release note
-    status: approved
+    status: valid
     tags: ["eclipse:document"]
     fields:
       safety-level: QM
@@ -13,7 +13,7 @@ artifacts:
   - id: DOC__PLATFORM_VERIFICATION_REPORT_V07
     type: doc
     title: Platform Verification Report
-    status: approved
+    status: valid
     tags: ["eclipse:document"]
     fields:
       safety-level: QM

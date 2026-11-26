@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-CHECKLIST-8323
 title: Documentation Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

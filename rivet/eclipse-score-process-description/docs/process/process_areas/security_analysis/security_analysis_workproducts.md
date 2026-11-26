@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-WORKPRODUCTS-37145
 title: Security Analysis Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

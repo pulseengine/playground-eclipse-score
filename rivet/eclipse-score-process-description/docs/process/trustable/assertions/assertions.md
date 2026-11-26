@@ -2,7 +2,7 @@
 id: DOC-ASSERTIONS-79467
 title: Assertions
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

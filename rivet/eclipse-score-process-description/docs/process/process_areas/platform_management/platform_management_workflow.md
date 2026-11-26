@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-MANAGEMENT-WORKFLOW-68251
 title: Platform Management Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

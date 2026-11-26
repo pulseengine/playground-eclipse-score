@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SECURITY-MANAGER-3511
 title: Platform Security Manager
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

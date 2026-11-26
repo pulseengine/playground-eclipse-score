@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-WORKFLOW-31095
 title: Tool Management Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

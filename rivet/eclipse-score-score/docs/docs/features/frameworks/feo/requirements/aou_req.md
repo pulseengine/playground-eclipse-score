@@ -2,7 +2,7 @@
 id: DOC-AOU-REQ-64484
 title: Aou Req
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-MLE.4-51072
 title: Mle.4
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

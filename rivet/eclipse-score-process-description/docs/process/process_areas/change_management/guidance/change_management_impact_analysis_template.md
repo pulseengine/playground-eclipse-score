@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-IMPACT-ANALYSIS-TEMPLATE-85926
 title: Change Management Impact Analysis Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

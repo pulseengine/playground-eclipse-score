@@ -2,7 +2,7 @@
 id: DOC-SUP.11-51928
 title: Sup.11
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-SCORE-V0-5-ALPHA-67968
 title: Score V0 5 Alpha
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

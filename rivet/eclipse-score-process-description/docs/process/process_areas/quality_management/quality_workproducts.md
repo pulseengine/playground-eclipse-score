@@ -2,7 +2,7 @@
 id: DOC-QUALITY-WORKPRODUCTS-6787
 title: Quality Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

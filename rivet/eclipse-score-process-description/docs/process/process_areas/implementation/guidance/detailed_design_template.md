@@ -2,7 +2,7 @@
 id: DOC-DETAILED-DESIGN-TEMPLATE-10857
 title: Detailed Design Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

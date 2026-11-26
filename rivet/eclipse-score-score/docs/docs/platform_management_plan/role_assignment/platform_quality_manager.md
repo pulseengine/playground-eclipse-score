@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-QUALITY-MANAGER-63200
 title: Platform Quality Manager
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

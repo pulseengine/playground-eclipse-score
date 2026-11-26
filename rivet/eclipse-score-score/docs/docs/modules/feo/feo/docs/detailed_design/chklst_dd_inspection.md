@@ -2,7 +2,7 @@
 id: DOC-CHKLST-DD-INSPECTION-22867
 title: Chklst Dd Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

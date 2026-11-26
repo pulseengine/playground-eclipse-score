@@ -2,7 +2,7 @@
 id: DOC-SCORE-LIFECYCLE-CONCEPT-35586
 title: Score Lifecycle Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

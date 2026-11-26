@@ -2,7 +2,7 @@
 id: DOC-PROCESS-MANAGEMENT-TEMPLATES-71283
 title: Process Management Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

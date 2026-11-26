@@ -2,7 +2,7 @@
 id: DOC-RELEASE-CONCEPT-88595
 title: Release Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

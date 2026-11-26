@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-REQUIREMENTS-14837
 title: Component Requirements
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

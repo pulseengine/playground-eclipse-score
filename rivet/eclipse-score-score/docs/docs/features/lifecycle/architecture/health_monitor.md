@@ -2,7 +2,7 @@
 id: DOC-HEALTH-MONITOR-59777
 title: Health Monitor
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

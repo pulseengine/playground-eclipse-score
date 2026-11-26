@@ -2,7 +2,7 @@
 id: DOC-SWE.2-51731
 title: Swe.2
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

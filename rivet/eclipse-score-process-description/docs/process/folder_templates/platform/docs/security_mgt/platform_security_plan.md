@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SECURITY-PLAN-40542
 title: Platform Security Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

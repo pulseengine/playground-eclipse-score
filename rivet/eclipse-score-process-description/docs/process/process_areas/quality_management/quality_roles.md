@@ -2,7 +2,7 @@
 id: DOC-QUALITY-ROLES-70799
 title: Quality Roles
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

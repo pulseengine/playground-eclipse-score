@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-MANAGEMENT-GETSTRT-61178
 title: Platform Management Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SECURITY-MANUAL-983
 title: Platform Security Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

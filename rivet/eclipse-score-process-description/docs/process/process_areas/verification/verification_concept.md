@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-CONCEPT-82551
 title: Verification Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

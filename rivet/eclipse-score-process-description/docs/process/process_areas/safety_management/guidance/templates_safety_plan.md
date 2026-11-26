@@ -2,7 +2,7 @@
 id: DOC-TEMPLATES-SAFETY-PLAN-53060
 title: Templates Safety Plan
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

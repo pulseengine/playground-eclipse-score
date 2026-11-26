@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-WORKPRODUCTS-29933
 title: Architecture Workproducts
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

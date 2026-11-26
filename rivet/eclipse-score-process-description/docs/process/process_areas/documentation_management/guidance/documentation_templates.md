@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-TEMPLATES-25131
 title: Documentation Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

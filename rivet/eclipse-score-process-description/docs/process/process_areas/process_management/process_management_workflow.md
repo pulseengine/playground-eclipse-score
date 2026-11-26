@@ -2,7 +2,7 @@
 id: DOC-PROCESS-MANAGEMENT-WORKFLOW-13008
 title: Process Management Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

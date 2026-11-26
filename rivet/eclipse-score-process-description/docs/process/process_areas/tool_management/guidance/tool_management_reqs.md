@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-REQS-77308
 title: Tool Management Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-IMPLEMENTATION-WORKFLOW-45256
 title: Implementation Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-SUP.8-78862
 title: Sup.8
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

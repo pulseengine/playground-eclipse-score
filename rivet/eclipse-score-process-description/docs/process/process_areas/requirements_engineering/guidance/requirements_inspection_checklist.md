@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-INSPECTION-CHECKLIST-11204
 title: Requirements Inspection Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

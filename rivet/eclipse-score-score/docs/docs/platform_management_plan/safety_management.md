@@ -2,7 +2,7 @@
 id: DOC-SAFETY-MANAGEMENT-15238
 title: Safety Management
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

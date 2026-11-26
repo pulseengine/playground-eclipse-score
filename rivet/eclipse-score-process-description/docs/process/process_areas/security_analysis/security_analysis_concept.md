@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-CONCEPT-32776
 title: Security Analysis Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

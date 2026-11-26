@@ -2,7 +2,7 @@
 id: DOC-PROCESS-MANAGEMENT-GUIDELINE-143
 title: Process Management Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

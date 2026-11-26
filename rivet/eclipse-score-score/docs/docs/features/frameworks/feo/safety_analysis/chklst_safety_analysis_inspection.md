@@ -2,7 +2,7 @@
 id: DOC-CHKLST-SAFETY-ANALYSIS-INSPECTION-53497
 title: Chklst Safety Analysis Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

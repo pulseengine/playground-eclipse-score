@@ -2,7 +2,7 @@
 id: DOC-CLIPPY-11814
 title: Clippy
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

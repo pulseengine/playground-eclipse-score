@@ -2,7 +2,7 @@
 id: DOC-SWE.6-77520
 title: Swe.6
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

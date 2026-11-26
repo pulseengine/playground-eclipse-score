@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-GUIDELINE-88267
 title: Documentation Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

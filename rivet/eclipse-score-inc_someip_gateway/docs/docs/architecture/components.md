@@ -2,7 +2,7 @@
 id: DOC-COMPONENTS-91564
 title: Components
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

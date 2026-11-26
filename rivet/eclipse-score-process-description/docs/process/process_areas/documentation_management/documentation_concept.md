@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-CONCEPT-84549
 title: Documentation Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

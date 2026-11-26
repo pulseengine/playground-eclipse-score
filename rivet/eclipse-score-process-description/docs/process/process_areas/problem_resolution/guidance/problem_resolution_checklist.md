@@ -2,7 +2,7 @@
 id: DOC-PROBLEM-RESOLUTION-CHECKLIST-33506
 title: Problem Resolution Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

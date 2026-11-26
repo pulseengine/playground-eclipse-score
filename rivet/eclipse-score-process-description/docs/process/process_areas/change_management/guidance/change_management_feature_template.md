@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-FEATURE-TEMPLATE-34207
 title: Change Management Feature Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-LAUNCH-MANAGER-CONFIGURATION-48854
 title: Launch Manager Configuration
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

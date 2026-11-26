@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-CONCEPT-12437
 title: Tool Management Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

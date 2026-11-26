@@ -2,7 +2,7 @@
 id: DOC-SCORE-TRACEABILITY-CONCEPT-18846
 title: Score Traceability Concept
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

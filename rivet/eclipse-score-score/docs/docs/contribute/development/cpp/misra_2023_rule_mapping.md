@@ -2,7 +2,7 @@
 id: DOC-MISRA-2023-RULE-MAPPING-83076
 title: Misra 2023 Rule Mapping
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-SAFETY-MANUAL-7334
 title: Safety Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

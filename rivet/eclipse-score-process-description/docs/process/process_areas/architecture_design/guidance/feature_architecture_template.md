@@ -2,7 +2,7 @@
 id: DOC-FEATURE-ARCHITECTURE-TEMPLATE-38205
 title: Feature Architecture Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

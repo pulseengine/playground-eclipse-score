@@ -2,7 +2,7 @@
 id: DOC-ARCHITECTURE-INSPECTION-CHECKLIST-77404
 title: Architecture Inspection Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

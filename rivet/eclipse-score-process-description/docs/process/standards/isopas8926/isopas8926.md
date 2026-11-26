@@ -2,7 +2,7 @@
 id: DOC-ISOPAS8926-43206
 title: Isopas8926
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

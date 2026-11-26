@@ -2,7 +2,7 @@
 id: DOC-QUALITY-REVIEW-CHECKLIST-15638
 title: Quality Review Checklist
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-GETSTRT-87886
 title: Requirements Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

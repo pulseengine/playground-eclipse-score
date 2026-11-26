@@ -2,7 +2,7 @@
 id: DOC-SECURITY-ANALYSIS-THREAT-TEMPLATES-52185
 title: Security Analysis Threat Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

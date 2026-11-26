@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-FMEA-74635
 title: Component Fmea
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

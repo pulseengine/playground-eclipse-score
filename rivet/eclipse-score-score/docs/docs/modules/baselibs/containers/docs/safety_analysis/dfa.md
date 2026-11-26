@@ -2,7 +2,7 @@
 id: DOC-DFA-93687
 title: Dfa
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

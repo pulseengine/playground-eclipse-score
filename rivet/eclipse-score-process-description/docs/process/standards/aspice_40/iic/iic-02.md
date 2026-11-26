@@ -2,7 +2,7 @@
 id: DOC-IIC-02-19180
 title: Iic-02
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

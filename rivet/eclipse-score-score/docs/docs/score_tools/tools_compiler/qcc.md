@@ -2,7 +2,7 @@
 id: DOC-QCC-64486
 title: Qcc
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

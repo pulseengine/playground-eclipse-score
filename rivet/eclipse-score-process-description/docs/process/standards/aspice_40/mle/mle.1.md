@@ -2,7 +2,7 @@
 id: DOC-MLE.1-89645
 title: Mle.1
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

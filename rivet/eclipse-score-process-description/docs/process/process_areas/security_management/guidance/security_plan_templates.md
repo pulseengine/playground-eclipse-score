@@ -2,7 +2,7 @@
 id: DOC-SECURITY-PLAN-TEMPLATES-18620
 title: Security Plan Templates
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

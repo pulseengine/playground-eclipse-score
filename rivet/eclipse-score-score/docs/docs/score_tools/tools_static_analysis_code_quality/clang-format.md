@@ -2,7 +2,7 @@
 id: DOC-CLANG-FORMAT-65887
 title: Clang-Format
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

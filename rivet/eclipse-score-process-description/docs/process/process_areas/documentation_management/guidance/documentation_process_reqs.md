@@ -2,7 +2,7 @@
 id: DOC-DOCUMENTATION-PROCESS-REQS-7059
 title: Documentation Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

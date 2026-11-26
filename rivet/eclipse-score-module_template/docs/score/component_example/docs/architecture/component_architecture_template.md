@@ -2,7 +2,7 @@
 id: DOC-COMPONENT-ARCHITECTURE-TEMPLATE-25885
 title: Component Architecture Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

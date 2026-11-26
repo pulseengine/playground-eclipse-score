@@ -2,7 +2,7 @@
 id: DOC-DETAILED-DESIGN-EXAMPLE-90304
 title: Detailed Design Example
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

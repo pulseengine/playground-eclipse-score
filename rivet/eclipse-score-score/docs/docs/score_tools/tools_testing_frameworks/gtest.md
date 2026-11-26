@@ -2,7 +2,7 @@
 id: DOC-GTEST-17627
 title: Gtest
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

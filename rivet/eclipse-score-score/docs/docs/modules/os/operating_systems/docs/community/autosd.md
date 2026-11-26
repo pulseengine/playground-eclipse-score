@@ -2,7 +2,7 @@
 id: DOC-AUTOSD-78074
 title: Autosd
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

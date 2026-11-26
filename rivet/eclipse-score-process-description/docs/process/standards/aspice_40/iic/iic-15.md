@@ -2,7 +2,7 @@
 id: DOC-IIC-15-61300
 title: Iic-15
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

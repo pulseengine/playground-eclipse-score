@@ -2,7 +2,7 @@
 id: DOC-CODING-GUIDELINES-60004
 title: Coding Guidelines
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

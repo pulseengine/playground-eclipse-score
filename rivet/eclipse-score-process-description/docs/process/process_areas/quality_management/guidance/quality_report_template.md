@@ -2,7 +2,7 @@
 id: DOC-QUALITY-REPORT-TEMPLATE-42341
 title: Quality Report Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

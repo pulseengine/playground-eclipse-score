@@ -2,7 +2,7 @@
 id: DOC-MODULE-VERIFICATION-REPORT-2635
 title: Module Verification Report
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

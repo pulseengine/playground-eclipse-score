@@ -2,7 +2,7 @@
 id: DOC-SAFETY-MANUAL-2185
 title: Safety Manual
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

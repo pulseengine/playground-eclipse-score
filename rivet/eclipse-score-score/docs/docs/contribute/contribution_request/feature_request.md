@@ -2,7 +2,7 @@
 id: DOC-FEATURE-REQUEST-92092
 title: Feature Request
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

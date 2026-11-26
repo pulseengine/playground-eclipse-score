@@ -2,7 +2,7 @@
 id: DOC-PLATFORM-SAFETY-ENGINEER-76963
 title: Platform Safety Engineer
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

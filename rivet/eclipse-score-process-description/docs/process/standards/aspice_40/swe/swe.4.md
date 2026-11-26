@@ -2,7 +2,7 @@
 id: DOC-SWE.4-23344
 title: Swe.4
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-GETSTRT-88042
 title: Verification Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

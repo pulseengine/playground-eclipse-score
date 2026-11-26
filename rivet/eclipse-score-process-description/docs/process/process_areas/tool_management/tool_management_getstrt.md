@@ -2,7 +2,7 @@
 id: DOC-TOOL-MANAGEMENT-GETSTRT-97633
 title: Tool Management Getstrt
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

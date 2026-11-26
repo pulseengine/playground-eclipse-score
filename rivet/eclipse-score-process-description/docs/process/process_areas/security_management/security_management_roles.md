@@ -2,7 +2,7 @@
 id: DOC-SECURITY-MANAGEMENT-ROLES-64682
 title: Security Management Roles
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

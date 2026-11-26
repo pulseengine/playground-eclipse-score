@@ -2,7 +2,7 @@
 id: DOC-VERIFICATION-WORKFLOWS-83080
 title: Verification Workflows
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

@@ -2,7 +2,7 @@
 id: DOC-CHANGE-MANAGEMENT-COMPONENT-TEMPLATE-74396
 title: Change Management Component Template
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

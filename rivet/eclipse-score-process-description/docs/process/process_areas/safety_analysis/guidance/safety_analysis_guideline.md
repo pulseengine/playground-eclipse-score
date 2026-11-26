@@ -2,7 +2,7 @@
 id: DOC-SAFETY-ANALYSIS-GUIDELINE-55302
 title: Safety Analysis Guideline
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

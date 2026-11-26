@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-PROCESS-REQS-78247
 title: Requirements Process Reqs
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

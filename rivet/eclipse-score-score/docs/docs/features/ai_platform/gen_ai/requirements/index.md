@@ -2,7 +2,7 @@
 id: DOC-INDEX-26075
 title: Index
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

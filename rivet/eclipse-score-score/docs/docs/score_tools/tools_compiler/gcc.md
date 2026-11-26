@@ -2,7 +2,7 @@
 id: DOC-GCC-20584
 title: Gcc
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

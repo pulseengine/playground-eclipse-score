@@ -2,7 +2,7 @@
 id: DOC-REQUIREMENTS-WORKFLOW-76360
 title: Requirements Workflow
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 

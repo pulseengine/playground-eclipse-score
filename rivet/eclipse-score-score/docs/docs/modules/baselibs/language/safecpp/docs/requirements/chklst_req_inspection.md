@@ -2,7 +2,7 @@
 id: DOC-CHKLST-REQ-INSPECTION-14613
 title: Chklst Req Inspection
 type: specification
-status: approved
+status: valid
 tags: [eclipse-score]
 ---
 
