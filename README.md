@@ -1,5 +1,7 @@
 # `playground-eclipse-score`
 
+> **Archived 2026-11-27: no longer maintained.**
+
 [![validate](https://github.com/pulseengine/playground-eclipse-score/actions/workflows/validate.yml/badge.svg)](https://github.com/pulseengine/playground-eclipse-score/actions/workflows/validate.yml)
 [![license: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
